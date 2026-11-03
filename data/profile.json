@@ -1,0 +1,14 @@
+{
+  "department": "컴퓨터공학부",
+  "year": 1,
+  "enrollment_status": "재학",
+  "dorm_resident": true,
+  "interests": ["장학", "취업·인턴", "대외활동·공모전"],
+  "always_show_categories": ["학사", "생활관"],
+  "excluded_categories": [],
+  "excluded_target_groups": ["대학원생", "교직원"],
+  "age": null,
+  "region": null,
+  "urgent_days": 3,
+  "preparation_days": 7
+}
