@@ -1,1 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>코리아텍 공지봇</title>
+  <style>
+    body { font-family: sans-serif; max-width: 720px; margin: 0 auto; padding: 16px; background: #f5f6f8; color: #222; }
+    h1 { font-size: 24px; margin-bottom: 4px; }
+    .sub { color: #666; margin-top: 0; }
+    .box { background: #fff; border-radius: 10px; padding: 14px 16px; margin: 12px 0; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+    .filters button { border: 1px solid #ccc; background: #fff; border-radius: 16px; padding: 6px 12px; margin: 2px; cursor: pointer; }
+    .filters button.on { background: #2f5bd3; color: #fff; border-color: #2f5bd3; }
+    .notice h3 { margin: 8px 0 6px; font-size: 17px; }
+    .notice .meta { font-size: 13px; color: #666; margin-top: 4px; }
+    .tag { display: inline-block; background: #e8eefc; color: #2f5bd3; border-radius: 6px; padding: 2px 6px; font-size: 12px; }
+    .new { display: inline-block; background: #ffe9a8; color: #8a5a00; border-radius: 6px; padding: 2px 6px; font-size: 12px; font-weight: bold; }
+    .dday { font-weight: bold; color: #555; }
+    .dday.urgent { color: #d33; }
+    .sample { color: #999; font-size: 12px; }
+    .empty { color: #888; text-align: center; }
+    a { color: inherit; }
+  </style>
+</head>
+<body>
+  <h1>코리아텍 공지봇</h1>
+  <p class="sub">나에게 맞는 학교 공지를 모아서 보여줍니다</p>
 
+  <!-- 내 설정 (3주차에 profile.json 연결) -->
+  <div class="box" id="profile">내 설정: 컴퓨터공학부 · 1학년 · 재학 · 생활관 거주</div>
+
+  <div class="filters" id="filters"></div>
+
+  <div id="notice-list"><p class="empty">공지를 불러오는 중…</p></div>
+
+  <script>
+    // ▼ 저장소 주인 GitHub 아이디로 바꾸기
+    const OWNER = "네아이디";
+    const REPO = "koreatech-notice-bot";
+    const DATA_URL = `https://raw.githubusercontent.com/${OWNER}/${REPO}/main/data/notices.json`;
+
+    // 마감 임박 기준 (profile.json 값과 맞추기)
+    const URGENT_DAYS = 3;           // 기본
+    const URGENT_DAYS_MATERIALS = 7; // 준비물 있을 때
+
+    const CATEGORIES = ["전체", "장학", "학사", "취업·인턴", "교내활동", "대외활동·공모전", "생활관"];
+    let notices = [];
+    let current = "전체";
+
+    function esc(s) {
+      return String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+    }
+
+    // 한국 시간 기준 오늘 날짜 (YYYY-MM-DD)
+    function todayKST() {
+      return new Date(Date.now() + 9 * 3600 * 1000).toISOString().slice(0, 10);
+    }
+
+    // 마감일까지 남은 날 수 (마감 없으면 null)
+    function daysLeft(deadline) {
+      if (!deadline) return null;
+      const d = deadline.slice(0, 10);
+      return Math.round((Date.parse(d) - Date.parse(todayKST())) / 86400000);
+    }
+
+    function ddayHTML(n) {
+      const left = daysLeft(n.deadline);
+      if (left === null) return "";
+      const hasMaterials = Array.isArray(n.materials) && n.materials.length > 0;
+      const limit = hasMaterials ? URGENT_DAYS_MATERIALS : URGENT_DAYS;
+      let text;
+      if (left < 0) text = "마감됨";
+      else if (left === 0) text = n.deadline.length > 10 ? `오늘 ${n.deadline.slice(11, 16)}` : "오늘 마감";
+      else text = `D-${left}`;
+      const urgent = left >= 0 && left <= limit;
+      return `<span class="dday${urgent ? " urgent" : ""}">${text}</span>`;
+    }
+
+    function targetText(t) {
+      if (!t || t.scope === "unknown") return "대상 불명확";
+      if (t.scope === "all") return "전체 대상";
+      const parts = [
+        ...(t.departments || []),
+        ...(t.years || []).map(y => `${y}학년`),
+        ...(t.enrollment_statuses || []),
+        ...(t.groups || []),
+      ];
+      if (t.dorm_required === true) parts.push("생활관 거주자");
+      return parts.length ? parts.join(" · ") + " 대상" : "대상 불명확";
+    }
+
+    function relevanceText(r) {
+      if (r === null || r === undefined) return "관련도 미정";
+      if (typeof r === "number") return r > 0 ? "★".repeat(r) : "숨김";
+      return r;
+    }
+
+    function card(n) {
+      const extra = [];
+      if (n.actions && n.actions.length) extra.push("할 일: " + n.actions.map(esc).join(", "));
+      if (n.materials && n.materials.length) extra.push("준비물: " + n.materials.map(esc).join(", "));
+      return `
+        <div class="box notice">
+          <span class="tag">${esc(n.category || "미분류")}</span>
+          ${n.is_new ? '<span class="new">NEW</span>' : ""}
+          ${ddayHTML(n)}
+          ${n.is_sample ? '<span class="sample">예시 데이터</span>' : ""}
+          <h3><a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.title)}</a></h3>
+          <div class="meta">${esc(relevanceText(n.relevance))} · ${esc(n.relevance_reason || targetText(n.target))} · ${esc(n.source)} · ${esc(n.published_date)}</div>
+          ${extra.length ? `<div class="meta">${extra.join(" / ")}</div>` : ""}
+        </div>`;
+    }
+
+    function render() {
+      const list = document.getElementById("notice-list");
+      const shown = notices
+        .filter(n => current === "전체" || n.category === current)
+        .sort((a, b) => {
+          // 마감 있는 공지 먼저, 마감 가까운 순
+          const da = daysLeft(a.deadline), db = daysLeft(b.deadline);
+          if (da === null && db === null) return 0;
+          if (da === null) return 1;
+          if (db === null) return -1;
+          return da - db;
+        });
+      list.innerHTML = shown.length ? shown.map(card).join("") : '<p class="empty">해당하는 공지가 없습니다</p>';
+    }
+
+    function renderFilters() {
+      const box = document.getElementById("filters");
+      box.innerHTML = CATEGORIES.map(c => `<button class="${c === current ? "on" : ""}" data-c="${esc(c)}">${esc(c)}</button>`).join("");
+      box.querySelectorAll("button").forEach(b => b.onclick = () => { current = b.dataset.c; renderFilters(); render(); });
+    }
+
+    fetch(DATA_URL, { cache: "no-store" })
+      .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(data => { notices = data; renderFilters(); render(); })
+      .catch(err => {
+        document.getElementById("notice-list").innerHTML =
+          `<p class="empty">공지를 불러오지 못했습니다 (${esc(err.message)})<br>OWNER 값과 data/notices.json 위치를 확인하세요</p>`;
+      });
+  </script>
+</body>
+</html>
