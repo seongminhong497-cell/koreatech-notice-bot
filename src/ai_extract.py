@@ -36,10 +36,12 @@ SYSTEM_PROMPT = """너는 한국기술교육대학교 공지에서 정보를 뽑
 - 제목에도 마감일이나 대상이 적혀 있을 수 있으니, 제목과 본문을 모두 확인해.
 
 target (누구를 위한 공지인지)
-- scope: 학생 누구나 해당되면 "all", 특정 학과·학년·학적·집단만 해당되면 "specific", 판단할 수 없으면 "unknown"
+- scope: 학생 누구나 해당되면 "all", 특정 학과·학년·학적·집단만 해당되면 "specific",
+  판단할 수 없으면 "unknown"
 - departments: 대상 학과 목록. "컴퓨터공학부"처럼 정식 이름으로 써. 학과 제한이 없으면 [], 알 수 없으면 null
 - years: 대상 학년 숫자 목록. 예: [1, 2]. 학년 제한이 없으면 [], 알 수 없으면 null
-- enrollment_statuses: 대상 학적 목록. "재학", "휴학", "졸업예정", "졸업" 중에서만 골라. 제한이 없으면 [], 알 수 없으면 null
+- enrollment_statuses: 대상 학적 목록. "재학", "휴학", "졸업예정", "졸업" 중에서만 골라.
+  제한이 없으면 [], 알 수 없으면 null
 - groups: 대상 집단 목록. "학부생", "대학원생", "교직원", "외국인 유학생", "일반인" 중에서만 골라.
   직원·계약직·연구원 채용은 "교직원"으로 써. 제한이 없으면 [], 알 수 없으면 null
 - dorm_required: 생활관생만 해당되면 true, 생활관생이 아닌 사람만 해당되면 false, 상관없거나 알 수 없으면 null
@@ -241,7 +243,10 @@ def process_notices(path=NOTICES_PATH):
         data = json.load(f)
     notices = data["notices"] if isinstance(data, dict) else data
 
-    todo = [n for n in notices if not n.get("is_sample") and not n.get("extracted")]
+    todo = [
+        n for n in notices
+        if not n.get("is_sample") and not n.get("extracted")
+    ]
     print(f"처리할 공지: {len(todo)}개")
 
     for i, notice in enumerate(todo, 1):
