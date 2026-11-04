@@ -44,6 +44,7 @@ target (누구를 위한 공지인지)
   제한이 없으면 [], 알 수 없으면 null
 - groups: 대상 집단 목록. "학부생", "대학원생", "교직원", "외국인 유학생", "일반인" 중에서만 골라.
   직원·계약직·연구원 채용은 "교직원"으로 써. 제한이 없으면 [], 알 수 없으면 null
+  그냥 "학생" 누구나 대상이면 학부생·대학원생을 적지 말고 []로 둬.
 - dorm_required: 생활관생만 해당되면 true, 생활관생이 아닌 사람만 해당되면 false, 상관없거나 알 수 없으면 null
 
 deadline (신청·제출 마감)
@@ -210,6 +211,9 @@ def clean(result):
         "groups": _str_list(t.get("groups"), GROUPS),
         "dorm_required": dorm,
     }
+    # 학부생과 대학원생이 둘 다면 사실상 학생 전체라 제한 없음으로 본다
+    if target["groups"] and set(target["groups"]) == {"학부생", "대학원생"}:
+        target["groups"] = []
     # 대상 조건이 하나라도 있으면 "all"이 아니라 "specific"
     has_condition = dorm is not None or any(
         target[k]
