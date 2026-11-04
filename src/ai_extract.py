@@ -2,7 +2,9 @@
 
 사용법
 - 테스트: python src/ai_extract.py ../장학.txt
-- 실제 처리: python src/ai_extract.py  (data/notices.json에서 아직 처리 안 된 공지만 처리)
+  (txt 안에 "이미지: 주소 또는 파일경로" 줄이 있으면 그 이미지도 같이 보낸다)
+- 실제 처리: python src/ai_extract.py
+  (data/notices.json에서 아직 처리 안 된 공지만 처리)
 """
 
 import datetime
@@ -12,11 +14,14 @@ import re
 import sys
 import time
 
+import requests
 from google import genai
 from google.genai import types
 
 MODEL = "gemini-3.5-flash-lite"
 NOTICES_PATH = "data/notices.json"
+MAX_IMAGES = 3  # 공지 하나에 AI로 보낼 이미지 최대 개수
+MAX_IMAGE_BYTES = 5 * 1024 * 1024  # 5MB보다 큰 이미지는 보내지 않음
 WAIT_SECONDS = 4.5  # 분당 15회 한도를 넘지 않도록 공지 사이에 쉬는 시간
 
 CATEGORIES = ["장학", "학사", "취업·인턴", "교내활동", "대외활동·공모전", "생활관"]
@@ -34,6 +39,7 @@ SYSTEM_PROMPT = """너는 한국기술교육대학교 공지에서 정보를 뽑
 - 공지에 적힌 내용만 쓰고, 적혀 있지 않은 내용은 절대 지어내지 마.
 - 판단하기 어려우면 null로 둬.
 - 제목에도 마감일이나 대상이 적혀 있을 수 있으니, 제목과 본문을 모두 확인해.
+- 이미지가 함께 오면 이미지 속 글자도 공지 본문으로 보고 똑같이 정보를 뽑아.
 
 target (누구를 위한 공지인지)
 - scope: 학생 누구나 해당되면 "all", 특정 학과·학년·학적·집단만 해당되면 "specific",
@@ -52,7 +58,9 @@ deadline (신청·제출 마감)
 - "24:00까지"는 그날 "23:59:00"으로 써.
 - 연도가 없으면 작성일을 기준으로 연도를 정해.
 - 마감이 여러 개면, 대상 학생 모두가 해야 하는 가장 가까운 신청·제출 마감 하나만 써.
-  특정 학년만 해당하는 일정(예: 4학년 우선 신청)은 고르지 마.
+- 특정 학년·집단만 해당하는 일정은 날짜가 더 빨라도 절대 고르지 마.
+  예: "4학년 우선 수강신청 11/10"과 "1차 수강신청 11/11"이 있으면
+  4학년 우선은 일부 학생만 해당하므로, 모두가 하는 1차 수강신청 11/11을 써.
 - 행사 날짜, 작업·점검 시간, 결과 발표일은 마감이 아니야. 신청·제출 마감이 없으면 null
 
 actions (학생이 해야 할 일)
@@ -104,13 +112,78 @@ def build_text(notice):
     )
 
 
-def call_ai(text, retries=3):
+def _image_type(data):
+    """이미지 파일의 앞부분을 보고 종류를 알아낸다. Gemini가 못 읽는 종류면 None."""
+    if data.startswith(b"\x89PNG"):
+        return "image/png"
+    if data.startswith(b"\xff\xd8"):
+        return "image/jpeg"
+    if data[:4] == b"RIFF" and data[8:12] == b"WEBP":
+        return "image/webp"
+    return None
+
+
+def _read_image(url, headers):
+    """인터넷 주소면 내려받고, 컴퓨터에 있는 파일 경로면 그 파일을 읽는다."""
+    if not url.startswith(("http://", "https://")):
+        try:
+            with open(url, "rb") as f:
+                return f.read()
+        except OSError as e:
+            print(f"  이미지 파일 열기 실패, 건너뜀: {url} ({e})")
+            return None
+    try:
+        res = requests.get(url, timeout=20, headers=headers)
+        res.raise_for_status()
+    except requests.RequestException as e:
+        print(f"  이미지 받기 실패, 건너뜀: {url} ({e})")
+        return None
+    return res.content
+
+
+def download_images(urls, referer=None):
+    """이미지 주소들을 내려받아 AI에게 보낼 수 있는 모양으로 만든다.
+
+    학교 사이트는 공지 페이지에서 눌렀을 때만 파일을 주는 경우가 있어서,
+    referer(공지 주소)를 같이 보내 "이 공지에서 왔다"고 알려준다.
+    """
+    headers = {"User-Agent": "Mozilla/5.0"}
+    if referer:
+        headers["Referer"] = referer
+    parts = []
+    for url in (urls or [])[:MAX_IMAGES * 2]:  # 실패할 것까지 생각해 넉넉히
+        if len(parts) >= MAX_IMAGES:
+            break
+        data = _read_image(url, headers)
+        if data is None:
+            continue
+        mime = _image_type(data)
+        if mime is None or len(data) > MAX_IMAGE_BYTES:
+            print(f"  보낼 수 없는 이미지라 건너뜀: {url}")
+            continue
+        parts.append(types.Part.from_bytes(data=data, mime_type=mime))
+    return parts
+
+
+def _lines_with(text, label):
+    """테스트용 txt에서 "label: 값" 줄을 찾아 값 목록을 만든다."""
+    values = []
+    for line in text.splitlines():
+        if line.strip().startswith(label + ":"):
+            value = line.split(":", 1)[1].strip()
+            if value:
+                values.append(value)
+    return values
+
+
+def call_ai(text, image_parts=None, retries=3):
     """AI를 부르고 JSON을 받는다. 실패하면 잠깐 쉬고 다시 시도하고, 끝내 실패하면 None."""
+    contents = [text] + list(image_parts or [])
     for attempt in range(1, retries + 1):
         try:
             res = get_client().models.generate_content(
                 model=MODEL,
-                contents=text,
+                contents=contents,
                 config=types.GenerateContentConfig(
                     system_instruction=SYSTEM_PROMPT,
                     response_mime_type="application/json",
@@ -214,12 +287,12 @@ def clean(result):
     # 학부생과 대학원생이 둘 다면 사실상 학생 전체라 제한 없음으로 본다
     if target["groups"] and set(target["groups"]) == {"학부생", "대학원생"}:
         target["groups"] = []
-    # 대상 조건이 하나라도 있으면 "all"이 아니라 "specific"
+    # 대상 조건이 하나라도 있으면 "all"이나 "unknown"이 아니라 "specific"
     has_condition = dorm is not None or any(
         target[k]
         for k in ("departments", "years", "enrollment_statuses", "groups")
     )
-    if has_condition and target["scope"] == "all":
+    if has_condition:
         target["scope"] = "specific"
 
     return {
@@ -231,9 +304,20 @@ def clean(result):
     }
 
 
-def extract(text, show_raw=False):
-    """공지 글 하나를 넣으면 정리된 정보를 돌려준다. 실패하면 None."""
-    raw = call_ai(text)
+def extract(text, images=None, referer=None, show_raw=False):
+    """공지 글과 이미지 주소를 넣으면 정리된 정보를 돌려준다. 실패하면 None.
+
+    images, referer를 안 주면 글 안의 "이미지:", "링크:" 줄을 쓴다(테스트용).
+    """
+    if images is None:
+        images = _lines_with(text, "이미지")
+    if referer is None:
+        links = _lines_with(text, "링크")
+        referer = links[0] if links else None
+    image_parts = download_images(images, referer)
+    if show_raw and images:
+        print(f"[이미지 {len(image_parts)}장을 같이 보냄]")
+    raw = call_ai(text, image_parts)
     if show_raw:
         print("[AI 원래 답]")
         print(json.dumps(raw, ensure_ascii=False, indent=2))
@@ -255,7 +339,11 @@ def process_notices(path=NOTICES_PATH):
 
     for i, notice in enumerate(todo, 1):
         print(f"[{i}/{len(todo)}] {notice.get('title', '')}")
-        info = extract(build_text(notice))
+        info = extract(
+            build_text(notice),
+            images=notice.get("images") or [],
+            referer=notice.get("url"),
+        )
         if info is None:
             print("  실패, 다음 실행 때 다시 처리합니다.")
         else:
