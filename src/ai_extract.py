@@ -391,6 +391,8 @@ def process_notices(path=NOTICES_PATH):
         if not n.get("is_sample") and not n.get("extracted")
     ]
     print(f"처리할 공지: {len(todo)}개")
+    if not todo:
+        return  # 바꿀 게 없으면 파일을 다시 쓰지 않는다(불필요한 커밋 방지)
 
     for i, notice in enumerate(todo, 1):
         print(f"[{i}/{len(todo)}] {notice.get('title', '')}")
