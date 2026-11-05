@@ -43,7 +43,7 @@
       "departments": [],
       "years": [],
       "enrollment_statuses": [],
-      "groups": ["학부생", "대학원생"],
+      "groups": [],
       "dorm_required": null
     },
     "deadline": "2026-11-20",
@@ -140,7 +140,7 @@
       "departments": [],
       "years": [],
       "enrollment_statuses": [],
-      "groups": ["학부생", "대학원생"],
+      "groups": [],
       "dorm_required": null
     },
     "deadline": null,
