@@ -19,6 +19,7 @@ from google import genai
 from google.genai import types
 
 MODEL = "gemini-3.5-flash-lite"
+BACKUP_MODEL = "gemma-4-26b-a4b-it"  # 기본 모델이 붐빌 때 쓰는 예비 모델
 NOTICES_PATH = "data/notices.json"
 MAX_IMAGES = 3  # 공지 하나에 AI로 보낼 이미지 최대 개수
 MAX_IMAGE_BYTES = 5 * 1024 * 1024  # 5MB보다 큰 이미지는 보내지 않음
@@ -63,8 +64,18 @@ deadline (신청·제출 마감)
   4학년 우선은 일부 학생만 해당하므로, 모두가 하는 1차 수강신청 11/11을 써.
 - 행사 날짜, 작업·점검 시간, 결과 발표일은 마감이 아니야. 신청·제출 마감이 없으면 null
 
+other_dates (deadline 말고 다른 일정)
+- deadline에 넣지 않은 날짜를 {"label": 일정 이름, "date": 날짜} 목록으로 써. 최대 5개
+- 예: 다른 신청 일정, 등록금 납부, 결과 발표, 행사일, 점검 기간 시작일
+- 일부 학년·집단만 해당하는 일정은 label에 대상을 함께 써. 예: "4학년 우선 수강신청"
+- date는 deadline과 같은 형식으로 쓰고, 날짜를 알 수 없는 일정은 넣지 마.
+- 다른 일정이 없으면 []
+
 actions (학생이 해야 할 일)
-- "포털에서 신청서 제출"처럼 짧은 문장 목록, 최대 3개. 할 일이 없으면 []
+- "포털에서 신청서 제출"처럼 짧은 문장 목록, 최대 3개
+- 공지에 할 일 정보가 없으면 null
+  예: 점검 안내, 단순 알림처럼 학생이 할 일이 언급되지 않은 공지는 []가 아니라 null
+- 공지에 "따로 할 일 없음"처럼 없다고 분명히 적혀 있을 때만 []
 
 materials (준비물·제출 서류)
 - 서류나 준비물 이름 목록. 공지에 언급이 없으면 null
@@ -85,7 +96,8 @@ category (분류)
     "dorm_required": <true 또는 false 또는 null>
   },
   "deadline": <마감 날짜 문자열 또는 null>,
-  "actions": <할 일 목록>,
+  "other_dates": <{"label", "date"} 목록 또는 []>,
+  "actions": <할 일 목록 또는 [] 또는 null>,
   "materials": <준비물 목록 또는 [] 또는 null>,
   "category": <분류 또는 null>
 }
@@ -176,26 +188,53 @@ def _lines_with(text, label):
     return values
 
 
-def call_ai(text, image_parts=None, retries=3):
-    """AI를 부르고 JSON을 받는다. 실패하면 잠깐 쉬고 다시 시도하고, 끝내 실패하면 None."""
+def _parse_json(text):
+    """AI 답에서 JSON 부분만 꺼낸다. ```json 같은 감싸기가 있어도 괜찮다."""
+    text = (text or "").strip()
+    start, end = text.find("{"), text.rfind("}")
+    if start == -1 or end == -1:
+        raise ValueError("답에 JSON이 없습니다")
+    return json.loads(text[start:end + 1])
+
+
+def _ask(model, contents):
+    """모델 하나에 한 번 물어본다. 예비 모델은 JSON 모드를 쓰지 않는다."""
+    if model == MODEL:
+        config = types.GenerateContentConfig(
+            system_instruction=SYSTEM_PROMPT,
+            response_mime_type="application/json",
+            temperature=0,
+            thinking_config=types.ThinkingConfig(thinking_level="LOW"),
+        )
+    else:
+        config = types.GenerateContentConfig(
+            system_instruction=SYSTEM_PROMPT,
+            temperature=0,
+        )
+    res = get_client().models.generate_content(
+        model=model, contents=contents, config=config
+    )
+    return _parse_json(res.text)
+
+
+def call_ai(text, image_parts=None):
+    """AI를 부르고 JSON을 받는다. 실패하면 끝내 None.
+
+    기본 모델이 붐비면 15초, 30초 쉬며 다시 시도하고,
+    그래도 안 되면 예비 모델(Gemma)로 바꿔서 2번 더 시도한다.
+    """
     contents = [text] + list(image_parts or [])
-    for attempt in range(1, retries + 1):
-        try:
-            res = get_client().models.generate_content(
-                model=MODEL,
-                contents=contents,
-                config=types.GenerateContentConfig(
-                    system_instruction=SYSTEM_PROMPT,
-                    response_mime_type="application/json",
-                    temperature=0,
-                    thinking_config=types.ThinkingConfig(thinking_level="LOW"),
-                ),
-            )
-            return json.loads(res.text)
-        except Exception as e:
-            print(f"  AI 호출 실패 ({attempt}/{retries}): {e}")
-            if attempt < retries:
-                time.sleep(10 * attempt)
+    for model, tries in ((MODEL, 3), (BACKUP_MODEL, 2)):
+        for attempt in range(1, tries + 1):
+            try:
+                result = _ask(model, contents)
+                if model != MODEL:
+                    print(f"  예비 모델({model})로 처리했습니다.")
+                return result
+            except Exception as e:
+                print(f"  AI 호출 실패 ({model} {attempt}/{tries}): {e}")
+                if attempt < tries:
+                    time.sleep(15 * attempt)
     return None
 
 
@@ -234,6 +273,21 @@ def _str_list(value, allowed=None):
     return items
 
 
+def _other_dates(value):
+    """other_dates를 [{"label", "date"}] 목록으로 정리한다. 이상한 항목은 버린다."""
+    if not isinstance(value, list):
+        return []
+    items = []
+    for x in value:
+        if not isinstance(x, dict):
+            continue
+        label = x.get("label")
+        date = _date(x.get("date"))
+        if isinstance(label, str) and label.strip() and date:
+            items.append({"label": label.strip(), "date": date})
+    return items[:5]
+
+
 def _year_list(value):
     if not isinstance(value, list):
         return None
@@ -267,8 +321,8 @@ def clean(result):
     deadline = _date(result.get("deadline"))
 
     actions = _str_list(result.get("actions"))
-    if actions is None:
-        actions = []
+    if actions is not None:
+        actions = actions[:3]
 
     category = result.get("category")
     if category not in CATEGORIES:
@@ -298,7 +352,8 @@ def clean(result):
     return {
         "target": target,
         "deadline": deadline,
-        "actions": actions[:3],
+        "other_dates": _other_dates(result.get("other_dates")),
+        "actions": actions,
         "materials": _str_list(result.get("materials")),
         "category": category,
     }
