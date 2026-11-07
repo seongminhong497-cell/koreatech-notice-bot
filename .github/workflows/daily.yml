@@ -1,0 +1,94 @@
+# 한기대 공지비서: 매일 자동으로 공지를 모으고 정리해서 저장한다.
+# GitHub Actions의 시간은 UTC(한국 시간 - 9시간)라서 아래 cron은 UTC 기준이다.
+
+name: 공지 자동 정리
+
+on:
+  schedule:
+    - cron: "0 22 * * *"      # 한국 07:00 (아침 브리핑까지 보냄)
+    - cron: "0 0,4,9 * * *"   # 한국 09:00, 13:00, 18:00 (웹페이지만 갱신)
+  workflow_dispatch:           # Actions 탭에서 "Run workflow" 버튼으로 바로 실행
+
+permissions:
+  contents: write              # 정리한 결과(data/)를 저장소에 커밋하기 위해 필요
+
+concurrency:
+  group: daily-notice          # 앞 실행이 끝나기 전에 다음 실행이 겹치지 않게
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: 저장소 가져오기
+        uses: actions/checkout@v4
+
+      - name: 파이썬 준비
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: 필요한 패키지 설치
+        run: pip install -r requirements.txt
+
+      # A: 크롤러 파일이 생기면 자동으로 실행된다. 파일 이름이 다르면 여기만 바꾸면 된다.
+      - name: 1. 공지 모으기 (A)
+        run: |
+          if [ -f src/crawler.py ]; then
+            python src/crawler.py
+          else
+            echo "크롤러(src/crawler.py)가 아직 없어서 건너뜁니다."
+          fi
+
+      - name: 2. AI 정리 (B)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          if [ -f data/notices.json ]; then
+            python src/ai_extract.py
+          else
+            echo "data/notices.json이 아직 없어서 건너뜁니다."
+          fi
+
+      # 날씨가 실패해도 공지 정리는 계속되도록 continue-on-error를 켠다.
+      - name: 3. 오늘 날씨 (B)
+        continue-on-error: true
+        env:
+          WEATHER_API_KEY: ${{ secrets.WEATHER_API_KEY }}
+        run: python src/weather.py
+
+      # C: 관련도 계산 파일이 생기면 자동으로 실행된다.
+      - name: 4. 관련도 계산 (C)
+        run: |
+          if [ -f src/relevance.py ]; then
+            python src/relevance.py
+          else
+            echo "관련도 계산(src/relevance.py)이 아직 없어서 건너뜁니다."
+          fi
+
+      # D: 아침 7시 실행과 수동 실행 때만 디스코드로 보낸다.
+      - name: 5. 디스코드 아침 브리핑 (D)
+        if: github.event.schedule == '0 22 * * *' || github.event_name == 'workflow_dispatch'
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        run: |
+          if [ -f src/discord_notify.py ]; then
+            python src/discord_notify.py
+          else
+            echo "디스코드 알림(src/discord_notify.py)이 아직 없어서 건너뜁니다."
+          fi
+
+      - name: 결과 저장
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "바뀐 내용이 없어서 커밋하지 않습니다."
+            exit 0
+          fi
+          git commit -m "자동 갱신: $(TZ=Asia/Seoul date '+%Y-%m-%d %H:%M')"
+          git pull --rebase origin main
+          git push origin HEAD:main
