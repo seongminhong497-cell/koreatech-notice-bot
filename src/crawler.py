@@ -346,6 +346,7 @@ def crawl_board(board):
             "published_date": published_date or None,
             "body": body,
             "images": images,
+            "is_sample": False,
             "extracted": False,
             "processed": False,
         })
