@@ -4,9 +4,16 @@
 data/notices.json, data/weather.json, data/profile.json을 읽어서
 오늘 날씨 / 마감 임박 / 새 공지를 정리한 브리핑을 디스코드 웹후크로 보낸다.
 
+보내는 공지 조건:
+  - 예시 공지(is_sample: true)가 아님
+  - AI 정리(extracted)와 관련도 계산(processed)이 모두 끝남
+  - 관련도가 0(숨김)이 아님
+  - 마감이 아직 지나지 않음 (마감 시각이 있으면 현재 한국 시간과 비교)
+
 실행:
-  python src/discord_notify.py            # 디스코드로 보내기 (DISCORD_WEBHOOK 필요)
-  python src/discord_notify.py --dry-run  # 보내지 않고 화면에만 출력 (테스트용)
+  python src/discord_notify.py                      # 디스코드로 보내기 (DISCORD_WEBHOOK 필요)
+  python src/discord_notify.py --dry-run            # 보내지 않고 화면에만 출력
+  python src/discord_notify.py --dry-run --samples  # 예시·미처리 공지도 포함해서 모양 확인
 """
 
 import datetime
@@ -36,28 +43,51 @@ def load_json(path, default):
         return default
 
 
-def today_kst():
-    return datetime.datetime.now(KST).date()
+def now_kst():
+    return datetime.datetime.now(KST)
 
 
-def days_left(deadline):
-    """마감일까지 남은 날 수. 마감이 없거나 형식이 이상하면 None."""
+def parse_deadline(deadline):
+    """마감 문자열을 (날짜, 시각 또는 None)으로 바꾼다. 형식이 이상하면 (None, None)."""
     if not deadline:
-        return None
+        return None, None
     try:
-        d = datetime.date.fromisoformat(deadline[:10])
+        if len(deadline) > 10:
+            dt = datetime.datetime.fromisoformat(deadline)
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=KST)
+            dt = dt.astimezone(KST)
+            return dt.date(), dt
+        return datetime.date.fromisoformat(deadline), None
     except ValueError:
+        return None, None
+
+
+def is_expired(n):
+    """마감이 지났는지. 시각이 있으면 지금 시각과, 날짜만 있으면 그날 끝까지 유효."""
+    day, moment = parse_deadline(n.get("deadline"))
+    if day is None:
+        return False
+    if moment is not None:
+        return moment <= now_kst()
+    return day < now_kst().date()
+
+
+def days_left(n):
+    """마감일까지 남은 날 수 (날짜 기준). 마감이 없으면 None."""
+    day, _ = parse_deadline(n.get("deadline"))
+    if day is None:
         return None
-    return (d - today_kst()).days
+    return (day - now_kst().date()).days
 
 
 def dday_text(n):
-    left = days_left(n.get("deadline"))
+    left = days_left(n)
     if left is None:
         return ""
     if left == 0:
-        dl = n["deadline"]
-        return f"오늘 {dl[11:16]}" if len(dl) > 10 else "오늘 마감"
+        _, moment = parse_deadline(n.get("deadline"))
+        return f"오늘 {moment:%H:%M}" if moment else "오늘 마감"
     return f"D-{left}"
 
 
@@ -69,8 +99,8 @@ def stars(relevance):
 
 def is_urgent(n, profile):
     """D-3 이내면 마감 임박, 준비물이 있으면 D-7부터."""
-    left = days_left(n.get("deadline"))
-    if left is None or left < 0:
+    left = days_left(n)
+    if left is None or is_expired(n):
         return False
     limit = profile.get("urgent_days", 3)
     if n.get("materials"):
@@ -78,22 +108,9 @@ def is_urgent(n, profile):
     return left <= limit
 
 
-def line(n, new_mark=False):
-    """[분류] 제목 | 관련도 | D-day  + 다음 줄에 한 줄 요약"""
-    parts = [f"[{n.get('category') or '미분류'}] {n.get('title', '(제목 없음)')}",
-             stars(n.get("relevance"))]
-    dd = dday_text(n)
-    if dd:
-        parts.append(dd)
-    text = " | ".join(parts)
-    if new_mark and n.get("is_new"):
-        text = "🆕 " + text
-    if n.get("url"):
-        text = f"{text}\n   <{n['url']}>"   # <> 로 감싸면 링크 미리보기가 안 붙음
-    summary = n.get("relevance_reason") or summary_from(n)
-    if summary:
-        text += f"\n   └ {summary}"
-    return "• " + text
+def cut(text, limit):
+    text = str(text or "")
+    return text if len(text) <= limit else text[: limit - 1] + "…"
 
 
 def summary_from(n):
@@ -106,18 +123,47 @@ def summary_from(n):
     return " / ".join(bits)
 
 
+def line(n, new_mark=False):
+    """[분류] 제목 | 관련도 | D-day  + 링크 + 한 줄 요약"""
+    title = cut(n.get("title") or "(제목 없음)", 150)
+    parts = [f"[{n.get('category') or '미분류'}] {title}", stars(n.get("relevance"))]
+    dd = dday_text(n)
+    if dd:
+        parts.append(dd)
+    text = " | ".join(parts)
+    if new_mark and n.get("is_new"):
+        text = "🆕 " + text
+    url = n.get("url")
+    if url and len(url) <= 500:
+        text += f"\n   <{url}>"   # <> 로 감싸면 링크 미리보기가 안 붙음
+    summary = n.get("relevance_reason") or summary_from(n)
+    if summary:
+        text += f"\n   └ {cut(summary, 200)}"
+    # 어떤 경우에도 공지 한 개가 메시지 한 개 길이를 넘지 않게
+    return cut("• " + text, MAX_LEN)
+
+
 def sort_key(n):
     """관련도 높은 순 → 마감 가까운 순"""
     rel = n.get("relevance") if isinstance(n.get("relevance"), int) else 0
-    left = days_left(n.get("deadline"))
+    left = days_left(n)
     return (-rel, left if left is not None else 9999)
 
 
-def build_briefing(notices, weather, profile):
-    # 숨김(0)과 지난 마감 공지는 빼기
-    visible = [n for n in notices
-               if n.get("relevance") != 0
-               and not ((days_left(n.get("deadline")) or 0) < 0)]
+def is_sendable(n, include_samples=False):
+    if include_samples:
+        return n.get("relevance") != 0 and not is_expired(n)
+    return (
+        not n.get("is_sample")
+        and n.get("extracted") is True
+        and n.get("processed") is True
+        and n.get("relevance") != 0
+        and not is_expired(n)
+    )
+
+
+def build_briefing(notices, weather, profile, include_samples=False):
+    visible = [n for n in notices if is_sendable(n, include_samples)]
 
     urgent = sorted([n for n in visible if is_urgent(n, profile)], key=sort_key)
     urgent_ids = {n.get("id") for n in urgent}
@@ -125,12 +171,12 @@ def build_briefing(notices, weather, profile):
     new = sorted([n for n in visible if n.get("is_new") and n.get("id") not in urgent_ids],
                  key=sort_key)
 
-    today = today_kst()
+    today = now_kst().date()
     weekday = "월화수목금토일"[today.weekday()]
     lines = [f"☀️ **{today.month}월 {today.day}일 ({weekday}) 아침 브리핑**", ""]
 
     if weather and weather.get("summary"):
-        lines.append(f"🌤 **오늘 날씨** ({weather.get('location', '학교')}): {weather['summary']}")
+        lines.append(f"🌤 **오늘 날씨** ({weather.get('location', '학교')}): {cut(weather['summary'], 300)}")
     else:
         lines.append("🌤 **오늘 날씨**: 정보를 가져오지 못했어요")
     lines.append("")
@@ -155,6 +201,7 @@ def split_messages(lines):
     """2000자 제한에 맞춰 여러 메시지로 나누기 (공지 한 개는 중간에 안 자름)."""
     messages, cur = [], ""
     for l in lines:
+        l = cut(l, MAX_LEN - 1)
         if len(cur) + len(l) + 1 > MAX_LEN and cur:
             messages.append(cur)
             cur = ""
@@ -176,11 +223,12 @@ def send(webhook, messages):
 
 def main():
     dry_run = "--dry-run" in sys.argv
+    include_samples = "--samples" in sys.argv
     notices = load_json(NOTICES_PATH, [])
     weather = load_json(WEATHER_PATH, None)
     profile = load_json(PROFILE_PATH, {})
 
-    messages = split_messages(build_briefing(notices, weather, profile))
+    messages = split_messages(build_briefing(notices, weather, profile, include_samples))
 
     webhook = os.environ.get("DISCORD_WEBHOOK")
     if dry_run or not webhook:
