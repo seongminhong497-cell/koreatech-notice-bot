@@ -28,6 +28,6 @@ jobs:
       - name: 수집 결과 저장
         uses: actions/upload-artifact@v7
         with:
-          name: notices-test
-          path: data/notices_test.json
+          name: notices
+          path: data/notices.json
           if-no-files-found: error

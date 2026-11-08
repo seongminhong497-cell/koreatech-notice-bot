@@ -37,12 +37,38 @@ BOARDS = [
 ]
 
 HEADERS = {"User-Agent": "Mozilla/5.0"}
+
+MAX_ATTEMPTS = 3
+
+def get_response(url):
+    for attempt in range(1, MAX_ATTEMPTS + 1):
+        try:
+            response = requests.get(
+                url,
+                headers=HEADERS,
+                timeout=15,
+            )
+            response.raise_for_status()
+            return response
+
+        except (requests.Timeout, requests.ConnectionError) as error:
+            if attempt == MAX_ATTEMPTS:
+                raise
+
+            wait_seconds = attempt * 2
+            print(
+                f"요청 실패. {wait_seconds}초 후 재시도 "
+                f"({attempt}/{MAX_ATTEMPTS}): {url} ({error})",
+                file=sys.stderr,
+            )
+            time.sleep(wait_seconds)
+
 TEST_LIMIT = None  # 게시판별 전체 수집. 일부만 보려면 숫자를 입력
 
 OUTPUT_PATH = (
     Path(__file__).resolve().parents[1]
     / "data"
-    / "notices_test.json"
+    / "notices.json"
 )
 
 IMAGE_EXTENSIONS = (".png", ".jpg", ".jpeg")
@@ -149,12 +175,7 @@ def is_skin_icon(image_url):
 
 def fetch_notice_detail(detail_url, title):
     """상세 페이지에서 본문과 PNG/JPG 이미지 주소를 가져온다."""
-    response = requests.get(
-        detail_url,
-        headers=HEADERS,
-        timeout=15,
-    )
-    response.raise_for_status()
+    response = get_response(detail_url)
     response.encoding = response.apparent_encoding
 
     soup = BeautifulSoup(response.text, "html.parser")
@@ -275,12 +296,7 @@ def crawl_board(board):
     """게시판 하나의 목록과 상세 내용을 수집한다."""
     board_url = board["url"]
 
-    response = requests.get(
-        board_url,
-        headers=HEADERS,
-        timeout=15,
-    )
-    response.raise_for_status()
+    response = get_response(board_url)
     response.encoding = response.apparent_encoding
 
     soup = BeautifulSoup(response.text, "html.parser")
@@ -346,7 +362,16 @@ def crawl_all_boards():
 
     for board in BOARDS:
         print(f"\n수집 중: {board['source']}", file=sys.stderr)
-        board_notices = crawl_board(board)
+
+        try:
+            board_notices = crawl_board(board)
+        except requests.RequestException as error:
+            print(
+                f"게시판 목록 수집 실패: {board['source']} ({error})",
+                file=sys.stderr,
+            )
+            continue
+
         all_notices.extend(board_notices)
         print(
             f"{board['source']}: {len(board_notices)}개 수집",
