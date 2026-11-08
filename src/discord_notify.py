@@ -223,7 +223,7 @@ def send(webhook, messages):
 
 def main():
     dry_run = "--dry-run" in sys.argv
-    include_samples = "--samples" in sys.argv
+    include_samples = dry_run and "--samples" in sys.argv
     notices = load_json(NOTICES_PATH, [])
     weather = load_json(WEATHER_PATH, None)
     profile = load_json(PROFILE_PATH, {})
