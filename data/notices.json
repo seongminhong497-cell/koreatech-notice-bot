@@ -1,0 +1,157 @@
+[
+  {
+    "id": "sample-001",
+    "is_sample": true,
+    "title": "[예시] 컴퓨터공학부 1학년 장학생 모집",
+    "url": "https://example.com/notices/sample-001",
+    "source": "학교-장학",
+    "source_type": "학교",
+    "published_date": "2026-11-03",
+    "body": "컴퓨터공학부 1학년 재학생을 대상으로 장학생을 모집합니다. 2026년 11월 10일 17시까지 신청서와 재학증명서를 제출하세요.",
+    "images": [],
+    "target": {
+      "scope": "specific",
+      "departments": ["컴퓨터공학부"],
+      "years": [1],
+      "enrollment_statuses": ["재학"],
+      "groups": ["학부생"],
+      "dorm_required": null
+    },
+    "deadline": "2026-11-10T17:00:00+09:00",
+    "other_dates": [],
+    "actions": ["장학금 신청"],
+    "materials": ["신청서", "재학증명서"],
+    "category": "장학",
+    "extracted": true,
+    "relevance": null,
+    "relevance_reason": null,
+    "is_new": true,
+    "processed": false
+  },
+  {
+    "id": "sample-002",
+    "is_sample": true,
+    "title": "[예시] 대학생 아이디어 공모전",
+    "url": "https://example.com/notices/sample-002",
+    "source": "학교-일반",
+    "source_type": "학교",
+    "published_date": "2026-11-03",
+    "body": "전체 학부생과 대학원생을 대상으로 아이디어 공모전을 진행합니다. 2026년 11월 20일까지 신청서와 제안서를 제출하세요. 결과 발표는 2026년 11월 27일입니다.",
+    "images": [],
+    "target": {
+      "scope": "all",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": "2026-11-20",
+    "other_dates": [
+      {
+        "label": "결과 발표",
+        "date": "2026-11-27"
+      }
+    ],
+    "actions": ["공모전 신청", "제안서 제출"],
+    "materials": ["신청서", "제안서"],
+    "category": "대외활동·공모전",
+    "extracted": true,
+    "relevance": null,
+    "relevance_reason": null,
+    "is_new": true,
+    "processed": false
+  },
+  {
+    "id": "sample-003",
+    "is_sample": true,
+    "title": "[예시] 교내 문화 행사 안내",
+    "url": "https://example.com/notices/sample-003",
+    "source": "학교-일반",
+    "source_type": "학교",
+    "published_date": "2026-11-03",
+    "body": "2026년 11월 15일 교내 문화 행사가 열립니다. 참여 대상, 신청 방법, 신청 마감일 및 준비물은 안내되어 있지 않습니다.",
+    "images": [],
+    "target": {
+      "scope": "unknown",
+      "departments": null,
+      "years": null,
+      "enrollment_statuses": null,
+      "groups": null,
+      "dorm_required": null
+    },
+    "deadline": null,
+    "other_dates": [
+      {
+        "label": "행사일",
+        "date": "2026-11-15"
+      }
+    ],
+    "actions": null,
+    "materials": null,
+    "category": "교내활동",
+    "extracted": true,
+    "relevance": null,
+    "relevance_reason": null,
+    "is_new": true,
+    "processed": false
+  },
+  {
+    "id": "sample-004",
+    "is_sample": true,
+    "title": "[예시] 대학원생 연구지원금 신청",
+    "url": "https://example.com/notices/sample-004",
+    "source": "학교-장학",
+    "source_type": "학교",
+    "published_date": "2026-11-03",
+    "body": "학과와 학년에 관계없이 재학 중인 대학원생만 연구지원금을 신청할 수 있습니다. 2026년 11월 12일 18시까지 연구계획서를 제출하세요.",
+    "images": [],
+    "target": {
+      "scope": "specific",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": ["재학"],
+      "groups": ["대학원생"],
+      "dorm_required": null
+    },
+    "deadline": "2026-11-12T18:00:00+09:00",
+    "other_dates": [],
+    "actions": ["연구지원금 신청"],
+    "materials": ["연구계획서"],
+    "category": "장학",
+    "extracted": true,
+    "relevance": null,
+    "relevance_reason": null,
+    "is_new": true,
+    "processed": false
+  },
+  {
+    "id": "sample-005",
+    "is_sample": true,
+    "title": "[예시] 학사 안내 홈페이지 개편",
+    "url": "https://example.com/notices/sample-005",
+    "source": "학교-학사",
+    "source_type": "학교",
+    "published_date": "2026-11-03",
+    "body": "전체 학부생과 대학원생에게 학사 안내 홈페이지 개편을 안내합니다. 학과, 학년, 학적 상태에 따른 제한은 없습니다. 별도의 신청이나 제출할 서류는 없습니다.",
+    "images": [],
+    "target": {
+      "scope": "all",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": null,
+    "other_dates": [],
+    "actions": [],
+    "materials": [],
+    "category": "학사",
+    "extracted": true,
+    "relevance": null,
+    "relevance_reason": null,
+    "is_new": true,
+    "processed": false
+  }
+]
