@@ -47,7 +47,7 @@ def get_response(url):
             response = requests.get(
                 url,
                 headers=HEADERS,
-                timeout=15,
+                timeout=(5, 15),
             )
             response.raise_for_status()
             return response
@@ -295,7 +295,7 @@ def fetch_notice_detail(detail_url, title):
     return body or None, sorted(images)
 
 
-def crawl_board(board):
+def crawl_board(board, skip_ids=None):
     """게시판 하나의 목록과 상세 내용을 수집한다."""
     board_url = board["url"]
 
@@ -327,21 +327,25 @@ def crawl_board(board):
 
         query = parse_qs(urlparse(detail_url).query)
         post_seq = query.get("post_seq", [detail_url])[0]
+        notice_id = f"{board['id_prefix']}-{post_seq}"
 
-        if notices:
-            time.sleep(1)
-
-        try:
-            body, images = fetch_notice_detail(detail_url, title)
-        except requests.RequestException as error:
-            print(
-                f"상세 페이지 수집 실패: {detail_url} ({error})",
-                file=sys.stderr,
-            )
+        if notice_id in (skip_ids or set()):
             body, images = None, []
+        else:
+            if notices:
+                time.sleep(1)
+
+            try:
+                body, images = fetch_notice_detail(detail_url, title)
+            except requests.RequestException as error:
+                print(
+                    f"상세 페이지 수집 실패: {detail_url} ({error})",
+                    file=sys.stderr,
+                )
+                body, images = None, []
 
         notices.append({
-            "id": f"{board['id_prefix']}-{post_seq}",
+            "id": notice_id,
             "title": title,
             "url": detail_url,
             "source": board["source"],
@@ -360,15 +364,16 @@ def crawl_board(board):
     return notices
 
 
-def crawl_all_boards():
+def crawl_all_boards(skip_ids=None):
     """설정된 게시판을 모두 수집한다."""
+    skip_ids = skip_ids or set()
     all_notices = []
 
     for board in BOARDS:
         print(f"\n수집 중: {board['source']}", file=sys.stderr)
 
         try:
-            board_notices = crawl_board(board)
+            board_notices = crawl_board(board, skip_ids)
         except requests.RequestException as error:
             print(
                 f"게시판 목록 수집 실패: {board['source']} ({error})",
@@ -477,7 +482,16 @@ def merge_notices(crawled_notices):
 
 
 if __name__ == "__main__":
-    crawled_notices = crawl_all_boards()
+    saved_notices = load_saved_notices()
+
+    # 본문이 이미 저장된 공지는 상세 페이지 수집을 건너뛴다.
+    skip_ids = {
+        notice["id"]
+        for notice in saved_notices
+        if notice.get("id") and (notice.get("body") or "").strip()
+    }
+
+    crawled_notices = crawl_all_boards(skip_ids)
     notices = merge_notices(crawled_notices)
 
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
