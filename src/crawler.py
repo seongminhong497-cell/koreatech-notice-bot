@@ -8,6 +8,7 @@ from urllib.parse import parse_qs, unquote, urljoin, urlparse
 import requests
 from bs4 import BeautifulSoup, NavigableString
 
+from datetime import datetime, timedelta, timezone
 
 BOARDS = [
     {
@@ -70,6 +71,8 @@ OUTPUT_PATH = (
     / "data"
     / "notices.json"
 )
+
+KST = timezone(timedelta(hours=9))
 
 IMAGE_EXTENSIONS = (".png", ".jpg", ".jpeg")
 
@@ -382,8 +385,100 @@ def crawl_all_boards():
     return all_notices
 
 
+def load_saved_notices():
+    """기존 공지 파일을 읽는다."""
+    if not OUTPUT_PATH.exists():
+        return []
+
+    with OUTPUT_PATH.open("r", encoding="utf-8") as file:
+        notices = json.load(file)
+
+    if not isinstance(notices, list):
+        raise ValueError("data/notices.json의 최상위 값은 목록이어야 합니다.")
+
+    return [
+        notice for notice in notices
+        if not notice.get("is_sample", False)
+    ]
+
+
+def is_within_new_period(notice, now):
+    """최초 수집 시각으로부터 24시간 이내인지 확인한다."""
+    collected_at = notice.get("collected_at")
+
+    if not isinstance(collected_at, str) or not collected_at:
+        return False
+
+    try:
+        collected_at = datetime.fromisoformat(
+            collected_at.replace("Z", "+00:00")
+        )
+        if collected_at.tzinfo is None:
+            collected_at = collected_at.replace(tzinfo=KST)
+    except (TypeError, ValueError):
+        return False
+
+    age = now - collected_at
+    return timedelta(0) <= age < timedelta(hours=24)
+
+
+def merge_notices(crawled_notices):
+    """기존 공지는 유지하고 새 공지만 추가하며, 빈 본문은 복구한다."""
+    now = datetime.now(KST)
+    saved_notices = load_saved_notices()
+
+    saved_by_id = {
+        notice["id"]: notice
+        for notice in saved_notices
+        if notice.get("id")
+    }
+
+    # 기존 공지는 수집 시각을 기준으로 is_new만 갱신한다.
+    for notice in saved_notices:
+        notice["is_new"] = is_within_new_period(notice, now)
+        notice.setdefault("relevance", None)
+        notice.setdefault("relevance_reason", None)
+
+    for crawled in crawled_notices:
+        notice_id = crawled.get("id")
+        if not notice_id:
+            continue
+
+        saved = saved_by_id.get(notice_id)
+
+        # 처음 보는 공지면 추가한다.
+        if saved is None:
+            new_notice = dict(crawled)
+            new_notice["is_new"] = True
+            new_notice["collected_at"] = now.isoformat(timespec="seconds")
+            new_notice.setdefault("relevance", None)
+            new_notice.setdefault("relevance_reason", None)
+
+            saved_notices.append(new_notice)
+            saved_by_id[notice_id] = new_notice
+            continue
+
+        # 기존 본문이 비어 있고 이번 수집에서 본문을 얻었으면 본문을 채운다.
+        old_body = (saved.get("body") or "").strip()
+        new_body = (crawled.get("body") or "").strip()
+
+        if not old_body and new_body:
+            saved["body"] = crawled["body"]
+            saved["images"] = crawled.get(
+                "images",
+                saved.get("images", []),
+            )
+            saved["extracted"] = False
+            saved["processed"] = False
+            saved["relevance"] = None
+            saved["relevance_reason"] = None
+
+    return saved_notices
+
+
 if __name__ == "__main__":
-    notices = crawl_all_boards()
+    crawled_notices = crawl_all_boards()
+    notices = merge_notices(crawled_notices)
 
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT_PATH.write_text(
