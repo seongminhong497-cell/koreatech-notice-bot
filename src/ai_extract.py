@@ -85,6 +85,8 @@ materials (준비물·제출 서류)
 category (분류)
 - "장학", "학사", "취업·인턴", "교내활동", "대외활동·공모전", "생활관" 중 하나.
 - 시스템 점검, 단순 안내처럼 맞는 게 없으면 억지로 고르지 말고 null
+- "생활관"은 기숙사(생활관) 입주, 퇴사, 점호, 호실처럼 기숙사 공지에만 써.
+  통학버스, 셔틀버스, 주차, 교통, 건물·시설 안내는 생활관이 아니야.
 
 답 형식 (꺾쇠 안의 설명 대신 공지에서 찾은 실제 값을 넣어)
 {
@@ -261,6 +263,31 @@ def _date(value):
     return f"{day.isoformat()}T{h:02d}:{mi:02d}:{sec:02d}+09:00"
 
 
+def _fix_past_year(deadline, published_date):
+    """마감일이 작성일보다 90일 넘게 앞서면 연도 오타로 보고 1년을 올린다.
+
+    예: 2026-08-31에 올라온 공지의 마감 "2025.12.31" → 2026-12-31
+    다시 올린 공지(끌올)처럼 마감이 조금 지난 경우는 그대로 둔다.
+    1년을 올려도 작성일보다 앞서면 고치지 않는다.
+    """
+    if not deadline or not isinstance(published_date, str):
+        return deadline
+    try:
+        posted = datetime.date.fromisoformat(published_date[:10])
+        day = datetime.date.fromisoformat(deadline[:10])
+    except ValueError:
+        return deadline
+    if (posted - day).days <= 90:
+        return deadline
+    try:
+        fixed = day.replace(year=day.year + 1)
+    except ValueError:  # 2월 29일
+        return deadline
+    if fixed < posted:
+        return deadline
+    return fixed.isoformat() + deadline[10:]
+
+
 def _str_list(value, allowed=None):
     """문자열 목록으로 정리한다. 허용 목록 밖의 값은 버리고, 전부 버려지면 '모름'(None)으로 본다."""
     if not isinstance(value, list):
@@ -428,6 +455,9 @@ def process_notices(path=NOTICES_PATH):
         if info is None:
             print("  실패, 다음 실행 때 다시 처리합니다.")
         else:
+            info["deadline"] = _fix_past_year(
+                info["deadline"], notice.get("published_date")
+            )
             notice.update(info)
             notice["extracted"] = True
             _save(path, data)  # 하나 끝날 때마다 저장
