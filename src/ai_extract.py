@@ -24,6 +24,8 @@ NOTICES_PATH = "data/notices.json"
 MAX_IMAGES = 3  # 공지 하나에 AI로 보낼 이미지 최대 개수
 MAX_IMAGE_BYTES = 5 * 1024 * 1024  # 5MB보다 큰 이미지는 보내지 않음
 MAX_PER_RUN = 30  # 한 번 실행에 처리할 공지 최대 개수. 나머지는 다음 실행 때
+TIME_BUDGET = 12 * 60  # AI 정리에 쓸 최대 시간(초). 워크플로 제한(15분) 전에 멈춘다
+IMAGE_TIMEOUT = (5, 10)  # 이미지 접속 5초, 받기 10초
 WAIT_SECONDS = 4.5  # 분당 15회 한도를 넘지 않도록 공지 사이에 쉬는 시간
 
 CATEGORIES = ["장학", "학사", "취업·인턴", "교내활동", "대외활동·공모전", "생활관"]
@@ -148,7 +150,7 @@ def _read_image(url, headers):
             print(f"  이미지 파일 열기 실패, 건너뜀: {url} ({e})")
             return None
     try:
-        res = requests.get(url, timeout=20, headers=headers)
+        res = requests.get(url, timeout=IMAGE_TIMEOUT, headers=headers)
         res.raise_for_status()
     except requests.RequestException as e:
         print(f"  이미지 받기 실패, 건너뜀: {url} ({e})")
@@ -166,9 +168,7 @@ def download_images(urls, referer=None):
     if referer:
         headers["Referer"] = referer
     parts = []
-    for url in (urls or [])[:MAX_IMAGES * 2]:  # 실패할 것까지 생각해 넉넉히
-        if len(parts) >= MAX_IMAGES:
-            break
+    for url in (urls or [])[:MAX_IMAGES]:  # 앞에서 3장까지만 시도
         data = _read_image(url, headers)
         if data is None:
             continue
@@ -445,7 +445,12 @@ def process_notices(path=NOTICES_PATH):
     if not todo:
         return  # 바꿀 게 없으면 파일을 다시 쓰지 않는다(불필요한 커밋 방지)
 
+    started = time.monotonic()
     for i, notice in enumerate(todo, 1):
+        if time.monotonic() - started > TIME_BUDGET:
+            print(f"시간 예산({TIME_BUDGET // 60}분)을 다 써서 멈춥니다. "
+                  f"남은 {len(todo) - i + 1}개는 다음 실행 때 처리합니다.")
+            break
         print(f"[{i}/{len(todo)}] {notice.get('title', '')}", flush=True)
         info = extract(
             build_text(notice),
