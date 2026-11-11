@@ -19,7 +19,7 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 50        # 전체 제한. 단계별 제한은 아래에 따로 둔다
+    timeout-minutes: 60        # 전체 제한. 단계별 제한 합(47분)보다 넉넉하게
     steps:
       - name: 저장소 가져오기
         uses: actions/checkout@v4
@@ -39,6 +39,7 @@ jobs:
       # 각 단계는 시간 제한을 따로 두고, 실패해도 다음 단계와 결과 저장은 계속한다.
       # A: 크롤러 파일이 생기면 자동으로 실행된다. 파일 이름이 다르면 여기만 바꾸면 된다.
       - name: 1. 공지 모으기 (A)
+        id: crawl
         timeout-minutes: 20
         continue-on-error: true
         run: |
@@ -49,6 +50,7 @@ jobs:
           fi
 
       - name: 2. AI 정리 (B)
+        id: ai
         timeout-minutes: 15
         continue-on-error: true
         env:
@@ -61,6 +63,7 @@ jobs:
           fi
 
       - name: 3. 오늘 날씨 (B)
+        id: weather
         timeout-minutes: 2
         continue-on-error: true
         env:
@@ -69,6 +72,7 @@ jobs:
 
       # C: 관련도 계산 파일이 생기면 자동으로 실행된다.
       - name: 4. 관련도 계산 (C)
+        id: relevance
         timeout-minutes: 5
         continue-on-error: true
         run: |
@@ -80,6 +84,7 @@ jobs:
 
       # D: 아침 7시 실행과 수동 실행 때만 디스코드로 보낸다.
       - name: 5. 디스코드 아침 브리핑 (D)
+        id: discord
         if: github.event.schedule == '0 22 * * *' || github.event_name == 'workflow_dispatch'
         timeout-minutes: 2
         continue-on-error: true
@@ -108,3 +113,27 @@ jobs:
           git commit -m "자동 갱신: $(TZ=Asia/Seoul date '+%Y-%m-%d %H:%M')"
           git pull --rebase origin main
           git push origin HEAD:main
+
+      # 위 단계들은 실패해도 저장까지 가도록 continue-on-error를 켰기 때문에,
+      # 그대로 두면 실패가 있어도 워크플로가 "성공"으로 보인다.
+      # 저장이 끝난 뒤 각 단계 결과를 확인해서, 하나라도 실패했으면 빨간색으로 끝낸다.
+      - name: 실패한 단계 확인
+        if: always()
+        env:
+          CRAWL: ${{ steps.crawl.outcome }}
+          AI: ${{ steps.ai.outcome }}
+          WEATHER: ${{ steps.weather.outcome }}
+          RELEVANCE: ${{ steps.relevance.outcome }}
+          DISCORD: ${{ steps.discord.outcome }}
+        run: |
+          failed=""
+          [ "$CRAWL" = "failure" ] && failed="$failed 1.공지모으기"
+          [ "$AI" = "failure" ] && failed="$failed 2.AI정리"
+          [ "$WEATHER" = "failure" ] && failed="$failed 3.날씨"
+          [ "$RELEVANCE" = "failure" ] && failed="$failed 4.관련도"
+          [ "$DISCORD" = "failure" ] && failed="$failed 5.디스코드"
+          if [ -n "$failed" ]; then
+            echo "::error::실패한 단계:$failed (결과 저장은 완료됨)"
+            exit 1
+          fi
+          echo "모든 단계가 정상적으로 끝났습니다."
