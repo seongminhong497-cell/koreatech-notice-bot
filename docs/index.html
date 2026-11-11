@@ -63,11 +63,23 @@
       return Math.round((Date.parse(d) - Date.parse(todayKST())) / 86400000);
     }
 
+    // 마감이 지났는지 (시각이 있으면 지금 시각과 비교, 날짜만 있으면 그날 끝까지 유효)
+    function isExpired(n) {
+      if (!n.deadline) return false;
+      if (n.deadline.length > 10) {
+        const t = Date.parse(n.deadline);
+        if (!isNaN(t)) return t <= Date.now();
+      }
+      const left = daysLeft(n.deadline);
+      return left !== null && left < 0;
+    }
+
     function ddayHTML(n) {
       const left = daysLeft(n.deadline);
       if (left === null) return "";
       const hasMaterials = Array.isArray(n.materials) && n.materials.length > 0;
       const limit = hasMaterials ? URGENT_DAYS_MATERIALS : URGENT_DAYS;
+      if (isExpired(n)) return `<span class="dday">마감됨</span>`;
       let text;
       if (left < 0) text = "마감됨";
       else if (left === 0) text = n.deadline.length > 10 ? `오늘 ${n.deadline.slice(11, 16)}` : "오늘 마감";
@@ -133,6 +145,9 @@
         .filter(n => n.relevance !== 0)   // 관련도 0 = 숨김
         .filter(n => current === "전체" || n.category === current)
         .sort((a, b) => {
+          // 0) 마감 지난 공지는 맨 아래로
+          const ea = isExpired(a), eb = isExpired(b);
+          if (ea !== eb) return ea ? 1 : -1;
           // 1) 관련도 높은 순 (미정은 맨 뒤)
           const ra = typeof a.relevance === "number" ? a.relevance : -1;
           const rb = typeof b.relevance === "number" ? b.relevance : -1;
