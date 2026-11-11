@@ -23,6 +23,9 @@ BACKUP_MODEL = "gemma-4-26b-a4b-it"  # 기본 모델이 붐빌 때 쓰는 예비
 NOTICES_PATH = "data/notices.json"
 MAX_IMAGES = 3  # 공지 하나에 AI로 보낼 이미지 최대 개수
 MAX_IMAGE_BYTES = 5 * 1024 * 1024  # 5MB보다 큰 이미지는 보내지 않음
+MAX_PER_RUN = 30  # 한 번 실행에 처리할 공지 최대 개수. 나머지는 다음 실행 때
+TIME_BUDGET = 12 * 60  # AI 정리에 쓸 최대 시간(초). 워크플로 제한(15분) 전에 멈춘다
+IMAGE_TIMEOUT = (5, 10)  # 이미지 접속 5초, 받기 10초
 WAIT_SECONDS = 4.5  # 분당 15회 한도를 넘지 않도록 공지 사이에 쉬는 시간
 
 CATEGORIES = ["장학", "학사", "취업·인턴", "교내활동", "대외활동·공모전", "생활관"]
@@ -84,6 +87,8 @@ materials (준비물·제출 서류)
 category (분류)
 - "장학", "학사", "취업·인턴", "교내활동", "대외활동·공모전", "생활관" 중 하나.
 - 시스템 점검, 단순 안내처럼 맞는 게 없으면 억지로 고르지 말고 null
+- "생활관"은 기숙사(생활관) 입주, 퇴사, 점호, 호실처럼 기숙사 공지에만 써.
+  통학버스, 셔틀버스, 주차, 교통, 건물·시설 안내는 생활관이 아니야.
 
 답 형식 (꺾쇠 안의 설명 대신 공지에서 찾은 실제 값을 넣어)
 {
@@ -145,7 +150,7 @@ def _read_image(url, headers):
             print(f"  이미지 파일 열기 실패, 건너뜀: {url} ({e})")
             return None
     try:
-        res = requests.get(url, timeout=20, headers=headers)
+        res = requests.get(url, timeout=IMAGE_TIMEOUT, headers=headers)
         res.raise_for_status()
     except requests.RequestException as e:
         print(f"  이미지 받기 실패, 건너뜀: {url} ({e})")
@@ -163,9 +168,7 @@ def download_images(urls, referer=None):
     if referer:
         headers["Referer"] = referer
     parts = []
-    for url in (urls or [])[:MAX_IMAGES * 2]:  # 실패할 것까지 생각해 넉넉히
-        if len(parts) >= MAX_IMAGES:
-            break
+    for url in (urls or [])[:MAX_IMAGES]:  # 앞에서 3장까지만 시도
         data = _read_image(url, headers)
         if data is None:
             continue
@@ -258,6 +261,31 @@ def _date(value):
     if h > 23 or mi > 59 or sec > 59:
         return day.isoformat()
     return f"{day.isoformat()}T{h:02d}:{mi:02d}:{sec:02d}+09:00"
+
+
+def _fix_past_year(deadline, published_date):
+    """마감일이 작성일보다 90일 넘게 앞서면 연도 오타로 보고 1년을 올린다.
+
+    예: 2026-08-31에 올라온 공지의 마감 "2025.12.31" → 2026-12-31
+    다시 올린 공지(끌올)처럼 마감이 조금 지난 경우는 그대로 둔다.
+    1년을 올려도 작성일보다 앞서면 고치지 않는다.
+    """
+    if not deadline or not isinstance(published_date, str):
+        return deadline
+    try:
+        posted = datetime.date.fromisoformat(published_date[:10])
+        day = datetime.date.fromisoformat(deadline[:10])
+    except ValueError:
+        return deadline
+    if (posted - day).days <= 90:
+        return deadline
+    try:
+        fixed = day.replace(year=day.year + 1)
+    except ValueError:  # 2월 29일
+        return deadline
+    if fixed < posted:
+        return deadline
+    return fixed.isoformat() + deadline[10:]
 
 
 def _str_list(value, allowed=None):
@@ -380,8 +408,20 @@ def extract(text, images=None, referer=None, show_raw=False):
     return clean(raw)
 
 
+def _save(path, data):
+    """임시 파일에 쓴 뒤 바꿔치기해서, 중간에 끊겨도 파일이 깨지지 않게 한다."""
+    tmp = path + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+    os.replace(tmp, path)
+
+
 def process_notices(path=NOTICES_PATH):
-    """notices.json에서 아직 AI 정리가 안 된 공지만 처리하고 저장한다."""
+    """notices.json에서 아직 AI 정리가 안 된 공지만 처리한다.
+
+    공지를 하나 처리할 때마다 바로 저장해서, 워크플로가 중간에 끊겨도
+    처리한 만큼은 남는다. 한 번에 MAX_PER_RUN개까지만 처리한다.
+    """
     with open(path, encoding="utf-8") as f:
         data = json.load(f)
     notices = data["notices"] if isinstance(data, dict) else data
@@ -390,12 +430,28 @@ def process_notices(path=NOTICES_PATH):
         n for n in notices
         if not n.get("is_sample") and not n.get("extracted")
     ]
+    # 본문도 이미지도 없으면 AI가 제목만 보고 추측하게 되므로 건너뛴다.
+    # extracted는 false로 남아서, 크롤러가 본문을 채운 다음 실행 때 처리된다.
+    empty = [n for n in todo if not (n.get("body") or "").strip()
+             and not n.get("images")]
+    todo = [n for n in todo if n not in empty]
+    if empty:
+        print(f"본문이 비어 있어 다음에 처리할 공지: {len(empty)}개")
+    if len(todo) > MAX_PER_RUN:
+        print(f"이번에는 {MAX_PER_RUN}개만 처리하고 "
+              f"나머지 {len(todo) - MAX_PER_RUN}개는 다음 실행 때 처리합니다.")
+        todo = todo[:MAX_PER_RUN]
     print(f"처리할 공지: {len(todo)}개")
     if not todo:
         return  # 바꿀 게 없으면 파일을 다시 쓰지 않는다(불필요한 커밋 방지)
 
+    started = time.monotonic()
     for i, notice in enumerate(todo, 1):
-        print(f"[{i}/{len(todo)}] {notice.get('title', '')}")
+        if time.monotonic() - started > TIME_BUDGET:
+            print(f"시간 예산({TIME_BUDGET // 60}분)을 다 써서 멈춥니다. "
+                  f"남은 {len(todo) - i + 1}개는 다음 실행 때 처리합니다.")
+            break
+        print(f"[{i}/{len(todo)}] {notice.get('title', '')}", flush=True)
         info = extract(
             build_text(notice),
             images=notice.get("images") or [],
@@ -404,13 +460,14 @@ def process_notices(path=NOTICES_PATH):
         if info is None:
             print("  실패, 다음 실행 때 다시 처리합니다.")
         else:
+            info["deadline"] = _fix_past_year(
+                info["deadline"], notice.get("published_date")
+            )
             notice.update(info)
             notice["extracted"] = True
+            _save(path, data)  # 하나 끝날 때마다 저장
         if i < len(todo):
             time.sleep(WAIT_SECONDS)
-
-    with open(path, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
     print("저장 완료")
 
 
