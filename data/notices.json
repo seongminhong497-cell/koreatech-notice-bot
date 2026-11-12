@@ -49,7 +49,7 @@
       "포트폴리오 자료(맞춤형 동영상 편집교육 지원자 한정)"
     ],
     "category": "교내활동",
-    "days_left": 10,
+    "days_left": 9,
     "is_expired": false,
     "is_urgent": false
   },
@@ -89,7 +89,7 @@
     ],
     "materials": null,
     "category": "학사",
-    "days_left": 1,
+    "days_left": 0,
     "is_expired": false,
     "is_urgent": true
   },
@@ -246,7 +246,7 @@
     ],
     "materials": null,
     "category": "대외활동·공모전",
-    "days_left": 18,
+    "days_left": 17,
     "is_expired": false,
     "is_urgent": false
   },
@@ -399,7 +399,7 @@
     ],
     "materials": null,
     "category": null,
-    "days_left": 49,
+    "days_left": 48,
     "is_expired": false,
     "is_urgent": false
   },
@@ -662,7 +662,7 @@
     ],
     "materials": null,
     "category": "교내활동",
-    "days_left": 0,
+    "days_left": -1,
     "is_expired": true,
     "is_urgent": false
   },
@@ -713,7 +713,7 @@
     ],
     "materials": null,
     "category": "취업·인턴",
-    "days_left": 6,
+    "days_left": 5,
     "is_expired": false,
     "is_urgent": false
   },
@@ -770,7 +770,7 @@
       "작품 시안"
     ],
     "category": "대외활동·공모전",
-    "days_left": 3,
+    "days_left": 2,
     "is_expired": false,
     "is_urgent": false
   },
@@ -816,9 +816,9 @@
     ],
     "materials": [],
     "category": "취업·인턴",
-    "days_left": 4,
+    "days_left": 3,
     "is_expired": false,
-    "is_urgent": false
+    "is_urgent": true
   },
   {
     "id": "general-37448",
@@ -862,9 +862,9 @@
     ],
     "materials": null,
     "category": "취업·인턴",
-    "days_left": 4,
+    "days_left": 3,
     "is_expired": false,
-    "is_urgent": false
+    "is_urgent": true
   },
   {
     "id": "general-37447",
@@ -904,7 +904,7 @@
     ],
     "materials": null,
     "category": "교내활동",
-    "days_left": 15,
+    "days_left": 14,
     "is_expired": false,
     "is_urgent": false
   },
@@ -987,7 +987,7 @@
       "팀원 전체 확인서"
     ],
     "category": "장학",
-    "days_left": 1,
+    "days_left": 0,
     "is_expired": false,
     "is_urgent": true
   },
@@ -1035,7 +1035,7 @@
       "신청 사유에 따른 증빙자료"
     ],
     "category": "장학",
-    "days_left": 1,
+    "days_left": 0,
     "is_expired": false,
     "is_urgent": true
   },
@@ -1085,9 +1085,9 @@
     ],
     "materials": null,
     "category": "장학",
-    "days_left": 0,
-    "is_expired": false,
-    "is_urgent": true
+    "days_left": -1,
+    "is_expired": true,
+    "is_urgent": false
   },
   {
     "id": "scholarship-2404",
@@ -1126,7 +1126,7 @@
       "외국인등록증 또는 귀화자의 기본증명서(상세) 또는 제적등본"
     ],
     "category": "장학",
-    "days_left": -20,
+    "days_left": -21,
     "is_expired": true,
     "is_urgent": false
   },
@@ -1170,7 +1170,7 @@
       "사회봉사활동 증빙자료(1365, VMS 발급 실적인증서, 교내사회봉사활동 확인서 등)"
     ],
     "category": "장학",
-    "days_left": -20,
+    "days_left": -21,
     "is_expired": true,
     "is_urgent": false
   },
@@ -1320,7 +1320,7 @@
     ],
     "materials": null,
     "category": "장학",
-    "days_left": 5,
+    "days_left": 4,
     "is_expired": false,
     "is_urgent": false
   },
@@ -1404,7 +1404,7 @@
       "외국어 성적 증명서"
     ],
     "category": "장학",
-    "days_left": -125,
+    "days_left": -126,
     "is_expired": true,
     "is_urgent": false
   },
@@ -1582,7 +1582,7 @@
     ],
     "materials": null,
     "category": "장학",
-    "days_left": -9,
+    "days_left": -10,
     "is_expired": true,
     "is_urgent": false
   },
@@ -1639,7 +1639,7 @@
       "국민기초생활수급자 및 차상위계층 확인 서류"
     ],
     "category": "장학",
-    "days_left": 1,
+    "days_left": 0,
     "is_expired": false,
     "is_urgent": false
   },
@@ -1709,7 +1709,7 @@
       "2026년 1학기 대학교 성적증명서 1부"
     ],
     "category": "장학",
-    "days_left": -13,
+    "days_left": -14,
     "is_expired": true,
     "is_urgent": false
   },
@@ -1755,9 +1755,9 @@
       "직전 학기 성적증명서"
     ],
     "category": "장학",
-    "days_left": 8,
+    "days_left": 7,
     "is_expired": false,
-    "is_urgent": false
+    "is_urgent": true
   },
   {
     "id": "scholarship-2410",
@@ -1795,7 +1795,7 @@
     ],
     "materials": null,
     "category": "장학",
-    "days_left": -14,
+    "days_left": -15,
     "is_expired": true,
     "is_urgent": false
   },
@@ -1865,7 +1865,7 @@
       "우대사항 증빙서류"
     ],
     "category": "장학",
-    "days_left": -11,
+    "days_left": -12,
     "is_expired": true,
     "is_urgent": false
   },
@@ -1972,7 +1972,7 @@
     ],
     "materials": null,
     "category": "학사",
-    "days_left": -1,
+    "days_left": -2,
     "is_expired": true,
     "is_urgent": false
   },
@@ -2376,7 +2376,7 @@
     ],
     "materials": null,
     "category": "학사",
-    "days_left": -647,
+    "days_left": -648,
     "is_expired": true,
     "is_urgent": false
   },
@@ -2453,7 +2453,7 @@
     ],
     "materials": null,
     "category": "학사",
-    "days_left": -4,
+    "days_left": -5,
     "is_expired": true,
     "is_urgent": false
   },
@@ -2495,7 +2495,7 @@
       "학점교류 추천서식"
     ],
     "category": "학사",
-    "days_left": -10,
+    "days_left": -11,
     "is_expired": true,
     "is_urgent": false
   },
@@ -2541,7 +2541,7 @@
       "신청서"
     ],
     "category": "학사",
-    "days_left": -13,
+    "days_left": -14,
     "is_expired": true,
     "is_urgent": false
   },
@@ -2586,7 +2586,7 @@
     ],
     "materials": null,
     "category": "학사",
-    "days_left": -10,
+    "days_left": -11,
     "is_expired": true,
     "is_urgent": false
   },
@@ -2628,7 +2628,7 @@
       "학점교류 추천서식"
     ],
     "category": "학사",
-    "days_left": -24,
+    "days_left": -25,
     "is_expired": true,
     "is_urgent": false
   },
@@ -2671,7 +2671,7 @@
     ],
     "materials": null,
     "category": "학사",
-    "days_left": -24,
+    "days_left": -25,
     "is_expired": true,
     "is_urgent": false
   },
@@ -2726,7 +2726,7 @@
     ],
     "materials": null,
     "category": "학사",
-    "days_left": -50,
+    "days_left": -51,
     "is_expired": true,
     "is_urgent": false
   },
@@ -2767,7 +2767,7 @@
     ],
     "materials": null,
     "category": "학사",
-    "days_left": -59,
+    "days_left": -60,
     "is_expired": true,
     "is_urgent": false
   },
@@ -2786,7 +2786,7 @@
     "is_sample": false,
     "extracted": true,
     "processed": true,
-    "is_new": true,
+    "is_new": false,
     "collected_at": "2026-11-11T20:40:15+09:00",
     "relevance": 1,
     "relevance_reason": "전체 학생 대상 · 일반 공지",
@@ -2833,7 +2833,7 @@
     "is_sample": false,
     "extracted": true,
     "processed": true,
-    "is_new": true,
+    "is_new": false,
     "collected_at": "2026-11-11T20:40:15+09:00",
     "relevance": 1,
     "relevance_reason": "전체 학생 대상 · 일반 공지",
@@ -2874,7 +2874,7 @@
     "is_sample": false,
     "extracted": true,
     "processed": true,
-    "is_new": true,
+    "is_new": false,
     "collected_at": "2026-11-11T20:40:15+09:00",
     "relevance": 1,
     "relevance_reason": "전체 학생 대상 · 일반 공지",
@@ -2910,7 +2910,7 @@
     "is_sample": false,
     "extracted": true,
     "processed": true,
-    "is_new": true,
+    "is_new": false,
     "collected_at": "2026-11-11T20:40:15+09:00",
     "relevance": 1,
     "relevance_reason": "전체 학생 대상 · 일반 공지",
@@ -2952,7 +2952,7 @@
     "is_sample": false,
     "extracted": true,
     "processed": true,
-    "is_new": true,
+    "is_new": false,
     "collected_at": "2026-11-11T20:40:15+09:00",
     "relevance": 1,
     "relevance_reason": "전체 학생 대상 · 일반 공지",
@@ -3041,7 +3041,7 @@
     ],
     "materials": null,
     "category": "대외활동·공모전",
-    "days_left": 5,
+    "days_left": 4,
     "is_expired": false,
     "is_urgent": false
   },
@@ -3088,7 +3088,7 @@
     ],
     "materials": null,
     "category": "교내활동",
-    "days_left": 18,
+    "days_left": 17,
     "is_expired": false,
     "is_urgent": false
   },
@@ -3205,7 +3205,7 @@
     ],
     "materials": null,
     "category": "대외활동·공모전",
-    "days_left": 15,
+    "days_left": 14,
     "is_expired": false,
     "is_urgent": false
   },
@@ -3335,9 +3335,9 @@
       "입소 신청서"
     ],
     "category": null,
-    "days_left": 8,
+    "days_left": 7,
     "is_expired": false,
-    "is_urgent": false
+    "is_urgent": true
   },
   {
     "id": "general-37471",
@@ -3390,8 +3390,187 @@
       "작품 시안"
     ],
     "category": "교내활동",
-    "days_left": 3,
+    "days_left": 2,
     "is_expired": false,
     "is_urgent": true
+  },
+  {
+    "id": "general-37467",
+    "title": "[연구지원팀] 2026년 한국기술교육대학교 연구(관리)자 세미나 개최(11.24.(화), 13:30~)",
+    "url": "https://www.koreatech.ac.kr/notice/view.es?mid=a10604010000&board_id=14&post_seq=37467&prefix_id=",
+    "source": "학교-일반",
+    "source_type": "학교",
+    "published_date": "2026-11-12",
+    "body": "안녕하세요. 산학협력단 연구지원팀입니다.\n교내 교수님 및 학생 연구자 대상으로 \"2026년 연구(관리)자 세미나\"를 개최합니다.\n이번 세미나에서는 최근 연구 보안등급 체계 개편에 따른  연구자의 연구보안 준수사항 이해와\n연구 수행에서 생성형 AI 활용이 확대됨에 따라 책임있고 올바른 사용 가이드라인을 안내할 예정입니다.\n참석하신 분들께 소정의 기념품과 다과를 제공할 예정이오니 많은 관심과 적극적인 참여를 부탁드립니다.\n[2026년 한국기술교육대학교 연구(관리)자 세미나 안내]\n◎ 개최 일시: 2026. 11. 24.(화) 14:00 ~ (※ 등록: 13:30 ~)\n◎ 개최 장소: 학생통합지원센터 세미나실(3층)\n◎ 참석 대상: 교원, 학/석/박사 연구원, 사업단(센터) 직원, 기타 연구원\n◎ 세미나 주제\n- 연구자를 위한 연구보안(KAIST 연구보안팀)\n- 대학연구자를 위한 생성형 AI 가이드라인(서강대학교)\n◎ 문의처: 산학협력단 연구지원팀(041-580-4831)",
+    "images": [],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-13T02:16:35+09:00",
+    "relevance": 0,
+    "relevance_reason": "제외 대상 집단 전용 공지",
+    "target": {
+      "scope": "specific",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [
+        "대학원생",
+        "교직원"
+      ],
+      "dorm_required": null
+    },
+    "deadline": null,
+    "other_dates": [
+      {
+        "label": "2026년 연구(관리)자 세미나 개최",
+        "date": "2026-11-24T14:00:00+09:00"
+      }
+    ],
+    "actions": null,
+    "materials": null,
+    "category": null,
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "general-37475",
+    "title": "[취창업지원팀] 장·단기 현장실습 지원자를 위한 AI 활용 입사지원서 작성 및 면접 준비 특강 안내(온라인)",
+    "url": "https://www.koreatech.ac.kr/notice/view.es?mid=a10604010000&board_id=14&post_seq=37475&prefix_id=",
+    "source": "학교-일반",
+    "source_type": "학교",
+    "published_date": "2026-11-12",
+    "body": "장·단기 현장실습 지원자를 위한 AI 활용 입사지원서 작성 및 면접 준비 특강 안내\n장·단기 현장실습 지원을 준비하는 학생들을 대상으로 「AI 활용 입사지원서 작성 및 면접 준비 특강」을 운영합니다.\nAI를 활용하여 효과적으로 입사지원서를 작성하고, 면접을 체계적으로 준비할 수 있도록 실전 중심의 교육을 진행하오니 관심 있는 학생들의 많은 참여 바랍니다.\n1. 특강 개요\n교육명: AI 활용 입사지원서 작성 및 면접 준비 특강\n교육일시: 2026. 11. 18.(수) 19:00~21:00 (2시간)\n교육방법: 온라인 실시간 특강\n교육대상: 장·단기 현장실습 지원 예정자 및 관심 있는 재학생\n주관: 취창업지원팀\n2. 주요 교육내용\nNAIM(취업지원AI서비스) 활용 입사지원서 작성법\n지원 직무 및 기업에 맞춘 자기소개서 작성·보완 전략\nAI를 활용한 예상 면접 질문 도출 및 답변 준비\n면접 답변 구성 및 실전 면접 대비 전략\n3. 신청 및 참여 안내\n신청방법: 아우누리-학생종합경력개발-해당교육 신청\n참여방법: 신청자 대상 온라인 접속 링크 별도 안내",
+    "images": [],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-13T02:16:35+09:00",
+    "relevance": 1,
+    "relevance_reason": "특정 대상 일치 및 마감 조건을 모두 충족하지 않음",
+    "target": {
+      "scope": "specific",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [
+        "재학"
+      ],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": null,
+    "other_dates": [
+      {
+        "label": "AI 활용 입사지원서 작성 및 면접 준비 특강",
+        "date": "2026-11-18T19:00:00+09:00"
+      }
+    ],
+    "actions": [
+      "아우누리-학생종합경력개발-해당교육 신청"
+    ],
+    "materials": null,
+    "category": "취업·인턴",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "general-37474",
+    "title": "[대학원교학팀] 서울 최경과정 행사 근장학생 모집합니다.",
+    "url": "https://www.koreatech.ac.kr/notice/view.es?mid=a10604010000&board_id=14&post_seq=37474&prefix_id=",
+    "source": "학교-일반",
+    "source_type": "학교",
+    "published_date": "2026-11-12",
+    "body": "대학원교학팀에서 근로장학생을 모집합니다.(대학 학부 재학생만 신청 가능)\n1. 근로기간: 2026. 11. 24.(화)\n2. 근로시간: 11시간(오전 10시 00분 ~ 저녁 23시)- 서울 이동시간(왕복 4시간) 포함, 점심, 저녁 휴게시간(2시간)은 미 포함.\n3. 시급: 10,030원/시간\n4. 근로내용: 최고경영자과정 행사 지원(석식제공, 다과제공, 소정의 선물 제공) / 행사 물품 셋팅 준비 및 종료 후 짐 정리\n※ 본 행사시간: 오후 6시  ~ 8시\n※ 정리 시간:  오후 8시  ~ 8시 30분\n5. 근로장소: 서울 용산역 인근 행사장(출발 및 도착은 1캠퍼스에서 함께 차량으로 이동)\n6. 모집인원: 3명 (우대 사항: 행사 경험이 있거나 PPT 컴퓨터 잘 다루는 사람 환영)\n7. 지원방법: 대학원교학팀 담당자 이메일(jrabbit87@학교메일)로 신청\n※ 신청 양식: 제목 – 서울 최경 수료식 행사 근장 신청합니다. / 내용 – 이름/학과/학번/핸드폰번호/남, 여 성별\n8. 모집기간: 11월 20일 오후 2시까지(인원충원시 마감예정)\n9. 선발: 개별 핸드폰 연락(041-560-1001 번호 전화로 연락할 예정임.)\n궁금한 사항이나 문의사항은 이메일 또는 사무실(041-560-1001)로 연락바랍니다.\n감사합니다.",
+    "images": [],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-13T02:16:35+09:00",
+    "relevance": 3,
+    "relevance_reason": "학적 상태, 대상 집단 조건 일치 · 마감 있음",
+    "target": {
+      "scope": "specific",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [
+        "재학"
+      ],
+      "groups": [
+        "학부생"
+      ],
+      "dorm_required": null
+    },
+    "deadline": "2026-11-20T14:00:00+09:00",
+    "other_dates": [
+      {
+        "label": "근로기간",
+        "date": "2026-11-24"
+      }
+    ],
+    "actions": [
+      "담당자 이메일로 신청서 제출"
+    ],
+    "materials": null,
+    "category": "교내활동",
+    "days_left": 7,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "academic-1625",
+    "title": "2026학년도 동계 안전공학 부전공생 안전관리실습 신청 안내",
+    "url": "https://www.koreatech.ac.kr/notice/view.es?mid=a10604030000&board_id=16&post_seq=1625&prefix_id=",
+    "source": "학교-학사",
+    "source_type": "학교",
+    "published_date": "2026-11-12",
+    "body": "[2026학년도 동계 안전공학 부전공자 교내 현장실습 신청자 모집 안내]\n안전공학부전공자의 산업현장에서 필요한 지식·기술의 습득을 위한 현장실습을 아래와 같이 운영하오니\n안전공학부전공 선발자 중 교내 현장실습을 희망하는 학생은 신청하시기 바랍니다.\n1. 운영교과목: 안전관리실습(단기 현장실습 동일대체 교과목)\n2. 운영기간: 방학 중 20일(8시간/1일) 운영(하계․동계방학 총 4회 운영)\n3. 운영인원: 12명 내외(현장실습 지원비 미지원)\n4. 지원자격: 안전공학부전공자 중 안전공학전공 3교과 이상 이수한 자\n5. 성적부여방법: 등락제(S/U)\n6. 모집일정\n- 실습생 모집: 2026.11.19.(목) 09:30 ~ 11.26.(목) 17:00\n- 실습생 추가 모집: 2026.12.1.(화) 09:30 ~ 12.4.(금) 17:00\n7. 신청방법\n- 첨부된 안전관리실습 신청서를 작성하여 미래융합학부 사무실 제출(인문경영관 K102호)\n8. 주의사항\n- 1차 실습기간(2026.12.21.(월) ~ 2027.1.19.(화)  /  계절학기 수강자 신청 불가\n- 2차 실습기간(2027.1.20.(수) ~ 2.18.(목)  /  2026년 2월 졸업예정자 신청 불가\n9. 문의사항: 안전공학 현장실습 관련 문의는 미래융합학부 사무실 (041-560-1489)로 문의\n첨부파일\n안전관리 실습 신청서.hwp\n다운로드\n미리보기",
+    "images": [],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-13T02:16:35+09:00",
+    "relevance": 0,
+    "relevance_reason": "학과 조건 불일치",
+    "target": {
+      "scope": "specific",
+      "departments": [
+        "안전공학부"
+      ],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": "2026-11-26T17:00:00+09:00",
+    "other_dates": [
+      {
+        "label": "실습생 추가 모집",
+        "date": "2026-12-04T17:00:00+09:00"
+      },
+      {
+        "label": "1차 실습기간",
+        "date": "2026-12-21"
+      },
+      {
+        "label": "2차 실습기간",
+        "date": "2027-01-20"
+      }
+    ],
+    "actions": [
+      "첨부된 안전관리실습 신청서를 작성하여 미래융합학부 사무실 제출"
+    ],
+    "materials": [
+      "안전관리실습 신청서"
+    ],
+    "category": "학사",
+    "days_left": 13,
+    "is_expired": false,
+    "is_urgent": false
   }
 ]
