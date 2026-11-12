@@ -13,11 +13,11 @@
     ],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 3,
+    "relevance_reason": "학적 상태 조건 일치 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -48,7 +48,10 @@
       "증빙서류",
       "포트폴리오 자료(맞춤형 동영상 편집교육 지원자 한정)"
     ],
-    "category": "교내활동"
+    "category": "교내활동",
+    "days_left": 10,
+    "is_expired": false,
+    "is_urgent": false
   },
   {
     "id": "general-37426",
@@ -61,11 +64,11 @@
     "images": [],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 1,
+    "relevance_reason": "특정 대상 일치 및 마감 조건을 모두 충족하지 않음",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -85,7 +88,10 @@
       "고지서에 명시되어 있는 신한은행 가상계좌로 등록금 납부"
     ],
     "materials": null,
-    "category": "학사"
+    "category": "학사",
+    "days_left": 1,
+    "is_expired": false,
+    "is_urgent": true
   },
   {
     "id": "general-37354",
@@ -98,11 +104,11 @@
     "images": [],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 1,
+    "relevance_reason": "전체 학생 대상 · 일반 공지",
     "target": {
       "scope": "all",
       "departments": [],
@@ -128,7 +134,10 @@
     ],
     "actions": null,
     "materials": null,
-    "category": null
+    "category": null,
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
   },
   {
     "id": "general-37340",
@@ -164,11 +173,11 @@
     ],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 1,
+    "relevance_reason": "전체 학생 대상 · 일반 공지",
     "target": {
       "scope": "all",
       "departments": [],
@@ -188,7 +197,10 @@
       "사전신청 링크를 통해 신청"
     ],
     "materials": null,
-    "category": "교내활동"
+    "category": "교내활동",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
   },
   {
     "id": "general-37327",
@@ -204,11 +216,11 @@
     ],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 3,
+    "relevance_reason": "학과, 학적 상태 조건 일치 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [
@@ -233,7 +245,10 @@
       "구글폼을 통해 신청서 제출"
     ],
     "materials": null,
-    "category": "대외활동·공모전"
+    "category": "대외활동·공모전",
+    "days_left": 18,
+    "is_expired": false,
+    "is_urgent": false
   },
   {
     "id": "general-37300",
@@ -246,11 +261,11 @@
     "images": [],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 1,
+    "relevance_reason": "대상 정보가 불명확함",
     "target": {
       "scope": "unknown",
       "departments": null,
@@ -265,7 +280,10 @@
       "보안 취약점 점검 및 필요한 개선 조치 실시"
     ],
     "materials": null,
-    "category": null
+    "category": null,
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
   },
   {
     "id": "general-37217",
@@ -283,11 +301,11 @@
     ],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 1,
+    "relevance_reason": "대상 정보가 불명확함",
     "target": {
       "scope": "unknown",
       "departments": null,
@@ -300,7 +318,10 @@
     "other_dates": [],
     "actions": null,
     "materials": null,
-    "category": "대외활동·공모전"
+    "category": "대외활동·공모전",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
   },
   {
     "id": "general-37214",
@@ -316,11 +337,11 @@
     ],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 1,
+    "relevance_reason": "전체 학생 대상 · 일반 공지",
     "target": {
       "scope": "all",
       "departments": [],
@@ -333,7 +354,10 @@
     "other_dates": [],
     "actions": null,
     "materials": null,
-    "category": null
+    "category": null,
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
   },
   {
     "id": "general-36861",
@@ -346,11 +370,11 @@
     "images": [],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 3,
+    "relevance_reason": "대상 집단 조건 일치 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -374,7 +398,10 @@
       "아우누리를 통해 교내 연구실 안전관리 시스템 접속 후 교육 이수"
     ],
     "materials": null,
-    "category": null
+    "category": null,
+    "days_left": 49,
+    "is_expired": false,
+    "is_urgent": false
   },
   {
     "id": "general-36827",
@@ -387,11 +414,11 @@
     "images": [],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 1,
+    "relevance_reason": "전체 학생 대상 · 일반 공지",
     "target": {
       "scope": "all",
       "departments": [],
@@ -417,7 +444,10 @@
       "탑승 시 QR코드 태그"
     ],
     "materials": null,
-    "category": null
+    "category": null,
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
   },
   {
     "id": "general-37458",
@@ -430,11 +460,11 @@
     "images": [],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 1,
+    "relevance_reason": "전체 학생 대상 · 일반 공지",
     "target": {
       "scope": "all",
       "departments": [],
@@ -452,7 +482,10 @@
     ],
     "actions": null,
     "materials": null,
-    "category": null
+    "category": null,
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
   },
   {
     "id": "general-37457",
@@ -468,11 +501,11 @@
     ],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 1,
+    "relevance_reason": "특정 대상 일치 및 마감 조건을 모두 충족하지 않음",
     "target": {
       "scope": "specific",
       "departments": [
@@ -495,7 +528,10 @@
       "학생종합경력개발 취창업프로그램에서 신청하기 클릭"
     ],
     "materials": null,
-    "category": "취업·인턴"
+    "category": "취업·인턴",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
   },
   {
     "id": "general-37456",
@@ -511,11 +547,11 @@
     ],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 1,
+    "relevance_reason": "전체 학생 대상 · 일반 공지",
     "target": {
       "scope": "all",
       "departments": [],
@@ -533,7 +569,10 @@
     ],
     "actions": null,
     "materials": null,
-    "category": "교내활동"
+    "category": "교내활동",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
   },
   {
     "id": "general-37455",
@@ -546,11 +585,11 @@
     "images": [],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 2,
+    "relevance_reason": "전체 학생 대상 · 관심 또는 항상 보기 분류",
     "target": {
       "scope": "all",
       "departments": [],
@@ -570,7 +609,10 @@
       "신청링크를 통해 사전 신청"
     ],
     "materials": null,
-    "category": "취업·인턴"
+    "category": "취업·인턴",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
   },
   {
     "id": "general-37454",
@@ -585,11 +627,11 @@
     ],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 3,
+    "relevance_reason": "학적 상태 조건 일치 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -619,7 +661,10 @@
       "구글 폼을 통해 신청서 제출"
     ],
     "materials": null,
-    "category": "교내활동"
+    "category": "교내활동",
+    "days_left": 0,
+    "is_expired": true,
+    "is_urgent": false
   },
   {
     "id": "general-37453",
@@ -632,11 +677,11 @@
     "images": [],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 3,
+    "relevance_reason": "학적 상태 조건 일치 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -667,7 +712,10 @@
       "교육참여 후 MFEC level1 자격시험 참여"
     ],
     "materials": null,
-    "category": "취업·인턴"
+    "category": "취업·인턴",
+    "days_left": 6,
+    "is_expired": false,
+    "is_urgent": false
   },
   {
     "id": "general-37451",
@@ -683,11 +731,11 @@
     ],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 0,
+    "relevance_reason": "제외 대상 집단 전용 공지",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -721,7 +769,10 @@
       "디자인 기획서",
       "작품 시안"
     ],
-    "category": "대외활동·공모전"
+    "category": "대외활동·공모전",
+    "days_left": 3,
+    "is_expired": false,
+    "is_urgent": false
   },
   {
     "id": "general-37449",
@@ -736,11 +787,11 @@
     ],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 3,
+    "relevance_reason": "학적 상태 조건 일치 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -764,7 +815,10 @@
       "댓글로 친구 태그하기"
     ],
     "materials": [],
-    "category": "취업·인턴"
+    "category": "취업·인턴",
+    "days_left": 4,
+    "is_expired": false,
+    "is_urgent": false
   },
   {
     "id": "general-37448",
@@ -779,11 +833,11 @@
     ],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 3,
+    "relevance_reason": "학적 상태 조건 일치 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -807,7 +861,10 @@
       "문장 형식에 맞게 댓글 작성"
     ],
     "materials": null,
-    "category": "취업·인턴"
+    "category": "취업·인턴",
+    "days_left": 4,
+    "is_expired": false,
+    "is_urgent": false
   },
   {
     "id": "general-37447",
@@ -820,11 +877,11 @@
     "images": [],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 3,
+    "relevance_reason": "학적 상태 조건 일치 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -846,7 +903,10 @@
       "구글폼 링크를 통해 신청서 제출"
     ],
     "materials": null,
-    "category": "교내활동"
+    "category": "교내활동",
+    "days_left": 15,
+    "is_expired": false,
+    "is_urgent": false
   },
   {
     "id": "scholarship-2418",
@@ -862,11 +922,11 @@
     ],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 2,
+    "relevance_reason": "전체 학생 대상 · 관심 또는 항상 보기 분류",
     "target": {
       "scope": "all",
       "departments": [],
@@ -881,7 +941,10 @@
       "링크를 통해 중복지원 여부 확인"
     ],
     "materials": null,
-    "category": "장학"
+    "category": "장학",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
   },
   {
     "id": "scholarship-2417",
@@ -894,11 +957,11 @@
     "images": [],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 3,
+    "relevance_reason": "학적 상태, 대상 집단 조건 일치 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -923,7 +986,10 @@
       "활동 실적 자료",
       "팀원 전체 확인서"
     ],
-    "category": "장학"
+    "category": "장학",
+    "days_left": 1,
+    "is_expired": false,
+    "is_urgent": true
   },
   {
     "id": "scholarship-2415",
@@ -936,11 +1002,11 @@
     "images": [],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 3,
+    "relevance_reason": "학적 상태, 대상 집단 조건 일치 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -968,7 +1034,10 @@
       "가족관계증명서 1부",
       "신청 사유에 따른 증빙자료"
     ],
-    "category": "장학"
+    "category": "장학",
+    "days_left": 1,
+    "is_expired": false,
+    "is_urgent": true
   },
   {
     "id": "scholarship-2414",
@@ -985,11 +1054,11 @@
     ],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 3,
+    "relevance_reason": "학적 상태 조건 일치 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -1015,7 +1084,10 @@
       "한국장학재단 홈페이지에서 온라인 신청"
     ],
     "materials": null,
-    "category": "장학"
+    "category": "장학",
+    "days_left": 0,
+    "is_expired": false,
+    "is_urgent": true
   },
   {
     "id": "scholarship-2404",
@@ -1028,11 +1100,11 @@
     "images": [],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 3,
+    "relevance_reason": "학적 상태 조건 일치 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -1053,7 +1125,10 @@
       "가족관계증명서",
       "외국인등록증 또는 귀화자의 기본증명서(상세) 또는 제적등본"
     ],
-    "category": "장학"
+    "category": "장학",
+    "days_left": -20,
+    "is_expired": true,
+    "is_urgent": false
   },
   {
     "id": "scholarship-2401",
@@ -1066,11 +1141,11 @@
     "images": [],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 3,
+    "relevance_reason": "학적 상태, 대상 집단 조건 일치 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -1094,7 +1169,10 @@
     "materials": [
       "사회봉사활동 증빙자료(1365, VMS 발급 실적인증서, 교내사회봉사활동 확인서 등)"
     ],
-    "category": "장학"
+    "category": "장학",
+    "days_left": -20,
+    "is_expired": true,
+    "is_urgent": false
   },
   {
     "id": "scholarship-2370",
@@ -1107,11 +1185,11 @@
     "images": [],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 1,
+    "relevance_reason": "특정 대상 일치 및 마감 조건을 모두 충족하지 않음",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -1147,7 +1225,10 @@
       "학업시간표 및 업무스케줄 입력"
     ],
     "materials": null,
-    "category": "장학"
+    "category": "장학",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
   },
   {
     "id": "scholarship-2357",
@@ -1160,11 +1241,11 @@
     "images": [],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 1,
+    "relevance_reason": "특정 대상 일치 및 마감 조건을 모두 충족하지 않음",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -1180,7 +1261,10 @@
       "근로중지자진신고 메뉴 활용"
     ],
     "materials": null,
-    "category": "장학"
+    "category": "장학",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
   },
   {
     "id": "scholarship-2354",
@@ -1195,11 +1279,11 @@
     ],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 2,
+    "relevance_reason": "전체 학생 대상 · 관심 또는 항상 보기 분류",
     "target": {
       "scope": "all",
       "departments": [],
@@ -1235,7 +1319,10 @@
       "한국장학재단 홈페이지에서 학자금대출 신청 및 실행"
     ],
     "materials": null,
-    "category": "장학"
+    "category": "장학",
+    "days_left": 5,
+    "is_expired": false,
+    "is_urgent": false
   },
   {
     "id": "scholarship-2336",
@@ -1253,11 +1340,11 @@
     ],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 2,
+    "relevance_reason": "전체 학생 대상 · 관심 또는 항상 보기 분류",
     "target": {
       "scope": "all",
       "departments": [],
@@ -1270,7 +1357,10 @@
     "other_dates": [],
     "actions": null,
     "materials": null,
-    "category": "장학"
+    "category": "장학",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
   },
   {
     "id": "scholarship-2274",
@@ -1283,11 +1373,11 @@
     "images": [],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 3,
+    "relevance_reason": "학적 상태 조건 일치 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -1313,7 +1403,10 @@
     "materials": [
       "외국어 성적 증명서"
     ],
-    "category": "장학"
+    "category": "장학",
+    "days_left": -125,
+    "is_expired": true,
+    "is_urgent": false
   },
   {
     "id": "scholarship-2122",
@@ -1339,11 +1432,11 @@
     ],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 2,
+    "relevance_reason": "전체 학생 대상 · 관심 또는 항상 보기 분류",
     "target": {
       "scope": "all",
       "departments": [],
@@ -1358,7 +1451,10 @@
       "포털에서 입금계좌 확인하기"
     ],
     "materials": null,
-    "category": "장학"
+    "category": "장학",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
   },
   {
     "id": "scholarship-2120",
@@ -1382,11 +1478,11 @@
     ],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 1,
+    "relevance_reason": "대상 정보가 불명확함",
     "target": {
       "scope": "unknown",
       "departments": null,
@@ -1399,7 +1495,10 @@
     "other_dates": [],
     "actions": null,
     "materials": null,
-    "category": "장학"
+    "category": "장학",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
   },
   {
     "id": "scholarship-1778",
@@ -1412,11 +1511,11 @@
     "images": [],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 2,
+    "relevance_reason": "전체 학생 대상 · 관심 또는 항상 보기 분류",
     "target": {
       "scope": "all",
       "departments": [],
@@ -1436,7 +1535,10 @@
       "장학금 추천서",
       "교외장학금 신청서"
     ],
-    "category": "장학"
+    "category": "장학",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
   },
   {
     "id": "scholarship-2416",
@@ -1451,11 +1553,11 @@
     ],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 3,
+    "relevance_reason": "학적 상태, 대상 집단 조건 일치 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -1479,7 +1581,10 @@
       "아우누리를 통한 국가근로장학 신청"
     ],
     "materials": null,
-    "category": "장학"
+    "category": "장학",
+    "days_left": -9,
+    "is_expired": true,
+    "is_urgent": false
   },
   {
     "id": "scholarship-2413",
@@ -1497,11 +1602,11 @@
     ],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 0,
+    "relevance_reason": "학년 조건 불일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -1533,7 +1638,10 @@
       "엔지니어링 및 에너지 산업 관련 경진대회·공모전 등 입상 증빙서류",
       "국민기초생활수급자 및 차상위계층 확인 서류"
     ],
-    "category": "장학"
+    "category": "장학",
+    "days_left": 1,
+    "is_expired": false,
+    "is_urgent": false
   },
   {
     "id": "scholarship-2412",
@@ -1546,11 +1654,11 @@
     "images": [],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 0,
+    "relevance_reason": "학년 조건 불일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -1600,7 +1708,10 @@
       "부모 또는 보호자 주민등록초본 1부",
       "2026년 1학기 대학교 성적증명서 1부"
     ],
-    "category": "장학"
+    "category": "장학",
+    "days_left": -13,
+    "is_expired": true,
+    "is_urgent": false
   },
   {
     "id": "scholarship-2411",
@@ -1613,11 +1724,11 @@
     "images": [],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 3,
+    "relevance_reason": "학적 상태, 대상 집단 조건 일치 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -1643,7 +1754,10 @@
       "학생 또는 보호자 명의 통장 사본",
       "직전 학기 성적증명서"
     ],
-    "category": "장학"
+    "category": "장학",
+    "days_left": 8,
+    "is_expired": false,
+    "is_urgent": false
   },
   {
     "id": "scholarship-2410",
@@ -1659,11 +1773,11 @@
     ],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 3,
+    "relevance_reason": "대상 집단 조건 일치 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -1680,7 +1794,10 @@
       "첨부된 모집 요강을 참고하여 신청 접수"
     ],
     "materials": null,
-    "category": "장학"
+    "category": "장학",
+    "days_left": -14,
+    "is_expired": true,
+    "is_urgent": false
   },
   {
     "id": "scholarship-2409",
@@ -1696,11 +1813,11 @@
     ],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 0,
+    "relevance_reason": "학년 조건 불일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -1747,7 +1864,10 @@
       "소속대학 성적증명서",
       "우대사항 증빙서류"
     ],
-    "category": "장학"
+    "category": "장학",
+    "days_left": -11,
+    "is_expired": true,
+    "is_urgent": false
   },
   {
     "id": "academic-1624",
@@ -1760,11 +1880,11 @@
     "images": [],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 1,
+    "relevance_reason": "특정 대상 일치 및 마감 조건을 모두 충족하지 않음",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -1784,7 +1904,10 @@
     "materials": [
       "사유별 증빙서류"
     ],
-    "category": "학사"
+    "category": "학사",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
   },
   {
     "id": "academic-1622",
@@ -1802,11 +1925,11 @@
     ],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 3,
+    "relevance_reason": "학적 상태, 대상 집단 조건 일치 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -1848,7 +1971,10 @@
       "가상계좌로 수강료 납부"
     ],
     "materials": null,
-    "category": "학사"
+    "category": "학사",
+    "days_left": -1,
+    "is_expired": true,
+    "is_urgent": false
   },
   {
     "id": "academic-1615",
@@ -1861,11 +1987,11 @@
     "images": [],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 1,
+    "relevance_reason": "특정 대상 일치 및 마감 조건을 모두 충족하지 않음",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -1880,7 +2006,10 @@
     "other_dates": [],
     "actions": null,
     "materials": null,
-    "category": "학사"
+    "category": "학사",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
   },
   {
     "id": "academic-1610",
@@ -1893,11 +2022,11 @@
     "images": [],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 0,
+    "relevance_reason": "학적 상태 조건 불일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -1921,7 +2050,10 @@
       "아우누리 - 졸업신청(통합) 및 자격취득신고 - 수시졸업신청 탭에서 신청"
     ],
     "materials": null,
-    "category": "학사"
+    "category": "학사",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
   },
   {
     "id": "academic-1609",
@@ -1934,11 +2066,11 @@
     "images": [],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 2,
+    "relevance_reason": "전체 학생 대상 · 관심 또는 항상 보기 분류",
     "target": {
       "scope": "all",
       "departments": [],
@@ -1951,7 +2083,10 @@
     "other_dates": [],
     "actions": null,
     "materials": null,
-    "category": "학사"
+    "category": "학사",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
   },
   {
     "id": "academic-1607",
@@ -1964,11 +2099,11 @@
     "images": [],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 1,
+    "relevance_reason": "특정 대상 일치 및 마감 조건을 모두 충족하지 않음",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -1989,7 +2124,10 @@
     "materials": [
       "이수증"
     ],
-    "category": "학사"
+    "category": "학사",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
   },
   {
     "id": "academic-1592",
@@ -2002,11 +2140,11 @@
     "images": [],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 0,
+    "relevance_reason": "학적 상태 조건 불일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -2040,7 +2178,10 @@
     "materials": [
       "신분증"
     ],
-    "category": "학사"
+    "category": "학사",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
   },
   {
     "id": "academic-1581",
@@ -2072,11 +2213,11 @@
     ],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 1,
+    "relevance_reason": "대상 정보가 불명확함",
     "target": {
       "scope": "unknown",
       "departments": null,
@@ -2089,7 +2230,10 @@
     "other_dates": [],
     "actions": null,
     "materials": null,
-    "category": "학사"
+    "category": "학사",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
   },
   {
     "id": "academic-1558",
@@ -2102,11 +2246,11 @@
     "images": [],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 2,
+    "relevance_reason": "전체 학생 대상 · 관심 또는 항상 보기 분류",
     "target": {
       "scope": "all",
       "departments": [],
@@ -2119,7 +2263,10 @@
     "other_dates": [],
     "actions": null,
     "materials": null,
-    "category": "학사"
+    "category": "학사",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
   },
   {
     "id": "academic-1468",
@@ -2132,11 +2279,11 @@
     "images": [],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 0,
+    "relevance_reason": "학년 조건 불일치",
     "target": {
       "scope": "specific",
       "departments": [
@@ -2182,7 +2329,10 @@
     ],
     "actions": null,
     "materials": null,
-    "category": "학사"
+    "category": "학사",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
   },
   {
     "id": "academic-1405",
@@ -2206,11 +2356,11 @@
     ],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 2,
+    "relevance_reason": "전체 학생 대상 · 관심 또는 항상 보기 분류",
     "target": {
       "scope": "all",
       "departments": [],
@@ -2225,7 +2375,10 @@
       "SSL VPN 계정 미리 신청"
     ],
     "materials": null,
-    "category": "학사"
+    "category": "학사",
+    "days_left": -647,
+    "is_expired": true,
+    "is_urgent": false
   },
   {
     "id": "academic-1623",
@@ -2238,11 +2391,11 @@
     "images": [],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 1,
+    "relevance_reason": "특정 대상 일치 및 마감 조건을 모두 충족하지 않음",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -2255,7 +2408,10 @@
     "other_dates": [],
     "actions": null,
     "materials": null,
-    "category": "학사"
+    "category": "학사",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
   },
   {
     "id": "academic-1621",
@@ -2268,11 +2424,11 @@
     "images": [],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 2,
+    "relevance_reason": "전체 학생 대상 · 관심 또는 항상 보기 분류",
     "target": {
       "scope": "all",
       "departments": [],
@@ -2296,7 +2452,10 @@
       "아우누리 → 학사 → 수강정보 → 강의설문 에서 설문 응답"
     ],
     "materials": null,
-    "category": "학사"
+    "category": "학사",
+    "days_left": -4,
+    "is_expired": true,
+    "is_urgent": false
   },
   {
     "id": "academic-1620",
@@ -2309,11 +2468,11 @@
     "images": [],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 3,
+    "relevance_reason": "학적 상태 조건 일치 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -2335,7 +2494,10 @@
       "교류대학 수학계획서",
       "학점교류 추천서식"
     ],
-    "category": "학사"
+    "category": "학사",
+    "days_left": -10,
+    "is_expired": true,
+    "is_urgent": false
   },
   {
     "id": "academic-1619",
@@ -2348,11 +2510,11 @@
     "images": [],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 1,
+    "relevance_reason": "특정 대상 일치 및 마감 조건을 모두 충족하지 않음",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -2378,7 +2540,10 @@
     "materials": [
       "신청서"
     ],
-    "category": "학사"
+    "category": "학사",
+    "days_left": -13,
+    "is_expired": true,
+    "is_urgent": false
   },
   {
     "id": "academic-1618",
@@ -2394,11 +2559,11 @@
     ],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 3,
+    "relevance_reason": "학적 상태 조건 일치 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -2420,7 +2585,10 @@
       "설문조사 링크 접속하여 설문 참여"
     ],
     "materials": null,
-    "category": "학사"
+    "category": "학사",
+    "days_left": -10,
+    "is_expired": true,
+    "is_urgent": false
   },
   {
     "id": "academic-1617",
@@ -2433,11 +2601,11 @@
     "images": [],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 3,
+    "relevance_reason": "학적 상태 조건 일치 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -2459,7 +2627,10 @@
       "교류대학 수학계획서",
       "학점교류 추천서식"
     ],
-    "category": "학사"
+    "category": "학사",
+    "days_left": -24,
+    "is_expired": true,
+    "is_urgent": false
   },
   {
     "id": "academic-1616",
@@ -2472,11 +2643,11 @@
     "images": [],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 3,
+    "relevance_reason": "학적 상태 조건 일치 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -2499,7 +2670,10 @@
       "아우누리에서 계절학기 희망 과목 신청"
     ],
     "materials": null,
-    "category": "학사"
+    "category": "학사",
+    "days_left": -24,
+    "is_expired": true,
+    "is_urgent": false
   },
   {
     "id": "academic-1614",
@@ -2519,11 +2693,11 @@
     ],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 3,
+    "relevance_reason": "학년, 학적 상태 조건 일치 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -2551,7 +2725,10 @@
       "구글 폼을 통해 신청서 제출"
     ],
     "materials": null,
-    "category": "학사"
+    "category": "학사",
+    "days_left": -50,
+    "is_expired": true,
+    "is_urgent": false
   },
   {
     "id": "academic-1613",
@@ -2564,11 +2741,11 @@
     "images": [],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 2,
+    "relevance_reason": "전체 학생 대상 · 관심 또는 항상 보기 분류",
     "target": {
       "scope": "all",
       "departments": [],
@@ -2589,7 +2766,10 @@
       "수강신청 완료 후 아우누리 수강이력 확인"
     ],
     "materials": null,
-    "category": "학사"
+    "category": "학사",
+    "days_left": -59,
+    "is_expired": true,
+    "is_urgent": false
   },
   {
     "id": "general-37463",
@@ -2605,11 +2785,11 @@
     ],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": true,
     "collected_at": "2026-11-11T20:40:15+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 1,
+    "relevance_reason": "전체 학생 대상 · 일반 공지",
     "target": {
       "scope": "all",
       "departments": [],
@@ -2627,7 +2807,10 @@
     ],
     "actions": null,
     "materials": null,
-    "category": null
+    "category": null,
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
   },
   {
     "id": "general-37462",
@@ -2649,11 +2832,11 @@
     ],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": true,
     "collected_at": "2026-11-11T20:40:15+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 1,
+    "relevance_reason": "전체 학생 대상 · 일반 공지",
     "target": {
       "scope": "all",
       "departments": [],
@@ -2671,7 +2854,10 @@
     ],
     "actions": null,
     "materials": null,
-    "category": null
+    "category": null,
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
   },
   {
     "id": "general-37461",
@@ -2687,11 +2873,11 @@
     ],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": true,
     "collected_at": "2026-11-11T20:40:15+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 1,
+    "relevance_reason": "전체 학생 대상 · 일반 공지",
     "target": {
       "scope": "all",
       "departments": [],
@@ -2704,7 +2890,10 @@
     "other_dates": [],
     "actions": null,
     "materials": null,
-    "category": null
+    "category": null,
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
   },
   {
     "id": "general-37460",
@@ -2720,11 +2909,11 @@
     ],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": true,
     "collected_at": "2026-11-11T20:40:15+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 1,
+    "relevance_reason": "전체 학생 대상 · 일반 공지",
     "target": {
       "scope": "all",
       "departments": [],
@@ -2744,7 +2933,10 @@
       "사전 참여 신청"
     ],
     "materials": null,
-    "category": "교내활동"
+    "category": "교내활동",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
   },
   {
     "id": "general-37459",
@@ -2759,11 +2951,11 @@
     ],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": true,
     "collected_at": "2026-11-11T20:40:15+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 1,
+    "relevance_reason": "전체 학생 대상 · 일반 공지",
     "target": {
       "scope": "all",
       "departments": [],
@@ -2783,7 +2975,10 @@
       "구글 폼을 통해 신청서 제출"
     ],
     "materials": null,
-    "category": "교내활동"
+    "category": "교내활동",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
   },
   {
     "id": "general-37468",
@@ -2799,11 +2994,11 @@
     ],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": true,
     "collected_at": "2026-11-12T11:37:12+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 3,
+    "relevance_reason": "학과, 학적 상태 조건 일치 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [
@@ -2845,7 +3040,10 @@
       "AWS 해커톤 산업연계 프로젝트 참가 신청"
     ],
     "materials": null,
-    "category": "대외활동·공모전"
+    "category": "대외활동·공모전",
+    "days_left": 5,
+    "is_expired": false,
+    "is_urgent": false
   },
   {
     "id": "general-37466",
@@ -2861,11 +3059,11 @@
     ],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": true,
     "collected_at": "2026-11-12T11:37:12+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 3,
+    "relevance_reason": "학적 상태, 대상 집단 조건 일치 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -2889,7 +3087,10 @@
       "구글폼을 통한 참가신청 링크 제출"
     ],
     "materials": null,
-    "category": "교내활동"
+    "category": "교내활동",
+    "days_left": 18,
+    "is_expired": false,
+    "is_urgent": false
   },
   {
     "id": "general-37465",
@@ -2902,11 +3103,11 @@
     "images": [],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": true,
     "collected_at": "2026-11-12T11:37:12+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 1,
+    "relevance_reason": "대상 정보가 불명확함",
     "target": {
       "scope": "unknown",
       "departments": null,
@@ -2919,7 +3120,10 @@
     "other_dates": [],
     "actions": null,
     "materials": null,
-    "category": "대외활동·공모전"
+    "category": "대외활동·공모전",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
   },
   {
     "id": "general-37464",
@@ -2932,11 +3136,11 @@
     "images": [],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": true,
     "collected_at": "2026-11-12T11:37:12+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 1,
+    "relevance_reason": "전체 학생 대상 · 일반 공지",
     "target": {
       "scope": "all",
       "departments": [],
@@ -2956,7 +3160,10 @@
       "학생종합경력개발에서 경진대회 청중평가단 신청"
     ],
     "materials": null,
-    "category": "교내활동"
+    "category": "교내활동",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
   },
   {
     "id": "general-37470",
@@ -2969,11 +3176,11 @@
     "images": [],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": true,
     "collected_at": "2026-11-12T14:05:45+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 3,
+    "relevance_reason": "학적 상태, 대상 집단 조건 일치 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -2997,7 +3204,10 @@
       "신청링크를 통해 설문 제출"
     ],
     "materials": null,
-    "category": "대외활동·공모전"
+    "category": "대외활동·공모전",
+    "days_left": 15,
+    "is_expired": false,
+    "is_urgent": false
   },
   {
     "id": "general-37469",
@@ -3012,11 +3222,11 @@
     ],
     "is_sample": false,
     "extracted": true,
-    "processed": false,
+    "processed": true,
     "is_new": true,
     "collected_at": "2026-11-12T14:05:45+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 0,
+    "relevance_reason": "학과 조건 불일치",
     "target": {
       "scope": "specific",
       "departments": [
@@ -3040,6 +3250,148 @@
       "당일 잡카페 현장 접수"
     ],
     "materials": null,
-    "category": "취업·인턴"
+    "category": "취업·인턴",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "general-37473",
+    "title": "설문조사하고 배민쿠폰 받자! ⭐2026학년도 학습생활 실태조사 및 K-Plus 학습역량 진단조사⭐",
+    "url": "https://www.koreatech.ac.kr/notice/view.es?mid=a10604010000&board_id=14&post_seq=37473&prefix_id=",
+    "source": "학교-일반",
+    "source_type": "학교",
+    "published_date": "2026-11-12",
+    "body": "안녕하세요? Edutech센터입니다.\nEdutech센터에서는 우리대학 학생들의 학습역량을 증진 시키기 위해\n다양한 학습방법을 연구하며, 프로그램을 기획ㆍ운영 하고 있습니다.\n우리대학 학생들을 위한 맞춤형 프로그램을 기획하기 위해\n학생들의 학습현황과 의견을 수렴하기 위한 설문조사이오니, 많은 참여를 부탁드리겠습니다.\n모든 문항에 성실하게 응답한 학생 중, 250명을 선정해 배민 쿠폰(1만원)을 지급할 예정입니다.\n성실하고 솔직한 응답을 부탁드립니다. 설문에 협조해주셔서 다시 한 번 감사드립니다.\n※ 본 설문조사의 결과는 통계법 제33조(비밀의 보호)에 의거하여 비밀이 보장되며, 설문에 대한 모든 응답과 개인적인 사항은 철저히 비밀로 처리되어 통계분석 목적 이외에는 절대 사용되지 않습니다.\n설문조사 참여하기 ↓↓↓↓↓\nhttps://forms.gle/cmjwxNn85A6RoAdYA\n첨부파일\n2026학년도 학습생활 실태조사 및 K-Plus 학습역량 진단조사 홍보.png\n다운로드\n미리보기",
+    "images": [
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&a=id&p=37473&fn=1794461110217_2026%25ED%2595%2599%25EB%2585%2584%25EB%258F%2584%2B%25ED%2595%2599%25EC%258A%25B5%25EC%2583%259D%25ED%2599%259C%2B%25EC%258B%25A4%25ED%2583%259C%25EC%25A1%25B0%25EC%2582%25AC%2B%25EB%25B0%258F%2BK-Plus%2B%25ED%2595%2599%25EC%258A%25B5%25EC%2597%25AD%25EB%259F%2589%2B%25EC%25A7%2584%25EB%258B%25A8%25EC%25A1%25B0%25EC%2582%25AC%2B%25ED%2599%258D%25EB%25B3%25B4.png",
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&p=37473&a=fd&fs=1"
+    ],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-12T15:29:21+09:00",
+    "relevance": 1,
+    "relevance_reason": "전체 학생 대상 · 일반 공지",
+    "target": {
+      "scope": "all",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": null,
+    "other_dates": [],
+    "actions": [
+      "설문조사 참여하기 링크를 통해 설문 응답 제출"
+    ],
+    "materials": null,
+    "category": "교내활동",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "general-37472",
+    "title": "2027학년도 한기대어린이집 원아 모집",
+    "url": "https://www.koreatech.ac.kr/notice/view.es?mid=a10604010000&board_id=14&post_seq=37472&prefix_id=",
+    "source": "학교-일반",
+    "source_type": "학교",
+    "published_date": "2026-11-12",
+    "body": "(어린이집) 2027학년도 한국기술교육대학교어린이집 원아 모집 안내\n국내 최고 수준의 한국기술교육대학교어린이집에서 2027학년도 신입 원아를 모집합니다. 입소 신청서는 학교 메일로 발송해 드렸으니, 관심 있는 분들의 많은 신청 바랍니다.\n1. 모집 안내\n- 모집 대상: 0세(2026년생) ~ 5세(2021년생)\n- 모집 기간: 2026. 11. 02.(월) ~ 11. 20.(금)\n- 접수 방법: 입소 신청서 작성 후 어린이집 이메일로 회신\n- 입소 확정: 2026. 11. 27.(금) 개별 통보 예정\n2. 접수 및 문의\n- 이메일: baby4990@코리아텍\n- 전화: 041-580-4990\n- 어린이집 위치: 한국기술교육대학교 제1캠퍼스 산학협력관 옆\n3. 신청 시 참고 사항\n- 학교 메일로 발송된 입소 신청서를 작성해 주세요.\n- 작성한 신청서는 모집 기간 내 어린이집 이메일로 회신해 주세요.\n아이들이 행복하게 성장하고, 부모님이 안심하고 맡길 수 있는 한국기술교육대학교어린이집에 많은 관심과 신청 부탁 드립니다. 아이들을 위해서 최선을 다하겠습니다.\n첨부파일\n한기대 어린이집 입소신청서.hwp\n다운로드\n미리보기\n2027 한기대어린이집 원아모집.png\n다운로드\n미리보기",
+    "images": [
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&a=id&p=37472&fn=1794460839357_2027%2B%25ED%2595%259C%25EA%25B8%25B0%25EB%258C%2580%25EC%2596%25B4%25EB%25A6%25B0%25EC%259D%25B4%25EC%25A7%2591%2B%25EC%259B%2590%25EC%2595%2584%25EB%25AA%25A8%25EC%25A7%2591.png",
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&p=37472&a=fd&fs=2"
+    ],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-12T15:29:21+09:00",
+    "relevance": 1,
+    "relevance_reason": "대상 정보가 불명확함",
+    "target": {
+      "scope": "unknown",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": "2026-11-20",
+    "other_dates": [
+      {
+        "label": "입소 확정 개별 통보",
+        "date": "2026-11-27"
+      }
+    ],
+    "actions": [
+      "입소 신청서 작성",
+      "어린이집 이메일로 신청서 회신"
+    ],
+    "materials": [
+      "입소 신청서"
+    ],
+    "category": null,
+    "days_left": 8,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "general-37471",
+    "title": "[앵커] ﻿디지털 포용형 배리어프리 키오스크 UX/UI 디자인 경진대회 및 리빙랩 공고(~11.15) **최우수팀(대상 수상)...",
+    "url": "https://www.koreatech.ac.kr/notice/view.es?mid=a10604010000&board_id=14&post_seq=37471&prefix_id=",
+    "source": "학교-일반",
+    "source_type": "학교",
+    "published_date": "2026-11-12",
+    "body": "[앵커] ﻿디지털 포용형 배리어프리 키오스크 UX/UI 디자인 경진대회 및 리빙랩 공고(~11.15) **최우수팀(대상 수상) 학생연구원으로 리빙랩 참여!\n디지털 포용형 배리어프리 키오스크 UX/UI 디자인 경진대회 및 리빙랩 공고\n한국기술교육대학교 앵커사업단에서는 「2025년 유니버설 디자인 기반 키오스크 디자인 경진대회 및 리빙랩」을 통해\n천안시 행정복지센터 등 총 10개소에 배리어프리 키오스크를 설치한 성과를 바탕으로,\n올해는 디지털 취약계층의 이용 편의성을 높이기 위한 「디지털 포용형 배리어프리 키오스크 UX/UI 디자인 경진대회」를 개최합니다.\n고령자·장애인·외국인 등 누구나 쉽게 이용할 수 있는 화면 및 서비스 이용 흐름을 제안하고, 최우수 작품(대상)은 리빙랩을 통해 현장 적용 가능한 디자인으로 고도화합니다.\n학생 여러분의 많은 참여를 바랍니다.\n※ 최우수 작품(대상) 수상팀 리빙랩 참여 예정 **자세한 사항 아래 확인\n[경진대회 개요]\n 프로그램: 디지털 포용형 배리어프리 키오스크 UX/UI 디자인 경진대회\n 공모주제: 디지털 취약계층을 포함한 누구나 쉽게 이용하는 생활밀착형 키오스크 UX/UI 설계\n 참여대상: 한국기술교육대학교 대학(원)생 ※휴학생 제외\n- 참여형태: 2~4인으로 구성된 팀 단위 참여\n 주최/주관: 한국기술교육대학교 앵커사업단\n 추진절차\n구 분\n일 정\n세 부 내 용\n모집\n10.23~11.15\n·교내 공지사항 등을 통해 경진대회 공고 및 접수\n심사진행\n11.16~11.17\n·내외부 심사위원 구성 및 서면평가 진행을 통해 선정\n결과발표\n11.18\n·참가팀 개별 통보 및 안내\n리빙랩 운영\n11월~12월\n·최우수 작품(대상)을 활용하여 리빙랩 운영\n사용자 검증\n~ 27.2월\n·배리어프리 키오스크 활용 사용자 검증 및 고도화\n[공모 내용]\n 대상 분야 및 설계 범위\n- 카페·음식점, 공공도서관, 공공시설, 문화·복지시설 등 생활밀착형 서비스 중 하나를 선택하여 이용 시작부터 선택·확인·신청 또는 결제·완료 안내까지 전체 화면과 이용 흐름을 설계\n적용 분야(예시)\n주요 서비스 시나리오\n카페·음식점\n메뉴 탐색, 주문, 옵션 설정, 결제, 수령 안내\n공공도서관\n좌석·시설 예약, 이용 신청, 대출·반납 안내\n공공시설\n시설·프로그램 예약, 접수, 이용권 발급\n문화·복지시설\n프로그램 선택, 이용 신청, 접수·안내\n기타\n생활밀착형 키오스크 서비스에 관한 창의적 제안\n- 대표 서비스 1개의 전체 사용자 이용 흐름을 설계하고, 타 생활·공공서비스로의 확장 가능성 제시\n- 키오스크 외형·기구 디자인이 아닌 화면 인터페이스(UI) 및 사용자 경험(UX) 디자인 평가\n- 21.5인치 디스플레이 기준 화면 설계(음성인식·결제 시스템의 실제 구현 불필요)\n 필수 설계 조건\n- 보편적 접근성: 고령자·장애인·외국인 등 다양한 이용자의 이해 및 조작 편의성\n- 명확한 정보전달: 큰 글씨, 적절한 대비, 쉬운 표현, 직관적 아이콘·버튼 및 화면별 정보량 최소화\n- 음성·터치 연계: STT·TTS 기반 안내 및 상태 표시, 인식 결과 확인·수정 및 터치 전환\n- 오류 대응: 뒤로 가기·취소·재시도·도움 요청 등 오류 복구 기능\n- 이용 과정의 일관성: 시작–탐색·선택–내용 확인–결제·신청–완료 안내까지 일관된 UX/UI 설계\n- 확장성: 다양한 서비스에 적용 가능한 공통 화면 구조 및 디자인 요소 제시\n 유니버설 디자인 7 원칙(필수 반영)\n설계 원칙\n주요 검토 사항(평가시 확인할 내용)\n공평한 사용\n이용자 간 차별 없이 핵심 서비스를 이용할 수 있는가?\n사용의 융통성\n음성·터치·버튼 등 다양한 방식으로 이용할 수 있는가?\n간단하고 직관적인 사용\n화면과 이용 절차가 쉽게 이해되는가?\n정보의 용이한 인지\n중요 정보가 글자·아이콘·안내 등을 통해 명확히 전달되는가?\n오류에 대한 포용력\n실수를 예방하고 발생한 오류에서 쉽게 회복할 수 있는가?\n적은 물리적 노력\n불필요한 터치 및 반복 동작을 최소화했는가?\n접근 및 사용을 위한 크기‧공간\n버튼·터치 영역·정보 요소가 조작하기에 적절한가?\n※ 무인정보단말기 접근성 지침(KS X 9211 등)을 참고하여 설계\n[심사 기준]\n- 심사위원 4인 내외 구성, 기획서 및 주요 화면 시안에 대한 서면 평가\n- 최종 수상작 총 4팀 이내 선정하며, 작품 수준이 심사 기준에 미달하는 경우 수상작을 선정하지 않을 수 있음\n평가항목\n배점\n유니버설 디자인 원칙 반영 및 접근성 개선 효과\n30\n화면 구성과 이용 흐름의 직관성‧편의성\n25\n음성‧터치 연계 및 오류 대응 설계\n15\n디자인 창의성 및 차별성\n15\n실현 가능성‧확정성 및 완성도\n15\n합계\n100\n 시상내역\n구 분\n상격\n선정 규모\n대상\n한국기술교육대학교 앵커사업단장상\n1팀\n최우수상\n한국기술교육대학교 앵커사업단장상\n1팀\n우수상\n한국기술교육대학교 앵커사업단장상\n2팀\n합 계\n4팀\n[대상 특전]\n- 리빙랩 설계 고도화 과정 참여(학생연구원 자격, 2026년 11~12월, 약 1개월간)\n- 리빙랩 참여 기간 중 소정의 학생 인건비 지급\n- 최종 UX/UI 디자인의 실제 키오스크 적용 검토 및 사용성 실증 기회 제공(예정)\n※ 학생인건비는 사업비 집행기준 및 참여 자격·기간에 따라 지급하며, 최우수 작품(대상) 수상팀은 리빙랩 전 과정에 참여해야 함\n[리빙랩 운영]\n- 참여대상: 최우수 작품(대상) 선정팀 1팀(학생연구원 참여), 지도교수 및 참여기업 협력\n- 주요활동: 기존 서비스 분석 → 최우수작 고도화 → 사용자 사용성 테스트 → 디자인 개선 → 결과 정리\n- 사용성검증: 고령자·외국인 등 다양한 이용자를 대상으로 실제 화면 또는 시뮬레이터 기반 이용 편의성·이해도·오류·만족도 확인\n- 최종산출물: 전체 화면 UX/UI 디자인, 사용자 이용 흐름도, 프로토타입, 평가·개선 보고서, 접근성 디자인 가이드\n※ 본 공모전 수상작은 리빙랩을 통한 디자인 고도화 및 사용성 검증에 활용될 수 있음.\n[제출서류 및 접수방법]\n 접수기간: 2026. 10. 23.(금) ~ 11.15.(일)\n 제출방법: 제출 파일을 하나의 압축파일로 묶어 이메일 접수(파일명: [경진대회]팀명_작품명.zip)\n 제 출 처: csh0020@학교메일\n 제출서류(선택 외 전체 필수)\n1. 참가신청서(PDF) 1부, 개인정보 수집·이용 동의서(PDF) 1부, 참여자 전원 재학증명서 각 1부\n2. 디자인 기획서(PPT): 문제 정의, 대상 사용자, 선택 서비스, 화면 콘셉트 및 차별성, 전체 이용 흐름, 음성·터치 연계 방식 및 확장성,\n3. 작품 시안(JPG·PNG·PDF 등): 주요 화면 구성 및 서비스 전 과정 표현\n4. 추가 자료(선택): 사용자 이용 흐름도 및 클릭형 프로토타입 등\n[저작권 및 기타사항]\n- 출품작은 참가자의 창작물이어야 하며, 타인의 저작권·디자인권 등 지식재산권을 침해해서는 안 됨.\n- 최우수 작품(대상)의 고도화 결과물 활용, 디자인 수정 및 지식재산권 관련 사항은 별도 협약 및 관련 규정에 따름.\n- 제출 내용이 허위이거나 타인의 작품을 무단 활용한 경우 수상 취소 등 필요한 조치를 할 수 있음.\n- 최우수 작품(대상)은 리빙랩의 디자인 개선 및 사용자 검증 활동에 참여해야 함.\n[참고]\n「2025년 유니버설 디자인 기반 키오스크 디자인 경진대회 및 리빙랩」 결과물 실제 설치 사진\n신안동 행정복지센터\n중앙도서관\n[문의]\n한국기술교육대학교 앵커사업단 / csh0020@학교메일 / 041-580-사육일이\n첨부파일\n(양식)참가신청서 및 개인정보 수집 및 이용 동의서.hwp\n다운로드\n미리보기",
+    "images": [
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&a=id&p=37268&fn=1792720758823_1%25EC%258B%25A0%25EC%2595%2588%25EB%258F%2599%2B%25ED%2596%2589%25EC%25A0%2595%25EB%25B3%25B5%25EC%25A7%2580%25EC%2584%25BC%25ED%2584%25B0.jpg",
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&a=id&p=37268&fn=1792720771410_1%25EC%25A4%2591%25EC%2595%2599%25EB%258F%2584%25EC%2584%259C%25EA%25B4%25801.jpg"
+    ],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-12T15:29:21+09:00",
+    "relevance": 3,
+    "relevance_reason": "학적 상태 조건 일치 · 마감 있음",
+    "target": {
+      "scope": "specific",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [
+        "재학"
+      ],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": "2026-11-15",
+    "other_dates": [
+      {
+        "label": "심사진행",
+        "date": "2026-11-16"
+      },
+      {
+        "label": "결과발표",
+        "date": "2026-11-18"
+      }
+    ],
+    "actions": [
+      "참가신청서, 개인정보 수집·이용 동의서, 재학증명서, 디자인 기획서, 작품 시안 등을 압축하여 이메일 접수"
+    ],
+    "materials": [
+      "참가신청서",
+      "개인정보 수집·이용 동의서",
+      "참여자 전원 재학증명서",
+      "디자인 기획서(PPT)",
+      "작품 시안"
+    ],
+    "category": "교내활동",
+    "days_left": 3,
+    "is_expired": false,
+    "is_urgent": true
   }
 ]
