@@ -49,7 +49,7 @@
       "포트폴리오 자료(맞춤형 동영상 편집교육 지원자 한정)"
     ],
     "category": "교내활동",
-    "days_left": 9,
+    "days_left": 8,
     "is_expired": false,
     "is_urgent": false
   },
@@ -89,9 +89,9 @@
     ],
     "materials": null,
     "category": "학사",
-    "days_left": 0,
-    "is_expired": false,
-    "is_urgent": true
+    "days_left": -1,
+    "is_expired": true,
+    "is_urgent": false
   },
   {
     "id": "general-37354",
@@ -246,7 +246,7 @@
     ],
     "materials": null,
     "category": "대외활동·공모전",
-    "days_left": 17,
+    "days_left": 16,
     "is_expired": false,
     "is_urgent": false
   },
@@ -399,7 +399,7 @@
     ],
     "materials": null,
     "category": null,
-    "days_left": 48,
+    "days_left": 47,
     "is_expired": false,
     "is_urgent": false
   },
@@ -662,7 +662,7 @@
     ],
     "materials": null,
     "category": "교내활동",
-    "days_left": -1,
+    "days_left": -2,
     "is_expired": true,
     "is_urgent": false
   },
@@ -713,7 +713,7 @@
     ],
     "materials": null,
     "category": "취업·인턴",
-    "days_left": 5,
+    "days_left": 4,
     "is_expired": false,
     "is_urgent": false
   },
@@ -770,7 +770,7 @@
       "작품 시안"
     ],
     "category": "대외활동·공모전",
-    "days_left": 2,
+    "days_left": 1,
     "is_expired": false,
     "is_urgent": false
   },
@@ -816,7 +816,7 @@
     ],
     "materials": [],
     "category": "취업·인턴",
-    "days_left": 3,
+    "days_left": 2,
     "is_expired": false,
     "is_urgent": true
   },
@@ -862,7 +862,7 @@
     ],
     "materials": null,
     "category": "취업·인턴",
-    "days_left": 3,
+    "days_left": 2,
     "is_expired": false,
     "is_urgent": true
   },
@@ -904,7 +904,7 @@
     ],
     "materials": null,
     "category": "교내활동",
-    "days_left": 14,
+    "days_left": 13,
     "is_expired": false,
     "is_urgent": false
   },
@@ -987,9 +987,9 @@
       "팀원 전체 확인서"
     ],
     "category": "장학",
-    "days_left": 0,
-    "is_expired": false,
-    "is_urgent": true
+    "days_left": -1,
+    "is_expired": true,
+    "is_urgent": false
   },
   {
     "id": "scholarship-2415",
@@ -1035,9 +1035,9 @@
       "신청 사유에 따른 증빙자료"
     ],
     "category": "장학",
-    "days_left": 0,
-    "is_expired": false,
-    "is_urgent": true
+    "days_left": -1,
+    "is_expired": true,
+    "is_urgent": false
   },
   {
     "id": "scholarship-2414",
@@ -1085,7 +1085,7 @@
     ],
     "materials": null,
     "category": "장학",
-    "days_left": -1,
+    "days_left": -2,
     "is_expired": true,
     "is_urgent": false
   },
@@ -1126,7 +1126,7 @@
       "외국인등록증 또는 귀화자의 기본증명서(상세) 또는 제적등본"
     ],
     "category": "장학",
-    "days_left": -21,
+    "days_left": -22,
     "is_expired": true,
     "is_urgent": false
   },
@@ -1170,7 +1170,7 @@
       "사회봉사활동 증빙자료(1365, VMS 발급 실적인증서, 교내사회봉사활동 확인서 등)"
     ],
     "category": "장학",
-    "days_left": -21,
+    "days_left": -22,
     "is_expired": true,
     "is_urgent": false
   },
@@ -1320,9 +1320,9 @@
     ],
     "materials": null,
     "category": "장학",
-    "days_left": 4,
+    "days_left": 3,
     "is_expired": false,
-    "is_urgent": false
+    "is_urgent": true
   },
   {
     "id": "scholarship-2336",
@@ -1404,7 +1404,7 @@
       "외국어 성적 증명서"
     ],
     "category": "장학",
-    "days_left": -126,
+    "days_left": -127,
     "is_expired": true,
     "is_urgent": false
   },
@@ -1582,7 +1582,7 @@
     ],
     "materials": null,
     "category": "장학",
-    "days_left": -10,
+    "days_left": -11,
     "is_expired": true,
     "is_urgent": false
   },
@@ -1639,8 +1639,8 @@
       "국민기초생활수급자 및 차상위계층 확인 서류"
     ],
     "category": "장학",
-    "days_left": 0,
-    "is_expired": false,
+    "days_left": -1,
+    "is_expired": true,
     "is_urgent": false
   },
   {
@@ -1709,7 +1709,7 @@
       "2026년 1학기 대학교 성적증명서 1부"
     ],
     "category": "장학",
-    "days_left": -14,
+    "days_left": -15,
     "is_expired": true,
     "is_urgent": false
   },
@@ -1755,7 +1755,7 @@
       "직전 학기 성적증명서"
     ],
     "category": "장학",
-    "days_left": 7,
+    "days_left": 6,
     "is_expired": false,
     "is_urgent": true
   },
@@ -1795,7 +1795,7 @@
     ],
     "materials": null,
     "category": "장학",
-    "days_left": -15,
+    "days_left": -16,
     "is_expired": true,
     "is_urgent": false
   },
@@ -1865,7 +1865,7 @@
       "우대사항 증빙서류"
     ],
     "category": "장학",
-    "days_left": -12,
+    "days_left": -13,
     "is_expired": true,
     "is_urgent": false
   },
@@ -1972,7 +1972,7 @@
     ],
     "materials": null,
     "category": "학사",
-    "days_left": -2,
+    "days_left": -3,
     "is_expired": true,
     "is_urgent": false
   },
@@ -2376,7 +2376,7 @@
     ],
     "materials": null,
     "category": "학사",
-    "days_left": -648,
+    "days_left": -649,
     "is_expired": true,
     "is_urgent": false
   },
@@ -2453,7 +2453,7 @@
     ],
     "materials": null,
     "category": "학사",
-    "days_left": -5,
+    "days_left": -6,
     "is_expired": true,
     "is_urgent": false
   },
@@ -2495,7 +2495,7 @@
       "학점교류 추천서식"
     ],
     "category": "학사",
-    "days_left": -11,
+    "days_left": -12,
     "is_expired": true,
     "is_urgent": false
   },
@@ -2541,7 +2541,7 @@
       "신청서"
     ],
     "category": "학사",
-    "days_left": -14,
+    "days_left": -15,
     "is_expired": true,
     "is_urgent": false
   },
@@ -2586,7 +2586,7 @@
     ],
     "materials": null,
     "category": "학사",
-    "days_left": -11,
+    "days_left": -12,
     "is_expired": true,
     "is_urgent": false
   },
@@ -2628,7 +2628,7 @@
       "학점교류 추천서식"
     ],
     "category": "학사",
-    "days_left": -25,
+    "days_left": -26,
     "is_expired": true,
     "is_urgent": false
   },
@@ -2671,7 +2671,7 @@
     ],
     "materials": null,
     "category": "학사",
-    "days_left": -25,
+    "days_left": -26,
     "is_expired": true,
     "is_urgent": false
   },
@@ -2726,7 +2726,7 @@
     ],
     "materials": null,
     "category": "학사",
-    "days_left": -51,
+    "days_left": -52,
     "is_expired": true,
     "is_urgent": false
   },
@@ -2767,7 +2767,7 @@
     ],
     "materials": null,
     "category": "학사",
-    "days_left": -60,
+    "days_left": -61,
     "is_expired": true,
     "is_urgent": false
   },
@@ -3041,9 +3041,9 @@
     ],
     "materials": null,
     "category": "대외활동·공모전",
-    "days_left": 4,
+    "days_left": 3,
     "is_expired": false,
-    "is_urgent": false
+    "is_urgent": true
   },
   {
     "id": "general-37466",
@@ -3088,7 +3088,7 @@
     ],
     "materials": null,
     "category": "교내활동",
-    "days_left": 17,
+    "days_left": 16,
     "is_expired": false,
     "is_urgent": false
   },
@@ -3177,7 +3177,7 @@
     "is_sample": false,
     "extracted": true,
     "processed": true,
-    "is_new": true,
+    "is_new": false,
     "collected_at": "2026-11-12T14:05:45+09:00",
     "relevance": 3,
     "relevance_reason": "학적 상태, 대상 집단 조건 일치 · 마감 있음",
@@ -3205,7 +3205,7 @@
     ],
     "materials": null,
     "category": "대외활동·공모전",
-    "days_left": 14,
+    "days_left": 13,
     "is_expired": false,
     "is_urgent": false
   },
@@ -3223,7 +3223,7 @@
     "is_sample": false,
     "extracted": true,
     "processed": true,
-    "is_new": true,
+    "is_new": false,
     "collected_at": "2026-11-12T14:05:45+09:00",
     "relevance": 0,
     "relevance_reason": "학과 조건 불일치",
@@ -3270,7 +3270,7 @@
     "is_sample": false,
     "extracted": true,
     "processed": true,
-    "is_new": true,
+    "is_new": false,
     "collected_at": "2026-11-12T15:29:21+09:00",
     "relevance": 1,
     "relevance_reason": "전체 학생 대상 · 일반 공지",
@@ -3308,7 +3308,7 @@
     "is_sample": false,
     "extracted": true,
     "processed": true,
-    "is_new": true,
+    "is_new": false,
     "collected_at": "2026-11-12T15:29:21+09:00",
     "relevance": 1,
     "relevance_reason": "대상 정보가 불명확함",
@@ -3335,7 +3335,7 @@
       "입소 신청서"
     ],
     "category": null,
-    "days_left": 7,
+    "days_left": 6,
     "is_expired": false,
     "is_urgent": true
   },
@@ -3354,7 +3354,7 @@
     "is_sample": false,
     "extracted": true,
     "processed": true,
-    "is_new": true,
+    "is_new": false,
     "collected_at": "2026-11-12T15:29:21+09:00",
     "relevance": 3,
     "relevance_reason": "학적 상태 조건 일치 · 마감 있음",
@@ -3390,7 +3390,7 @@
       "작품 시안"
     ],
     "category": "교내활동",
-    "days_left": 2,
+    "days_left": 1,
     "is_expired": false,
     "is_urgent": true
   },
@@ -3517,7 +3517,7 @@
     ],
     "materials": null,
     "category": "교내활동",
-    "days_left": 7,
+    "days_left": 6,
     "is_expired": false,
     "is_urgent": false
   },
@@ -3569,7 +3569,7 @@
       "안전관리실습 신청서"
     ],
     "category": "학사",
-    "days_left": 13,
+    "days_left": 12,
     "is_expired": false,
     "is_urgent": false
   },
@@ -3617,7 +3617,7 @@
     ],
     "materials": null,
     "category": "학사",
-    "days_left": 12,
+    "days_left": 11,
     "is_expired": false,
     "is_urgent": false
   },
@@ -3669,9 +3669,9 @@
     ],
     "materials": null,
     "category": "교내활동",
-    "days_left": 4,
+    "days_left": 3,
     "is_expired": false,
-    "is_urgent": false
+    "is_urgent": true
   },
   {
     "id": "general-37477",
@@ -3747,6 +3747,201 @@
     "actions": null,
     "materials": null,
     "category": "교내활동",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "general-37483",
+    "title": "[개교 35주년] AI 시대, 내 일자리와 커리어는 어떻게 바뀔까? '고용·평생직업능력개발 발전 전략 포럼' 초대(다과 박스,...",
+    "url": "https://www.koreatech.ac.kr/notice/view.es?mid=a10604010000&board_id=14&post_seq=37483&prefix_id=",
+    "source": "학교-일반",
+    "source_type": "학교",
+    "published_date": "2026-11-13",
+    "body": "[개교 35주년] AI 시대, 내 일자리와 커리어는 어떻게 바뀔까? '고용·평생직업능력개발 발전 전략 포럼' 초대(다과 박스, 커피 쿠폰 증정)\nAI는 일과 배움의 방식을 어떻게 바꾸고 있을까요?\n개교 35주년을 맞아 「고용·평생직업능력개발 발전 전략 포럼」을 개최합니다.\n전문가 강연과 우리 대학의 AI 혁신 사례를 통해 고용·직업교육의 변화와 미래 방향을 살펴보는 자리입니다. 관심 있는 학생 여러분의 많은 참여 바랍니다!\n<행사 안내>\n일시: 2026. 11. 18.(수) 13:30~17:30 ※ 등록·접수 13:00부터\n장소: 다담미래학습관 Hybrid SKY Hall\n대상: 관심 있는 재학생, 교직원 및 유관기관 관계자\n참여방법: 사전신청 [https://url.kr/l9p761] 또는 당일 현장 접수\n<주요 프로그램>\n전문가 강연｜AI 시대 고용과 직업능력개발의 미래\n이진구 교수(한국기술교육대학교): AI 시대 직업능력개발의 미래 비전과 과제\n이영민 교수(숙명여자대학교): AI 시대 고용서비스의 미래와 KOREATECH의 대응전략\n혁신 사례 공유｜우리 대학의 AI 활용과 미래 전략\n기업의 AI 전환, 피지컬 AI 전문인력 양성, AI 교·강사 교육, AI 학습콘텐츠 등 5개 기관 발표\n<참여자 혜택>\n다과박스: 사전신청 또는 현장 접수 참여자 대상 선착순 120명 증정\n스타벅스 쿠폰: 행사 종료 후 만족도 설문 및 후기 작성자 중 100명 선정·증정\n※ 세부 프로그램과 운영시간은 상황에 따라 변경될 수 있습니다.\n첨부파일\n[개교 35주년]고용·평생직능 발전 전략 포럼_포스터.pdf\n다운로드\n미리보기\n포럼 포스터.png\n다운로드\n미리보기",
+    "images": [
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&a=id&p=37483&fn=1794562042032_%25ED%258F%25AC%25EB%259F%25BC%2B%25ED%258F%25AC%25EC%258A%25A4%25ED%2584%25B0.png",
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&p=37483&a=fd&fs=2"
+    ],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-14T01:52:29+09:00",
+    "relevance": 1,
+    "relevance_reason": "전체 학생 대상 · 일반 공지",
+    "target": {
+      "scope": "all",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": null,
+    "other_dates": [
+      {
+        "label": "고용·평생직업능력개발 발전 전략 포럼",
+        "date": "2026-11-18"
+      }
+    ],
+    "actions": [
+      "사전신청 또는 당일 현장 접수"
+    ],
+    "materials": null,
+    "category": "교내활동",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "general-37482",
+    "title": "[SW중심대학사업단] ✨AWS 공인 자격증 취득 교육과정✨ 신청 안내(~12.02.(수) 17:00까지)",
+    "url": "https://www.koreatech.ac.kr/notice/view.es?mid=a10604010000&board_id=14&post_seq=37482&prefix_id=",
+    "source": "학교-일반",
+    "source_type": "학교",
+    "published_date": "2026-11-13",
+    "body": "안녕하십니까.\n소프트웨어중심대학사업단입니다.\n소프트웨어중심대학사업단에서 AWS 공인 자격증 취득을 위한 교육과정을 아래와 같이 운영하오니, 관심 있는 학생들의 많은 신청 바랍니다.\n[ AWS 공인 자격증 취득 교육 ]\n▶신청기한: ~ 2026.12.02.(수) 17:00까지\n▶신청방법: 구글폼(https://forms.gle/xncjtzRUJLjqmfdE8) 제출\n※ AWS 자격증 학습 플랫폼 지원 신청을 아직 하지 않으신 분들은 해당 링크(https://forms.gle/yjCiwrf9V37MhwDK9)를 통하여 신청 후, 교육과정 신청을 진행해주시기 바랍니다.\n▶대상: SW중심대학사업 *참여학과 재학생\n(*기계, 메카, 전전통, 컴공, 미래, 경영, 고용정책서비스학과 학부생 우선 선발, 여석 시 참여학과 대학원생 참여 가능)\n▶모집인원: 총 30명\n▶일정(총 4일, 주말 운영)\n- AIF 취득 과정(1.5일): 2026.12.12.(토) 10:00~18:00, 12.13.(일) 10:00~14:00\n- CLF 취득 과정(2.5일): 2026.12.13.(일) 15:00~18:00, 12.19.(토)~12.20.(일) 10:00~18:00\n* AIF, CLF 중 선택 가능하며, 두가지 교육과정을 모두 수강하는 것도 가능합니다.\n▶장소: 한국기술교육대학교 교내 강의실(추후 안내)\n▶문의: SW중심대학사업단(20250178@학교메일)\n첨부파일\nAWS 공인 자격증(AIF,CLF) 취득 교육과정 안내.png\n다운로드\n미리보기",
+    "images": [
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&a=id&p=37482&fn=1794559045025_AWS%2B%25EA%25B3%25B5%25EC%259D%25B8%2B%25EC%259E%2590%25EA%25B2%25A9%25EC%25A6%259D%2528AIF%252CCLF%2529%2B%25EC%25B7%25A8%25EB%2593%259D%2B%25EA%25B5%2590%25EC%259C%25A1%25EA%25B3%25BC%25EC%25A0%2595%2B%25EC%2595%2588%25EB%2582%25B4.png",
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&p=37482&a=fd&fs=1"
+    ],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-14T01:52:29+09:00",
+    "relevance": 3,
+    "relevance_reason": "학과, 학적 상태 조건 일치 · 마감 있음",
+    "target": {
+      "scope": "specific",
+      "departments": [
+        "기계공학부",
+        "메카트로닉스공학부",
+        "전자·전기·통신공학부",
+        "컴퓨터공학부",
+        "미래모빌리티학과",
+        "경영학과",
+        "고용서비스정책학과"
+      ],
+      "years": [],
+      "enrollment_statuses": [
+        "재학"
+      ],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": "2026-12-02T17:00:00+09:00",
+    "other_dates": [
+      {
+        "label": "AIF 취득 과정",
+        "date": "2026-12-12"
+      },
+      {
+        "label": "CLF 취득 과정",
+        "date": "2026-12-13"
+      }
+    ],
+    "actions": [
+      "구글폼을 통해 교육과정 신청서 제출"
+    ],
+    "materials": null,
+    "category": "대외활동·공모전",
+    "days_left": 18,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "general-37481",
+    "title": "(끌올) [다산정보관] 2026 심야 독서캠프 참여자 모집",
+    "url": "https://www.koreatech.ac.kr/notice/view.es?mid=a10604010000&board_id=14&post_seq=37481&prefix_id=",
+    "source": "학교-일반",
+    "source_type": "학교",
+    "published_date": "2026-11-13",
+    "body": "안녕하세요, 학술정보팀입니다.\n2026학년도 다산정보관 심야 독서캠프를 아래와 같이 진행합니다.\n관심있는 학생들의 많은 참여 부탁드립니다.\n🔎 사라진 90분의 기록\n2026학년도 다산정보관 심야 독서캠프에서 사라진 기록의 비밀을 밝혀보세요!\n📅 일시: 11. 23.(월) 18:00~22:00\n📍 장소: 다산정보관 3층·4층\n👥 대상: 한국기술교육대학교 재학 학부생\n📚 모집인원: 선착순 40명\n책과 함께하는 특별한 밤으로 여러분을 초대합니다.\n□ 참여신청 링크: https://naver.me/FSvlucaa\n※어떤 프로그램인지 궁금하다면?\n📌프리퀄 해보기 https://bit.ly/3WihJIU\n첨부파일\n(참고) 포스터.png\n다운로드\n미리보기",
+    "images": [
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&a=id&p=37481&fn=1794558707395_%2528%25EC%25B0%25B8%25EA%25B3%25A0%2529%2B%25ED%258F%25AC%25EC%258A%25A4%25ED%2584%25B0.png",
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&p=37481&a=fd&fs=1"
+    ],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-14T01:52:29+09:00",
+    "relevance": 1,
+    "relevance_reason": "특정 대상 일치 및 마감 조건을 모두 충족하지 않음",
+    "target": {
+      "scope": "specific",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [
+        "재학"
+      ],
+      "groups": [
+        "학부생"
+      ],
+      "dorm_required": null
+    },
+    "deadline": null,
+    "other_dates": [
+      {
+        "label": "심야 독서캠프",
+        "date": "2026-11-23"
+      }
+    ],
+    "actions": [
+      "참여신청 링크를 통해 신청"
+    ],
+    "materials": null,
+    "category": "교내활동",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "general-37480",
+    "title": "(끌올) [취창업지원팀] 메카트로닉스/기계공학부 졸업동문 릴레이 멘토링(농심태경)_대면진행(26.11.18.)",
+    "url": "https://www.koreatech.ac.kr/notice/view.es?mid=a10604010000&board_id=14&post_seq=37480&prefix_id=",
+    "source": "학교-일반",
+    "source_type": "학교",
+    "published_date": "2026-11-13",
+    "body": "안녕하세요. 취창업지원팀입니다.\n기계설비 취업을 준비하는 학생들을 위해 메카트로닉스 졸업동문과 함께하는 취업 멘토링을 아래와 같이 운영하오니, 많은 관심과 참여 바랍니다.\n1. 프로그램 개요\n프로그램명: 재직동문 취업 멘토링 (농심태경 현직자 멘토링)\n참여멘토: 농심태경 기계설비관리자 재직동문\n운영일시: 2026. 11. 18.(수) 10:00 ~ 17:00 (점심시간 12:00~13:00 상담 미운영)\n운영장소: 학생통합지원센터 2층 잡카페 상담실\n참여대상: 기계공학부, 메카트로닉스 등 관심있는 학생 모두\n2. 상담 방식\n상담인원: 회차별 최대 2인\n상담시간: 1회차당 20분 이내\n3. 상담 주요 내용\n멘토 재직 기관 및 직무 소개\n재학생의 취업준비도 점검\n자기소개서 및 면접 컨설팅\n취업준비 방향 설정 조언\n4. 신청방법\n아우누리-학생경력종합개발-교육/행사-취창업프로그램-한국사회보장정보원 졸업동문 릴레이 멘토링\n코리아텍 앱에서도 신청 가능합니다:)\n아우누리 신청 후\n당일 잡카페 현장 접수 순서에 따라 상담 진행\n(현장 접수시, 대기할 수 있습니다.)\n5. 준비사항\n입사지원서 등 개인 스펙 정리 자료 지참(필수 지참X)\n6. 참여혜택\n만족도 조사 설문지 제출 시 K-CDP 5점 부여\n7. 문의\n취창업지원팀 (041-560-2607)",
+    "images": [
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&a=id&p=37469&fn=1794473160908_%255B%25ED%2581%25AC%25EA%25B8%25B0%25EB%25B3%2580%25ED%2599%2598%255D%2B%25EB%2586%258D%25EC%258B%25AC%25ED%2583%259C%25EA%25B2%25BD.png"
+    ],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-14T01:52:29+09:00",
+    "relevance": 0,
+    "relevance_reason": "학과 조건 불일치",
+    "target": {
+      "scope": "specific",
+      "departments": [
+        "메카트로닉스공학부",
+        "기계공학부"
+      ],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": null,
+    "other_dates": [
+      {
+        "label": "멘토링 운영일",
+        "date": "2026-11-18"
+      }
+    ],
+    "actions": [
+      "아우누리 또는 코리아텍 앱에서 프로그램 신청",
+      "당일 잡카페 현장 접수"
+    ],
+    "materials": [
+      "입사지원서 등 개인 스펙 정리 자료(필수 지참 아님)"
+    ],
+    "category": "취업·인턴",
     "days_left": null,
     "is_expired": false,
     "is_urgent": false
