@@ -1,13 +1,13 @@
 {
-  "department": "컴퓨터공학부",
-  "year": 1,
+  "department": "기계공학부",
+  "year": 2,
   "groups": [
     "학부생"
   ],
   "enrollment_status": "재학",
   "dorm_resident": true,
   "interests": [
-    "학사"
+    "대외활동·공모전"
   ],
   "always_show_categories": [],
   "excluded_categories": [],
