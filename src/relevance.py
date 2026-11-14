@@ -59,7 +59,7 @@ def match_groups(profile, groups):
 
 
 def evaluate_relevance(notice, profile):
-    """Return (rating, reason), without changing the notice."""
+    """Rate strong matches separately from broad eligibility."""
     category = notice.get("category")
     if category in (profile.get("excluded_categories") or []):
         return 0, "사용자가 제외한 분류"
@@ -68,31 +68,38 @@ def evaluate_relevance(notice, profile):
     if not isinstance(target, dict):
         return 1, "대상 정보가 불명확함"
 
-    fields = (
-        ("department", "departments", "학과"),
-        ("year", "years", "학년"),
-        ("enrollment_status", "enrollment_statuses", "학적 상태"),
-    )
-    matches = []
+    strong_matches = []
+    broad_matches = []
     uncertain = False
 
-    for user_key, target_key, label in fields:
+    fields = (
+        ("department", "departments", "학과", True),
+        ("year", "years", "학년", True),
+        ("enrollment_status", "enrollment_statuses", "학적 상태", False),
+    )
+
+    for user_key, target_key, label, is_strong in fields:
         allowed = target.get(target_key)
         result = match_condition(profile.get(user_key), allowed)
+
         if result is False:
             return 0, f"{label} 조건 불일치"
         if result is None:
             uncertain = True
         elif allowed:
-            matches.append(label)
+            if is_strong:
+                strong_matches.append(label)
+            else:
+                broad_matches.append(label)
 
-    group_result = match_groups(profile, target.get("groups"))
+    groups = target.get("groups")
+    group_result = match_groups(profile, groups)
     if group_result is False:
         return 0, "제외 대상 집단 전용 공지"
     if group_result is None:
         uncertain = True
-    elif target.get("groups"):
-        matches.append("대상 집단")
+    elif groups:
+        broad_matches.append("대상 집단")
 
     required = target.get("dorm_required")
     if required is not None:
@@ -102,34 +109,48 @@ def evaluate_relevance(notice, profile):
         elif resident != required:
             return 0, "생활관 거주 조건 불일치"
         else:
-            matches.append("생활관")
+            strong_matches.append("생활관")
 
     scope = target.get("scope")
     if scope not in ("all", "specific"):
         return 1, "대상 정보가 불명확함"
 
-    # An all-student label with specific restrictions needs review.
     restricted = any(
         target.get(key)
-        for key in ("departments", "years", "enrollment_statuses", "groups")
+        for key in (
+            "departments",
+            "years",
+            "enrollment_statuses",
+            "groups",
+        )
     ) or required is not None
+
+    has_deadline = bool(notice.get("deadline"))
+    interested = category in (profile.get("interests") or [])
 
     if scope == "all":
         if restricted:
             return 1, "전체 대상 표시와 세부 조건 확인 필요"
-        preferred = set(profile.get("interests") or [])
-        preferred.update(profile.get("always_show_categories") or [])
-        if category in preferred:
-            return 2, "전체 학생 대상 · 관심 또는 항상 보기 분류"
-        return 1, "전체 학생 대상 · 일반 공지"
+        if interested and has_deadline:
+            return 2, "전체 학생 대상 · 관심 분류 · 마감 있음"
+        return 1, "전체 학생 대상 · 관심 분류와 마감 조건 미충족"
 
     if uncertain:
         return 1, "일부 대상 조건 또는 사용자 정보 확인 필요"
 
-    if matches and notice.get("deadline"):
-        return 3, f"{', '.join(matches)} 조건 일치 · 마감 있음"
+    if strong_matches:
+        labels = ", ".join(strong_matches)
+        if has_deadline:
+            return 3, f"좁은 조건({labels}) 일치 · 마감 있음"
+        return 1, f"좁은 조건({labels}) 일치 · 마감 정보 없음"
 
-    return 1, "특정 대상 일치 및 마감 조건을 모두 충족하지 않음"
+    if broad_matches:
+        labels = ", ".join(broad_matches)
+        if interested and has_deadline:
+            return 2, f"넓은 조건({labels}) 일치 · 관심 분류 · 마감 있음"
+        return 1, f"넓은 조건({labels})만 일치"
+
+    return 1, "명확한 대상 조건이 없어 일반 공지로 표시"
 
 
 def deadline_info(notice, profile, now):
