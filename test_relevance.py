@@ -162,6 +162,77 @@ class RelevanceTests(unittest.TestCase):
         )[0]
         self.assertEqual(changed["relevance"], 0)
 
+    def make_broad_target(self):
+        self.notice["target"].update(
+            departments=[],
+            years=[],
+            dorm_required=None,
+        )
+
+    def test_broad_interest_and_deadline_gets_two(self):
+        self.make_broad_target()
+        self.assertEqual(self.result()["relevance"], 2)
+
+    def test_broad_without_interest_gets_one(self):
+        self.make_broad_target()
+        self.notice["category"] = "교내활동"
+        self.assertEqual(self.result()["relevance"], 1)
+
+    def test_broad_without_deadline_gets_one(self):
+        self.make_broad_target()
+        self.notice["deadline"] = None
+        self.assertEqual(self.result()["relevance"], 1)
+
+    def test_always_show_alone_does_not_raise_rating(self):
+        self.make_broad_target()
+        self.notice["category"] = "학사"
+        self.assertEqual(self.result()["relevance"], 1)
+
+    def test_each_strong_condition_can_get_three(self):
+        cases = (
+            {"departments": ["CS"]},
+            {"years": [1]},
+            {"dorm_required": True},
+            {"dorm_required": False},
+        )
+        for condition in cases:
+            with self.subTest(condition=condition):
+                self.make_broad_target()
+                self.notice["target"].update(condition)
+                self.profile["dorm_resident"] = condition.get(
+                    "dorm_required", True
+                )
+                self.assertEqual(self.result()["relevance"], 3)
+
+    def test_strong_match_without_deadline_gets_one(self):
+        self.notice["deadline"] = None
+        self.assertEqual(self.result()["relevance"], 1)
+
+    def test_strong_match_does_not_override_broad_mismatch(self):
+        self.notice["target"]["enrollment_statuses"] = ["on_leave"]
+        self.assertEqual(self.result()["relevance"], 0)
+
+    def test_broad_unknown_membership_gets_one(self):
+        self.make_broad_target()
+        self.profile["groups"] = None
+        self.assertEqual(self.result()["relevance"], 1)
+
+    def test_all_students_requires_interest_and_deadline(self):
+        self.notice["target"] = {
+            "scope": "all",
+            "departments": [],
+            "years": [],
+            "enrollment_statuses": [],
+            "groups": [],
+            "dorm_required": None,
+        }
+        self.assertEqual(self.result()["relevance"], 2)
+        self.notice["deadline"] = None
+        self.assertEqual(self.result()["relevance"], 1)
+        self.notice["deadline"] = "2026-11-14"
+        self.notice["category"] = "학사"
+        self.assertEqual(self.result()["relevance"], 1)
+
 
 if __name__ == "__main__":
     unittest.main()
