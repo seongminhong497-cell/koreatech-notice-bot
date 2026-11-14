@@ -19,6 +19,9 @@
     .dday.urgent { color: #d33; }
     .sample { color: #999; font-size: 12px; }
     .empty { color: #888; text-align: center; }
+    .profile-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; }
+    .settings-btn { background: #2f5bd3; color: #fff; text-decoration: none; border-radius: 16px; padding: 6px 12px; font-size: 14px; white-space: nowrap; }
+    .settings-btn:hover { background: #2549ad; }
     a { color: inherit; }
   </style>
 </head>
@@ -27,7 +30,10 @@
   <p class="sub">나에게 맞는 학교 공지를 모아서 보여줍니다</p>
 
   <!-- 내 설정 (3주차에 profile.json 연결) -->
-  <div class="box" id="profile">내 설정: 컴퓨터공학부 · 1학년 · 재학 · 생활관 거주</div>
+  <div class="box profile-row">
+    <span id="profile">내 설정: 컴퓨터공학부 · 1학년 · 재학 · 생활관 거주</span>
+    <a class="settings-btn" href="https://github.com/seongminhong497-cell/koreatech-notice-bot/issues/new?template=settings.yml" target="_blank" rel="noopener">⚙️ 내 설정 바꾸기</a>
+  </div>
 
   <div class="filters" id="filters"></div>
 
