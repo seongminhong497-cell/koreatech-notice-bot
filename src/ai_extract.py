@@ -18,6 +18,9 @@ import requests
 from google import genai
 from google.genai import types
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from departments import DEPARTMENTS, normalize_departments, normalize_notices  # noqa: E402
+
 MODEL = "gemini-3.5-flash-lite"
 BACKUP_MODEL = "gemma-4-26b-a4b-it"  # 기본 모델이 붐빌 때 쓰는 예비 모델
 NOTICES_PATH = "data/notices.json"
@@ -48,13 +51,16 @@ SYSTEM_PROMPT = """너는 한국기술교육대학교 공지에서 정보를 뽑
 target (누구를 위한 공지인지)
 - scope: 학생 누구나 해당되면 "all", 특정 학과·학년·학적·집단만 해당되면 "specific",
   판단할 수 없으면 "unknown"
-- departments: 대상 학과 목록. "컴퓨터공학부"처럼 정식 이름으로 써. 학과 제한이 없으면 [], 알 수 없으면 null
+- departments: 대상 학과 목록. 아래 이름 중에서 골라 써. 전공 이름이 나오면 그 전공이 속한 학부를 써.
+  {DEPARTMENT_LIST}
+  목록에 없는 학과는 공지에 적힌 대로 써. 학과 제한이 없으면 [], 알 수 없으면 null
 - years: 대상 학년 숫자 목록. 예: [1, 2]. 학년 제한이 없으면 [], 알 수 없으면 null
 - enrollment_statuses: 대상 학적 목록. "재학", "휴학", "졸업예정", "졸업" 중에서만 골라.
   제한이 없으면 [], 알 수 없으면 null
 - groups: 대상 집단 목록. "학부생", "대학원생", "교직원", "외국인 유학생", "일반인" 중에서만 골라.
   직원·계약직·연구원 채용은 "교직원"으로 써. 제한이 없으면 [], 알 수 없으면 null
   그냥 "학생" 누구나 대상이면 학부생·대학원생을 적지 말고 []로 둬.
+  "대학(원)생", "학부(원)생", "대학생 및 대학원생"은 학부생과 대학원생 둘 다야.
 - dorm_required: 생활관생만 해당되면 true, 생활관생이 아닌 사람만 해당되면 false, 상관없거나 알 수 없으면 null
 
 deadline (신청·제출 마감)
@@ -108,6 +114,10 @@ category (분류)
 }
 
 답하기 전에 본문을 끝까지 읽고, 신청 기간·신청 자격·신청 방법·제출 서류 부분을 꼭 확인해."""
+
+SYSTEM_PROMPT = SYSTEM_PROMPT.replace(
+    "{DEPARTMENT_LIST}", ", ".join(DEPARTMENTS)
+)
 
 _client = None
 
@@ -358,7 +368,9 @@ def clean(result):
 
     target = {
         "scope": scope,
-        "departments": _str_list(t.get("departments")),
+        "departments": normalize_departments(
+            _str_list(t.get("departments"))
+        ),
         "years": _year_list(t.get("years")),
         "enrollment_statuses": _str_list(
             t.get("enrollment_statuses"), STATUSES
@@ -425,6 +437,12 @@ def process_notices(path=NOTICES_PATH):
     with open(path, encoding="utf-8") as f:
         data = json.load(f)
     notices = data["notices"] if isinstance(data, dict) else data
+
+    # 예전에 저장된 공지의 학과 이름도 표준 이름으로 맞춘다 (관련도 계산 전에)
+    renamed = normalize_notices(notices)
+    if renamed:
+        print(f"저장된 공지의 학과 이름 통일: {renamed}개")
+        _save(path, data)
 
     todo = [
         n for n in notices

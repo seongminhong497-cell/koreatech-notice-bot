@@ -1,0 +1,114 @@
+name: 내 설정 바꾸기
+description: 학과, 학년, 관심 분야를 바꾸면 다음 실행부터 별점이 새 설정으로 매겨집니다.
+title: "[설정] 내 설정 바꾸기"
+labels: ["settings"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        아래 항목을 고르고 **Create**를 누르면 몇 분 안에 설정이 바뀌고, 공지 별점이 새 설정으로 다시 계산됩니다.
+        결과는 이 이슈에 댓글로 알려드리고 이슈는 자동으로 닫힙니다. 저장소 주인과 팀원만 바꿀 수 있습니다.
+
+  - type: dropdown
+    id: department
+    attributes:
+      label: 학과
+      options:
+        - 기계공학부
+        - 메카트로닉스공학부
+        - 전기·전자·통신공학부
+        - 컴퓨터공학부
+        - 디자인공학과
+        - 건축공학과
+        - 에너지신소재화학공학부
+        - 산업경영학부
+        - 고용서비스정책학과
+        - 미래융합학부
+        - 반도체·디스플레이공학과
+    validations:
+      required: true
+
+  - type: dropdown
+    id: year
+    attributes:
+      label: 학년
+      options:
+        - "1"
+        - "2"
+        - "3"
+        - "4"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: enrollment_status
+    attributes:
+      label: 학적
+      options:
+        - 재학
+        - 휴학
+    validations:
+      required: true
+
+  - type: dropdown
+    id: dorm_resident
+    attributes:
+      label: 생활관에 살고 있나요?
+      options:
+        - 예
+        - 아니요
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: interests
+    attributes:
+      label: 관심 분야
+      description: 별점을 높게 받을 분류를 골라주세요. 여러 개 고를 수 있어요.
+      options:
+        - label: 장학
+        - label: 학사
+        - label: 취업·인턴
+        - label: 교내활동
+        - label: 대외활동·공모전
+        - label: 생활관
+
+  - type: checkboxes
+    id: always_show
+    attributes:
+      label: 항상 보기
+      description: 관심 분야가 아니어도 빠짐없이 보고 싶은 분류예요.
+      options:
+        - label: 장학
+        - label: 학사
+        - label: 취업·인턴
+        - label: 교내활동
+        - label: 대외활동·공모전
+        - label: 생활관
+
+  - type: checkboxes
+    id: excluded
+    attributes:
+      label: 안 보기
+      description: 이 분류의 공지는 숨깁니다.
+      options:
+        - label: 장학
+        - label: 학사
+        - label: 취업·인턴
+        - label: 교내활동
+        - label: 대외활동·공모전
+        - label: 생활관
+
+  - type: input
+    id: urgent_days
+    attributes:
+      label: 마감 임박 기준 (일)
+      description: 마감이 며칠 남았을 때부터 "마감 임박"에 넣을지 정해요. 비워두면 3일입니다.
+      placeholder: "3"
+
+  - type: input
+    id: preparation_days
+    attributes:
+      label: 준비물이 있는 공지의 마감 임박 기준 (일)
+      description: 서류 같은 준비물이 필요한 공지는 더 일찍 알려줘요. 비워두면 7일입니다.
+      placeholder: "7"
