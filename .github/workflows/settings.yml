@@ -58,6 +58,8 @@ jobs:
 
       - name: 별점 다시 계산
         run: |
+          # 예전에 저장된 공지의 학과 이름도 표준 이름으로 맞춘 뒤 계산한다
+          python src/departments.py
           if [ -f src/relevance.py ]; then
             python src/relevance.py > /dev/null
             echo "새 설정으로 별점을 다시 계산했습니다."

@@ -19,7 +19,7 @@ from google import genai
 from google.genai import types
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from departments import DEPARTMENTS, normalize_departments  # noqa: E402
+from departments import DEPARTMENTS, normalize_departments, normalize_notices  # noqa: E402
 
 MODEL = "gemini-3.5-flash-lite"
 BACKUP_MODEL = "gemma-4-26b-a4b-it"  # 기본 모델이 붐빌 때 쓰는 예비 모델
@@ -437,6 +437,12 @@ def process_notices(path=NOTICES_PATH):
     with open(path, encoding="utf-8") as f:
         data = json.load(f)
     notices = data["notices"] if isinstance(data, dict) else data
+
+    # 예전에 저장된 공지의 학과 이름도 표준 이름으로 맞춘다 (관련도 계산 전에)
+    renamed = normalize_notices(notices)
+    if renamed:
+        print(f"저장된 공지의 학과 이름 통일: {renamed}개")
+        _save(path, data)
 
     todo = [
         n for n in notices
