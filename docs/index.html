@@ -43,9 +43,17 @@
     // ▼ 저장소 주인 GitHub 아이디로 바꾸기
     const OWNER = "seongminhong497-cell";
     const REPO = "koreatech-notice-bot";
-    const DATA_URL = `https://raw.githubusercontent.com/${OWNER}/${REPO}/main/data/notices.json`;
+    // 파일 주소: ref 자리에 커밋 번호를 넣으면 커밋마다 주소가 달라져서 GitHub 캐시에 걸리지 않는다
+    const fileUrl = (ref, path) => `https://raw.githubusercontent.com/${OWNER}/${REPO}/${ref}/${path}`;
 
-    const PROFILE_URL = `https://raw.githubusercontent.com/${OWNER}/${REPO}/main/data/profile.json`;
+    // main의 최신 커밋 번호 (실패하거나 API 한도(시간당 60번)를 넘으면 예전처럼 main 사용)
+    const latestRef = fetch(`https://api.github.com/repos/${OWNER}/${REPO}/commits/main`, {
+        cache: "no-store",
+        headers: { Accept: "application/vnd.github.sha" },
+      })
+      .then(r => { if (!r.ok) throw new Error(r.status); return r.text(); })
+      .then(sha => /^[0-9a-f]{40}$/.test(sha.trim()) ? sha.trim() : "main")
+      .catch(() => "main");
 
     // 마감 임박 기준 (profile.json을 불러오면 그 값으로 바뀜)
     let URGENT_DAYS = 3;           // 기본
@@ -191,8 +199,9 @@
     }
 
     // profile.json 불러오기 (실패해도 공지 목록은 그대로 보여줌)
-    // ?t=지금시각 을 붙여서 GitHub 캐시를 거치지 않고 매번 새로 받아온다
-    const profileLoaded = fetch(`${PROFILE_URL}?t=${Date.now()}`, { cache: "no-store" })
+    // 최신 커밋 주소로 받아와서, 설정을 바꾸면 새로고침만으로 바로 보인다
+    const profileLoaded = latestRef
+      .then(ref => fetch(fileUrl(ref, "data/profile.json"), { cache: "no-store" }))
       .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
       .then(p => {
         document.getElementById("profile").textContent = "내 설정: " + profileText(p);
@@ -203,7 +212,8 @@
         document.getElementById("profile").textContent = "내 설정: 불러오지 못했습니다";
       });
 
-    fetch(`${DATA_URL}?t=${Date.now()}`, { cache: "no-store" })
+    latestRef
+      .then(ref => fetch(fileUrl(ref, "data/notices.json"), { cache: "no-store" }))
       .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
       .then(data => profileLoaded.then(() => data))   // 마감 임박 기준을 먼저 맞추고 그리기
       .then(data => { notices = Array.isArray(data) ? data : (data.notices || []); renderFilters(); render(); })
