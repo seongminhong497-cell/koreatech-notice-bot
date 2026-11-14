@@ -484,6 +484,7 @@ def crawl_board(board, skip_ids=None):
             badge.decompose()
 
         title = title_link.get_text(" ", strip=True)
+        title = re.sub(r"^새글\s*", "", title).strip()
         detail_url = urljoin(board_url, title_link["href"])
         published_date = (
             date_cell.get_text(strip=True)
@@ -636,6 +637,10 @@ def merge_notices(crawled_notices):
 
     # 기존 공지는 수집 시각을 기준으로 is_new만 갱신한다.
     for notice in saved_notices:
+        title = notice.get("title")
+        if isinstance(title, str):
+            notice["title"] = re.sub(r"^새글\s*", "", title).strip()
+
         notice["is_new"] = is_within_new_period(notice, now)
         notice.setdefault("relevance", None)
         notice.setdefault("relevance_reason", None)
