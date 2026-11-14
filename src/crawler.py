@@ -35,6 +35,125 @@ BOARDS = [
         "source": "학교-학사",
         "id_prefix": "academic",
     },
+
+                # 기계공학부
+    {
+        "url": "https://www.koreatech.ac.kr/board.es?mid=a70601000000&bid=0072",
+        "source": "기계공학부-일반",
+        "id_prefix": "mech-general",
+        "department": "기계공학부"
+    },
+    {
+        "url": "https://www.koreatech.ac.kr/board.es?mid=a70604000000&bid=0075",
+        "source": "기계공학부-취업",
+        "id_prefix": "mech-employment",
+        "department": "기계공학부"
+    },
+
+    # 메카트로닉스공학부
+    {
+        "url": "https://www.koreatech.ac.kr/board.es?mid=a80701000000&bid=0085",
+        "source": "메카트로닉스공학부-일반",
+        "id_prefix": "mechatronics-general",
+        "department": "메카트로닉스공학부"
+    },
+    {
+        "url": "https://www.koreatech.ac.kr/board.es?mid=a80704000000&bid=0088",
+        "source": "메카트로닉스공학부-취업",
+        "id_prefix": "mechatronics-employment",
+        "department": "메카트로닉스공학부"
+    },
+
+    # 전기·전자·통신공학부
+    {
+        "url": "https://www.koreatech.ac.kr/board.es?mid=a90601000000&bid=0097",
+        "source": "전기전자통신공학부-일반",
+        "id_prefix": "eetc-general",
+        "department": "전기·전자·통신공학부"
+    },
+    {
+        "url": "https://www.koreatech.ac.kr/board.es?mid=a90603000000&bid=0100",
+        "source": "전기전자통신공학부-취업",
+        "id_prefix": "eetc-employment",
+        "department": "전기·전자·통신공학부"
+    },
+
+    # 컴퓨터공학부
+    {
+        "url": "https://www.koreatech.ac.kr/board.es?mid=b10601000000&bid=0105",
+        "source": "컴퓨터공학부-일반",
+        "id_prefix": "cse-general",
+        "department": "컴퓨터공학부"
+    },
+    {
+        "url": "https://www.koreatech.ac.kr/board.es?mid=b10704000000&bid=0109",
+        "source": "컴퓨터공학부-취업",
+        "id_prefix": "cse-employment",
+        "department": "컴퓨터공학부"
+    },
+
+    # 디자인공학과
+    {
+        "url": "https://www.koreatech.ac.kr/board.es?mid=b20601000000&bid=0114",
+        "source": "디자인공학과-일반",
+        "id_prefix": "design-general",
+        "department": "디자인공학과"
+    },
+    {
+        "url": "https://www.koreatech.ac.kr/board.es?mid=b20602000000&bid=0115",
+        "source": "디자인공학과-취업",
+        "id_prefix": "design-employment",
+        "department": "디자인공학과"
+    },
+
+    # 건축공학과
+    {
+        "url": "https://www.koreatech.ac.kr/board.es?mid=b30401000000&bid=0122",
+        "source": "건축공학과-일반",
+        "id_prefix": "architecture-general",
+        "department": "건축공학과"
+    },
+    {
+        "url": "https://www.koreatech.ac.kr/board.es?mid=b30402000000&bid=0124",
+        "source": "건축공학과-취업",
+        "id_prefix": "architecture-employment",
+        "department": "건축공학과"
+    },
+
+    # 에너지신소재화학공학부: 화학공학전공은 접근 불가로 제외
+    {
+        "url": "https://www.koreatech.ac.kr/board.es?mid=b40501000000&bid=0130",
+        "source": "에너지신소재공학전공-일반",
+        "id_prefix": "energy-materials-general",
+        "department": "에너지신소재화학공학부"
+    },
+
+    # 산업경영학부: 일반공지에 취업·대외활동 포함 / 조율 후 수정 필요
+    {
+        "url": "https://www.koreatech.ac.kr/board.es?mid=b60501000000&bid=0145",
+        "source": "산업경영학부-일반",
+        "id_prefix": "industrial-management-general",
+        "department": "산업경영학부"
+    },
+
+    # 고용서비스정책학과: 일반공지
+    {
+        "url": "https://www.koreatech.ac.kr/board.es?mid=b80601000000&bid=0151",
+        "source": "고용서비스정책학과-일반",
+        "id_prefix": "employment-policy-general",
+        "department": "고용서비스정책학과"
+    },
+
+    # 미래융합학부: 일반공지
+    {
+        "url": "https://www.koreatech.ac.kr/board.es?mid=b70401000000&bid=0148",
+        "source": "미래융합학부-일반",
+        "id_prefix": "future-convergence-general",
+        "department": "미래융합학부"
+    },
+
+    # 반도체·디스플레이공학과: 현재 크롤러의 게시판과 구조가 달라 테스트 후 추가 예정
+        
 ]
 
 HEADERS = {"User-Agent": "Mozilla/5.0"}
@@ -71,8 +190,32 @@ OUTPUT_PATH = (
     / "data"
     / "notices.json"
 )
+PROFILE_PATH = OUTPUT_PATH.parent / "profile.json"
 
 KST = timezone(timedelta(hours=9))
+
+def load_profile_department():
+    """profile.json에서 사용자의 학과를 읽는다."""
+    try:
+        with PROFILE_PATH.open("r", encoding="utf-8") as file:
+            profile = json.load(file)
+    except (OSError, json.JSONDecodeError) as error:
+        print(
+            f"profile.json을 읽지 못해 학과 게시판은 건너뜁니다: {error}",
+            file=sys.stderr,
+        )
+        return None
+
+    department = profile.get("department") if isinstance(profile, dict) else None
+
+    if not isinstance(department, str) or not department.strip():
+        print(
+            "profile.json에 department 값이 없어 학과 게시판은 건너뜁니다.",
+            file=sys.stderr,
+        )
+        return None
+
+    return department.strip()
 
 IMAGE_EXTENSIONS = (".png", ".jpg", ".jpeg")
 
@@ -171,9 +314,14 @@ def find_notice_content(soup, title):
 
 
 def is_skin_icon(image_url):
-    """게시판 장식용 아이콘은 이미지 목록에서 제외한다."""
-    image_path = unquote(urlparse(image_url).path).lower()
-    return "/upload/skin/board/basic/" in image_path
+    """게시판 장식 아이콘과 QR 코드를 이미지 목록에서 제외한다."""
+    parsed_url = urlparse(image_url)
+    image_path = unquote(parsed_url.path).lower()
+
+    return (
+        parsed_url.netloc.lower() == "api.qrserver.com"
+        or "/upload/skin/board/basic/" in image_path
+    )
 
 
 def fetch_notice_detail(detail_url, title):
@@ -261,11 +409,29 @@ def fetch_notice_detail(detail_url, title):
 
     # 공유 버튼과 스크립트 제거
     for unwanted in content.select(
-        "script, style, noscript, button, .share, .sns"
+        "script, style, noscript, button, .share, .sns, "
+        "grammarly-desktop-integration, translator-content-app"
     ):
         unwanted.decompose()
 
     raw_text = extract_text_preserving_spacing(content)
+
+    # 본문에 글자 형태로 들어온 사이트 안내 문구 제거
+    raw_text = re.sub(
+        r"Not Allowed Attribute Filtered\s*\([^)]*\)\s*",
+        "",
+        raw_text,
+        flags=re.IGNORECASE,
+    )
+
+    # 본문 끝에 붙은 확장 프로그램 태그 제거
+    raw_text = re.sub(
+        r"</?(?:grammarly-desktop-integration|translator-content-app)\b[^>]*>",
+        "",
+        raw_text,
+        flags=re.IGNORECASE,
+    )
+
     lines = []
 
     for line in raw_text.splitlines():
@@ -325,9 +491,25 @@ def crawl_board(board, skip_ids=None):
             else None
         )
 
+        if published_date:
+            date_match = re.search(
+                r"(\d{4})[./-]\s*(\d{1,2})[./-]\s*(\d{1,2})",
+                published_date,
+            )
+            if date_match:
+                year, month, day = map(int, date_match.groups())
+                published_date = f"{year:04d}-{month:02d}-{day:02d}"
+
         query = parse_qs(urlparse(detail_url).query)
-        post_seq = query.get("post_seq", [detail_url])[0]
-        notice_id = f"{board['id_prefix']}-{post_seq}"
+        post_id = (
+            query.get("post_seq", [None])[0]
+            or query.get("list_no", [None])[0]
+        )
+        if not post_id:
+            print(f"게시글 번호를 찾지 못했습니다: {detail_url}", file=sys.stderr)
+            continue
+
+        notice_id = f"{board['id_prefix']}-{post_id}"
 
         if notice_id in (skip_ids or set()):
             body, images = None, []
@@ -365,11 +547,26 @@ def crawl_board(board, skip_ids=None):
 
 
 def crawl_all_boards(skip_ids=None):
-    """설정된 게시판을 모두 수집한다."""
+    """학교 게시판과 프로필 학과 게시판을 수집한다."""
     skip_ids = skip_ids or set()
+    profile_department = load_profile_department()
     all_notices = []
 
     for board in BOARDS:
+        board_department = board.get("department")
+
+        # 학과가 지정된 게시판은 프로필 학과와 일치할 때만 수집한다.
+        # department가 없는 학교 게시판은 항상 수집한다.
+        if (
+            board_department is not None
+            and board_department != profile_department
+        ):
+            print(
+                f"학과가 달라 수집 건너뜀: {board['source']}",
+                file=sys.stderr,
+            )
+            continue
+
         print(f"\n수집 중: {board['source']}", file=sys.stderr)
 
         try:
@@ -388,7 +585,6 @@ def crawl_all_boards(skip_ids=None):
         )
 
     return all_notices
-
 
 def load_saved_notices():
     """기존 공지 파일을 읽는다."""
