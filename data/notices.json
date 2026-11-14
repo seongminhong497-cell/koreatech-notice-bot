@@ -16,8 +16,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 3,
-    "relevance_reason": "학적 상태 조건 일치 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -68,7 +68,7 @@
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
     "relevance": 1,
-    "relevance_reason": "특정 대상 일치 및 마감 조건을 모두 충족하지 않음",
+    "relevance_reason": "명확한 대상 조건이 없어 일반 공지로 표시",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -108,7 +108,7 @@
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
     "relevance": 1,
-    "relevance_reason": "전체 학생 대상 · 일반 공지",
+    "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
     "target": {
       "scope": "all",
       "departments": [],
@@ -177,7 +177,7 @@
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
     "relevance": 1,
-    "relevance_reason": "전체 학생 대상 · 일반 공지",
+    "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
     "target": {
       "scope": "all",
       "departments": [],
@@ -220,16 +220,16 @@
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
     "relevance": 3,
-    "relevance_reason": "학과, 학적 상태 조건 일치 · 마감 있음",
+    "relevance_reason": "좁은 조건(학과) 일치 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [
         "기계공학부",
         "메카트로닉스공학부",
-        "전기전자통신공학부",
+        "전기·전자·통신공학부",
         "컴퓨터공학부",
         "미래자동차공학과",
-        "경영학과",
+        "산업경영학부",
         "고용서비스정책학과"
       ],
       "years": [],
@@ -341,7 +341,7 @@
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
     "relevance": 1,
-    "relevance_reason": "전체 학생 대상 · 일반 공지",
+    "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
     "target": {
       "scope": "all",
       "departments": [],
@@ -373,8 +373,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 3,
-    "relevance_reason": "대상 집단 조건 일치 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(대상 집단)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -418,7 +418,7 @@
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
     "relevance": 1,
-    "relevance_reason": "전체 학생 대상 · 일반 공지",
+    "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
     "target": {
       "scope": "all",
       "departments": [],
@@ -464,7 +464,7 @@
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
     "relevance": 1,
-    "relevance_reason": "전체 학생 대상 · 일반 공지",
+    "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
     "target": {
       "scope": "all",
       "departments": [],
@@ -505,11 +505,11 @@
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
     "relevance": 1,
-    "relevance_reason": "특정 대상 일치 및 마감 조건을 모두 충족하지 않음",
+    "relevance_reason": "좁은 조건(학과) 일치 · 마감 정보 없음",
     "target": {
       "scope": "specific",
       "departments": [
-        "전기전자공학전공",
+        "전기·전자·통신공학부",
         "컴퓨터공학부"
       ],
       "years": [],
@@ -551,7 +551,7 @@
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
     "relevance": 1,
-    "relevance_reason": "전체 학생 대상 · 일반 공지",
+    "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
     "target": {
       "scope": "all",
       "departments": [],
@@ -588,8 +588,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 2,
-    "relevance_reason": "전체 학생 대상 · 관심 또는 항상 보기 분류",
+    "relevance": 1,
+    "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
     "target": {
       "scope": "all",
       "departments": [],
@@ -630,8 +630,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 3,
-    "relevance_reason": "학적 상태 조건 일치 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -680,8 +680,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 3,
-    "relevance_reason": "학적 상태 조건 일치 · 마감 있음",
+    "relevance": 2,
+    "relevance_reason": "넓은 조건(학적 상태) 일치 · 관심 분류 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -790,8 +790,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 3,
-    "relevance_reason": "학적 상태 조건 일치 · 마감 있음",
+    "relevance": 2,
+    "relevance_reason": "넓은 조건(학적 상태) 일치 · 관심 분류 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -836,8 +836,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 3,
-    "relevance_reason": "학적 상태 조건 일치 · 마감 있음",
+    "relevance": 2,
+    "relevance_reason": "넓은 조건(학적 상태) 일치 · 관심 분류 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -880,8 +880,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 3,
-    "relevance_reason": "학적 상태 조건 일치 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -925,8 +925,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 2,
-    "relevance_reason": "전체 학생 대상 · 관심 또는 항상 보기 분류",
+    "relevance": 1,
+    "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
     "target": {
       "scope": "all",
       "departments": [],
@@ -960,8 +960,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 3,
-    "relevance_reason": "학적 상태, 대상 집단 조건 일치 · 마감 있음",
+    "relevance": 2,
+    "relevance_reason": "넓은 조건(학적 상태, 대상 집단) 일치 · 관심 분류 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -1005,8 +1005,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 3,
-    "relevance_reason": "학적 상태, 대상 집단 조건 일치 · 마감 있음",
+    "relevance": 2,
+    "relevance_reason": "넓은 조건(학적 상태, 대상 집단) 일치 · 관심 분류 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -1057,8 +1057,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 3,
-    "relevance_reason": "학적 상태 조건 일치 · 마감 있음",
+    "relevance": 2,
+    "relevance_reason": "넓은 조건(학적 상태) 일치 · 관심 분류 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -1103,8 +1103,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 3,
-    "relevance_reason": "학적 상태 조건 일치 · 마감 있음",
+    "relevance": 2,
+    "relevance_reason": "넓은 조건(학적 상태) 일치 · 관심 분류 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -1144,8 +1144,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 3,
-    "relevance_reason": "학적 상태, 대상 집단 조건 일치 · 마감 있음",
+    "relevance": 2,
+    "relevance_reason": "넓은 조건(학적 상태, 대상 집단) 일치 · 관심 분류 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -1189,7 +1189,7 @@
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
     "relevance": 1,
-    "relevance_reason": "특정 대상 일치 및 마감 조건을 모두 충족하지 않음",
+    "relevance_reason": "넓은 조건(학적 상태)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -1245,7 +1245,7 @@
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
     "relevance": 1,
-    "relevance_reason": "특정 대상 일치 및 마감 조건을 모두 충족하지 않음",
+    "relevance_reason": "명확한 대상 조건이 없어 일반 공지로 표시",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -1283,7 +1283,7 @@
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
     "relevance": 2,
-    "relevance_reason": "전체 학생 대상 · 관심 또는 항상 보기 분류",
+    "relevance_reason": "전체 학생 대상 · 관심 분류 · 마감 있음",
     "target": {
       "scope": "all",
       "departments": [],
@@ -1343,8 +1343,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 2,
-    "relevance_reason": "전체 학생 대상 · 관심 또는 항상 보기 분류",
+    "relevance": 1,
+    "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
     "target": {
       "scope": "all",
       "departments": [],
@@ -1376,8 +1376,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 3,
-    "relevance_reason": "학적 상태 조건 일치 · 마감 있음",
+    "relevance": 2,
+    "relevance_reason": "넓은 조건(학적 상태) 일치 · 관심 분류 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -1435,8 +1435,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 2,
-    "relevance_reason": "전체 학생 대상 · 관심 또는 항상 보기 분류",
+    "relevance": 1,
+    "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
     "target": {
       "scope": "all",
       "departments": [],
@@ -1514,8 +1514,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 2,
-    "relevance_reason": "전체 학생 대상 · 관심 또는 항상 보기 분류",
+    "relevance": 1,
+    "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
     "target": {
       "scope": "all",
       "departments": [],
@@ -1556,8 +1556,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 3,
-    "relevance_reason": "학적 상태, 대상 집단 조건 일치 · 마감 있음",
+    "relevance": 2,
+    "relevance_reason": "넓은 조건(학적 상태, 대상 집단) 일치 · 관심 분류 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -1727,8 +1727,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 3,
-    "relevance_reason": "학적 상태, 대상 집단 조건 일치 · 마감 있음",
+    "relevance": 2,
+    "relevance_reason": "넓은 조건(학적 상태, 대상 집단) 일치 · 관심 분류 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -1776,8 +1776,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 3,
-    "relevance_reason": "대상 집단 조건 일치 · 마감 있음",
+    "relevance": 2,
+    "relevance_reason": "넓은 조건(대상 집단) 일치 · 관심 분류 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -1884,7 +1884,7 @@
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
     "relevance": 1,
-    "relevance_reason": "특정 대상 일치 및 마감 조건을 모두 충족하지 않음",
+    "relevance_reason": "넓은 조건(학적 상태)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -1928,8 +1928,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 3,
-    "relevance_reason": "학적 상태, 대상 집단 조건 일치 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태, 대상 집단)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -1991,7 +1991,7 @@
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
     "relevance": 1,
-    "relevance_reason": "특정 대상 일치 및 마감 조건을 모두 충족하지 않음",
+    "relevance_reason": "넓은 조건(대상 집단)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -2069,8 +2069,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 2,
-    "relevance_reason": "전체 학생 대상 · 관심 또는 항상 보기 분류",
+    "relevance": 1,
+    "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
     "target": {
       "scope": "all",
       "departments": [],
@@ -2103,7 +2103,7 @@
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
     "relevance": 1,
-    "relevance_reason": "특정 대상 일치 및 마감 조건을 모두 충족하지 않음",
+    "relevance_reason": "넓은 조건(학적 상태)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -2249,8 +2249,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 2,
-    "relevance_reason": "전체 학생 대상 · 관심 또는 항상 보기 분류",
+    "relevance": 1,
+    "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
     "target": {
       "scope": "all",
       "departments": [],
@@ -2288,10 +2288,11 @@
       "scope": "specific",
       "departments": [
         "기계공학부",
-        "전기ㆍ전자ㆍ통신공학부",
+        "전기·전자·통신공학부",
         "컴퓨터공학부",
-        "디자인ㆍ건축공학부",
-        "에너지신소재공학전공"
+        "디자인공학과",
+        "건축공학과",
+        "에너지신소재화학공학부"
       ],
       "years": [
         3
@@ -2359,8 +2360,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 2,
-    "relevance_reason": "전체 학생 대상 · 관심 또는 항상 보기 분류",
+    "relevance": 1,
+    "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
     "target": {
       "scope": "all",
       "departments": [],
@@ -2395,7 +2396,7 @@
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
     "relevance": 1,
-    "relevance_reason": "특정 대상 일치 및 마감 조건을 모두 충족하지 않음",
+    "relevance_reason": "명확한 대상 조건이 없어 일반 공지로 표시",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -2427,8 +2428,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 2,
-    "relevance_reason": "전체 학생 대상 · 관심 또는 항상 보기 분류",
+    "relevance": 1,
+    "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
     "target": {
       "scope": "all",
       "departments": [],
@@ -2471,8 +2472,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 3,
-    "relevance_reason": "학적 상태 조건 일치 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -2514,7 +2515,7 @@
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
     "relevance": 1,
-    "relevance_reason": "특정 대상 일치 및 마감 조건을 모두 충족하지 않음",
+    "relevance_reason": "명확한 대상 조건이 없어 일반 공지로 표시",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -2562,8 +2563,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 3,
-    "relevance_reason": "학적 상태 조건 일치 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -2604,8 +2605,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 3,
-    "relevance_reason": "학적 상태 조건 일치 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -2646,8 +2647,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 3,
-    "relevance_reason": "학적 상태 조건 일치 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -2697,7 +2698,7 @@
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
     "relevance": 3,
-    "relevance_reason": "학년, 학적 상태 조건 일치 · 마감 있음",
+    "relevance_reason": "좁은 조건(학년) 일치 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -2744,8 +2745,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 2,
-    "relevance_reason": "전체 학생 대상 · 관심 또는 항상 보기 분류",
+    "relevance": 1,
+    "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
     "target": {
       "scope": "all",
       "departments": [],
@@ -2789,7 +2790,7 @@
     "is_new": false,
     "collected_at": "2026-11-11T20:40:15+09:00",
     "relevance": 1,
-    "relevance_reason": "전체 학생 대상 · 일반 공지",
+    "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
     "target": {
       "scope": "all",
       "departments": [],
@@ -2836,7 +2837,7 @@
     "is_new": false,
     "collected_at": "2026-11-11T20:40:15+09:00",
     "relevance": 1,
-    "relevance_reason": "전체 학생 대상 · 일반 공지",
+    "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
     "target": {
       "scope": "all",
       "departments": [],
@@ -2877,7 +2878,7 @@
     "is_new": false,
     "collected_at": "2026-11-11T20:40:15+09:00",
     "relevance": 1,
-    "relevance_reason": "전체 학생 대상 · 일반 공지",
+    "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
     "target": {
       "scope": "all",
       "departments": [],
@@ -2913,7 +2914,7 @@
     "is_new": false,
     "collected_at": "2026-11-11T20:40:15+09:00",
     "relevance": 1,
-    "relevance_reason": "전체 학생 대상 · 일반 공지",
+    "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
     "target": {
       "scope": "all",
       "departments": [],
@@ -2955,7 +2956,7 @@
     "is_new": false,
     "collected_at": "2026-11-11T20:40:15+09:00",
     "relevance": 1,
-    "relevance_reason": "전체 학생 대상 · 일반 공지",
+    "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
     "target": {
       "scope": "all",
       "departments": [],
@@ -2998,16 +2999,16 @@
     "is_new": false,
     "collected_at": "2026-11-12T11:37:12+09:00",
     "relevance": 3,
-    "relevance_reason": "학과, 학적 상태 조건 일치 · 마감 있음",
+    "relevance_reason": "좁은 조건(학과) 일치 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [
         "기계공학부",
         "메카트로닉스공학부",
-        "전기전자통신공학부",
+        "전기·전자·통신공학부",
         "컴퓨터공학부",
         "미래융합학부",
-        "경영학부",
+        "산업경영학부",
         "고용서비스정책학과"
       ],
       "years": [],
@@ -3062,8 +3063,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-12T11:37:12+09:00",
-    "relevance": 3,
-    "relevance_reason": "학적 상태, 대상 집단 조건 일치 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태, 대상 집단)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -3140,7 +3141,7 @@
     "is_new": false,
     "collected_at": "2026-11-12T11:37:12+09:00",
     "relevance": 1,
-    "relevance_reason": "전체 학생 대상 · 일반 공지",
+    "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
     "target": {
       "scope": "all",
       "departments": [],
@@ -3179,8 +3180,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-12T14:05:45+09:00",
-    "relevance": 3,
-    "relevance_reason": "학적 상태, 대상 집단 조건 일치 · 마감 있음",
+    "relevance": 2,
+    "relevance_reason": "넓은 조건(학적 상태, 대상 집단) 일치 · 관심 분류 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -3273,7 +3274,7 @@
     "is_new": false,
     "collected_at": "2026-11-12T15:29:21+09:00",
     "relevance": 1,
-    "relevance_reason": "전체 학생 대상 · 일반 공지",
+    "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
     "target": {
       "scope": "all",
       "departments": [],
@@ -3356,8 +3357,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-12T15:29:21+09:00",
-    "relevance": 3,
-    "relevance_reason": "학적 상태 조건 일치 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -3450,7 +3451,7 @@
     "is_new": false,
     "collected_at": "2026-11-13T02:16:35+09:00",
     "relevance": 1,
-    "relevance_reason": "특정 대상 일치 및 마감 조건을 모두 충족하지 않음",
+    "relevance_reason": "넓은 조건(학적 상태)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -3491,8 +3492,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-13T02:16:35+09:00",
-    "relevance": 3,
-    "relevance_reason": "학적 상태, 대상 집단 조건 일치 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태, 대상 집단)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -3591,7 +3592,7 @@
     "is_new": false,
     "collected_at": "2026-11-13T11:16:46+09:00",
     "relevance": 3,
-    "relevance_reason": "학년, 학적 상태 조건 일치 · 마감 있음",
+    "relevance_reason": "좁은 조건(학년) 일치 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -3636,7 +3637,7 @@
     "is_new": false,
     "collected_at": "2026-11-13T11:16:46+09:00",
     "relevance": 1,
-    "relevance_reason": "전체 학생 대상 · 일반 공지",
+    "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
     "target": {
       "scope": "all",
       "departments": [],
@@ -3691,7 +3692,7 @@
     "is_new": false,
     "collected_at": "2026-11-13T11:16:46+09:00",
     "relevance": 1,
-    "relevance_reason": "전체 학생 대상 · 일반 공지",
+    "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
     "target": {
       "scope": "all",
       "departments": [],
@@ -3769,7 +3770,7 @@
     "is_new": true,
     "collected_at": "2026-11-14T01:52:29+09:00",
     "relevance": 1,
-    "relevance_reason": "전체 학생 대상 · 일반 공지",
+    "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
     "target": {
       "scope": "all",
       "departments": [],
@@ -3812,16 +3813,16 @@
     "is_new": true,
     "collected_at": "2026-11-14T01:52:29+09:00",
     "relevance": 3,
-    "relevance_reason": "학과, 학적 상태 조건 일치 · 마감 있음",
+    "relevance_reason": "좁은 조건(학과) 일치 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [
         "기계공학부",
         "메카트로닉스공학부",
-        "전자·전기·통신공학부",
+        "전기·전자·통신공학부",
         "컴퓨터공학부",
         "미래모빌리티학과",
-        "경영학과",
+        "산업경영학부",
         "고용서비스정책학과"
       ],
       "years": [],
@@ -3869,7 +3870,7 @@
     "is_new": true,
     "collected_at": "2026-11-14T01:52:29+09:00",
     "relevance": 1,
-    "relevance_reason": "특정 대상 일치 및 마감 조건을 모두 충족하지 않음",
+    "relevance_reason": "넓은 조건(학적 상태, 대상 집단)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -3941,6 +3942,53 @@
     "materials": [
       "입사지원서 등 개인 스펙 정리 자료(필수 지참 아님)"
     ],
+    "category": "취업·인턴",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "general-37484",
+    "title": "(끌올)_현대자동차 하이테크 서비스엔지니어(대졸자) 채용전환형 인턴십 설명회 (11/17)",
+    "url": "https://www.koreatech.ac.kr/notice/view.es?mid=a10604010000&board_id=14&post_seq=37484&prefix_id=",
+    "source": "학교-일반",
+    "source_type": "학교",
+    "published_date": "2026-11-14",
+    "body": "현대자동차 서비스엔지니어 채용설명회\n■행사 개요\n- 행 사 명: 현대자동차 서비스엔지니어 채용설명회\n- 진행 기업: 현대자동차\n- 행사 내용: 채용설명회 및 간단한 이벤트 (*콘텐츠는 미정이며, 추후 재안내)\n- 진행 일자: 11월 17일(화) 14:00~15:30\n- 신청방법: 학생종합경력개발 취창업프로그램에서 신청하기 클릭\n- 참여 인원: 약 70명\n- 주요 참여 대상: 전기·전자, IT·SW, 컴퓨터공학 등 이공계 전공자 및 하이테크 진단·정비 등 고난도 자동차 정비 분야에 관심 있는 학사학위 취득 예정 및 취득학생 이 외 모빌리티 분야에 관심이 있는 학생",
+    "images": [
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&a=id&p=37457&fn=1794357362035_%255B%25ED%2581%25AC%25EA%25B8%25B0%25EB%25B3%2580%25ED%2599%2598%255D2027%2B%25ED%2598%2584%25EB%258C%2580%25EC%259E%2590%25EB%258F%2599%25EC%25B0%25A8%2B%25EC%2584%259C%25EB%25B9%2584%25EC%258A%25A4%25EC%2597%2594%25EC%25A7%2580%25EB%258B%2588%25EC%2596%25B4%2B%25EC%25B1%2584%25EC%259A%25A9%25EC%2584%25A4%25EB%25AA%2585%25ED%259A%258C%2B%25ED%258F%25AC%25EC%258A%25A4%25ED%2584%25B0_%25ED%2595%259C%25EA%25B5%25AD%25EA%25B8%25B0%25EC%2588%25A0%25EA%25B5%2590%25EC%259C%25A1%25EB%258C%2580.jpg"
+    ],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-14T18:53:53+09:00",
+    "relevance": 1,
+    "relevance_reason": "좁은 조건(학과) 일치 · 마감 정보 없음",
+    "target": {
+      "scope": "specific",
+      "departments": [
+        "전기·전자·통신공학부",
+        "컴퓨터공학부",
+        "기계공학부",
+        "메카트로닉스공학부"
+      ],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": null,
+    "other_dates": [
+      {
+        "label": "채용설명회 행사일",
+        "date": "2026-11-17T14:00:00+09:00"
+      }
+    ],
+    "actions": [
+      "학생종합경력개발 취창업프로그램에서 신청하기 클릭"
+    ],
+    "materials": null,
     "category": "취업·인턴",
     "days_left": null,
     "is_expired": false,
