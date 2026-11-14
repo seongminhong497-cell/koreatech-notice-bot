@@ -6,11 +6,7 @@
   ],
   "enrollment_status": "재학",
   "dorm_resident": true,
-  "interests": [
-    "장학",
-    "학사",
-    "교내활동"
-  ],
+  "interests": [],
   "always_show_categories": [],
   "excluded_categories": [],
   "excluded_target_groups": [
