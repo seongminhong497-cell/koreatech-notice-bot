@@ -31,7 +31,7 @@
 
   <!-- 내 설정 (3주차에 profile.json 연결) -->
   <div class="box profile-row">
-    <span id="profile">내 설정: 컴퓨터공학부 · 1학년 · 재학 · 생활관 거주</span>
+    <span id="profile">내 설정: 불러오는 중…</span>
     <a class="settings-btn" href="https://github.com/seongminhong497-cell/koreatech-notice-bot/issues/new?template=settings.yml" target="_blank" rel="noopener">⚙️ 내 설정 바꾸기</a>
   </div>
 
@@ -45,9 +45,11 @@
     const REPO = "koreatech-notice-bot";
     const DATA_URL = `https://raw.githubusercontent.com/${OWNER}/${REPO}/main/data/notices.json`;
 
-    // 마감 임박 기준 (profile.json 값과 맞추기)
-    const URGENT_DAYS = 3;           // 기본
-    const URGENT_DAYS_MATERIALS = 7; // 준비물 있을 때
+    const PROFILE_URL = `https://raw.githubusercontent.com/${OWNER}/${REPO}/main/data/profile.json`;
+
+    // 마감 임박 기준 (profile.json을 불러오면 그 값으로 바뀜)
+    let URGENT_DAYS = 3;           // 기본
+    let URGENT_DAYS_MATERIALS = 7; // 준비물 있을 때
 
     const CATEGORIES = ["전체", "장학", "학사", "취업·인턴", "교내활동", "대외활동·공모전", "생활관"];
     let notices = [];
@@ -177,8 +179,32 @@
       box.querySelectorAll("button").forEach(b => b.onclick = () => { current = b.dataset.c; renderFilters(); render(); });
     }
 
+    // 내 설정 한 줄 (예: 컴퓨터공학부 · 1학년 · 재학 · 생활관 거주)
+    function profileText(p) {
+      const parts = [];
+      if (p.department) parts.push(p.department);
+      if (p.year) parts.push(`${p.year}학년`);
+      if (p.enrollment_status) parts.push(p.enrollment_status);
+      if (p.dorm_resident === true) parts.push("생활관 거주");
+      else if (p.dorm_resident === false) parts.push("생활관 미거주");
+      return parts.length ? parts.join(" · ") : "설정 없음";
+    }
+
+    // profile.json 불러오기 (실패해도 공지 목록은 그대로 보여줌)
+    const profileLoaded = fetch(PROFILE_URL, { cache: "no-store" })
+      .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(p => {
+        document.getElementById("profile").textContent = "내 설정: " + profileText(p);
+        if (Number.isInteger(p.urgent_days)) URGENT_DAYS = p.urgent_days;
+        if (Number.isInteger(p.preparation_days)) URGENT_DAYS_MATERIALS = p.preparation_days;
+      })
+      .catch(() => {
+        document.getElementById("profile").textContent = "내 설정: 불러오지 못했습니다";
+      });
+
     fetch(DATA_URL, { cache: "no-store" })
       .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(data => profileLoaded.then(() => data))   // 마감 임박 기준을 먼저 맞추고 그리기
       .then(data => { notices = Array.isArray(data) ? data : (data.notices || []); renderFilters(); render(); })
       .catch(err => {
         document.getElementById("notice-list").innerHTML =
