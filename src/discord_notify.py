@@ -30,7 +30,7 @@ PAGE_URL = "https://seongminhong497-cell.github.io/koreatech-notice-bot/"
 
 KST = datetime.timezone(datetime.timedelta(hours=9))
 MAX_LEN = 1900        # 디스코드 메시지 한 개 최대 2000자 (여유를 둠)
-MAX_PER_SECTION = 8   # 구역마다 최대 몇 개까지 보여줄지
+MAX_PER_SECTION = 5   # 구역마다 최대 몇 개까지 보여줄지 (나머지는 웹페이지에서)
 
 
 def load_json(path, default):
@@ -123,24 +123,30 @@ def summary_from(n):
     return " / ".join(bits)
 
 
+def md_escape(text):
+    """디스코드 마크다운에서 특별한 뜻이 있는 글자 앞에 \\ 를 붙인다."""
+    for ch in "\\[]()*_~`|>":
+        text = text.replace(ch, "\\" + ch)
+    return text
+
+
 def line(n, new_mark=False):
-    """[분류] 제목 | 관련도 | D-day  + 링크 + 한 줄 요약"""
-    title = cut(n.get("title") or "(제목 없음)", 150)
-    parts = [f"[{n.get('category') or '미분류'}] {title}", stars(n.get("relevance"))]
+    """• [분류] 제목(링크) · ★★★ · D-day  + 다음 줄에 한 줄 요약"""
+    title = md_escape(cut(n.get("title") or "(제목 없음)", 80))
+    url = (n.get("url") or "").replace("&prefix_id=", "")   # 빈 값 주소 조각은 빼서 길이 줄이기
+    if url and len(url) <= 500 and " " not in url:
+        title = f"[{title}](<{url}>)"   # 제목을 누르면 공지로 이동, <> 는 미리보기 끄기
+    parts = [f"`{n.get('category') or '미분류'}` {title}", stars(n.get("relevance"))]
     dd = dday_text(n)
     if dd:
-        parts.append(dd)
-    text = " | ".join(parts)
+        parts.append(f"**{dd}**")
+    text = " · ".join(parts)
     if new_mark and n.get("is_new"):
         text = "🆕 " + text
-    url = n.get("url")
-    if url and len(url) <= 500:
-        text += f"\n   <{url}>"   # <> 로 감싸면 링크 미리보기가 안 붙음
     summary = n.get("relevance_reason") or summary_from(n)
     if summary:
-        text += f"\n   └ {cut(summary, 200)}"
-    # 어떤 경우에도 공지 한 개가 메시지 한 개 길이를 넘지 않게
-    return cut("• " + text, MAX_LEN)
+        text += f"\n   └ {md_escape(cut(summary, 100))}"
+    return "• " + text
 
 
 def sort_key(n):
