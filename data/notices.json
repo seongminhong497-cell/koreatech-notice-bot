@@ -1657,8 +1657,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 3,
-    "relevance_reason": "좁은 조건(학년) 일치 · 마감 있음",
+    "relevance": 0,
+    "relevance_reason": "학년 조건 불일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -2697,8 +2697,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 0,
-    "relevance_reason": "학년 조건 불일치",
+    "relevance": 3,
+    "relevance_reason": "좁은 조건(학년) 일치 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [],
