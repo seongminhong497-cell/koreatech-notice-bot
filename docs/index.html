@@ -191,7 +191,8 @@
     }
 
     // profile.json 불러오기 (실패해도 공지 목록은 그대로 보여줌)
-    const profileLoaded = fetch(PROFILE_URL, { cache: "no-store" })
+    // ?t=지금시각 을 붙여서 GitHub 캐시를 거치지 않고 매번 새로 받아온다
+    const profileLoaded = fetch(`${PROFILE_URL}?t=${Date.now()}`, { cache: "no-store" })
       .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
       .then(p => {
         document.getElementById("profile").textContent = "내 설정: " + profileText(p);
@@ -202,7 +203,7 @@
         document.getElementById("profile").textContent = "내 설정: 불러오지 못했습니다";
       });
 
-    fetch(DATA_URL, { cache: "no-store" })
+    fetch(`${DATA_URL}?t=${Date.now()}`, { cache: "no-store" })
       .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
       .then(data => profileLoaded.then(() => data))   // 마감 임박 기준을 먼저 맞추고 그리기
       .then(data => { notices = Array.isArray(data) ? data : (data.notices || []); renderFilters(); render(); })
