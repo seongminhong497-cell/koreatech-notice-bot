@@ -428,6 +428,16 @@ def _save(path, data):
     os.replace(tmp, path)
 
 
+def _board_department(source):
+    """'컴퓨터공학부-일반'처럼 학과 게시판에서 온 공지면 그 학과 표준 이름을 돌려준다."""
+    if not isinstance(source, str) or "-" not in source:
+        return None
+    names = normalize_departments([source.split("-")[0]])
+    if len(names) == 1 and names[0] in DEPARTMENTS:
+        return names[0]
+    return None
+
+
 def process_notices(path=NOTICES_PATH):
     """notices.json에서 아직 AI 정리가 안 된 공지만 처리한다.
 
@@ -481,6 +491,13 @@ def process_notices(path=NOTICES_PATH):
             info["deadline"] = _fix_past_year(
                 info["deadline"], notice.get("published_date")
             )
+            # 학과 게시판 공지인데 AI가 대상 학과를 못 찾으면, 그 게시판의 학과로 채운다
+            board_department = _board_department(notice.get("source"))
+            target = info.get("target") or {}
+            if board_department and not target.get("departments"):
+                target["departments"] = [board_department]
+                target["scope"] = "specific"
+                info["target"] = target
             notice.update(info)
             notice["extracted"] = True
             _save(path, data)  # 하나 끝날 때마다 저장
