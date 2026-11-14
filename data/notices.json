@@ -3180,8 +3180,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-12T14:05:45+09:00",
-    "relevance": 2,
-    "relevance_reason": "넓은 조건(학적 상태, 대상 집단) 일치 · 관심 분류 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태, 대상 집단)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
