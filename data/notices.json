@@ -3767,7 +3767,7 @@
     "is_sample": false,
     "extracted": true,
     "processed": true,
-    "is_new": true,
+    "is_new": false,
     "collected_at": "2026-11-14T01:52:29+09:00",
     "relevance": 1,
     "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
@@ -3810,7 +3810,7 @@
     "is_sample": false,
     "extracted": true,
     "processed": true,
-    "is_new": true,
+    "is_new": false,
     "collected_at": "2026-11-14T01:52:29+09:00",
     "relevance": 3,
     "relevance_reason": "좁은 조건(학과) 일치 · 마감 있음",
@@ -3867,7 +3867,7 @@
     "is_sample": false,
     "extracted": true,
     "processed": true,
-    "is_new": true,
+    "is_new": false,
     "collected_at": "2026-11-14T01:52:29+09:00",
     "relevance": 1,
     "relevance_reason": "넓은 조건(학적 상태, 대상 집단)만 일치",
@@ -3913,7 +3913,7 @@
     "is_sample": false,
     "extracted": true,
     "processed": true,
-    "is_new": true,
+    "is_new": false,
     "collected_at": "2026-11-14T01:52:29+09:00",
     "relevance": 0,
     "relevance_reason": "학과 조건 불일치",
@@ -4036,18 +4036,33 @@
     "source": "컴퓨터공학부-일반",
     "source_type": "학교",
     "published_date": "2024-06-12",
-    "body": null,
+    "body": "전공 졸업학점 76학점 중 전공필수 47학점, 전공선택 29학점인 경우 전공필수 학점은 무조건 47학점 이상, 전공필수+전공선택= 76학점을 충족하면 됩니다.\n사례1. 전공필수 51학점 + 전공선택 25학점 = 76학점으로 \"전공 졸업학점 충족\"\n사례2. 전공필수 48학점 + 전공선택 28학점 = 76학점으로 \"전공 졸업학점 충족\"\n사례3. 전공필수 45학점 + 전공선택 31학점 = 76학점이나 전공필수 학점 미달로 \"전공 졸업학점 미충족\" 졸업신청 전 반드시 확인하시기 바라며,\n교육과정별로 전공필수 학점이 상이할 수 있으니 대학요람을 확인하시기 바랍니다. 감사합니다.",
     "images": [],
     "is_sample": false,
-    "extracted": false,
-    "processed": false,
+    "extracted": true,
+    "processed": true,
     "is_new": true,
     "collected_at": "2026-11-15T01:17:06+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 1,
+    "relevance_reason": "좁은 조건(학과) 일치 · 마감 정보 없음",
     "days_left": null,
-    "is_expired": null,
-    "is_urgent": false
+    "is_expired": false,
+    "is_urgent": false,
+    "target": {
+      "scope": "specific",
+      "departments": [
+        "컴퓨터공학부"
+      ],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": null,
+    "other_dates": [],
+    "actions": null,
+    "materials": null,
+    "category": "학사"
   },
   {
     "id": "cse-general-43406",
@@ -4161,18 +4176,33 @@
     "source": "컴퓨터공학부-일반",
     "source_type": "학교",
     "published_date": "2017-01-16",
-    "body": null,
+    "body": "안녕하세요.\n학부사무실입니다.\n연도별필수교과목내역과 졸업시 필요한 이수학점에 대하여 공지드립니다.\n졸업을 하기 위해서는 필수적으로 들어야 할 과목이 있고 요구되는 학점을 충족시켜야합니다.\n각 학번별로 정리되어 있으니 첨부한 엑셀파일을 참고해주시기 바랍니다.\n11학번과 12학번은 10학번 교과목을 참고하시면 됩니다.\n1. 필수교과목내역 확인\n- 년도별교과과정영역별필수(핵심)교과목내역(2016년도까지).xls 파일에서 자신이 해당하는 학번에 나와있는 강의들은 모두 들어야만 졸업이 가능하니 필수적으로 확인해야합니다.\n2. 이수학점 확인\n- 컴공관련 학점.xlsx 파일에서 자신이 해당하는 학번에 자료를 참고합니다. 각 영역별로 필수학점과 총계학점은 꼭 충족시켜야합니다. (일반이 부족한것 OK)\nex) 10학번 일 때 교양 필수 12학점, 교양 일반 6학점(O), 교양 필수 14학점, 교양 일반 4학점 (O),  교양 필수 10학점,  교양 일반 8학점 (X)\n- 자유학점은 각 영역별로 초과되는 학점이 자유선택으로 넘어갑니다. 따로 이수구분조정하지 않아도 됩니다.\n-  08 ~ 12 학번은 전공필수과목을 다 들을 경우 47학점. 부족한 3학점은 알고리즘및실습, 디지털시스템설계및실습, 디지털신호처리및실습 3개의 강의중 하나를 수강하여 3학점을 채워야합니다. C1, C2를 MSC로 이수구분하였을 경우 부족한 전공핵심 6학점은 일반전공에서 이수구분 조정 가능합니다.\n-  08 ~ 12 학번은 C1, C2 과목을 MSC로 이수구분 조정 가능합니다.   (함께 옮겨야 하고 MSC 하나 전공 하나 따로 구분하는것은 불가능)\n첨부파일\n년도별교과과정영역별필수(핵심)교과목내역(2016년도까지).xls\n(157KB / 다운로드:945 / 미리보기:216)\n다운로드\n미리보기\n컴공관련 학점.xlsx\n(14KB / 다운로드:930 / 미리보기:196)\n다운로드\n미리보기",
     "images": [],
     "is_sample": false,
-    "extracted": false,
-    "processed": false,
+    "extracted": true,
+    "processed": true,
     "is_new": true,
     "collected_at": "2026-11-15T01:17:06+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 1,
+    "relevance_reason": "좁은 조건(학과) 일치 · 마감 정보 없음",
     "days_left": null,
-    "is_expired": null,
-    "is_urgent": false
+    "is_expired": false,
+    "is_urgent": false,
+    "target": {
+      "scope": "specific",
+      "departments": [
+        "컴퓨터공학부"
+      ],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": null,
+    "other_dates": [],
+    "actions": null,
+    "materials": null,
+    "category": "학사"
   },
   {
     "id": "cse-general-42901",
@@ -4332,23 +4362,51 @@
   },
   {
     "id": "cse-general-56867",
-    "title": "새글 [SW중심대학사업단] AWS AI/Cloud 자격증 관련 학습 플랫폼 이용 참여자 모집",
+    "title": "[SW중심대학사업단] AWS AI/Cloud 자격증 관련 학습 플랫폼 이용 참여자 모집",
     "url": "https://www.koreatech.ac.kr/board.es?mid=b10601000000&bid=0105&act=view&list_no=56867&tag=&nPage=1",
     "source": "컴퓨터공학부-일반",
     "source_type": "학교",
     "published_date": "2026-11-12",
-    "body": null,
-    "images": [],
+    "body": "SW중심대학사업단에서 AWS 자격증 취득을 위한 학습 플랫폼을 무료로 이용해 볼 수 있도록 지원을 하고 있습니다.\nAI와 클라우드 관련 내용입니다. 자격증 취득을 하지 않더라도 AI와 클라우드 쪽으로 학습할 수 있는 기회이니 어렵게 생각하지 말고 신청해 보기 바랍니다.\n-------------------------------------------------------\n지원 내용: AWS 자격증 학습 플랫폼 이용 지원\n대상 자격증: AIF, CLF, AIP, DVA, MLA, SAA, SAP, SCS, SOA\n※ 11월 중순경 AIF, CLF 취득 과정 프로그램 추진 예정(자격증 응시료 지원)\n신청 기간: 2026. 11. 30.(월)까지\n가입 후 2027. 2. 28.까지 이용 가능\n신청 방법: 구글폼 제출\nhttps://forms.gle/nE8Kp3x6F5zXUBbN7\n문의: SW중심대학사업단(20250178@학교메일)\n첨부파일\nAWS 자격증 학습 플랫폼 지원 안내 포스터.png\n(493.3KB / 다운로드 15회 / 미리보기:4)\n다운로드\n미리보기",
+    "images": [
+      "https://www.koreatech.ac.kr/boardDownload.es?mid=b10601000000&bid=0105&list_no=56867&seq=1",
+      "https://www.koreatech.ac.kr/boardDownload.es?mid=b10601000000&bid=0105&list_no=56867&seq=1&gubun=view"
+    ],
     "is_sample": false,
-    "extracted": false,
-    "processed": false,
+    "extracted": true,
+    "processed": true,
     "is_new": true,
     "collected_at": "2026-11-15T01:17:06+09:00",
-    "relevance": null,
-    "relevance_reason": null,
-    "days_left": null,
-    "is_expired": null,
-    "is_urgent": false
+    "relevance": 3,
+    "relevance_reason": "좁은 조건(학과) 일치 · 마감 있음",
+    "days_left": 15,
+    "is_expired": false,
+    "is_urgent": false,
+    "target": {
+      "scope": "specific",
+      "departments": [
+        "기계공학부",
+        "메카트로닉스공학부",
+        "전기·전자·통신공학부",
+        "컴퓨터공학부",
+        "미래융합학부",
+        "산업경영학부",
+        "고용서비스정책학과"
+      ],
+      "years": [],
+      "enrollment_statuses": [
+        "재학"
+      ],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": "2026-11-30",
+    "other_dates": [],
+    "actions": [
+      "구글폼 제출"
+    ],
+    "materials": null,
+    "category": "취업·인턴"
   },
   {
     "id": "cse-general-56827",
@@ -4523,18 +4581,48 @@
     "source": "컴퓨터공학부-일반",
     "source_type": "학교",
     "published_date": "2026-10-13",
-    "body": null,
+    "body": "2026년 졸업작품 아이디어 경진대회 안내드립니다.\n1. 일시: 2026년 11월 18일 수요일 오후 4시 ~ 6시(시간 변동 가능)\n2. 장소: 2공학관 1,2,4층 복도(추후 자세히 안내 예정)\n3. 대상: 총 124명, 2026-2학기 공학설계 수강 학생\n4. 주제: 졸업작품 제작을 위한 아이디어 포스터 제작 및 발표\n5. 안내사항\n- 공학설계 수강 학생은 모두 참가해야함\n- 팀별 인원은 최소 2명이상, 최대 5명까지 가능함\n- 평가는 대면으로 진행 예정(포스터 부착 후 심사위원 분들에게 발표 진행)\n- 발표는 팀원 중 1명이 진행, 발표시간은 5분 내외\n- 2공학관 1층 복도에 작년 포스터가 설치되어 있으니 참고할 것!\n- 포스터 제작은 자유롭게 제작 가능(양식이 없으니 자유롭게 제작하면 됨)\n6. 포스터 작성 방법\n* 포스터 양식\n- size: A1\n- 파일형식: JPEG, 24bit, 300dpi 이상\n* 포스터 제작 시 작성 금지 내용\n- 지도교수 이름, 졸업연구실 정보(랩실 이름 혹은 이미지 등)\n7.  참가신청서 제출 기간\n- 2026년 11월 06일 금요일까지\n- 신청방법: smilebear1@koreatech.ac.kr 메일로 회신\n- 신청양식: 팀 단위로 제출할 것!!(첨부파일 양식에 맞춰 작성바람!!)\n8. 포스터 제출 기한\n- 2026년 11월 15일 일요일 자정까지(기한 엄수!!)\n- 최종파일은 지도교수님에게 확인 후 제출할 것!!\n- 제출방법: 학부홈페이지 -> 학부서비스 -> 공학설계 -> 2026-2 -> 공학설계 포스터 업로드\n- 파일명: 작품명_팀장이름.jpeg\n첨부파일\n2026년_컴퓨터공학부_공학설계_아이디어_경진대회_참가신청서_양식.xlsx\n(10.48KB / 다운로드 241회 / 미리보기:93)\n다운로드\n미리보기",
     "images": [],
     "is_sample": false,
-    "extracted": false,
-    "processed": false,
+    "extracted": true,
+    "processed": true,
     "is_new": true,
     "collected_at": "2026-11-15T01:17:06+09:00",
-    "relevance": null,
-    "relevance_reason": null,
-    "days_left": null,
-    "is_expired": null,
-    "is_urgent": false
+    "relevance": 3,
+    "relevance_reason": "좁은 조건(학과) 일치 · 마감 있음",
+    "days_left": -9,
+    "is_expired": true,
+    "is_urgent": false,
+    "target": {
+      "scope": "specific",
+      "departments": [
+        "컴퓨터공학부"
+      ],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": "2026-11-06",
+    "other_dates": [
+      {
+        "label": "포스터 제출 기한",
+        "date": "2026-11-15T23:59:00+09:00"
+      },
+      {
+        "label": "경진대회 일시",
+        "date": "2026-11-18T16:00:00+09:00"
+      }
+    ],
+    "actions": [
+      "참가신청서를 작성하여 이메일로 제출",
+      "포스터 제작 후 학부홈페이지에서 업로드 제출"
+    ],
+    "materials": [
+      "2026년_컴퓨터공학부_공학설계_아이디어_경진대회_참가신청서_양식.xlsx",
+      "A1 사이즈 포스터 파일(JPEG)"
+    ],
+    "category": "교내활동"
   },
   {
     "id": "cse-general-56645",
@@ -4748,18 +4836,49 @@
     "source": "컴퓨터공학부-일반",
     "source_type": "학교",
     "published_date": "2026-08-27",
-    "body": null,
-    "images": [],
+    "body": "아래와 같이 프로그래밍 경시대회가 열립니다.\n관심 있는 학생들 많이 참여해 주세요.\n- 대회 일시: 9.19.(토) 13:00~17:00\n- 모집 기간: ~9.11.(금)\n- 총 상금: 600 만원\n- 신청 링크: https://forms.gle/QetSWcNFo3LrLRNE9\n첨부파일\n2026programming.png\n(2.45MB / 다운로드 103회 / 미리보기:48)\n다운로드\n미리보기",
+    "images": [
+      "https://www.koreatech.ac.kr/boardDownload.es?mid=b10601000000&bid=0105&list_no=56331&seq=1",
+      "https://www.koreatech.ac.kr/boardDownload.es?mid=b10601000000&bid=0105&list_no=56331&seq=1&gubun=view"
+    ],
     "is_sample": false,
-    "extracted": false,
-    "processed": false,
+    "extracted": true,
+    "processed": true,
     "is_new": true,
     "collected_at": "2026-11-15T01:17:06+09:00",
-    "relevance": null,
-    "relevance_reason": null,
-    "days_left": null,
-    "is_expired": null,
-    "is_urgent": false
+    "relevance": 3,
+    "relevance_reason": "좁은 조건(학과) 일치 · 마감 있음",
+    "days_left": -65,
+    "is_expired": true,
+    "is_urgent": false,
+    "target": {
+      "scope": "specific",
+      "departments": [
+        "컴퓨터공학부"
+      ],
+      "years": [],
+      "enrollment_statuses": [
+        "재학"
+      ],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": "2026-09-11",
+    "other_dates": [
+      {
+        "label": "팀 선정 및 안내",
+        "date": "2026-09-16"
+      },
+      {
+        "label": "경시대회",
+        "date": "2026-09-19"
+      }
+    ],
+    "actions": [
+      "구글폼을 통해 신청서 제출"
+    ],
+    "materials": null,
+    "category": "교내활동"
   },
   {
     "id": "cse-general-56317",
@@ -4962,18 +5081,51 @@
     "source": "컴퓨터공학부-일반",
     "source_type": "학교",
     "published_date": "2026-07-23",
-    "body": null,
-    "images": [],
+    "body": "첨부파일\n(붙임2) 제2회 지방교육재정 데이터 분석·활용 논문대회 포스터.jpg\n(1.54MB / 다운로드 92회 / 미리보기:43)\n다운로드\n미리보기",
+    "images": [
+      "https://www.koreatech.ac.kr/boardDownload.es?mid=b10601000000&bid=0105&list_no=56216&seq=1",
+      "https://www.koreatech.ac.kr/boardDownload.es?mid=b10601000000&bid=0105&list_no=56216&seq=1&gubun=view"
+    ],
     "is_sample": false,
-    "extracted": false,
-    "processed": false,
+    "extracted": true,
+    "processed": true,
     "is_new": true,
     "collected_at": "2026-11-15T01:17:06+09:00",
-    "relevance": null,
-    "relevance_reason": null,
-    "days_left": null,
-    "is_expired": null,
-    "is_urgent": false
+    "relevance": 3,
+    "relevance_reason": "좁은 조건(학과) 일치 · 마감 있음",
+    "days_left": -37,
+    "is_expired": true,
+    "is_urgent": false,
+    "target": {
+      "scope": "specific",
+      "departments": [
+        "컴퓨터공학부"
+      ],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": "2026-10-09",
+    "other_dates": [
+      {
+        "label": "결과 발표",
+        "date": "2026-11-06"
+      },
+      {
+        "label": "우수 논문 발표",
+        "date": "2026-11-27"
+      }
+    ],
+    "actions": [
+      "지방교육재정알리미 홈페이지에서 논문 및 참가신청서 등 작성",
+      "접수 기간 내 이메일로 제출"
+    ],
+    "materials": [
+      "참가신청서",
+      "논문"
+    ],
+    "category": "대외활동·공모전"
   },
   {
     "id": "cse-general-56188",
@@ -5117,6 +5269,905 @@
     "category": null,
     "days_left": null,
     "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "cse-employment-56858",
+    "title": "[한미그룹] 2026년 11월 수시채용",
+    "url": "https://www.koreatech.ac.kr/board.es?mid=b10704000000&bid=0109&act=view&list_no=56858&tag=&nPage=1",
+    "source": "컴퓨터공학부-취업",
+    "source_type": "학교",
+    "published_date": "2026-11-12",
+    "body": "공고접수기간: 2026.11.02 ~ 2026.11.15\n공고 URL:  https://hanmi.recruiter.co.kr/career/jobs/132886\n1. 당사의 2026년 11월 수시채용 채용계획을 아래와 같이 안내드리오니,\n기졸업자 및 2027년 2월 졸업예정자 중 우수한 학생 추천을 부탁드립니다.\n가. 모집요강\n-. 모집부문: 마케팅, 연구개발, 품질, 제조, 설비 등 전 부문\n-. 접수기한: 2026.11.02(월) ~ 2026.11.15(일) 23:59 까지 [14일간]\n나. 입사지원\n-. 한미그룹 채용홈페이지(hanmi.recruiter.co.kr)에서 모집부분 선택 후 입사지원서 작성\n※ 전형 방법\n-. 정규직: 서류전형 → 인적성검사 → 면접전형(1,2차) → 최종합격\n-. 계약직: 서류전형 → 인적성검사 → 면접전형(1차) → 최종합격\n※ 국가보훈대상자 및 장애인은 관련 서류 제출 시 관계 법령에 의거 우대합니다.\n※ 입사지원서의 내용은 상세히 기재하시기 바라며, 만약 입사지원서에 기재한 내용이\n사실과 다를 경우 채용에서 제외 될 수 있음을 알려드립니다.\n※ 채용 관련 문의사항은 e메일(junghwan.oh@hanmi.co.kr), 전화(02-410-8715)로\n연락주시기 바랍니다.",
+    "images": [
+      "https://www.koreatech.ac.kr/ease_src/crosseditor/binary/images/000031/20261112093451990_2S8QWGD3.png"
+    ],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-15T10:27:42+09:00",
+    "relevance": 0,
+    "relevance_reason": "학적 상태 조건 불일치",
+    "target": {
+      "scope": "specific",
+      "departments": [
+        "컴퓨터공학부"
+      ],
+      "years": [],
+      "enrollment_statuses": [
+        "졸업예정",
+        "졸업"
+      ],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": "2026-11-15T23:59:00+09:00",
+    "other_dates": [],
+    "actions": [
+      "한미그룹 채용홈페이지에서 모집부문 선택 후 입사지원서 작성"
+    ],
+    "materials": null,
+    "category": "취업·인턴",
+    "days_left": 0,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "cse-employment-56237",
+    "title": "(주)도루코 2026년 상시채용",
+    "url": "https://www.koreatech.ac.kr/board.es?mid=b10704000000&bid=0109&act=view&list_no=56237&tag=&nPage=1",
+    "source": "컴퓨터공학부-취업",
+    "source_type": "학교",
+    "published_date": "2026-08-04",
+    "body": "(주)도루코 2026년 상시채용\n공고 URL: https://dorco.recruiter.co.kr/career/home",
+    "images": [
+      "https://www.koreatech.ac.kr/ease_src/crosseditor/binary/images/000027/20260804094400541_W1I94K8D.png"
+    ],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-15T10:27:42+09:00",
+    "relevance": 0,
+    "relevance_reason": "학적 상태 조건 불일치",
+    "target": {
+      "scope": "specific",
+      "departments": [
+        "컴퓨터공학부",
+        "기계공학부",
+        "산업경영학부"
+      ],
+      "years": [],
+      "enrollment_statuses": [
+        "졸업예정",
+        "졸업"
+      ],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": null,
+    "other_dates": [],
+    "actions": [
+      "채용 홈페이지에서 지원"
+    ],
+    "materials": [
+      "입사지원서",
+      "최종학교 성적증명서 및 졸업증명서",
+      "경력증명서",
+      "각종 어학 및 자격증 사본"
+    ],
+    "category": "취업·인턴",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "cse-employment-56178",
+    "title": "[천안] 하나AI(주) AI 개발자 채용(~07.23)",
+    "url": "https://www.koreatech.ac.kr/board.es?mid=b10704000000&bid=0109&act=view&list_no=56178&tag=&nPage=1",
+    "source": "컴퓨터공학부-취업",
+    "source_type": "학교",
+    "published_date": "2026-07-08",
+    "body": "천안 소재 [하나 AI]에서 AI 개발자를 채용하고 있습니다.\n관심있는 학생들은 아래 채용 URL 확인 후 지원하시면 됩니다.\n지원한 학생은 아래 메일로 지원여부 공유해주세요.\n(E-mail: smilebear1@koreatech.ac.kr / 컴공 기술연구원 황현서)\n* 채용 공고 및 입사 지원 URL\nhttps://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=54257315&location=ts&searchword=%ED%95%98%EB%82%98%EC%97%90%EC%9D%B4%EC%95%84%EC%9D%B4&searchType=search&paid_fl=n&search_uuid=906370df-666e-4092-98fa-8fd975900d30&t_ref=search&t_ref_content=generic#seq=0\n첨부파일\n하나AI 채용공고.JPG\n(102.55KB / 다운로드 186회 / 미리보기:100)\n다운로드\n미리보기",
+    "images": [
+      "https://www.koreatech.ac.kr/boardDownload.es?mid=b10704000000&bid=0109&list_no=56178&seq=1",
+      "https://www.koreatech.ac.kr/ease_src/crosseditor/binary/images/000027/20260708163528386_FAZ7AQQE.jpg"
+    ],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-15T10:27:42+09:00",
+    "relevance": 3,
+    "relevance_reason": "좁은 조건(학과) 일치 · 마감 있음",
+    "target": {
+      "scope": "specific",
+      "departments": [
+        "컴퓨터공학부"
+      ],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": "2026-07-23T23:59:00+09:00",
+    "other_dates": [],
+    "actions": [
+      "사람인 입사지원",
+      "지원한 학생은 지정된 메일로 지원여부 공유"
+    ],
+    "materials": [
+      "사람인 온라인 이력서"
+    ],
+    "category": "취업·인턴",
+    "days_left": -115,
+    "is_expired": true,
+    "is_urgent": false
+  },
+  {
+    "id": "cse-employment-55719",
+    "title": "[일반직, 공무직, 체험형 청년인턴] 부산광역시 남구시설관리공단 채용 공고 ~ 2026. ..",
+    "url": "https://www.koreatech.ac.kr/board.es?mid=b10704000000&bid=0109&act=view&list_no=55719&tag=&nPage=1",
+    "source": "컴퓨터공학부-취업",
+    "source_type": "학교",
+    "published_date": "2026-04-29",
+    "body": "[일반직, 공무직, 체험형 청년인턴] 부산광역시 남구시설관리공단 채용 공고 ~ 2026. 05. 08\n위치는 부산 남구 용호동에 위치한 부산광역시 남구시설관리공단입니다.\n공고 URL: https://bnfmc.recruiter.co.kr/app/jobnotice/view?systemKindCode=MRS2&jobnoticeSn=214081",
+    "images": [
+      "https://www.koreatech.ac.kr/ease_src/crosseditor/binary/images/000026/20260429105705338_T3VBEA05.jpg"
+    ],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-15T10:27:42+09:00",
+    "relevance": 3,
+    "relevance_reason": "좁은 조건(학과) 일치 · 마감 있음",
+    "target": {
+      "scope": "specific",
+      "departments": [
+        "컴퓨터공학부"
+      ],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": "2026-05-08",
+    "other_dates": [],
+    "actions": [
+      "채용 공고 URL에서 지원 접수"
+    ],
+    "materials": null,
+    "category": "취업·인턴",
+    "days_left": -191,
+    "is_expired": true,
+    "is_urgent": false
+  },
+  {
+    "id": "cse-employment-55539",
+    "title": "[한국콜마] 2026 상반기 콜마그룹 대졸신입 공채(~04.22)",
+    "url": "https://www.koreatech.ac.kr/board.es?mid=b10704000000&bid=0109&act=view&list_no=55539&tag=&nPage=1",
+    "source": "컴퓨터공학부-취업",
+    "source_type": "학교",
+    "published_date": "2026-04-13",
+    "body": null,
+    "images": [
+      "https://www.koreatech.ac.kr/ease_src/crosseditor/binary/images/000025/20260413104723721_9V0R5SDH.png"
+    ],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-15T10:27:42+09:00",
+    "relevance": 0,
+    "relevance_reason": "학적 상태 조건 불일치",
+    "target": {
+      "scope": "specific",
+      "departments": [
+        "컴퓨터공학부"
+      ],
+      "years": [],
+      "enrollment_statuses": [
+        "졸업예정"
+      ],
+      "groups": [
+        "학부생"
+      ],
+      "dorm_required": null
+    },
+    "deadline": "2026-04-22T23:59:00+09:00",
+    "other_dates": [
+      {
+        "label": "지원기간 시작",
+        "date": "2026-04-09T12:00:00+09:00"
+      }
+    ],
+    "actions": [
+      "콜마그룹 채용사이트 접속 후 희망직무 지원링크 클릭"
+    ],
+    "materials": null,
+    "category": "취업·인턴",
+    "days_left": -207,
+    "is_expired": true,
+    "is_urgent": false
+  },
+  {
+    "id": "cse-employment-55520",
+    "title": "[그룹공채] 2026년 상반기 코스맥스그룹 신입사원 공개채용",
+    "url": "https://www.koreatech.ac.kr/board.es?mid=b10704000000&bid=0109&act=view&list_no=55520&tag=&nPage=1",
+    "source": "컴퓨터공학부-취업",
+    "source_type": "학교",
+    "published_date": "2026-03-20",
+    "body": null,
+    "images": [
+      "https://www.koreatech.ac.kr/ease_src/crosseditor/binary/images/000024/20260320122644843_RXPP6FPY.png"
+    ],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-15T10:27:42+09:00",
+    "relevance": 0,
+    "relevance_reason": "학적 상태 조건 불일치",
+    "target": {
+      "scope": "specific",
+      "departments": [
+        "컴퓨터공학부"
+      ],
+      "years": [],
+      "enrollment_statuses": [
+        "졸업예정",
+        "졸업"
+      ],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": "2026-04-06T16:00:00+09:00",
+    "other_dates": [
+      {
+        "label": "중앙대학교 채용상담회 및 채용설명회",
+        "date": "2026-03-24"
+      }
+    ],
+    "actions": [
+      "코스맥스 채용 사이트를 통해 지원서 접수"
+    ],
+    "materials": [
+      "최종학교 졸업증명서, 성적증명서",
+      "경력증명서",
+      "어학성적, 자격증"
+    ],
+    "category": "취업·인턴",
+    "days_left": -223,
+    "is_expired": true,
+    "is_urgent": false
+  },
+  {
+    "id": "cse-employment-55208",
+    "title": "[채용연계형] 메타넷그룹 채용연계형 교육 안내",
+    "url": "https://www.koreatech.ac.kr/board.es?mid=b10704000000&bid=0109&act=view&list_no=55208&tag=&nPage=1",
+    "source": "컴퓨터공학부-취업",
+    "source_type": "학교",
+    "published_date": "2026-01-20",
+    "body": "메타넷디지털(구 대우정보시스템)과 계열사인 AI 전문기업 스켈터랩스에서 AI엔지니어로서의 커리어 성장을 지원하는\nAI 개발자 인터십 과정을 운영합니다.\n관심있는 학생들은 첨부된 파일 확인하여 기간 내 지원하기 바랍니다.(지원 방법은 첨부파일에 설명되어 있음)\n서류접수 기간은 2026.01.25(일)까지 입니다.\n또한, 지원한 학생이 있을 경우 아래 E-mail 지원 여부 회신하기 바랍니다.\n* E-mail: smilebear1@koreatech.ac.kr(황현서/컴퓨터공학부 기술연구원)\n첨부파일\n메타넷그룹 교육인턴십프로그램 브로슈어.pdf\n(6.31MB / 다운로드 208회 / 미리보기:149)\n다운로드\n미리보기",
+    "images": [],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-15T10:27:42+09:00",
+    "relevance": 3,
+    "relevance_reason": "좁은 조건(학과) 일치 · 마감 있음",
+    "target": {
+      "scope": "specific",
+      "departments": [
+        "컴퓨터공학부"
+      ],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": "2026-01-25",
+    "other_dates": [],
+    "actions": [
+      "첨부파일 확인 후 기간 내 지원",
+      "지원 시 E-mail 회신"
+    ],
+    "materials": null,
+    "category": "취업·인턴",
+    "days_left": -294,
+    "is_expired": true,
+    "is_urgent": false
+  },
+  {
+    "id": "cse-employment-54732",
+    "title": "[토스] 25년도 2학기 Frontend Platform Assistant 모집",
+    "url": "https://www.koreatech.ac.kr/board.es?mid=b10704000000&bid=0109&act=view&list_no=54732&tag=&nPage=1",
+    "source": "컴퓨터공학부-취업",
+    "source_type": "학교",
+    "published_date": "2025-11-20",
+    "body": "토스에서 아래와 같이 Frontend Platform Assistant 모집하고 있습니다.\n아래 내용 혹은 URL 접속하여 확인하기 바랍니다.\nURL:  https://toss.im/builder/to/ecec6cbba9344082920c82ba28698bfb\n💫  이력서의 강력한 한 줄, 토스에서\n실력 있는 토스의 시니어 개발자들과 프론트엔드 개발환경의 미래를 그려가며 성장해 보세요! 전담 멘토와 직접 소통하며, 기술 문제에 대해 생각하는 방식을 배울 수 있어요. 2달간의 과정이 끝나면 나만의 경쟁력을 얻을 수 있을 거예요.\n💡 답을 얻어갈 수 있는 질문들\n100명 이상의 프론트엔드 개발자들이 매일 개발하는 프레임워크는 어떻게 설계할까?\n스타 8K 이상의 세계적인 오픈소스 라이브러리를 어떻게 운영하고 기여할 수 있을까?\n언어 및 프레임워크 레벨까지 깊이 이해한다는 것은 무엇일까?\n🧑🏻‍🌾  진행할 프로젝트\n다음 프로젝트 중 하나에 2달동안 참여하게 돼요.\n토스 앱 안의 모바일 서비스를 만드는 개발 서버와 IDE 플러그인\n토스 앱을 개발하는 프레임워크의 플러그인 시스템\nNode.js 라이브러리를 간편하게 빌드하는 번들러와 CLI\n린트, 단위 테스트, 타입 검사를 자동으로 수행하는 CI 시스템\n작은 오류라도 빠르게 감지하고, 서비스 담당자에게 전달되는 On-call 시스템\n토스 개발자들이 라이브러리를 개발하는 통합 리포지토리 설계\n접근성, 큰글씨를 손쉽게 테스트할 수 있는 크롬 익스텐션\nAI 에이전트와 연결할 수 있는 사내 시스템 CLI\nJava 빌드 결과물 크기 분석 및 모니터링 도구\n📝  지원 조건\n26년 1월 5일부터 2월 27일까지 토스 사무실에서 근무 가능하신 분 (서울 역삼역 or 신논현역 인근)\n📅  전형 일정\n지원 접수 마감: 12월 1일 (월) 23:59\n과제 대상자 발표: 12월 4일 (목) 11:00\n코딩 과제 전형: 12월 6일 (토) 11:00부터 24시간 동안 진행\n💬 리포지토리 제출 가이드\n이번 전형에서는 이력서 없이 리포지토리로 지원해요. 다음과 같이 토스가 중요하게 생각하는 요소들을 참고해 보세요.\n서비스가 아닌 라이브러리 또는 CLI 도구를 다루는 리포지토리이면 좋아요.\n프로젝트가 어떤 문제를 해결하고자 하는지 알 수 있는 README가 있으면 좋아요.\n빌드 또는 린트, 의존성 설정을 올바르게 하기 위해 노력한 리포지토리이면 좋아요.\n코드에 버그가 없도록 추가한 CI Check 및 테스트가 있으면 좋아요.\n라이브러리 또는 CLI 도구의 레퍼런스 및 가이드를 포함하고 있으면 좋아요.\n코드 파일을 수정하기 쉽도록 디렉토리 구조 및 코드 품질을 고민한 리포지토리면 좋아요.\nType를 정확하게 사용하기 위해 고민한 리포지토리면 좋아요.",
+    "images": [],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-15T10:27:42+09:00",
+    "relevance": 3,
+    "relevance_reason": "좁은 조건(학과) 일치 · 마감 있음",
+    "target": {
+      "scope": "specific",
+      "departments": [
+        "컴퓨터공학부"
+      ],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": "2025-12-01T23:59:00+09:00",
+    "other_dates": [
+      {
+        "label": "과제 대상자 발표",
+        "date": "2025-12-04"
+      },
+      {
+        "label": "코딩 과제 전형",
+        "date": "2025-12-06"
+      }
+    ],
+    "actions": [
+      "URL에 접속하여 지원 접수",
+      "리포지토리 제출"
+    ],
+    "materials": [
+      "리포지토리"
+    ],
+    "category": "취업·인턴",
+    "days_left": -349,
+    "is_expired": true,
+    "is_urgent": false
+  },
+  {
+    "id": "cse-employment-54597",
+    "title": "[소프트웨어중심대학] 사업직원(계약직 일반) 공개채용 공고",
+    "url": "https://www.koreatech.ac.kr/board.es?mid=b10704000000&bid=0109&act=view&list_no=54597&tag=&nPage=1",
+    "source": "컴퓨터공학부-취업",
+    "source_type": "학교",
+    "published_date": "2025-11-04",
+    "body": "소프트웨어중심대학에서 사업직원(계약직 일반) 공개 채용을 진행하고 있습니다.\n아래 URL로 접속하여 내용 확인하기 바랍니다.\n* 채용 URL: https://sandan.koreatech.ac.kr/kor/CMS/JobNoticeMgr/notice/view.do?mCode=MN108¬ice_seq=281",
+    "images": [
+      "https://www.koreatech.ac.kr/ease_src/crosseditor/binary/images/000021/20251104124509130_EDYG1IXX.png"
+    ],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-15T10:27:42+09:00",
+    "relevance": 0,
+    "relevance_reason": "제외 대상 집단 전용 공지",
+    "target": {
+      "scope": "specific",
+      "departments": [
+        "컴퓨터공학부"
+      ],
+      "years": null,
+      "enrollment_statuses": null,
+      "groups": [
+        "교직원"
+      ],
+      "dorm_required": null
+    },
+    "deadline": null,
+    "other_dates": [],
+    "actions": [
+      "채용 URL에 접속하여 내용 확인"
+    ],
+    "materials": null,
+    "category": "취업·인턴",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "cse-employment-54127",
+    "title": "쎄트렉아이 2025 하반기 신입 채용, SI Future-Ship 모집 ~ 2025.09.14(일) 23:59까지",
+    "url": "https://www.koreatech.ac.kr/board.es?mid=b10704000000&bid=0109&act=view&list_no=54127&tag=&nPage=1",
+    "source": "컴퓨터공학부-취업",
+    "source_type": "학교",
+    "published_date": "2025-08-26",
+    "body": "쎄트렉아이 2025 하반기 신입 채용, SI Future-Ship 모집\n공고 URL:  https://satreci.recruiter.co.kr\n자세한 사항은 위 공고 URL을 참고하기 바랍니다.",
+    "images": [
+      "https://www.koreatech.ac.kr/ease_src/crosseditor/binary/images/000018/20250826153213894_LJHJ7MWP.png"
+    ],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-15T10:27:42+09:00",
+    "relevance": 0,
+    "relevance_reason": "학적 상태 조건 불일치",
+    "target": {
+      "scope": "specific",
+      "departments": [
+        "컴퓨터공학부"
+      ],
+      "years": [],
+      "enrollment_statuses": [
+        "졸업예정",
+        "졸업"
+      ],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": "2025-09-14T23:59:00+09:00",
+    "other_dates": [
+      {
+        "label": "인턴십 기간",
+        "date": "2025-10-20"
+      }
+    ],
+    "actions": [
+      "쎄트렉아이 채용사이트를 통한 지원"
+    ],
+    "materials": null,
+    "category": "취업·인턴",
+    "days_left": -427,
+    "is_expired": true,
+    "is_urgent": false
+  },
+  {
+    "id": "cse-employment-55673",
+    "title": "[체험형 청년인턴] 제1차 부산광역시 남구시설관리공단 채용 공고 ~ 2025. 05. 02",
+    "url": "https://www.koreatech.ac.kr/board.es?mid=b10704000000&bid=0109&act=view&list_no=55673&tag=&nPage=1",
+    "source": "컴퓨터공학부-취업",
+    "source_type": "학교",
+    "published_date": "2025-04-22",
+    "body": "당사는 남구 용호동에 위치한 부산광역시 남구시설관리공단입니다.\n공고 URL: https://bnfmc.recruiter.co.kr/app/jobnotice/view?systemKindCode=MRS2&jobnoticeSn=214081\n첨부파일\n2025년 제1차 일반직·공무직·체험형 청년인턴 채용 공고.hwp\n(107.5KB / 다운로드 345회 / 미리보기:256)\n다운로드\n미리보기\n2025년 제1차 일반직·공무직·체험형 청년인턴 채용 공고.pdf\n(230.88KB / 다운로드 336회 / 미리보기:255)\n다운로드\n미리보기",
+    "images": [
+      "https://www.koreatech.ac.kr/ease_src/crosseditor/binary/images/000015/20250422082859163_DBQ4QYAV.jpg"
+    ],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-15T10:27:42+09:00",
+    "relevance": 3,
+    "relevance_reason": "좁은 조건(학과) 일치 · 마감 있음",
+    "target": {
+      "scope": "specific",
+      "departments": [
+        "컴퓨터공학부"
+      ],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": "2025-05-02T18:00:00+09:00",
+    "other_dates": [
+      {
+        "label": "서류심사 결과 발표",
+        "date": "2025-05-09"
+      },
+      {
+        "label": "인성검사 (청년인턴 제외)",
+        "date": "2025-05-10"
+      },
+      {
+        "label": "면접심사 대상자 발표",
+        "date": "2025-05-13"
+      },
+      {
+        "label": "면접심사",
+        "date": "2025-05-16"
+      },
+      {
+        "label": "최종합격자 발표",
+        "date": "2025-05-27"
+      }
+    ],
+    "actions": [
+      "채용 홈페이지에서 원서 접수"
+    ],
+    "materials": [
+      "응시원서",
+      "자기소개서",
+      "개인정보수집·이용·제공 동의서 및 서약서",
+      "직무수행계획서",
+      "경력사항 증빙서한",
+      "주민등록초본",
+      "자격증 사유 또는 취득사항 확인서",
+      "경력증명서"
+    ],
+    "category": "취업·인턴",
+    "days_left": -562,
+    "is_expired": true,
+    "is_urgent": false
+  },
+  {
+    "id": "cse-employment-53618",
+    "title": "[체험형 청년인턴] 제1차 부산광역시 남구시설관리공단 채용 공고 ~ 2025. 05. 02",
+    "url": "https://www.koreatech.ac.kr/board.es?mid=b10704000000&bid=0109&act=view&list_no=53618&tag=&nPage=1",
+    "source": "컴퓨터공학부-취업",
+    "source_type": "학교",
+    "published_date": "2025-04-22",
+    "body": "당사는 남구 용호동에 위치한 부산광역시 남구시설관리공단입니다.\n공고 URL: https://bnfmc.recruiter.co.kr/app/jobnotice/view?systemKindCode=MRS2&jobnoticeSn=214081\n첨부파일\n2025년 제1차 일반직·공무직·체험형 청년인턴 채용 공고.hwp\n(107.5KB / 다운로드 321회 / 미리보기:241)\n다운로드\n미리보기\n2025년 제1차 일반직·공무직·체험형 청년인턴 채용 공고.pdf\n(230.88KB / 다운로드 337회 / 미리보기:259)\n다운로드\n미리보기",
+    "images": [
+      "https://www.koreatech.ac.kr/ease_src/crosseditor/binary/images/000015/20250422082859163_DBQ4QYAV.jpg"
+    ],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-15T10:27:42+09:00",
+    "relevance": 3,
+    "relevance_reason": "좁은 조건(학과) 일치 · 마감 있음",
+    "target": {
+      "scope": "specific",
+      "departments": [
+        "컴퓨터공학부"
+      ],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": "2025-05-02",
+    "other_dates": [],
+    "actions": [
+      "채용 공고 URL에서 지원서 제출"
+    ],
+    "materials": null,
+    "category": "취업·인턴",
+    "days_left": -562,
+    "is_expired": true,
+    "is_urgent": false
+  },
+  {
+    "id": "cse-employment-53611",
+    "title": "대전방송 및 대전정보문화산업진흥원 인턴형 일경험 모집 안내(~4.21)",
+    "url": "https://www.koreatech.ac.kr/board.es?mid=b10704000000&bid=0109&act=view&list_no=53611&tag=&nPage=1",
+    "source": "컴퓨터공학부-취업",
+    "source_type": "학교",
+    "published_date": "2025-04-17",
+    "body": "대전방송 및 대전정보문화산업진흥원에서 인턴형 일경험을 모집하고 있습니다.\n아래 공고 내용 확인 바라며, 관심 있는 학생들은 제출서류에 포함되어 있는 서류 작성하여 제출하기 바랍니다.\n추가로 각 기관별 운영계획서도 첨부하였으니 참고하기 바랍니다.\n제출은 아래 메일로 하시면 되고, 문의사항은 아래 안내된 문일영교수님께 연락하시면 됩니다.\n* 서류제출 메일: intern@rapa.or.kr\n* 문의사항: 컴퓨터공학부 문일영 교수(iymoon@koreatech.ac.kr)\n첨부파일\n대전방송 인턴형 일경험 모집 공고.jpg\n(1.09MB / 다운로드 316회 / 미리보기:241)\n다운로드\n미리보기\n대전정보문화산업진흥원 인턴형 일경험 모집 공고.jpg\n(1.08MB / 다운로드 300회 / 미리보기:231)\n다운로드\n미리보기\n[대전방송] 인턴형 일경험 운영계획서.hwp\n(64.5KB / 다운로드 310회 / 미리보기:242)\n다운로드\n미리보기\n[대전정보문화산업진흥원] 인턴형 일경험 운영 계획서.hwpx\n(63.7KB / 다운로드 301회 / 미리보기:239)\n다운로드\n미리보기\n제출서류.zip\n(307.24KB / 다운로드 308회 / 미리보기:234)\n다운로드\n미리보기",
+    "images": [
+      "https://www.koreatech.ac.kr/boardDownload.es?mid=b10704000000&bid=0109&list_no=53611&seq=1",
+      "https://www.koreatech.ac.kr/boardDownload.es?mid=b10704000000&bid=0109&list_no=53611&seq=1&gubun=view",
+      "https://www.koreatech.ac.kr/boardDownload.es?mid=b10704000000&bid=0109&list_no=53611&seq=2",
+      "https://www.koreatech.ac.kr/boardDownload.es?mid=b10704000000&bid=0109&list_no=53611&seq=2&gubun=view"
+    ],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-15T10:27:42+09:00",
+    "relevance": 3,
+    "relevance_reason": "좁은 조건(학과) 일치 · 마감 있음",
+    "target": {
+      "scope": "specific",
+      "departments": [
+        "컴퓨터공학부"
+      ],
+      "years": [],
+      "enrollment_statuses": [
+        "재학",
+        "휴학",
+        "졸업예정"
+      ],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": "2025-04-21",
+    "other_dates": [
+      {
+        "label": "서류전형",
+        "date": "2025-04-23"
+      },
+      {
+        "label": "면접전형",
+        "date": "2025-04-28"
+      },
+      {
+        "label": "사전교육",
+        "date": "2025-05-07"
+      },
+      {
+        "label": "일경험 기간",
+        "date": "2025-05-12"
+      }
+    ],
+    "actions": [
+      "미래내일일경험 통합플랫폼에서 개별 신청",
+      "참가지원서 및 일체서류 이메일 제출"
+    ],
+    "materials": [
+      "참가지원서 및 일체서류"
+    ],
+    "category": "취업·인턴",
+    "days_left": -573,
+    "is_expired": true,
+    "is_urgent": false
+  },
+  {
+    "id": "cse-employment-53472",
+    "title": "2025 대원제약 DNA채용(상반기 공채)",
+    "url": "https://www.koreatech.ac.kr/board.es?mid=b10704000000&bid=0109&act=view&list_no=53472&tag=&nPage=1",
+    "source": "컴퓨터공학부-취업",
+    "source_type": "학교",
+    "published_date": "2025-03-27",
+    "body": "아래와 같이 대원제약에서 채용을 진행하오니,\n학우들의 많은 관심과 지원 바랍니다.\n감사합니다.\n채용 URL: https://daewonpharm.recruiter.co.kr/app/jobnotice/view?systemKindCode=MRS2&jobnoticeSn=211646\n구분\n내용\n공고명\n2025 대원제약 DNA채용(상반기 공채)\n공고접수기간\n~2025. 04. 07.(월) 17시 30분",
+    "images": [],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-15T10:27:42+09:00",
+    "relevance": 3,
+    "relevance_reason": "좁은 조건(학과) 일치 · 마감 있음",
+    "target": {
+      "scope": "specific",
+      "departments": [
+        "컴퓨터공학부"
+      ],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": "2025-04-07T17:30:00+09:00",
+    "other_dates": [],
+    "actions": [
+      "채용 URL을 통해 지원"
+    ],
+    "materials": null,
+    "category": "취업·인턴",
+    "days_left": -587,
+    "is_expired": true,
+    "is_urgent": false
+  },
+  {
+    "id": "cse-employment-52224",
+    "title": "[충북] 충북대학교병원 신규직원(전산직 포함) 모집 공고(~06.28)",
+    "url": "https://www.koreatech.ac.kr/board.es?mid=b10704000000&bid=0109&act=view&list_no=52224&tag=&nPage=1",
+    "source": "컴퓨터공학부-취업",
+    "source_type": "학교",
+    "published_date": "2024-06-18",
+    "body": "2024년도 제 4차 충북대학교병원 신규직원 모집 공고입니다.\n전산직 모집 공고는 아래 확인 바라며, 자세한 내용은 채용 홈페이지 확인하기 바랍니다.\n채용 URL: https://cbnuh.recruiter.co.kr/app/jobnotice/view?systemKindCode=MRS2&jobnoticeSn=184489",
+    "images": [
+      "https://www.koreatech.ac.kr/ease_src/crosseditor/binary/images/000006/20240618172422550_EXA1BADC.png"
+    ],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-15T10:27:42+09:00",
+    "relevance": 3,
+    "relevance_reason": "좁은 조건(학과) 일치 · 마감 있음",
+    "target": {
+      "scope": "specific",
+      "departments": [
+        "컴퓨터공학부"
+      ],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": "2024-06-28",
+    "other_dates": [],
+    "actions": [
+      "채용 홈페이지에서 지원서 접수"
+    ],
+    "materials": null,
+    "category": "취업·인턴",
+    "days_left": -870,
+    "is_expired": true,
+    "is_urgent": false
+  },
+  {
+    "id": "cse-employment-52207",
+    "title": "㈜휴니버스글로벌 인턴후 채용(~상시)",
+    "url": "https://www.koreatech.ac.kr/board.es?mid=b10704000000&bid=0109&act=view&list_no=52207&tag=&nPage=1",
+    "source": "컴퓨터공학부-취업",
+    "source_type": "학교",
+    "published_date": "2024-06-12",
+    "body": "휴니버스글로벌은\n클라우드 기반의 디지털 헬스케어의 선도, 정밀의료 병원정보시스템 (PHIS)을 개발하는 회사입니다.\n인턴 3개월후 정규직 전환 채용으로\n인턴기간: 약 210만원\n정규직 전환후 연봉 3,300 정도\n학생들의 많은 관심 바라며, 지원은 아래로 연락 바랍니다.\n휴니버스글로벌 인사팀 박승준 차장: edunuri1@huniverse.co.kr\n자세한 사항은 첨부파일을 참조하기 바랍니다.\n첨부파일\n휴니버스글로벌_채용설명회배포_V1.1.pdf\n(1.74MB / 다운로드 405회 / 미리보기:312)\n다운로드\n미리보기",
+    "images": [],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-15T10:27:42+09:00",
+    "relevance": 1,
+    "relevance_reason": "좁은 조건(학과) 일치 · 마감 정보 없음",
+    "target": {
+      "scope": "specific",
+      "departments": [
+        "컴퓨터공학부"
+      ],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": null,
+    "other_dates": [],
+    "actions": [
+      "이메일로 지원 연락"
+    ],
+    "materials": null,
+    "category": "취업·인턴",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "cse-employment-51691",
+    "title": "2024년도 상반기 한국기술교육대학교 직원 채용",
+    "url": "https://www.koreatech.ac.kr/board.es?mid=b10704000000&bid=0109&act=view&list_no=51691&tag=&nPage=1",
+    "source": "컴퓨터공학부-취업",
+    "source_type": "학교",
+    "published_date": "2024-04-02",
+    "body": "상세한 내용은 첨부된 파일을 확인하시기 바랍니다.\n첨부파일\n2024년 상반기 직원 채용공고문.hwp\n(59KB / 다운로드 890회 / 미리보기:600)\n다운로드\n미리보기\n입사지원서 및 직무기술서.zip\n(370KB / 다운로드 462회 / 미리보기:365)\n다운로드\n미리보기",
+    "images": [],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-15T10:27:42+09:00",
+    "relevance": 0,
+    "relevance_reason": "제외 대상 집단 전용 공지",
+    "target": {
+      "scope": "specific",
+      "departments": [
+        "컴퓨터공학부"
+      ],
+      "years": null,
+      "enrollment_statuses": null,
+      "groups": [
+        "교직원"
+      ],
+      "dorm_required": null
+    },
+    "deadline": null,
+    "other_dates": [],
+    "actions": [
+      "첨부된 파일 확인 후 입사지원서 및 직무기술서 제출"
+    ],
+    "materials": [
+      "입사지원서",
+      "직무기술서"
+    ],
+    "category": "취업·인턴",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "cse-employment-51531",
+    "title": "[수시채용, 일본] CAL 주식회사 엔지니어 채용",
+    "url": "https://www.koreatech.ac.kr/board.es?mid=b10704000000&bid=0109&act=view&list_no=51531&tag=&nPage=1",
+    "source": "컴퓨터공학부-취업",
+    "source_type": "학교",
+    "published_date": "2024-03-19",
+    "body": "일본 기업 CAL 주식회사에서 엔지니어를 수시채용합니다.\n관심있는 분은 첨부된 공고문을 확인하시기 바랍니다.\n첨부파일\n■CAL_채용공고.pdf\n(316.02KB / 다운로드 462회 / 미리보기:375)\n다운로드\n미리보기",
+    "images": [],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-15T10:27:42+09:00",
+    "relevance": 1,
+    "relevance_reason": "좁은 조건(학과) 일치 · 마감 정보 없음",
+    "target": {
+      "scope": "specific",
+      "departments": [
+        "컴퓨터공학부"
+      ],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": null,
+    "other_dates": [],
+    "actions": [
+      "첨부된 공고문 확인"
+    ],
+    "materials": null,
+    "category": "취업·인턴",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "cse-employment-51337",
+    "title": "[서울] 파수&스패로우 신입 공개 채용(~03.10)",
+    "url": "https://www.koreatech.ac.kr/board.es?mid=b10704000000&bid=0109&act=view&list_no=51337&tag=&nPage=1",
+    "source": "컴퓨터공학부-취업",
+    "source_type": "학교",
+    "published_date": "2024-02-29",
+    "body": "파수&스패로우에서 신입 공개 채용을 하고 있습니다.\n모집기간은 2.19(월) ~ 3.10(일)까지 이며,\n모집 직무 소개는 아래 이미지 참고 및 URL로 접속하여 확인하기 바랍니다.\nSW 개발 부문 및 컨설턴트/사업 부문을 채용하고 있으니 많은 관심 바랍니다.\n채용 URL:  2024년 1차 신입 공개 채용 – Fasoo 공식 채용사이트",
+    "images": [
+      "https://www.koreatech.ac.kr/ease_src/crosseditor/binary/images/000001/20240229103446243_GTS5MD6A.png",
+      "https://www.koreatech.ac.kr/ease_src/crosseditor/binary/images/000001/20240229103507651_J0GOQVEH.png",
+      "https://www.koreatech.ac.kr/ease_src/crosseditor/binary/images/000001/20240229103516194_TZ71OZ1H.png"
+    ],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-15T10:27:42+09:00",
+    "relevance": 3,
+    "relevance_reason": "좁은 조건(학과) 일치 · 마감 있음",
+    "target": {
+      "scope": "specific",
+      "departments": [
+        "컴퓨터공학부"
+      ],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": "2024-03-10",
+    "other_dates": [],
+    "actions": [
+      "채용 사이트 접속하여 지원"
+    ],
+    "materials": null,
+    "category": "취업·인턴",
+    "days_left": -980,
+    "is_expired": true,
+    "is_urgent": false
+  },
+  {
+    "id": "cse-employment-43973",
+    "title": "GS네오텍(주) IT/경영기획 경력 및 신입사원 모집(~ 2. 29.)",
+    "url": "https://www.koreatech.ac.kr/board.es?mid=b10704000000&bid=0109&act=view&list_no=43973&tag=&nPage=1",
+    "source": "컴퓨터공학부-취업",
+    "source_type": "학교",
+    "published_date": "2024-02-16",
+    "body": "자세한 내용은 아래 이미지를 확인하시기 바라며\n하이퍼링크가 비활성화되어있으니 해당 기업 홈페이지에 접속하여\n입사 지원하시기 바랍니다.\n첨부파일\nGS네오텍㈜_채용공고.jpg\n(638KB / 다운로드:350 / 미리보기:323)\n다운로드\n미리보기",
+    "images": [
+      "https://www.koreatech.ac.kr/boardDownload.es?mid=b10704000000&bid=0109&list_no=43973&seq=1",
+      "https://www.koreatech.ac.kr/boardDownload.es?mid=b10704000000&bid=0109&list_no=43973&seq=1&gubun=view",
+      "https://www.koreatech.ac.kr/upload/cse/files/attach/images/184/425/120/7eca14f4b47882c58ef24d5ecfa4872f.jpg"
+    ],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-15T10:27:42+09:00",
+    "relevance": 0,
+    "relevance_reason": "학적 상태 조건 불일치",
+    "target": {
+      "scope": "specific",
+      "departments": [
+        "컴퓨터공학부",
+        "산업경영학부"
+      ],
+      "years": [],
+      "enrollment_statuses": [
+        "졸업예정",
+        "졸업"
+      ],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": "2024-02-29",
+    "other_dates": [],
+    "actions": [
+      "기업 홈페이지에 접속하여 입사 지원"
+    ],
+    "materials": null,
+    "category": "취업·인턴",
+    "days_left": -990,
+    "is_expired": true,
     "is_urgent": false
   }
 ]
