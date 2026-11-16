@@ -1,16 +1,12 @@
 {
-  "department": "컴퓨터공학부",
+  "department": "메카트로닉스공학부",
   "year": 1,
   "groups": [
     "학부생"
   ],
   "enrollment_status": "재학",
   "dorm_resident": true,
-  "interests": [
-    "장학",
-    "학사",
-    "취업·인턴"
-  ],
+  "interests": [],
   "always_show_categories": [],
   "excluded_categories": [],
   "excluded_target_groups": [
