@@ -7762,15 +7762,59 @@
       "https://www.koreatech.ac.kr/boardDownload.es?mid=a70604000000&bid=0075&list_no=52280&seq=3&gubun=view"
     ],
     "is_sample": false,
-    "extracted": false,
-    "processed": false,
+    "extracted": true,
+    "processed": true,
     "is_new": true,
     "collected_at": "2026-11-16T10:50:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
-    "days_left": null,
-    "is_expired": null,
-    "is_urgent": false
+    "relevance": 0,
+    "relevance_reason": "사용자가 제외한 분류",
+    "days_left": -841,
+    "is_expired": true,
+    "is_urgent": false,
+    "target": {
+      "scope": "specific",
+      "departments": [
+        "전기·전자·통신공학부",
+        "컴퓨터공학부"
+      ],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": "2024-07-28",
+    "other_dates": [
+      {
+        "label": "1차 서류평가",
+        "date": "2024-07-29"
+      },
+      {
+        "label": "1차 합격자 발표",
+        "date": "2024-08-01"
+      },
+      {
+        "label": "2차 면접평가",
+        "date": "2024-08-06"
+      },
+      {
+        "label": "최종 합격자 발표",
+        "date": "2024-08-07"
+      },
+      {
+        "label": "인턴십 OT",
+        "date": "2024-08-28"
+      }
+    ],
+    "actions": [
+      "QR코드 스캔 후 신청양식 다운로드 및 신청서 제출"
+    ],
+    "materials": [
+      "참가신청서",
+      "자기소개서",
+      "개인정보 수집·이용·제공 동의서",
+      "포트폴리오(선택)"
+    ],
+    "category": "취업·인턴"
   },
   {
     "id": "mech-employment-52245",
@@ -7782,15 +7826,39 @@
     "body": "1) 모집분야 및 채용인원\n가. 신입직: 경영관리-16명/기술-117명/연구-5명(석사 이상)\n나. 경력직: IT운영-1명/홍보전문가-1명/사업용 검사-1명/토목-7명/기계-3명/용접-1명\n2) 접수기간: 2024.6.28.(금) 10:00 ~ 7.3.(수) 15:00 / 채용홈페이지 온라인 접수\n채용 공고문 확인 및 문의(한국전기안전공사 인사혁신부 ☎063-716-2285, 2283) 바랍니다.\n첨부파일\n2024년 신입. 경력. 공무직 공개채용 채용공고문.pdf\n(566.64KB / 다운로드 561회 / 미리보기:378)\n다운로드\n미리보기\n직무기술서.zip\n(1.45MB / 다운로드 451회 / 미리보기:327)\n다운로드\n미리보기\n자기소개서.zip\n(96.07KB / 다운로드 479회 / 미리보기:334)\n다운로드\n미리보기",
     "images": [],
     "is_sample": false,
-    "extracted": false,
-    "processed": false,
+    "extracted": true,
+    "processed": true,
     "is_new": true,
     "collected_at": "2026-11-16T10:50:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
-    "days_left": null,
-    "is_expired": null,
-    "is_urgent": false
+    "relevance": 0,
+    "relevance_reason": "사용자가 제외한 분류",
+    "days_left": -866,
+    "is_expired": true,
+    "is_urgent": false,
+    "target": {
+      "scope": "specific",
+      "departments": [
+        "기계공학부"
+      ],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [
+        "교직원"
+      ],
+      "dorm_required": null
+    },
+    "deadline": "2024-07-03T15:00:00+09:00",
+    "other_dates": [
+      {
+        "label": "접수 시작",
+        "date": "2024-06-28T10:00:00+09:00"
+      }
+    ],
+    "actions": [
+      "채용홈페이지 온라인 접수"
+    ],
+    "materials": null,
+    "category": "취업·인턴"
   },
   {
     "id": "mech-employment-40126",
@@ -7804,15 +7872,30 @@
       "https://email.koreatech.ac.kr/mail/view/embed/image.do？mail_key=65765c1e3fe641ecf250f17c＆amp;depth=0＆amp;mindex=-1＆amp;aindex=0"
     ],
     "is_sample": false,
-    "extracted": false,
-    "processed": false,
+    "extracted": true,
+    "processed": true,
     "is_new": true,
     "collected_at": "2026-11-16T10:50:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 0,
+    "relevance_reason": "사용자가 제외한 분류",
     "days_left": null,
-    "is_expired": null,
-    "is_urgent": false
+    "is_expired": false,
+    "is_urgent": false,
+    "target": {
+      "scope": "specific",
+      "departments": [
+        "기계공학부"
+      ],
+      "years": null,
+      "enrollment_statuses": null,
+      "groups": null,
+      "dorm_required": null
+    },
+    "deadline": null,
+    "other_dates": [],
+    "actions": null,
+    "materials": null,
+    "category": "취업·인턴"
   },
   {
     "id": "mech-employment-40125",
@@ -7827,15 +7910,47 @@
       "https://www.koreatech.ac.kr/upload/dext5editordata/2023/12/20231219_102636500_09679.jpeg"
     ],
     "is_sample": false,
-    "extracted": false,
-    "processed": false,
+    "extracted": true,
+    "processed": true,
     "is_new": true,
     "collected_at": "2026-11-16T10:50:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
-    "days_left": null,
-    "is_expired": null,
-    "is_urgent": false
+    "relevance": 0,
+    "relevance_reason": "사용자가 제외한 분류",
+    "days_left": -1065,
+    "is_expired": true,
+    "is_urgent": false,
+    "target": {
+      "scope": "specific",
+      "departments": [
+        "기계공학부",
+        "전기·전자·통신공학부",
+        "에너지신소재화학공학부"
+      ],
+      "years": [],
+      "enrollment_statuses": [
+        "졸업예정",
+        "졸업"
+      ],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": "2023-12-17T23:59:00+09:00",
+    "other_dates": [
+      {
+        "label": "인턴 연수기간",
+        "date": "2024-01-08"
+      }
+    ],
+    "actions": [
+      "당사 GM Career Site 온라인 지원",
+      "당사 국문 이력서 첨부",
+      "개인정보 동의서 제출"
+    ],
+    "materials": [
+      "당사 국문 이력서",
+      "개인정보 동의서"
+    ],
+    "category": "취업·인턴"
   },
   {
     "id": "mech-employment-40124",
@@ -7849,15 +7964,32 @@
       "https://www.koreatech.ac.kr/upload/dext5editordata/2023/12/20231219_102215764_13089.jpeg"
     ],
     "is_sample": false,
-    "extracted": false,
-    "processed": false,
+    "extracted": true,
+    "processed": true,
     "is_new": true,
     "collected_at": "2026-11-16T10:50:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
-    "days_left": null,
-    "is_expired": null,
-    "is_urgent": false
+    "relevance": 0,
+    "relevance_reason": "사용자가 제외한 분류",
+    "days_left": -1055,
+    "is_expired": true,
+    "is_urgent": false,
+    "target": {
+      "scope": "specific",
+      "departments": [
+        "기계공학부"
+      ],
+      "years": null,
+      "enrollment_statuses": null,
+      "groups": null,
+      "dorm_required": null
+    },
+    "deadline": "2023-12-27T15:00:00+09:00",
+    "other_dates": [],
+    "actions": [
+      "채용 홈페이지에서 입사지원서 접수"
+    ],
+    "materials": null,
+    "category": "취업·인턴"
   },
   {
     "id": "mech-employment-40123",
@@ -7869,15 +8001,38 @@
     "body": "1.회사명: Y＆T 파워텍（주)\n2. 산업분야: 자동차 부품\n3. 모집분야: 주조생산무문  00명\n4. 전형방법: 서류==> 면접==> 신체검사\n5. 제출서류\n-이력서   - 성적증명서  - 자기소개서    -자격증 사본    - 주민등록등본 1부\n6. 접수기한: 2024년 1월 31일 까지 （조기마감 가능)\n7. 근무처: 충북 음성\n8. 접수 및 접수처: 우편 또는 이메일 접수\n충북 음성군  삼성명  아이텍산단로   110  Y＆amp;T 파워텍（주) 총무부\njhlim@yandt.co.kr\n9. 문의 사항: 043- 0880-1200",
     "images": [],
     "is_sample": false,
-    "extracted": false,
-    "processed": false,
+    "extracted": true,
+    "processed": true,
     "is_new": true,
     "collected_at": "2026-11-16T10:50:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
-    "days_left": null,
-    "is_expired": null,
-    "is_urgent": false
+    "relevance": 0,
+    "relevance_reason": "사용자가 제외한 분류",
+    "days_left": -1020,
+    "is_expired": true,
+    "is_urgent": false,
+    "target": {
+      "scope": "specific",
+      "departments": [
+        "기계공학부"
+      ],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": "2024-01-31",
+    "other_dates": [],
+    "actions": [
+      "우편 또는 이메일로 서류 접수"
+    ],
+    "materials": [
+      "이력서",
+      "성적증명서",
+      "자기소개서",
+      "자격증 사본",
+      "주민등록등본 1부"
+    ],
+    "category": "취업·인턴"
   },
   {
     "id": "mech-employment-40122",
@@ -7889,15 +8044,46 @@
     "body": "1. 회사명: 이엔테크（주)\n2. 회사 개요\n1) 위치: 본 사: 전라남도 나주\n근무지: 충청남도 아산시 둔포면 아산벨리동로 216（아산테크노밸리)   2) 사원 수: 23명\n3) 주생산품목: 한전 및 철도용 GIS, 개폐기, 수출용 RMU, 테슬라 설치공사\n외 다수 등\n4) 년 매출액: 200억원\n5) 주요 납품처: 한국전력공사, 국가철도공단,\n해외전력회사（쿠웨이트, 대만, 베트남 등)\n6) 홈페이지: https://www.entech2020.com\n3. 채용 관련\n1) 모집분야 및 인원: 연구소 0명 （기계/기계설계, 전기/전자 전공)\n2) 주요업무: 전력기기 신제품 개발\n（우대사항: 3D 모델링 가능자, 전기관련 자격증 소지자)\n3) 채용종류: 정규직 사원 채용\n4) 연봉: 4년대졸 기준 3,400부터~ 개인역량에 따라 차등 적용)\n5) 지원자격: 졸업생 및 4학년 재학생\n6) 제출서류: 이력서, 자기소개서, 성적증명서, 주민등록등본, 자격증 사본\n7) 기숙사: 회사 근방 EG THE 1 아파트\n4. 기타 문의 사항  （기계공학부  취업담당연구원: 박백한)",
     "images": [],
     "is_sample": false,
-    "extracted": false,
-    "processed": false,
+    "extracted": true,
+    "processed": true,
     "is_new": true,
     "collected_at": "2026-11-16T10:50:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 0,
+    "relevance_reason": "사용자가 제외한 분류",
     "days_left": null,
-    "is_expired": null,
-    "is_urgent": false
+    "is_expired": false,
+    "is_urgent": false,
+    "target": {
+      "scope": "specific",
+      "departments": [
+        "기계공학부",
+        "전기·전자·통신공학부"
+      ],
+      "years": [
+        4
+      ],
+      "enrollment_statuses": [
+        "재학",
+        "졸업"
+      ],
+      "groups": [
+        "학부생"
+      ],
+      "dorm_required": null
+    },
+    "deadline": null,
+    "other_dates": [],
+    "actions": [
+      "이력서, 자기소개서, 성적증명서, 주민등록등본, 자격증 사본 제출"
+    ],
+    "materials": [
+      "이력서",
+      "자기소개서",
+      "성적증명서",
+      "주민등록등본",
+      "자격증 사본"
+    ],
+    "category": "취업·인턴"
   },
   {
     "id": "mech-employment-40121",
@@ -7911,15 +8097,40 @@
       "https://www.koreatech.ac.kr/boardDownload.es?mid=a70604000000&bid=0075&list_no=40121&seq=1"
     ],
     "is_sample": false,
-    "extracted": false,
-    "processed": false,
+    "extracted": true,
+    "processed": true,
     "is_new": true,
     "collected_at": "2026-11-16T10:50:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
-    "days_left": null,
-    "is_expired": null,
-    "is_urgent": false
+    "relevance": 0,
+    "relevance_reason": "사용자가 제외한 분류",
+    "days_left": -1460,
+    "is_expired": true,
+    "is_urgent": false,
+    "target": {
+      "scope": "specific",
+      "departments": [
+        "기계공학부"
+      ],
+      "years": [],
+      "enrollment_statuses": [
+        "졸업",
+        "졸업예정"
+      ],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": "2022-11-17T23:00:00+09:00",
+    "other_dates": [
+      {
+        "label": "Live 채용설명회 사전신청",
+        "date": "2022-11-07T23:00:00+09:00"
+      }
+    ],
+    "actions": [
+      "현대백화점그룹 채용페이지에서 온라인 지원"
+    ],
+    "materials": null,
+    "category": "취업·인턴"
   },
   {
     "id": "mech-employment-40120",
@@ -7931,15 +8142,40 @@
     "body": "안녕하세요.\n취창업지원팀 장은비입니다.\n어제 벽산엔지니어링 인사팀으로부터 급하게 1:1 채용상담회 요청을 받아서, 재학생 및 졸업생들과 인사차장과 1:1 상담회를 아래와 같이 개최합니다.\n일시: 2022.10.21.（금, 내일) 오후 2시~4시\n장소: 학생통합지원센터 2층 경력개발실（신한은행맞은편)\n내용: 인사팀 차장과 해당 직무 1:1 채용상담회\n아직 직무를 결정하지 못한 학생들은 직무결정에 도움이 될\n학생들과 인사담당자의 만남에 적극 참여 바랍니다.\n첨부파일\n［인사팀 11 채용상담회 홍보］ 벽산엔지니어링_21（금） 오후2시.zip\n(776.1KB / 다운로드 329회 / 미리보기:296)\n다운로드\n미리보기",
     "images": [],
     "is_sample": false,
-    "extracted": false,
-    "processed": false,
+    "extracted": true,
+    "processed": true,
     "is_new": true,
     "collected_at": "2026-11-16T10:50:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 0,
+    "relevance_reason": "사용자가 제외한 분류",
     "days_left": null,
-    "is_expired": null,
-    "is_urgent": false
+    "is_expired": false,
+    "is_urgent": false,
+    "target": {
+      "scope": "specific",
+      "departments": [
+        "기계공학부"
+      ],
+      "years": [],
+      "enrollment_statuses": [
+        "재학",
+        "졸업"
+      ],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": null,
+    "other_dates": [
+      {
+        "label": "벽산엔지니어링 1:1 채용상담회",
+        "date": "2022-10-21T14:00:00+09:00"
+      }
+    ],
+    "actions": [
+      "채용상담회 참석"
+    ],
+    "materials": null,
+    "category": "취업·인턴"
   },
   {
     "id": "mech-employment-40119",
@@ -7951,15 +8187,35 @@
     "body": "1. 회사명:  흥아기연\n2. 산업분야: 자동포장기계 제작회사\n3.모집분야: 첨부화일 참조（연구개발, 기술부, 영업부)\n4. 모집인원: 첨부화일 참조\n5.연봉: 4,200만원（신입기준: 성과급 포함)\n6. 제출서류: 이력서, 자기소개서\n7. 근무지: 인천광역시\n관심있는 학생은 유승열 교수에게 문의하여 주시기 바랍니다.\n첨부파일\n흥아기연채용공고_220720（링크포함）_Rev01.pdf\n(809.12KB / 다운로드 462회 / 미리보기:315)\n다운로드\n미리보기",
     "images": [],
     "is_sample": false,
-    "extracted": false,
-    "processed": false,
+    "extracted": true,
+    "processed": true,
     "is_new": true,
     "collected_at": "2026-11-16T10:50:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 0,
+    "relevance_reason": "사용자가 제외한 분류",
     "days_left": null,
-    "is_expired": null,
-    "is_urgent": false
+    "is_expired": false,
+    "is_urgent": false,
+    "target": {
+      "scope": "specific",
+      "departments": [
+        "기계공학부"
+      ],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": null,
+    "other_dates": [],
+    "actions": [
+      "유승열 교수에게 문의"
+    ],
+    "materials": [
+      "이력서",
+      "자기소개서"
+    ],
+    "category": "취업·인턴"
   },
   {
     "id": "mech-employment-40118",
@@ -7971,15 +8227,32 @@
     "body": "1.회사명:  가산방재기술（주)\n2.모집분야:기계설계 （CAD)\n3.모집인원:1명\n4.연봉:4000만원\n5.근무시간:주5일근무\n6.복지분야:생일（상품권지급)\n명절선물지급및연휴전날단축근무\n7.기숙사（올해공장신축예정)\n8.근무인원:5명\n9. 근무지: 충청남도 천안시 동남구 목천읍 삼성4길 8\n10. 문의 사항:\n- 회사연락처:  041-561-7119\n11. 기타사항: 취업담당자에게 문의 요함",
     "images": [],
     "is_sample": false,
-    "extracted": false,
-    "processed": false,
+    "extracted": true,
+    "processed": true,
     "is_new": true,
     "collected_at": "2026-11-16T10:50:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 0,
+    "relevance_reason": "사용자가 제외한 분류",
     "days_left": null,
-    "is_expired": null,
-    "is_urgent": false
+    "is_expired": false,
+    "is_urgent": false,
+    "target": {
+      "scope": "specific",
+      "departments": [
+        "기계공학부"
+      ],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": null,
+    "other_dates": [],
+    "actions": [
+      "취업담당자에게 문의"
+    ],
+    "materials": null,
+    "category": "취업·인턴"
   },
   {
     "id": "mech-employment-40117",
@@ -7991,15 +8264,34 @@
     "body": "1.  회사명: （주) 나옴\n2. 채용인원: 인턴연구원 2명\n3. 근무기간: 2022.05 ~ 2022.11（기간 중 6개원)\n4. 지원자격: 전문대졸 이상, 운전경력 보유\n5. 급여: 월 220만원\n6. 업무내용\n- 주업무: 현장실험지원（지하역사 승강장 및 대합실 급배기구 풍량 측정 및 결과보고서 작성)\n- 보조업무:  제품（공기정화장치, 공기질 측정기) 성능평가 보조\n7. 근무조건\n- 두 5일 근무. 근무시간 （09:00~18:00)\n- 식사제공\n- 월 1회 휴가 제공\n- 출장시 출장비 지급\n- 고용, 산재보험 가입\n- 6개월 평가 결과에 따라 정규직 채용\n8. 근무지: 경기도 의왕시 보낫 또는 판교 DBC\n9. 문의 및 지원 방법\n- 기획팀 팀: 오미석 031-462-1709\n-＇\"사람인 \" 채용공고 지원 또는  E-mail로 이력서（자유형식)제출\n- 기타 문의 사항: 기계공학부 이정훈 교수 또는 담담 기술연구원",
     "images": [],
     "is_sample": false,
-    "extracted": false,
-    "processed": false,
+    "extracted": true,
+    "processed": true,
     "is_new": true,
     "collected_at": "2026-11-16T10:50:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 0,
+    "relevance_reason": "사용자가 제외한 분류",
     "days_left": null,
-    "is_expired": null,
-    "is_urgent": false
+    "is_expired": false,
+    "is_urgent": false,
+    "target": {
+      "scope": "specific",
+      "departments": [
+        "기계공학부"
+      ],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": null,
+    "other_dates": [],
+    "actions": [
+      "사람인 채용공고 지원 또는 이메일로 이력서 제출"
+    ],
+    "materials": [
+      "이력서(자유형식)"
+    ],
+    "category": "취업·인턴"
   },
   {
     "id": "mech-employment-40116",
@@ -8014,15 +8306,43 @@
       "https://www.koreatech.ac.kr/upload/dext5editordata/2022/01/20220124_152347515_29882.jpeg"
     ],
     "is_sample": false,
-    "extracted": false,
-    "processed": false,
+    "extracted": true,
+    "processed": true,
     "is_new": true,
     "collected_at": "2026-11-16T10:50:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 0,
+    "relevance_reason": "사용자가 제외한 분류",
     "days_left": null,
-    "is_expired": null,
-    "is_urgent": false
+    "is_expired": false,
+    "is_urgent": false,
+    "target": {
+      "scope": "specific",
+      "departments": [
+        "기계공학부",
+        "메카트로닉스공학부"
+      ],
+      "years": [],
+      "enrollment_statuses": [
+        "졸업예정",
+        "졸업"
+      ],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": null,
+    "other_dates": [],
+    "actions": [
+      "이력서 및 자기소개서 제출"
+    ],
+    "materials": [
+      "이력서",
+      "자기소개서",
+      "어학성적표",
+      "자격증 사본",
+      "성적증명서",
+      "졸업(예정)증명서"
+    ],
+    "category": "취업·인턴"
   },
   {
     "id": "mech-employment-40115",
@@ -8034,15 +8354,34 @@
     "body": "첨부문서 참조하시기 바랍니다.\n첨부파일\n취업추천의뢰서_한국기술교육대학교.hwp\n(922KB / 다운로드 349회 / 미리보기:305)\n다운로드\n미리보기",
     "images": [],
     "is_sample": false,
-    "extracted": false,
-    "processed": false,
+    "extracted": true,
+    "processed": true,
     "is_new": true,
     "collected_at": "2026-11-16T10:50:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 0,
+    "relevance_reason": "사용자가 제외한 분류",
     "days_left": null,
-    "is_expired": null,
-    "is_urgent": false
+    "is_expired": false,
+    "is_urgent": false,
+    "target": {
+      "scope": "specific",
+      "departments": [
+        "기계공학부"
+      ],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": null,
+    "other_dates": [],
+    "actions": [
+      "첨부문서 참조하여 취업추천 신청"
+    ],
+    "materials": [
+      "취업추천의뢰서"
+    ],
+    "category": "취업·인턴"
   },
   {
     "id": "mech-employment-40112",
@@ -8054,14 +8393,111 @@
     "body": "Position Information\n·\nPosition:\nService Engineer\n·\nStatus:\n정규직 0명\n·\nDesired Expertise:\nMechanic\n·\nExperience:\n신입 또는\n경력\n·\nEducation:\nA minimum of Bachelor’s degree\n·\nSalary:\nCompetitive\n·\nLocation Base:\n경기도 동탄 （2022년\n10월 아산 탕정으로 이주예정)\nJob Deion\n자사 제품의 현장 Repair\n문제발생의 원인분석 및 이에 대한 문서관리 및 리포트\n한국가스안전공사 검사 대응\n문제해결 대응을 위한 본사와의 커뮤니케이션 및 프로세스 준수\n관련 기관들의 규정 준수를 위해 정보 업데이트\n인증검사 대응\nCriteria for Success\n가스밸브에\n대한 이해 및 기계관련 백그라운드\n본사와의\n커뮤니케이션을 위한 영어실력\n활동적이며\n적극적인 성격\n성실하며\n변화를 두려워하지 않는 성격\nBenefit\n급여 외 성과급 지급\n명절 상품권 지급\n각종 경조사에 대한 지원금 및 휴가\n우수사원 표창\n수평관계의 회사문화와 자유로운 분위기\n신규사업장 설립 및 이전으로 인한 쾌적한 환경\nRecruiting Process\n1차 서류심사\n2차 면접 （합격자에게 개별통보)\n제출서류: 국문 또는 영문이력서, 자기소개서 （MS Word file only)\n제출처: HAN.sangwook골뱅이rotarex.com\n제출기한: 2022년 1월 31일까지\n기타 문의 사항은 로타렉스코리아 채용 담당자에게 연락 주시기 바랍니다. （T. 031-삼칠육-7820)\n첨부파일\n로타렉스코리아_Service Engineer_채용공고.pdf\n(188.95KB / 다운로드 322회 / 미리보기:267)\n다운로드\n미리보기",
     "images": [],
     "is_sample": false,
-    "extracted": false,
-    "processed": false,
+    "extracted": true,
+    "processed": true,
     "is_new": true,
     "collected_at": "2026-11-16T10:50:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
+    "relevance": 0,
+    "relevance_reason": "사용자가 제외한 분류",
+    "days_left": -1750,
+    "is_expired": true,
+    "is_urgent": false,
+    "target": {
+      "scope": "specific",
+      "departments": [
+        "기계공학부"
+      ],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [
+        "교직원"
+      ],
+      "dorm_required": null
+    },
+    "deadline": "2022-01-31",
+    "other_dates": [],
+    "actions": [
+      "국문 또는 영문이력서 및 자기소개서를 이메일로 제출"
+    ],
+    "materials": [
+      "국문 또는 영문이력서",
+      "자기소개서"
+    ],
+    "category": "취업·인턴"
+  },
+  {
+    "id": "general-37493",
+    "title": "[끌올] [취창업지원팀] 모빌리티 산업 직무아카데미(총 4회차, 11/18~11/21) ✔️ 대면교육 \"햄버거\" 제공 ✔️",
+    "url": "https://www.koreatech.ac.kr/notice/view.es?mid=a10604010000&board_id=14&post_seq=37493&prefix_id=",
+    "source": "학교-일반",
+    "source_type": "학교",
+    "published_date": "2026-11-16",
+    "body": "2026학년도 취업 역량 강화를 위하여 다음과 같이 직무특강을 실시하고자 합니다.\n(총 4강으로 원하는 강의를 강의별로 각각 신청해야 수강 관련 안내가 전송됩니다.)\n1. 프로그램: 모빌리티 산업 직무아카데미\n2. 교육일정: 2026.11.18.(수) ~11.21(토)\n3. 교육방법: 대면 교육(11/18), 비대면 교육(11/19, 11/20, 11/21)\n4. 대상자: 전체 학년 학생\n5. 신청방법: 아우누리 - 경력개발 - 취업프로그램 - 해당프로그램 신청\n6. 기타사항\n- 대면수업: 석식(햄버거) 제공\n- 수료자에 대해 K-CDP 점수 5점 제공\n※ 참고: 모빌리티 산업 직무아카데미 전체 일정",
+    "images": [
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&a=id&p=37357&fn=1793594736180_%25EB%25AA%25A8%25EB%25B9%258C%25EB%25A6%25AC%25ED%258B%25B0%2B%25EC%2582%25B0%25EC%2597%2585%2B%25EC%25A7%2581%25EB%25AC%25B4%25EC%2595%2584%25EC%25B9%25B4%25EB%258D%25B0%25EB%25AF%25B8.png"
+    ],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-16T13:01:07+09:00",
+    "relevance": 0,
+    "relevance_reason": "사용자가 제외한 분류",
+    "target": {
+      "scope": "all",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": null,
+    "other_dates": [
+      {
+        "label": "모빌리티 산업 직무아카데미",
+        "date": "2026-11-18"
+      }
+    ],
+    "actions": [
+      "아우누리 - 경력개발 - 취업프로그램 - 해당프로그램 신청"
+    ],
+    "materials": null,
+    "category": "취업·인턴",
     "days_left": null,
-    "is_expired": null,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "general-37492",
+    "title": "[긴급공지] 연구행정통합시스템 접속 불가 안내",
+    "url": "https://www.koreatech.ac.kr/notice/view.es?mid=a10604010000&board_id=14&post_seq=37492&prefix_id=",
+    "source": "학교-일반",
+    "source_type": "학교",
+    "published_date": "2026-11-16",
+    "body": "안녕하세요. 산학협력단장 이규만입니다.\n현재 불특정 다수 대학이 해커로부터 개인정보 유출 등의 피해에 노출된 상황이 파악되었습니다.\n노출된 대학은 31개로 추정 중이며, 그 중 우리대학과 동일한 연구행정통합시스템을 사용하는 대학은 20개입니다.\n우리 기관의 경우, 피해 사실이 확인되지 않았으나\n산학협력단에서는 연구행정통합시스템 상의 정보 유출을 막기 위하여 우선 서버 접속을 차단하고,\n대학 정보화운영팀과 연구행정통합시스템 개발사(웹케시)와 함께 서버 접속을 차단하기 전 침투했을 악성코드에 대한 점검을 하고 있습니다.\n대학 내/외부와 관계없이 연구행정통합시스템은 접속이 불가하며,\n점검을 완료한 후 내부 접속부터 순차적으로 정상화하겠습니다.\n연구행정통합시스템의 사용에 장애가 발생하여 불편하시겠지만, 지금 상황이 전국적으로 확산되고 있고 매우 긴급한 사안으로 각별한 이해와 양해 부탁드립니다.\n산학협력단장 이규만 드림.",
+    "images": [],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-16T13:01:07+09:00",
+    "relevance": 1,
+    "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
+    "target": {
+      "scope": "all",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": null,
+    "other_dates": [],
+    "actions": null,
+    "materials": null,
+    "category": null,
+    "days_left": null,
+    "is_expired": false,
     "is_urgent": false
   }
 ]
