@@ -40,7 +40,8 @@ jobs:
         uses: actions/checkout@v4
         with:
           # main이 보호되어 있어서, 결과를 push할 수 있는 토큰으로 가져온다
-          token: ${{ secrets.BOT_PUSH_TOKEN }}
+          # main이 보호된 저장소는 BOT_PUSH_TOKEN, 없으면 기본 토큰을 쓴다
+          token: ${{ secrets.BOT_PUSH_TOKEN || github.token }}
 
       - name: 파이썬 준비
         uses: actions/setup-python@v5
