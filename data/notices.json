@@ -8817,7 +8817,7 @@
     "is_sample": false,
     "extracted": true,
     "processed": true,
-    "is_new": true,
+    "is_new": false,
     "collected_at": "2026-11-17T13:15:46+09:00",
     "relevance": 1,
     "relevance_reason": "대상 정보가 불명확함",
@@ -8853,7 +8853,7 @@
     "is_sample": false,
     "extracted": true,
     "processed": true,
-    "is_new": true,
+    "is_new": false,
     "collected_at": "2026-11-17T13:15:46+09:00",
     "relevance": 1,
     "relevance_reason": "좁은 조건(생활관) 일치 · 마감 정보 없음",
@@ -8893,7 +8893,7 @@
     "is_sample": false,
     "extracted": true,
     "processed": true,
-    "is_new": true,
+    "is_new": false,
     "collected_at": "2026-11-17T13:15:46+09:00",
     "relevance": 0,
     "relevance_reason": "사용자가 제외한 분류",
@@ -8938,7 +8938,7 @@
     "is_sample": false,
     "extracted": true,
     "processed": true,
-    "is_new": true,
+    "is_new": false,
     "collected_at": "2026-11-17T13:15:46+09:00",
     "relevance": 1,
     "relevance_reason": "넓은 조건(학적 상태, 대상 집단)만 일치",
@@ -8986,7 +8986,7 @@
     "is_sample": false,
     "extracted": true,
     "processed": true,
-    "is_new": true,
+    "is_new": false,
     "collected_at": "2026-11-17T13:15:46+09:00",
     "relevance": 1,
     "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
@@ -9025,7 +9025,7 @@
     "is_sample": false,
     "extracted": true,
     "processed": true,
-    "is_new": true,
+    "is_new": false,
     "collected_at": "2026-11-17T13:15:46+09:00",
     "relevance": 1,
     "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
@@ -9065,7 +9065,7 @@
     "is_sample": false,
     "extracted": true,
     "processed": true,
-    "is_new": true,
+    "is_new": false,
     "collected_at": "2026-11-17T13:15:46+09:00",
     "relevance": 0,
     "relevance_reason": "사용자가 제외한 분류",
@@ -9111,7 +9111,7 @@
     "is_sample": false,
     "extracted": true,
     "processed": true,
-    "is_new": true,
+    "is_new": false,
     "collected_at": "2026-11-17T13:15:46+09:00",
     "relevance": 1,
     "relevance_reason": "명확한 대상 조건이 없어 일반 공지로 표시",
@@ -9151,7 +9151,7 @@
     "is_sample": false,
     "extracted": true,
     "processed": true,
-    "is_new": true,
+    "is_new": false,
     "collected_at": "2026-11-17T13:15:46+09:00",
     "relevance": 2,
     "relevance_reason": "전체 학생 대상 · 관심 분류 · 마감 있음",
@@ -9644,17 +9644,41 @@
     "source": "학교-일반",
     "source_type": "학교",
     "published_date": "2026-11-18",
-    "body": null,
+    "body": "대학원교학팀에서 근로장학생을 모집합니다.(대학 학부 재학생만 신청 가능)\n1. 근로기간: 2026. 11. 24.(화)\n2. 근로시간: 11시간(오전 10시 00분 ~ 저녁 23시)- 서울 이동시간(왕복 4시간) 포함, 점심, 저녁 휴게시간(2시간)은 미 포함.\n3. 시급: 10,030원/시간\n4. 근로내용: 최고경영자과정 행사 지원(맛있는 중식, 근사한 석식제공, 다과 제공, 소정의 선물 제공) / 행사 물품 셋팅 준비 및 종료 후 짐 정리\n※ 본 행사시간: 오후 6시  ~ 8시\n※ 정리 시간:  오후 8시  ~ 8시 30분\n5. 근로장소: 서울 용산역 인근 행사장(출발 및 도착은 1캠퍼스에서 함께 차량으로 이동)\n6. 모집인원: 2명 (우대 사항: 행사 경험이 있거나 PPT 컴퓨터 잘 다루는 사람 환영)\n7. 지원방법: 대학원교학팀 담당자 이메일(jrabbit87@학교메일)로 신청\n※ 신청 양식: 제목 – 서울 최경 수료식 행사 근장 신청합니다. / 내용 – 이름/학과/학번/핸드폰번호/남, 여 성별\n8. 모집기간: 11월 20일 오후 2시까지(인원충원시 마감예정)\n9. 선발: 개별 핸드폰 연락(041-560-1001 번호 전화로 연락할 예정임.)\n궁금한 사항이나 문의사항은 이메일 또는 사무실(041-560-1001)로 연락바랍니다.\n감사합니다.",
     "images": [],
     "is_sample": false,
-    "extracted": false,
-    "processed": false,
+    "extracted": true,
+    "processed": true,
     "is_new": true,
     "collected_at": "2026-11-18T12:16:11+09:00",
-    "relevance": null,
-    "relevance_reason": null,
-    "days_left": null,
-    "is_expired": null,
-    "is_urgent": false
+    "relevance": 2,
+    "relevance_reason": "넓은 조건(학적 상태, 대상 집단) 일치 · 관심 분류 · 마감 있음",
+    "days_left": 2,
+    "is_expired": false,
+    "is_urgent": true,
+    "target": {
+      "scope": "specific",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [
+        "재학"
+      ],
+      "groups": [
+        "학부생"
+      ],
+      "dorm_required": null
+    },
+    "deadline": "2026-11-20T14:00:00+09:00",
+    "other_dates": [
+      {
+        "label": "근로기간",
+        "date": "2026-11-24"
+      }
+    ],
+    "actions": [
+      "대학원교학팀 담당자 이메일로 신청"
+    ],
+    "materials": null,
+    "category": "교내활동"
   }
 ]
