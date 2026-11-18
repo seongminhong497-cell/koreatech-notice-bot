@@ -8515,7 +8515,7 @@
     "is_sample": false,
     "extracted": true,
     "processed": true,
-    "is_new": true,
+    "is_new": false,
     "collected_at": "2026-11-17T04:07:13+09:00",
     "relevance": 2,
     "relevance_reason": "전체 학생 대상 · 관심 분류 · 마감 있음",
@@ -8558,7 +8558,7 @@
     "is_sample": false,
     "extracted": true,
     "processed": true,
-    "is_new": true,
+    "is_new": false,
     "collected_at": "2026-11-17T04:07:13+09:00",
     "relevance": 1,
     "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
@@ -8601,7 +8601,7 @@
     "is_sample": false,
     "extracted": true,
     "processed": true,
-    "is_new": true,
+    "is_new": false,
     "collected_at": "2026-11-17T04:07:13+09:00",
     "relevance": 1,
     "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
@@ -8639,7 +8639,7 @@
     "is_sample": false,
     "extracted": true,
     "processed": true,
-    "is_new": true,
+    "is_new": false,
     "collected_at": "2026-11-17T04:07:13+09:00",
     "relevance": 1,
     "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
@@ -8680,7 +8680,7 @@
     "is_sample": false,
     "extracted": true,
     "processed": true,
-    "is_new": true,
+    "is_new": false,
     "collected_at": "2026-11-17T04:07:13+09:00",
     "relevance": 1,
     "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
@@ -8718,7 +8718,7 @@
     "is_sample": false,
     "extracted": true,
     "processed": true,
-    "is_new": true,
+    "is_new": false,
     "collected_at": "2026-11-17T04:07:13+09:00",
     "relevance": 0,
     "relevance_reason": "사용자가 제외한 분류",
@@ -8765,7 +8765,7 @@
     "is_sample": false,
     "extracted": true,
     "processed": true,
-    "is_new": true,
+    "is_new": false,
     "collected_at": "2026-11-17T04:07:13+09:00",
     "relevance": 2,
     "relevance_reason": "넓은 조건(학적 상태, 대상 집단) 일치 · 관심 분류 · 마감 있음",
@@ -9507,6 +9507,154 @@
     "category": "교내활동",
     "days_left": null,
     "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "general-37514",
+    "title": "■ 2026년 2학기 재학생 건강검진 실시 안내(12.1) ■",
+    "url": "https://www.koreatech.ac.kr/notice/view.es?mid=a10604010000&board_id=14&post_seq=37514&prefix_id=",
+    "source": "학교-일반",
+    "source_type": "학교",
+    "published_date": "2026-11-18",
+    "body": "안녕하세요. 안전관리팀입니다.\n2026년 12월 재학생 일반건강검진을 다음과 같이 실시 하오니 많은 참여 부탁드립니다.\n1. 검진일정: 2026년 12월 1일(화) 08:00 ~ 13:00\n2. 검진대상: 2026년 모든 학부, 학과 미수검자\n2. 검진장소: 학생통합지원센터 1층 우체국 앞\n3. 검진항목: 신체계측, 시력·청력·구강검사, 혈압검사, 흉부방사선 검사, 혈액검사, 요검사\n4. 검진방법: 출장검진버스를 통한 일반건강검진 실시\n5. 검진비용: 무료(대학 지원)\n2026년 건강검진을 받은 재학생만 2027년 1학기 기숙사 신청 가능합니다\n2026년 일반건강검진을 개별적으로 받은 학생은 안전관리팀(scw4277@학교메일)으로 증빙서류 송부해 주시기 바랍니다.\n기타 문의사항이 있을 경우 안전관리팀(041-560-1743) 또는 생활관(041-560-1261)으로 연락주시기 바랍니다.\n첨부파일\n미수검자 건강검진 포스터.jpg\n다운로드\n미리보기",
+    "images": [
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&a=id&p=37514&fn=1794962127105_%25EB%25AF%25B8%25EC%2588%2598%25EA%25B2%2580%25EC%259E%2590%2B%25EA%25B1%25B4%25EA%25B0%2595%25EA%25B2%2580%25EC%25A7%2584%2B%25ED%258F%25AC%25EC%258A%25A4%25ED%2584%25B0.jpg",
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&p=37514&a=fd&fs=1"
+    ],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-18T12:16:11+09:00",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태, 대상 집단)만 일치",
+    "target": {
+      "scope": "specific",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [
+        "재학"
+      ],
+      "groups": [
+        "학부생"
+      ],
+      "dorm_required": null
+    },
+    "deadline": null,
+    "other_dates": [
+      {
+        "label": "건강검진일",
+        "date": "2026-12-01"
+      }
+    ],
+    "actions": [
+      "개별적으로 받은 학생은 안전관리팀으로 증빙서류 송부"
+    ],
+    "materials": null,
+    "category": "교내활동",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "general-37516",
+    "title": "(끌올) [앵커사업단] ☘️ 요거트 찹쌀떡부터 김태호 PD 특강까지! 2026 미래인재 페스티벌 (11.18.) ☘️",
+    "url": "https://www.koreatech.ac.kr/notice/view.es?mid=a10604010000&board_id=14&post_seq=37516&prefix_id=",
+    "source": "학교-일반",
+    "source_type": "학교",
+    "published_date": "2026-11-18",
+    "body": "안녕하세요.\n한국기술교육대학교 앵커사업단입니다.\n기업과 함께 만든 성장, 학생과 함께 여는 미래!\n오는 11월 18일(수), 앵커사업단에서 「2026 지산학연협력·미래인재 페스티벌」을 개최합니다.\n이번 페스티벌에서는 앵커사업의 우수성과를 만나볼 수 있는 전시와 공모전부터 나만의 스타일을 찾는 뷰티 체험, 취업을 위한 커리어 컨설팅, 특별 명사특강까지!\n학생 여러분을 위한 다채로운 프로그램과 이벤트를 준비했으니 많은 관심과 참여 바랍니다.\n☆★ 이번 페스티벌, 놓치면 아쉬운 BEST 프로그램! ★☆\n1. 2026 앵커사업 우수사례 수기공모전\n- 앵커사업 프로그램에 참여한 학생들의 생생한 경험과 성장 이야기\n- 우수사례 발표 및 성과 공유\n2. 스탬프 투어 참여하고 요거트 찹쌀떡 받자!\n- 전시존, 스킬업존, 수기공모전 투표 등 행사장 곳곳을 둘러보세요!\n- 3개 이상 스탬프를 모으면 달콤한 요거트 찹쌀떡 증정!\n- 선착순 500명 한정!\n3. 나만의 매력을 찾아보는 뷰티 체험\n- 퍼스널컬러 진단: 나에게 가장 잘 어울리는 컬러 찾기\n- 메이크업 및 눈썹 정리: 전문가와 함께하는 이미지 스타일링\n4. 헤드헌터와 함께하는 커리어 클리닉\n- 나의 이력서와 자기소개서를 바탕으로 진로 컨설팅 진행\n- 전문가의 맞춤형 첨삭 및 취업 방향 상담\n- 이력서 및 자기소개서 \"자유양식\" (기존 작성한 자료 사용 가능)\n5. 김태호 PD 특별 초청 특강\n- 「무한도전」, 「놀면 뭐하니?」를 연출한 김태호 PD가 전하는 특별한 이야기!\n- 방송과 콘텐츠, 도전과 성장에 관한 생생한 이야기\n☆★ 이 밖에도 다양한 전시와 체험이 기다립니다! ★☆\n- 리빙랩 / 캡스톤디자인 / 연구회 / 수기공모전 전시\n- 앵커사업 참여 재학생 우수사례 공유\n- 앵커 포토존 및 다양한 체험 프로그램\n[행사 안내]\n- 일시: 2026. 11. 18.(수) 09:30~17:30\n- 장소: 한국기술교육대학교 다산홀 및 다산로비\n행사 안내 및 세부 프로그램은 공식 홈페이지에서 확인해 주세요!\n주소창에 아래 링크를 복사해주세요!\n▶ https://mirae-stamp-2026.netlify.app/\n여러분의 많은 참여 바랍니다.\n한국기술교육대학교 앵커사업단\n첨부파일\n1. 2026 지산학연협력 미래인재 페스티벌 포스터.png\n다운로드\n미리보기",
+    "images": [
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&a=id&p=37516&fn=1794966844729_1.%2B2026%2B%25EC%25A7%2580%25EC%2582%25B0%25ED%2595%2599%25EC%2597%25B0%25ED%2598%2591%25EB%25A0%25A5%2B%25EB%25AF%25B8%25EB%259E%2598%25EC%259D%25B8%25EC%259E%25AC%2B%25ED%258E%2598%25EC%258A%25A4%25ED%258B%25B0%25EB%25B2%258C%2B%25ED%258F%25AC%25EC%258A%25A4%25ED%2584%25B0.png",
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&p=37516&a=fd&fs=1"
+    ],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-18T12:16:11+09:00",
+    "relevance": 1,
+    "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
+    "target": {
+      "scope": "all",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": null,
+    "other_dates": [
+      {
+        "label": "2026 미래인재 페스티벌",
+        "date": "2026-11-18"
+      }
+    ],
+    "actions": null,
+    "materials": null,
+    "category": "교내활동",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "general-37515",
+    "title": "[생활관CARE] 28기 디딤지기 모집안내(~11.29)",
+    "url": "https://www.koreatech.ac.kr/notice/view.es?mid=a10604010000&board_id=14&post_seq=37515&prefix_id=",
+    "source": "학교-일반",
+    "source_type": "학교",
+    "published_date": "2026-11-18",
+    "body": "[생활관CARE] “오늘 어땠어?” 그 한마디를 먼저 건네는 사람!\n생활관 또래상담원, 28기 디딤지기를 모집합니다.\n수업을 마치고 생활관으로 돌아오는 길, 누군가에게 오늘 있었던 일을 털어놓고 싶은 날이 있습니다.\n그럴 때 “오늘 어땠어?” 하고 물어봐 주는 친구가 있다면, 방에 돌아가는 발걸음이 조금은 가벼워질지도 모릅니다.\n디딤지기는 생활관에서 함께 지내는 친구들의 이야기를 듣고, 일상 속에서 서로 가까워질 수 있는 시간을 만드는 또래상담원입니다.\n방학 중 또래상담 교육에서 친구의 이야기를 듣는 법을 배우고, 학기 중에는 또래상담과 너나들이 심리문화 프로그램을 함께 만들어 갑니다.\n친구의 이야기에 귀 기울이며, 함께 성장하는 한 학기! 28기 디딤지기에서 여러분을 기다립니다!\n● 모집기간 2026. 11. 18.(수)~11. 29.(일)\n● 모집인원 20명 내외\n● 지원조건 방학 중 또래상담 교육 이수 가능자 · 또래상담 및 멘토링 경험자 우대\n● 주요활동 학기 중 또래상담, 활동일지 작성 및 정기회의, 너나들이 심리문화 프로그램 기획·운영\n● 활동혜택 우선입사, 공동체 활동 인증, 활동비 지급, 학생강사 활동 기회\n● 신청방법 포스터의 QR코드를 스캔해 구글폼 제출\n● 기타문의 생활관 정서문화지원팀 041-560-1274\n첨부파일\n28기 디딤지기 모집포스터.png\n다운로드\n미리보기\n28기 디딤지기 모집 QR.png\n다운로드\n미리보기",
+    "images": [
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&a=id&p=37515&fn=1794964523855_28%25EA%25B8%25B0%2B%25EB%2594%2594%25EB%2594%25A4%25EC%25A7%2580%25EA%25B8%25B0%2B%25EB%25AA%25A8%25EC%25A7%2591%25ED%258F%25AC%25EC%258A%25A4%25ED%2584%25B0.png",
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&a=id&p=37515&fn=1794964806100_28%25EA%25B8%25B0%2B%25EB%2594%2594%25EB%2594%25A4%25EC%25A7%2580%25EA%25B8%25B0%2B%25EB%25AA%25A8%25EC%25A7%2591%2BQR.png",
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&p=37515&a=fd&fs=1",
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&p=37515&a=fd&fs=2"
+    ],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-18T12:16:11+09:00",
+    "relevance": 2,
+    "relevance_reason": "전체 학생 대상 · 관심 분류 · 마감 있음",
+    "target": {
+      "scope": "all",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": "2026-11-29",
+    "other_dates": [],
+    "actions": [
+      "포스터의 QR코드를 스캔해 구글폼 제출"
+    ],
+    "materials": null,
+    "category": "생활관",
+    "days_left": 11,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "general-37513",
+    "title": "[대학원교학팀] 서울최경과정 단기근장을 모집합니다.",
+    "url": "https://www.koreatech.ac.kr/notice/view.es?mid=a10604010000&board_id=14&post_seq=37513&prefix_id=",
+    "source": "학교-일반",
+    "source_type": "학교",
+    "published_date": "2026-11-18",
+    "body": null,
+    "images": [],
+    "is_sample": false,
+    "extracted": false,
+    "processed": false,
+    "is_new": true,
+    "collected_at": "2026-11-18T12:16:11+09:00",
+    "relevance": null,
+    "relevance_reason": null,
+    "days_left": null,
+    "is_expired": null,
     "is_urgent": false
   }
 ]
