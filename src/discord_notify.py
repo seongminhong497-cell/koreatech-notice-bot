@@ -26,7 +26,16 @@ import requests
 NOTICES_PATH = "data/notices.json"
 WEATHER_PATH = "data/weather.json"
 PROFILE_PATH = "data/profile.json"
-PAGE_URL = "https://seongminhong497-cell.github.io/koreatech-notice-bot/"
+def _page_url():
+    """웹페이지 주소. Actions에서는 GITHUB_REPOSITORY(아이디/저장소이름)로 자동으로 만든다."""
+    repo = os.environ.get("GITHUB_REPOSITORY", "")
+    if "/" in repo:
+        owner, name = repo.split("/", 1)
+        return f"https://{owner.lower()}.github.io/{name}/"
+    return "https://seongminhong497-cell.github.io/koreatech-notice-bot/"
+
+
+PAGE_URL = _page_url()
 
 KST = datetime.timezone(datetime.timedelta(hours=9))
 MAX_LEN = 1900        # 디스코드 메시지 한 개 최대 2000자 (여유를 둠)
@@ -140,6 +149,8 @@ def line(n, new_mark=False):
     dd = dday_text(n)
     if dd:
         parts.append(f"**{dd}**")
+    if n.get("source_type") == "정부":
+        parts.append(f"🏛 {md_escape(n.get('source') or '온통청년')}")   # 정부 공지는 출처 표시
     text = " · ".join(parts)
     if new_mark and n.get("is_new"):
         text = "🆕 " + text
