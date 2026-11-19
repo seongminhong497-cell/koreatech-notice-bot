@@ -14,6 +14,7 @@
     .notice h3 { margin: 8px 0 6px; font-size: 17px; }
     .notice .meta { font-size: 13px; color: #666; margin-top: 4px; }
     .tag { display: inline-block; background: #e8eefc; color: #2f5bd3; border-radius: 6px; padding: 2px 6px; font-size: 12px; }
+    .tag.gov { background: #e6f4ea; color: #1e7a3c; }
     .new { display: inline-block; background: #ffe9a8; color: #8a5a00; border-radius: 6px; padding: 2px 6px; font-size: 12px; font-weight: bold; }
     .dday { font-weight: bold; color: #555; }
     .dday.urgent { color: #d33; }
@@ -63,12 +64,17 @@
     let URGENT_DAYS = 3;           // 기본
     let URGENT_DAYS_MATERIALS = 7; // 준비물 있을 때
 
-    const CATEGORIES = ["전체", "장학", "학사", "취업·인턴", "교내활동", "대외활동·공모전", "생활관"];
+    const CATEGORIES = ["전체", "장학", "학사", "취업·인턴", "교내활동", "대외활동·공모전", "생활관", "청년정책"];
     let notices = [];
     let current = "전체";
 
     function esc(s) {
       return String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+    }
+
+    // 청년정책(정부 공지)인지: 분류가 "청년정책"이거나 출처 종류가 "정부"
+    function isYouthPolicy(n) {
+      return n.category === "청년정책" || n.source_type === "정부";
     }
 
     // 한국 시간 기준 오늘 날짜 (YYYY-MM-DD)
@@ -150,6 +156,7 @@
       return `
         <div class="box notice">
           <span class="tag">${esc(n.category || "미분류")}</span>
+          ${n.source_type === "정부" ? '<span class="tag gov">🏛 ' + esc(n.source || "온통청년") + "</span>" : ""}
           ${n.is_new ? '<span class="new">NEW</span>' : ""}
           ${ddayHTML(n)}
           ${n.is_sample ? '<span class="sample">예시 데이터</span>' : ""}
@@ -163,7 +170,7 @@
       const list = document.getElementById("notice-list");
       const shown = notices
         .filter(n => n.relevance !== 0)   // 관련도 0 = 숨김
-        .filter(n => current === "전체" || n.category === current)
+        .filter(n => current === "전체" || (current === "청년정책" ? isYouthPolicy(n) : n.category === current))
         .sort((a, b) => {
           // 0) 마감 지난 공지는 맨 아래로
           const ea = isExpired(a), eb = isExpired(b);
@@ -199,6 +206,13 @@
       if (p.enrollment_status) parts.push(p.enrollment_status);
       if (p.dorm_resident === true) parts.push("생활관 거주");
       else if (p.dorm_resident === false) parts.push("생활관 미거주");
+      // 나이: age가 있으면 그대로, 없고 출생연도가 있으면 계산
+      const age = Number.isInteger(p.age) ? p.age
+        : (Number.isInteger(p.birth_year) ? Number(todayKST().slice(0, 4)) - p.birth_year : null);
+      if (age !== null) parts.push(`만 ${age}세`);
+      // 지역: region이 있으면 그대로, 없으면 시도 + 시군구
+      const region = p.region || [p.sido, p.sigungu].filter(Boolean).join(" ");
+      if (region) parts.push(region);
       return parts.length ? parts.join(" · ") : "설정 없음";
     }
 

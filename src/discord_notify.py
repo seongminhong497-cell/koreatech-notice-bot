@@ -149,6 +149,8 @@ def line(n, new_mark=False):
     dd = dday_text(n)
     if dd:
         parts.append(f"**{dd}**")
+    if n.get("source_type") == "정부":
+        parts.append(f"🏛 {md_escape(n.get('source') or '온통청년')}")   # 정부 공지는 출처 표시
     text = " · ".join(parts)
     if new_mark and n.get("is_new"):
         text = "🆕 " + text
