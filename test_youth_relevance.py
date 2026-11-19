@@ -9,6 +9,7 @@ from src.youth_relevance import (
     match_region,
 )
 
+
 class AgeMatchingTests(unittest.TestCase):
     def match(self, birth_year, minimum, maximum, unrestricted=None):
         return match_age(
@@ -63,6 +64,7 @@ class AgeMatchingTests(unittest.TestCase):
         for arguments in cases:
             with self.subTest(arguments=arguments):
                 self.assertIsNone(self.match(*arguments))
+
 
 class RegionMatchingTests(unittest.TestCase):
     def test_nationwide_without_user_region(self):
@@ -139,6 +141,7 @@ class RegionMatchingTests(unittest.TestCase):
                 self.assertIsNone(
                     match_region("충청남도", "천안시", regions)
                 )
+
 
 class YouthScoringTests(unittest.TestCase):
     def setUp(self):
