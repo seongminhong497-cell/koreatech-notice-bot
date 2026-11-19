@@ -49,7 +49,7 @@
       "포트폴리오 자료(맞춤형 동영상 편집교육 지원자 한정)"
     ],
     "category": "교내활동",
-    "days_left": 3,
+    "days_left": 2,
     "is_expired": false,
     "is_urgent": true
   },
@@ -89,7 +89,7 @@
     ],
     "materials": null,
     "category": "학사",
-    "days_left": -6,
+    "days_left": -7,
     "is_expired": true,
     "is_urgent": false
   },
@@ -246,7 +246,7 @@
     ],
     "materials": null,
     "category": "대외활동·공모전",
-    "days_left": 11,
+    "days_left": 10,
     "is_expired": false,
     "is_urgent": false
   },
@@ -399,7 +399,7 @@
     ],
     "materials": null,
     "category": null,
-    "days_left": 42,
+    "days_left": 41,
     "is_expired": false,
     "is_urgent": false
   },
@@ -662,7 +662,7 @@
     ],
     "materials": null,
     "category": "교내활동",
-    "days_left": -7,
+    "days_left": -8,
     "is_expired": true,
     "is_urgent": false
   },
@@ -713,7 +713,7 @@
     ],
     "materials": null,
     "category": "취업·인턴",
-    "days_left": -1,
+    "days_left": -2,
     "is_expired": true,
     "is_urgent": false
   },
@@ -770,7 +770,7 @@
       "작품 시안"
     ],
     "category": "대외활동·공모전",
-    "days_left": -4,
+    "days_left": -5,
     "is_expired": true,
     "is_urgent": false
   },
@@ -816,7 +816,7 @@
     ],
     "materials": [],
     "category": "취업·인턴",
-    "days_left": -3,
+    "days_left": -4,
     "is_expired": true,
     "is_urgent": false
   },
@@ -862,7 +862,7 @@
     ],
     "materials": null,
     "category": "취업·인턴",
-    "days_left": -3,
+    "days_left": -4,
     "is_expired": true,
     "is_urgent": false
   },
@@ -904,7 +904,7 @@
     ],
     "materials": null,
     "category": "교내활동",
-    "days_left": 8,
+    "days_left": 7,
     "is_expired": false,
     "is_urgent": false
   },
@@ -987,7 +987,7 @@
       "팀원 전체 확인서"
     ],
     "category": "장학",
-    "days_left": -6,
+    "days_left": -7,
     "is_expired": true,
     "is_urgent": false
   },
@@ -1035,7 +1035,7 @@
       "신청 사유에 따른 증빙자료"
     ],
     "category": "장학",
-    "days_left": -6,
+    "days_left": -7,
     "is_expired": true,
     "is_urgent": false
   },
@@ -1085,7 +1085,7 @@
     ],
     "materials": null,
     "category": "장학",
-    "days_left": -7,
+    "days_left": -8,
     "is_expired": true,
     "is_urgent": false
   },
@@ -1126,7 +1126,7 @@
       "외국인등록증 또는 귀화자의 기본증명서(상세) 또는 제적등본"
     ],
     "category": "장학",
-    "days_left": -27,
+    "days_left": -28,
     "is_expired": true,
     "is_urgent": false
   },
@@ -1170,7 +1170,7 @@
       "사회봉사활동 증빙자료(1365, VMS 발급 실적인증서, 교내사회봉사활동 확인서 등)"
     ],
     "category": "장학",
-    "days_left": -27,
+    "days_left": -28,
     "is_expired": true,
     "is_urgent": false
   },
@@ -1320,7 +1320,7 @@
     ],
     "materials": null,
     "category": "장학",
-    "days_left": -2,
+    "days_left": -3,
     "is_expired": true,
     "is_urgent": false
   },
@@ -1404,7 +1404,7 @@
       "외국어 성적 증명서"
     ],
     "category": "장학",
-    "days_left": -132,
+    "days_left": -133,
     "is_expired": true,
     "is_urgent": false
   },
@@ -1582,7 +1582,7 @@
     ],
     "materials": null,
     "category": "장학",
-    "days_left": -16,
+    "days_left": -17,
     "is_expired": true,
     "is_urgent": false
   },
@@ -1639,7 +1639,7 @@
       "국민기초생활수급자 및 차상위계층 확인 서류"
     ],
     "category": "장학",
-    "days_left": -6,
+    "days_left": -7,
     "is_expired": true,
     "is_urgent": false
   },
@@ -1709,7 +1709,7 @@
       "2026년 1학기 대학교 성적증명서 1부"
     ],
     "category": "장학",
-    "days_left": -20,
+    "days_left": -21,
     "is_expired": true,
     "is_urgent": false
   },
@@ -1755,7 +1755,7 @@
       "직전 학기 성적증명서"
     ],
     "category": "장학",
-    "days_left": 1,
+    "days_left": 0,
     "is_expired": false,
     "is_urgent": true
   },
@@ -1795,7 +1795,7 @@
     ],
     "materials": null,
     "category": "장학",
-    "days_left": -21,
+    "days_left": -22,
     "is_expired": true,
     "is_urgent": false
   },
@@ -1865,7 +1865,7 @@
       "우대사항 증빙서류"
     ],
     "category": "장학",
-    "days_left": -18,
+    "days_left": -19,
     "is_expired": true,
     "is_urgent": false
   },
@@ -1972,7 +1972,7 @@
     ],
     "materials": null,
     "category": "학사",
-    "days_left": -8,
+    "days_left": -9,
     "is_expired": true,
     "is_urgent": false
   },
@@ -2377,7 +2377,7 @@
     ],
     "materials": null,
     "category": "학사",
-    "days_left": -654,
+    "days_left": -655,
     "is_expired": true,
     "is_urgent": false
   },
@@ -2454,7 +2454,7 @@
     ],
     "materials": null,
     "category": "학사",
-    "days_left": -11,
+    "days_left": -12,
     "is_expired": true,
     "is_urgent": false
   },
@@ -2496,7 +2496,7 @@
       "학점교류 추천서식"
     ],
     "category": "학사",
-    "days_left": -17,
+    "days_left": -18,
     "is_expired": true,
     "is_urgent": false
   },
@@ -2542,7 +2542,7 @@
       "신청서"
     ],
     "category": "학사",
-    "days_left": -20,
+    "days_left": -21,
     "is_expired": true,
     "is_urgent": false
   },
@@ -2587,7 +2587,7 @@
     ],
     "materials": null,
     "category": "학사",
-    "days_left": -17,
+    "days_left": -18,
     "is_expired": true,
     "is_urgent": false
   },
@@ -2629,7 +2629,7 @@
       "학점교류 추천서식"
     ],
     "category": "학사",
-    "days_left": -31,
+    "days_left": -32,
     "is_expired": true,
     "is_urgent": false
   },
@@ -2672,7 +2672,7 @@
     ],
     "materials": null,
     "category": "학사",
-    "days_left": -31,
+    "days_left": -32,
     "is_expired": true,
     "is_urgent": false
   },
@@ -2727,7 +2727,7 @@
     ],
     "materials": null,
     "category": "학사",
-    "days_left": -57,
+    "days_left": -58,
     "is_expired": true,
     "is_urgent": false
   },
@@ -2768,7 +2768,7 @@
     ],
     "materials": null,
     "category": "학사",
-    "days_left": -66,
+    "days_left": -67,
     "is_expired": true,
     "is_urgent": false
   },
@@ -3042,7 +3042,7 @@
     ],
     "materials": null,
     "category": "대외활동·공모전",
-    "days_left": -2,
+    "days_left": -3,
     "is_expired": true,
     "is_urgent": false
   },
@@ -3089,7 +3089,7 @@
     ],
     "materials": null,
     "category": "교내활동",
-    "days_left": 11,
+    "days_left": 10,
     "is_expired": false,
     "is_urgent": false
   },
@@ -3206,7 +3206,7 @@
     ],
     "materials": null,
     "category": "대외활동·공모전",
-    "days_left": 8,
+    "days_left": 7,
     "is_expired": false,
     "is_urgent": false
   },
@@ -3336,7 +3336,7 @@
       "입소 신청서"
     ],
     "category": null,
-    "days_left": 1,
+    "days_left": 0,
     "is_expired": false,
     "is_urgent": true
   },
@@ -3391,7 +3391,7 @@
       "작품 시안"
     ],
     "category": "교내활동",
-    "days_left": -4,
+    "days_left": -5,
     "is_expired": true,
     "is_urgent": false
   },
@@ -3518,7 +3518,7 @@
     ],
     "materials": null,
     "category": "교내활동",
-    "days_left": 1,
+    "days_left": 0,
     "is_expired": false,
     "is_urgent": true
   },
@@ -3570,7 +3570,7 @@
       "안전관리실습 신청서"
     ],
     "category": "학사",
-    "days_left": 7,
+    "days_left": 6,
     "is_expired": false,
     "is_urgent": false
   },
@@ -3618,7 +3618,7 @@
     ],
     "materials": null,
     "category": "학사",
-    "days_left": 6,
+    "days_left": 5,
     "is_expired": false,
     "is_urgent": false
   },
@@ -3670,7 +3670,7 @@
     ],
     "materials": null,
     "category": "교내활동",
-    "days_left": -2,
+    "days_left": -3,
     "is_expired": true,
     "is_urgent": false
   },
@@ -3848,7 +3848,7 @@
     ],
     "materials": null,
     "category": "대외활동·공모전",
-    "days_left": 13,
+    "days_left": 12,
     "is_expired": false,
     "is_urgent": false
   },
@@ -4379,7 +4379,7 @@
     "collected_at": "2026-11-15T01:17:06+09:00",
     "relevance": 0,
     "relevance_reason": "사용자가 제외한 분류",
-    "days_left": 11,
+    "days_left": 10,
     "is_expired": false,
     "is_urgent": false,
     "target": {
@@ -4448,7 +4448,7 @@
     ],
     "materials": null,
     "category": "교내활동",
-    "days_left": -10,
+    "days_left": -11,
     "is_expired": true,
     "is_urgent": false
   },
@@ -4511,7 +4511,7 @@
     ],
     "materials": null,
     "category": "교내활동",
-    "days_left": -2,
+    "days_left": -3,
     "is_expired": true,
     "is_urgent": false
   },
@@ -4570,7 +4570,7 @@
       "신청서"
     ],
     "category": "교내활동",
-    "days_left": -20,
+    "days_left": -21,
     "is_expired": true,
     "is_urgent": false
   },
@@ -4590,7 +4590,7 @@
     "collected_at": "2026-11-15T01:17:06+09:00",
     "relevance": 3,
     "relevance_reason": "좁은 조건(학과) 일치 · 마감 있음",
-    "days_left": -13,
+    "days_left": -14,
     "is_expired": true,
     "is_urgent": false,
     "target": {
@@ -4747,7 +4747,7 @@
     ],
     "materials": null,
     "category": "대외활동·공모전",
-    "days_left": -64,
+    "days_left": -65,
     "is_expired": true,
     "is_urgent": false
   },
@@ -4848,7 +4848,7 @@
     "collected_at": "2026-11-15T01:17:06+09:00",
     "relevance": 3,
     "relevance_reason": "좁은 조건(학과) 일치 · 마감 있음",
-    "days_left": -69,
+    "days_left": -70,
     "is_expired": true,
     "is_urgent": false,
     "target": {
@@ -4921,7 +4921,7 @@
       "지도교수 변경신청서"
     ],
     "category": "학사",
-    "days_left": -77,
+    "days_left": -78,
     "is_expired": true,
     "is_urgent": false
   },
@@ -4973,7 +4973,7 @@
       "재학증명서"
     ],
     "category": "교내활동",
-    "days_left": -77,
+    "days_left": -78,
     "is_expired": true,
     "is_urgent": false
   },
@@ -5070,7 +5070,7 @@
     ],
     "materials": [],
     "category": "장학",
-    "days_left": -88,
+    "days_left": -89,
     "is_expired": true,
     "is_urgent": false
   },
@@ -5093,7 +5093,7 @@
     "collected_at": "2026-11-15T01:17:06+09:00",
     "relevance": 3,
     "relevance_reason": "좁은 조건(학과) 일치 · 마감 있음",
-    "days_left": -41,
+    "days_left": -42,
     "is_expired": true,
     "is_urgent": false,
     "target": {
@@ -5309,7 +5309,7 @@
     ],
     "materials": null,
     "category": "취업·인턴",
-    "days_left": -4,
+    "days_left": -5,
     "is_expired": true,
     "is_urgent": false
   },
@@ -5401,7 +5401,7 @@
       "사람인 온라인 이력서"
     ],
     "category": "취업·인턴",
-    "days_left": -119,
+    "days_left": -120,
     "is_expired": true,
     "is_urgent": false
   },
@@ -5440,7 +5440,7 @@
     ],
     "materials": null,
     "category": "취업·인턴",
-    "days_left": -195,
+    "days_left": -196,
     "is_expired": true,
     "is_urgent": false
   },
@@ -5488,7 +5488,7 @@
     ],
     "materials": null,
     "category": "취업·인턴",
-    "days_left": -211,
+    "days_left": -212,
     "is_expired": true,
     "is_urgent": false
   },
@@ -5539,7 +5539,7 @@
       "어학성적, 자격증"
     ],
     "category": "취업·인턴",
-    "days_left": -227,
+    "days_left": -228,
     "is_expired": true,
     "is_urgent": false
   },
@@ -5577,7 +5577,7 @@
     ],
     "materials": null,
     "category": "취업·인턴",
-    "days_left": -298,
+    "days_left": -299,
     "is_expired": true,
     "is_urgent": false
   },
@@ -5626,7 +5626,7 @@
       "리포지토리"
     ],
     "category": "취업·인턴",
-    "days_left": -353,
+    "days_left": -354,
     "is_expired": true,
     "is_urgent": false
   },
@@ -5714,7 +5714,7 @@
     ],
     "materials": null,
     "category": "취업·인턴",
-    "days_left": -431,
+    "days_left": -432,
     "is_expired": true,
     "is_urgent": false
   },
@@ -5783,7 +5783,7 @@
       "경력증명서"
     ],
     "category": "취업·인턴",
-    "days_left": -566,
+    "days_left": -567,
     "is_expired": true,
     "is_urgent": false
   },
@@ -5822,7 +5822,7 @@
     ],
     "materials": null,
     "category": "취업·인턴",
-    "days_left": -566,
+    "days_left": -567,
     "is_expired": true,
     "is_urgent": false
   },
@@ -5888,7 +5888,7 @@
       "참가지원서 및 일체서류"
     ],
     "category": "취업·인턴",
-    "days_left": -577,
+    "days_left": -578,
     "is_expired": true,
     "is_urgent": false
   },
@@ -5925,7 +5925,7 @@
     ],
     "materials": null,
     "category": "취업·인턴",
-    "days_left": -591,
+    "days_left": -592,
     "is_expired": true,
     "is_urgent": false
   },
@@ -5964,7 +5964,7 @@
     ],
     "materials": null,
     "category": "취업·인턴",
-    "days_left": -874,
+    "days_left": -875,
     "is_expired": true,
     "is_urgent": false
   },
@@ -6121,7 +6121,7 @@
     ],
     "materials": null,
     "category": "취업·인턴",
-    "days_left": -984,
+    "days_left": -985,
     "is_expired": true,
     "is_urgent": false
   },
@@ -6166,7 +6166,7 @@
     ],
     "materials": null,
     "category": "취업·인턴",
-    "days_left": -994,
+    "days_left": -995,
     "is_expired": true,
     "is_urgent": false
   },
@@ -6331,7 +6331,7 @@
     ],
     "materials": null,
     "category": "교내활동",
-    "days_left": -3,
+    "days_left": -4,
     "is_expired": true,
     "is_urgent": false
   },
@@ -6415,7 +6415,7 @@
     ],
     "materials": null,
     "category": "취업·인턴",
-    "days_left": -3,
+    "days_left": -4,
     "is_expired": true,
     "is_urgent": false
   },
@@ -6501,7 +6501,7 @@
     ],
     "materials": null,
     "category": "취업·인턴",
-    "days_left": 4,
+    "days_left": 3,
     "is_expired": false,
     "is_urgent": false
   },
@@ -6547,7 +6547,7 @@
     ],
     "materials": null,
     "category": "장학",
-    "days_left": -3,
+    "days_left": -4,
     "is_expired": true,
     "is_urgent": false
   },
@@ -6624,7 +6624,7 @@
     ],
     "materials": null,
     "category": "학사",
-    "days_left": -146,
+    "days_left": -147,
     "is_expired": true,
     "is_urgent": false
   },
@@ -6681,7 +6681,7 @@
       "자 (CAD-3D 응시자)"
     ],
     "category": "학사",
-    "days_left": -134,
+    "days_left": -135,
     "is_expired": true,
     "is_urgent": false
   },
@@ -6734,7 +6734,7 @@
       "추천자 명단(붙임2)"
     ],
     "category": "학사",
-    "days_left": -211,
+    "days_left": -212,
     "is_expired": true,
     "is_urgent": false
   },
@@ -6830,7 +6830,7 @@
       "건설엔지니어 장학금 자기소개서 1부"
     ],
     "category": "장학",
-    "days_left": -223,
+    "days_left": -224,
     "is_expired": true,
     "is_urgent": false
   },
@@ -6869,7 +6869,7 @@
     ],
     "materials": null,
     "category": "학사",
-    "days_left": -308,
+    "days_left": -309,
     "is_expired": true,
     "is_urgent": false
   },
@@ -6970,7 +6970,7 @@
       "증빙 자료"
     ],
     "category": "학사",
-    "days_left": -316,
+    "days_left": -317,
     "is_expired": true,
     "is_urgent": false
   },
@@ -7012,7 +7012,7 @@
     ],
     "materials": null,
     "category": "교내활동",
-    "days_left": -338,
+    "days_left": -339,
     "is_expired": true,
     "is_urgent": false
   },
@@ -7067,7 +7067,7 @@
     ],
     "materials": null,
     "category": "교내활동",
-    "days_left": -335,
+    "days_left": -336,
     "is_expired": true,
     "is_urgent": false
   },
@@ -7122,7 +7122,7 @@
     ],
     "materials": null,
     "category": "교내활동",
-    "days_left": -335,
+    "days_left": -336,
     "is_expired": true,
     "is_urgent": false
   },
@@ -7173,7 +7173,7 @@
       "어학성적증명서"
     ],
     "category": "취업·인턴",
-    "days_left": -363,
+    "days_left": -364,
     "is_expired": true,
     "is_urgent": false
   },
@@ -7221,7 +7221,7 @@
     ],
     "materials": null,
     "category": "대외활동·공모전",
-    "days_left": -363,
+    "days_left": -364,
     "is_expired": true,
     "is_urgent": false
   },
@@ -7265,7 +7265,7 @@
       "공학설계 소요재료 신청서"
     ],
     "category": "학사",
-    "days_left": -370,
+    "days_left": -371,
     "is_expired": true,
     "is_urgent": false
   },
@@ -7351,7 +7351,7 @@
     "actions": null,
     "materials": null,
     "category": "학사",
-    "days_left": -496,
+    "days_left": -497,
     "is_expired": true,
     "is_urgent": false
   },
@@ -7404,7 +7404,7 @@
       "증빙자료 (전국 규모 이상의 국내ㆍ외 수상 해당자)"
     ],
     "category": "학사",
-    "days_left": -496,
+    "days_left": -497,
     "is_expired": true,
     "is_urgent": false
   },
@@ -7446,7 +7446,7 @@
       "개인정보활용동의서"
     ],
     "category": "학사",
-    "days_left": -587,
+    "days_left": -588,
     "is_expired": true,
     "is_urgent": false
   },
@@ -7485,7 +7485,7 @@
       "졸업설계소요재료 엑셀파일"
     ],
     "category": "학사",
-    "days_left": -573,
+    "days_left": -574,
     "is_expired": true,
     "is_urgent": false
   },
@@ -7541,7 +7541,7 @@
     ],
     "materials": null,
     "category": "장학",
-    "days_left": -634,
+    "days_left": -635,
     "is_expired": true,
     "is_urgent": false
   },
@@ -7745,7 +7745,7 @@
     ],
     "materials": null,
     "category": "취업·인턴",
-    "days_left": -810,
+    "days_left": -811,
     "is_expired": true,
     "is_urgent": false
   },
@@ -7768,7 +7768,7 @@
     "collected_at": "2026-11-16T10:50:50+09:00",
     "relevance": 0,
     "relevance_reason": "사용자가 제외한 분류",
-    "days_left": -844,
+    "days_left": -845,
     "is_expired": true,
     "is_urgent": false,
     "target": {
@@ -7832,7 +7832,7 @@
     "collected_at": "2026-11-16T10:50:50+09:00",
     "relevance": 0,
     "relevance_reason": "사용자가 제외한 분류",
-    "days_left": -869,
+    "days_left": -870,
     "is_expired": true,
     "is_urgent": false,
     "target": {
@@ -7916,7 +7916,7 @@
     "collected_at": "2026-11-16T10:50:50+09:00",
     "relevance": 0,
     "relevance_reason": "사용자가 제외한 분류",
-    "days_left": -1068,
+    "days_left": -1069,
     "is_expired": true,
     "is_urgent": false,
     "target": {
@@ -7970,7 +7970,7 @@
     "collected_at": "2026-11-16T10:50:50+09:00",
     "relevance": 0,
     "relevance_reason": "사용자가 제외한 분류",
-    "days_left": -1058,
+    "days_left": -1059,
     "is_expired": true,
     "is_urgent": false,
     "target": {
@@ -8007,7 +8007,7 @@
     "collected_at": "2026-11-16T10:50:50+09:00",
     "relevance": 0,
     "relevance_reason": "사용자가 제외한 분류",
-    "days_left": -1023,
+    "days_left": -1024,
     "is_expired": true,
     "is_urgent": false,
     "target": {
@@ -8103,7 +8103,7 @@
     "collected_at": "2026-11-16T10:50:50+09:00",
     "relevance": 0,
     "relevance_reason": "사용자가 제외한 분류",
-    "days_left": -1463,
+    "days_left": -1464,
     "is_expired": true,
     "is_urgent": false,
     "target": {
@@ -8399,7 +8399,7 @@
     "collected_at": "2026-11-16T10:50:50+09:00",
     "relevance": 0,
     "relevance_reason": "사용자가 제외한 분류",
-    "days_left": -1753,
+    "days_left": -1754,
     "is_expired": true,
     "is_urgent": false,
     "target": {
@@ -8539,7 +8539,7 @@
     ],
     "materials": null,
     "category": "교내활동",
-    "days_left": 17,
+    "days_left": 16,
     "is_expired": false,
     "is_urgent": false
   },
@@ -8746,7 +8746,7 @@
     ],
     "materials": null,
     "category": "취업·인턴",
-    "days_left": 8,
+    "days_left": 7,
     "is_expired": false,
     "is_urgent": false
   },
@@ -8798,7 +8798,7 @@
     ],
     "materials": null,
     "category": "장학",
-    "days_left": -1,
+    "days_left": -2,
     "is_expired": true,
     "is_urgent": false
   },
@@ -9006,7 +9006,7 @@
     ],
     "materials": null,
     "category": null,
-    "days_left": 28,
+    "days_left": 27,
     "is_expired": false,
     "is_urgent": false
   },
@@ -9135,7 +9135,7 @@
     ],
     "materials": null,
     "category": "교내활동",
-    "days_left": 15,
+    "days_left": 14,
     "is_expired": false,
     "is_urgent": false
   },
@@ -9172,7 +9172,7 @@
       "의견서"
     ],
     "category": "학사",
-    "days_left": 5,
+    "days_left": 4,
     "is_expired": false,
     "is_urgent": true
   },
@@ -9223,7 +9223,7 @@
       "사회봉사활동 등 (선택)"
     ],
     "category": "장학",
-    "days_left": 4,
+    "days_left": 3,
     "is_expired": false,
     "is_urgent": false
   },
@@ -9327,7 +9327,7 @@
       "사진 파일(JPG, JPEG, PNG)"
     ],
     "category": "교내활동",
-    "days_left": 14,
+    "days_left": 13,
     "is_expired": false,
     "is_urgent": false
   },
@@ -9377,7 +9377,7 @@
       "본인이 이수한 과목을 확인 할 수 있는 자료"
     ],
     "category": "취업·인턴",
-    "days_left": 10,
+    "days_left": 9,
     "is_expired": false,
     "is_urgent": false
   },
@@ -9457,7 +9457,7 @@
     ],
     "materials": null,
     "category": "학사",
-    "days_left": 8,
+    "days_left": 7,
     "is_expired": false,
     "is_urgent": false
   },
@@ -9633,7 +9633,7 @@
     ],
     "materials": null,
     "category": "생활관",
-    "days_left": 10,
+    "days_left": 9,
     "is_expired": false,
     "is_urgent": false
   },
@@ -9653,7 +9653,7 @@
     "collected_at": "2026-11-18T12:16:11+09:00",
     "relevance": 2,
     "relevance_reason": "넓은 조건(학적 상태, 대상 집단) 일치 · 관심 분류 · 마감 있음",
-    "days_left": 1,
+    "days_left": 0,
     "is_expired": false,
     "is_urgent": true,
     "target": {
@@ -9696,7 +9696,7 @@
     "is_sample": false,
     "extracted": true,
     "processed": true,
-    "is_new": true,
+    "is_new": false,
     "collected_at": "2026-11-19T02:42:42+09:00",
     "relevance": 1,
     "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
@@ -9737,7 +9737,7 @@
     "is_sample": false,
     "extracted": true,
     "processed": true,
-    "is_new": true,
+    "is_new": false,
     "collected_at": "2026-11-19T02:42:42+09:00",
     "relevance": 0,
     "relevance_reason": "사용자가 제외한 분류",
@@ -9791,7 +9791,7 @@
     "is_sample": false,
     "extracted": true,
     "processed": true,
-    "is_new": true,
+    "is_new": false,
     "collected_at": "2026-11-19T02:42:42+09:00",
     "relevance": 2,
     "relevance_reason": "넓은 조건(학적 상태) 일치 · 관심 분류 · 마감 있음",
@@ -9819,7 +9819,7 @@
       "온라인평생교육원 근로장학생 지원서"
     ],
     "category": "장학",
-    "days_left": 5,
+    "days_left": 4,
     "is_expired": false,
     "is_urgent": true
   },
@@ -9835,7 +9835,7 @@
     "is_sample": false,
     "extracted": true,
     "processed": true,
-    "is_new": true,
+    "is_new": false,
     "collected_at": "2026-11-19T02:42:42+09:00",
     "relevance": 1,
     "relevance_reason": "명확한 대상 조건이 없어 일반 공지로 표시",
@@ -9859,7 +9859,468 @@
     ],
     "materials": null,
     "category": "교내활동",
-    "days_left": 1,
+    "days_left": 0,
+    "is_expired": false,
+    "is_urgent": true
+  },
+  {
+    "id": "general-37526",
+    "title": "[안전관리팀]수능 종료 후 인파밀집에 따른 안전사고 예방 안내",
+    "url": "https://www.koreatech.ac.kr/notice/view.es?mid=a10604010000&board_id=14&post_seq=37526&prefix_id=",
+    "source": "학교-일반",
+    "source_type": "학교",
+    "published_date": "2026-11-19",
+    "body": "안전관리팀에서 안내하여 드립니다.\n수능 종료 후 수험생 등 청소년을 중심으로 주요 번화가 등에 평소보다 많은 인파가 모일 것으로 예상됩니다.\n이에, 구성원 여러분의 개인적인 외부 활동 중에서도 안전을 확보할 수 있도록, 붙임의 다중운집 인파사고 대비 국민행동요령 확인하여 주시기 바랍니다.\n첨부파일\n다중운집인파사고 대비 국민행동요령.pdf\n다운로드\n미리보기\n다중운집인파사고 대비 국민행동요령.jpg\n다운로드\n미리보기",
+    "images": [
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&a=id&p=37526&fn=1795076260634_%25EB%258B%25A4%25EC%25A4%2591%25EC%259A%25B4%25EC%25A7%2591%25EC%259D%25B8%25ED%258C%258C%25EC%2582%25AC%25EA%25B3%25A0%2B%25EB%258C%2580%25EB%25B9%2584%2B%25EA%25B5%25AD%25EB%25AF%25BC%25ED%2596%2589%25EB%258F%2599%25EC%259A%2594%25EB%25A0%25B9.jpg",
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&p=37526&a=fd&fs=2"
+    ],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-20T02:52:44+09:00",
+    "relevance": 1,
+    "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
+    "target": {
+      "scope": "all",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": null,
+    "other_dates": [],
+    "actions": null,
+    "materials": null,
+    "category": null,
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "general-37525",
+    "title": "(끌올) 2026학년도 동계 국외기술교육봉사 봉사단원 모집(~11.22일)",
+    "url": "https://www.koreatech.ac.kr/notice/view.es?mid=a10604010000&board_id=14&post_seq=37525&prefix_id=",
+    "source": "학교-일반",
+    "source_type": "학교",
+    "published_date": "2026-11-19",
+    "body": "안녕하세요, ESG센터입니다.\nESG센터에서는 개발도상국 국외봉사활동을 통해 글로벌 현장에서 활약할 수 있는 실천공학기술자와 직업능력개발담당자 양성을 위해\n2026학년도 동계 국외 기술교육봉사 활동에 참여할 학생을 아래와 같이 모집합니다.\n1. 봉사대상지: 베트남(다낭) 다낭전문대학교 및 다낭제4보육원\n2. 활동기간: 2027. 1. 9.(토) ~ 2027. 1. 23.(토) (14박 15일)\n3. 모집인원: 총 20명\n4. 활동분야: 봉사별 중복지원 가능(1인당 최대 2개 분야 신청 가능)\n순번\n봉사 분야\n모집인원\n봉사기관\n1\n맞춤형 그래픽 및 동영상 제작 편집 교육\n3명 내외\n다낭전문대학교\n2\n웹 프로그래밍\n3명 내외\n3\nPython 프로그래밍\n3명 내외\n4\n엑셀을 활용한 데이터 분석 및 활용\n3명 내외\n5\n전기·네트워크 공사\n8명 내외\n다낭제4보육원\n※ 맞춤형 동영상 편집교육 지원자는 지원 시에 포트폴리오 자료를 신청서, 증빙서류 등 첨부파일과 함께 제출 필요\n5. 지원자격: 해외여행에 결격사유가 없는 만 19세 이상 34세 미만 재학생\n※ 해당 봉사활동 출국일 기준 여권 유효 만료기간이 6개월 이상되어야 함(추후 재확인)\n6. 참가비: 1인당 70만원\n7. 접수기간: 2026. 11. 09.(월)~ 2026. 11. 22.(일) 23:59까지\n8. 선발방법: 서류평가 50%(봉사활동경력, 대학기여도, 어학, 기타 등) + 면접 50%\n9. 면접일자 및 장소: 2026. 11. 24.(화) ~ 11. 26.(목), ESG센터(학생통합지원센터 1층) / 세부일정 11. 25.(월) 개별연락\n※ 면접 미응시자 불합격 처리됨\n10. 제출방법: 아우누리 봉사활동 신청 탭>국외기술교육봉사>2026학년도 동계 국외기술교봉사 내 신청서 입력, 신청서 첨부파일(증빙서류 함께 압축)하여 제출\n11. 유의사항\n- 프로그램 진행 중 본인의 부주의 또는 인솔자의 지침을 따르지 않아 발생한 문제(무단 이탈 등)에 대한 책임은 본인에게 있습니다. 또한 인솔 담당자의 결정(귀국 조치, 학점 미이수 등)에 따라야 하며, 이를 따르지 않을 경우 대학에서 주관하는 프로그램 참여에 제한이 있을 수 있습니다.\n- 해외봉사활동 종료 후, 소정의 절차에 따라 현지 활동 종료일로부터 2주 이내에 결과보고서를 제출해야 합니다. 또한 항공사 단체 항공권 규정에 따라 출발일 기준 29일 전 취소 시 항공료의 30%, 14일 전 취소 시 항공료의 50%가 위약금으로 부과되며, 해당 비용은 본인이 부담해야 합니다.\n- 출국 전 총 40시간의 사전교육에 필수적으로 참여해야 하므로, 계절학기 수강(예정)자는 참여가 어려운 점 양해 부탁드립니다.\n- 현지 사정에 따라 상기 모든 일정 및 모집인원은 일부 변경될 수도 있습니다.(학교 일정상 취소 시 전액환불, 개인사정으로 환불 시 교통비 수수료 제외 후 환불)\n- 세부 공지사항 미숙지 또는 개인정보 오기로 인한 책임은 신청자 본인에게 있으므로, 추후 안내되는 공지사항을 반드시 확인하여 주시기 바랍니다.\n- 국외기술교육봉사 교과목 신설에 따른 학점 인정(세부 내용 붙임 확인)\n- 세부 모집기간, 지원자 미달 등 불가피한 사유 발생 시 일정 및 내용은 변경될 수 있습니다.\n- 접수 마감일 다음 날인 11월 23일(월)에 접수 완료 문자가 발송될 예정입니다. 접수를 완료하였으나 문자를 받지 못한 경우, esg@대학메일로 문의하여 주시기 바랍니다.\n- 신청서와 증빙서류는 각각 제출하지 않으며, 반드시 하나의 한글(hwp) 파일로 통합하여 제출해야 합니다. 증빙서류는 신청서 본문 뒤에 이어서 첨부해 주시기 바랍니다.\n12. 문의처: 041-560-1712\n* (참고 영상) 2025학년도 동계 국외기술교육봉사 VLOG * (복사 후 새 창 붙여넣기)\n베트남 다낭에서 기술 전수하고 온 썰 | 한기대 해외 기술 교육봉사 VLOG(상편): https://www.youtube.com/watch?v=I2zDUVkZSmw&t=8s\n안녕 다낭! 2주간의 뜨거웠던 기술 나눔 | 한기대 해외 기술 교육봉사 VLOG(하편): https://www.youtube.com/watch?v=QBRYzA8B-D4&t=27s\n첨부파일\n1. 2026학년도 동계 국외 기술교육봉사 참가신청서.hwp\n다운로드\n미리보기\n2026 국외기술교육봉사 단원 모집 포스터_fin.png\n다운로드\n미리보기",
+    "images": [
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&a=id&p=37525&fn=1795074723966_2026%2B%25EA%25B5%25AD%25EC%2599%25B8%25EA%25B8%25B0%25EC%2588%25A0%25EA%25B5%2590%25EC%259C%25A1%25EB%25B4%2589%25EC%2582%25AC%2B%25EB%258B%25A8%25EC%259B%2590%2B%25EB%25AA%25A8%25EC%25A7%2591%2B%25ED%258F%25AC%25EC%258A%25A4%25ED%2584%25B0_fin.png",
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&p=37525&a=fd&fs=2"
+    ],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-20T02:52:44+09:00",
+    "relevance": 2,
+    "relevance_reason": "넓은 조건(학적 상태) 일치 · 관심 분류 · 마감 있음",
+    "target": {
+      "scope": "specific",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [
+        "재학"
+      ],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": "2026-11-22T23:59:00+09:00",
+    "other_dates": [
+      {
+        "label": "면접일자",
+        "date": "2026-11-24"
+      },
+      {
+        "label": "활동기간",
+        "date": "2027-01-09"
+      }
+    ],
+    "actions": [
+      "아우누리 봉사활동 신청 탭에서 신청서 입력 및 제출",
+      "신청서 및 증빙서류를 하나의 한글(hwp) 파일로 통합하여 첨부"
+    ],
+    "materials": [
+      "참가신청서",
+      "증빙서류",
+      "포트폴리오 자료(맞춤형 동영상 편집교육 지원자에 한함)"
+    ],
+    "category": "교내활동",
+    "days_left": 2,
+    "is_expired": false,
+    "is_urgent": true
+  },
+  {
+    "id": "general-37524",
+    "title": "[기업견학]_반도체실리콘웨이퍼제조기업_MEMC코리아 기업견학 (~11/20 11:00)신청",
+    "url": "https://www.koreatech.ac.kr/notice/view.es?mid=a10604010000&board_id=14&post_seq=37524&prefix_id=",
+    "source": "학교-일반",
+    "source_type": "학교",
+    "published_date": "2026-11-19",
+    "body": "엠이엠씨코리아(주) 기업견학\n□ 개 요\n- 일 시: 2026.11.23.(월) 10:50~15:50 (인경관 앞 출발)\n- 장 소: 엠이엠씨코리아(주)\n- 내 용: 산업소개 및 직무 탐색, 현장견학, 직무별 졸업동문 만남 등\n- 대 상: 관련 산업 직무 희망자 20명 선정\n□ 세부일정(안)\n시간\n내용\n11:00∼11:40\n·집결 → 엠이엠씨코리아 이동 (버스대절) 인경관 앞 출발\n11:40∼11:50\n·내측 보안실 >> 엠이엠씨 교육장 이동\n11:50∼12:30\n12:30∼13:30\n13:30∼14:30\n14:30~15:00\n15:05~15:00\n·개회 및 회사소개\n·엠이엠시코리아 카페테리아 기업 구내식당 식사\n·Puller 전망대 및 Clean Room 공장투어\n·한기대 재직 선배와의 만남 (직무 및 전공별)\n·폐회 및 기념사진\n15:10~15:50\n·엠이엠씨코리아 → 학교\n※ 오전 집결시간\n10시 50분 까지 인경관 앞 버스에 서명 후 탑승합니다.\n※ 해당 일정은 변동 될 수 있습니다.\n□ 접수방법\n- 모집인원: 20명(선발)\n- 신청방법: 학생종합경력개발 >>취창업프로그램 >> MEMC기업견학 신청\n- 신청기간: ~26.11.20.(금) 오전 11:00까지",
+    "images": [],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-20T02:52:44+09:00",
+    "relevance": 0,
+    "relevance_reason": "사용자가 제외한 분류",
+    "target": {
+      "scope": "all",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": "2026-11-20T11:00:00+09:00",
+    "other_dates": [
+      {
+        "label": "기업견학 행사일",
+        "date": "2026-11-23"
+      }
+    ],
+    "actions": [
+      "학생종합경력개발에서 취창업프로그램 MEMC기업견학 신청"
+    ],
+    "materials": null,
+    "category": "취업·인턴",
+    "days_left": 0,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "general-37523",
+    "title": "[충남앵커공유대학] 기계공학부 대상 미래모빌리티융합시스템 전공 모집 사전 설명회(261120) 개최",
+    "url": "https://www.koreatech.ac.kr/notice/view.es?mid=a10604010000&board_id=14&post_seq=37523&prefix_id=",
+    "source": "학교-일반",
+    "source_type": "학교",
+    "published_date": "2026-11-19",
+    "body": "안녕하세요. 앵커사업단입니다.\n충남앵커공유대학 미래모빌리티융합시스템 전공 모집과 관련하여 사전 설명회를 개최합니다.\n전공에 관심 있는 기계공학부 학생들의 많은 관심과 참여 바랍니다.\n1. 설명회 안내\n일시: 2026. 11. 20.(금) 15:00~17:00\n장소: 제1공학관 E210호\n참석 대상: 기계공학부 재학생 누구나\n주요 내용: 미래모빌리티융합시스템 전공 소개 및 모집 관련 안내\n2. 참석 신청\n신청 링크: https://forms.gle/ptAYmhPfMXRJzr1J8\n3. 문의\n앵커사업단\n전화: 041-580-4873\n이메일: distopa1234@학교메일\n※ 본 설명회는 기계공학부 학생만 참석할 수 있습니다.\n감사합니다.",
+    "images": [],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-20T02:52:44+09:00",
+    "relevance": 0,
+    "relevance_reason": "학과 조건 불일치",
+    "target": {
+      "scope": "specific",
+      "departments": [
+        "기계공학부"
+      ],
+      "years": [],
+      "enrollment_statuses": [
+        "재학"
+      ],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": null,
+    "other_dates": [
+      {
+        "label": "설명회 개최",
+        "date": "2026-11-20T15:00:00+09:00"
+      }
+    ],
+    "actions": [
+      "설명회 참석 신청 링크 제출"
+    ],
+    "materials": null,
+    "category": "교내활동",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "general-37522",
+    "title": "[마감] 논술고사 물품준비 근로장학생 모집(11.20.(금) 10시~16시 / 단순업무)",
+    "url": "https://www.koreatech.ac.kr/notice/view.es?mid=a10604010000&board_id=14&post_seq=37522&prefix_id=",
+    "source": "학교-일반",
+    "source_type": "학교",
+    "published_date": "2026-11-19",
+    "body": "안녕하세요. 입학팀입니다.\n논술고사 물품 준비를 위한 단기근로장학생을 모집하오니 신청 바랍니다.\nㅇ 근로일자: 2026. 11. 20.(금) 9시 ~ 16시 (점심시간 1시간 제외 6시간 근무)\nㅇ 근무내용: 단순업무(물품 준비 및 정리)\nㅇ 근무장소: 입학팀(4공학관B동 108호)\nㅇ 모집인원: 2명\nㅇ 지원방법: 학번, 성명, 소속 학과, 연락처를 메일 제출(ksh2015@학교메일)\n선착순 모집하여 모집인원 충족 시 모집 마감합니다.\n휴학생, 국가근로장학생 등 지원자격 미충족자는 지원하지 말아 주시기 바랍니다.\n문의처: 041-560-1236",
+    "images": [],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-20T02:52:44+09:00",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태)만 일치",
+    "target": {
+      "scope": "specific",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [
+        "재학"
+      ],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": null,
+    "other_dates": [
+      {
+        "label": "근로일자",
+        "date": "2026-11-20"
+      }
+    ],
+    "actions": [
+      "학번, 성명, 소속 학과, 연락처를 메일 제출"
+    ],
+    "materials": null,
+    "category": "장학",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "general-37521",
+    "title": "[시설관리팀] 중앙공원 주변 대형수목 전정작업 안내(11.20. 08:00 ~ 17:00)",
+    "url": "https://www.koreatech.ac.kr/notice/view.es?mid=a10604010000&board_id=14&post_seq=37521&prefix_id=",
+    "source": "학교-일반",
+    "source_type": "학교",
+    "published_date": "2026-11-19",
+    "body": "시설관리팀에서 안내드립니다.\n중앙공원 주변 대형수목 전정작업에 따라\n아래와 같이 작업일정 및 범위 안내드립니다.\n1. 작업범위에 따른 일정 [11.20.(금)]\n- (1차) 대학본부 앞 도로: 08:00 ~ 12:00\n- (2차) 복지관 앞 도로: 13:00 ~ 17:00\n2. 작업내용: 3.5톤 크레인 사용에 따른 도로 통제\n작업시간 동안에 해당구역 차량 통행 불가(붙임 참고)\n3. 문의사항: 시설관리팀 (041-560-2565)\n첨부파일\n작업범위.png\n다운로드\n미리보기",
+    "images": [
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&a=id&p=37521&fn=1795069029833_%25EC%259E%2591%25EC%2597%2585%25EB%25B2%2594%25EC%259C%2584.png",
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&p=37521&a=fd&fs=1"
+    ],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-20T02:52:44+09:00",
+    "relevance": 1,
+    "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
+    "target": {
+      "scope": "all",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": null,
+    "other_dates": [
+      {
+        "label": "대학본부 앞 도로 전정작업 (차량 통행 불가)",
+        "date": "2026-11-20T08:00:00+09:00"
+      },
+      {
+        "label": "복지관 앞 도로 전정작업 (차량 통행 불가)",
+        "date": "2026-11-20T13:00:00+09:00"
+      }
+    ],
+    "actions": null,
+    "materials": null,
+    "category": null,
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "academic-1632",
+    "title": "2026학년도 동계 계절수업 학점교류 수학 안내(단국대학교 천안캠퍼스)",
+    "url": "https://www.koreatech.ac.kr/notice/view.es?mid=a10604030000&board_id=16&post_seq=1632&prefix_id=",
+    "source": "학교-학사",
+    "source_type": "학교",
+    "published_date": "2026-11-19",
+    "body": "2026학년도 동계 계절수업 학점교류 수학 안내(단국대학교 천안캠퍼스)\n국내 대학 간 학점교류 협정에 따라 2026학년도 동계 단국대학교 천안캠퍼스 계절수업 학점교류에 대해 다음과 같이 안내하오니, 수강을 희망하는 학생은 기한 내 신청하시기 바랍니다\n□ 대상자: 2026학년도 2학기 재학생\n□ 수강신청 학점: 본교 계절수업 포함 6학점 이내(재학기간 중 타대학 취득 인정학점 40학점 이내)\n□ 수강신청 및 등록기간, 교과목 리스트: 첨부파일 참조\n□ 수강신청 방법: 교류대학 수학계획서(우리대학 양식), 학점교류 추천서식(단국대학교 양식)을 작성하여 haksa@학교메일로 제출\n- 제출기한: 2026. 11. 25.(수) 12:00 까지 제출\n- 이메일 제목: 2026학년도 동계 계절학기 학점교류 신청(단국대)_이름_학번\n- 교류대학 수학계획서에 수강 교과목 담당교수님 확인 후 지도교수님, 소속 학부(과)장님 확인 받아 제출(순서대로 확인받으시기 바람)\n□ 유의사항\n- 우리대학 학사팀에 교류대학 수학 지원서 및 계획서 미제출 시 추후 학점인정처리 불가\n- 타 대학 수강예정과목은 우리대학 관련과목으로 해당학점 내에서 인정 가능함\n→ 타대학 2학점 교과목을 우리 대학 3학점 교과목으로 인정 불가\n→ 이러닝 수업의 경우 우리대학의 교과목으로 인정이 불가할 수 있음\n- 학점교류 시 교류 대학과의 상호작용 기간이 소요되어, 성적확정 처리(학점반영)이 지연될 수 있음\n→ 2027년 2월 졸업예정 학생 수강 불가\n- 관련문의: 학사팀(haksa@학교메일)\n첨부파일\n붙임2. 2026학년도 계절(동계)학기 학점교류 추천 명단(서식).xlsx\n다운로드\n미리보기\n붙임3. 학점교류 추천서(양식).hwp\n다운로드\n미리보기\n붙임1. 2026학년도 계절(동계)학기 학점교류 수학안내.hwp\n다운로드\n미리보기\n(한국기술교육대학교) 2026학년도 동계 계절학기 타대학 학점교류 안내.hwp\n다운로드\n미리보기\n(한국기술교육대학교) 교류대학수학계획서.hwp\n다운로드\n미리보기",
+    "images": [],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-20T02:52:44+09:00",
+    "relevance": 2,
+    "relevance_reason": "넓은 조건(학적 상태) 일치 · 관심 분류 · 마감 있음",
+    "target": {
+      "scope": "specific",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [
+        "재학"
+      ],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": "2026-11-25T12:00:00+09:00",
+    "other_dates": [],
+    "actions": [
+      "교류대학 수학계획서 및 학점교류 추천서식 작성하여 이메일 제출"
+    ],
+    "materials": [
+      "교류대학 수학계획서",
+      "학점교류 추천서식"
+    ],
+    "category": "학사",
+    "days_left": 5,
+    "is_expired": false,
+    "is_urgent": true
+  },
+  {
+    "id": "academic-1631",
+    "title": "2026학년도 동계 계절수업 학점교류 수학 안내(호서대학교)",
+    "url": "https://www.koreatech.ac.kr/notice/view.es?mid=a10604030000&board_id=16&post_seq=1631&prefix_id=",
+    "source": "학교-학사",
+    "source_type": "학교",
+    "published_date": "2026-11-19",
+    "body": "2026학년도 동계 계절수업 학점교류 수학 안내(호서대학교)\n국내 대학 간 학점교류 협정에 따라 2026학년도 동계 호서대학교 계절수업 학점교류에 대해 다음과 같이 안내하오니, 수강을 희망하는 학생은 기한 내 신청하시기 바랍니다\n□ 대상자: 2026학년도 2학기 재학생\n□ 수강신청 학점: 본교 계절수업 포함 6학점 이내(재학기간 중 타대학 취득 인정학점 40학점 이내)\n□ 수강신청 및 등록기간, 교과목 리스트: 첨부파일 참조\n□ 수강신청 방법: 교류대학 수학계획서(우리대학 양식), 학점교류 추천서식(호서대학교 양식)을 작성하여 haksa@학교메일로 제출\n- 제출기한: 2026. 11. 25.(수) 12:00 까지 제출\n- 이메일 제목: 2026학년도 동계 계절학기 학점교류 신청(호서대)_이름_학번\n- 교류대학 수학계획서에 수강 교과목 담당교수님 확인 후 지도교수님, 소속 학부(과)장님 확인 받아 제출(순서대로 확인받으시기 바람)\n□ 유의사항\n- 우리대학 학사팀에 교류대학 수학 지원서 및 계획서 미제출 시 추후 학점인정처리 불가\n- 타 대학 수강예정과목은 우리대학 관련과목으로 해당학점 내에서 인정 가능함\n→ 타대학 2학점 교과목을 우리 대학 3학점 교과목으로 인정 불가\n→ 이러닝 수업의 경우 우리대학의 교과목으로 인정이 불가할 수 있음\n- 학점교류 시 교류 대학과의 상호작용 기간이 소요되어, 성적확정 처리(학점반영)이 지연될 수 있음\n→ 2027년 2월 졸업예정 학생 수강 불가\n- 관련문의: 학사팀(haksa@학교메일)\n첨부파일\n붙임2. 2026학년도 호서대학교 동계 계절학기 학점교류 추천자(서식).xlsx\n다운로드\n미리보기\n붙임2. 2026학년도 호서대학교 동계 계절학기 학점교류 추천자(서식).xlsx\n다운로드\n미리보기\n붙임3. 교류대학 수학 지원서.hwp\n다운로드\n미리보기\n붙임1. 2026학년도 호서대학교 동계 계절학기 학점교류 신청 안내-복사.pdf\n다운로드\n미리보기\n(한국기술교육대학교) 2026학년도 동계 계절학기 타대학 학점교류 안내.hwp\n다운로드\n미리보기\n(한국기술교육대학교) 교류대학수학계획서.hwp\n다운로드\n미리보기",
+    "images": [],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-20T02:52:44+09:00",
+    "relevance": 2,
+    "relevance_reason": "넓은 조건(학적 상태) 일치 · 관심 분류 · 마감 있음",
+    "target": {
+      "scope": "specific",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [
+        "재학"
+      ],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": "2026-11-25T12:00:00+09:00",
+    "other_dates": [],
+    "actions": [
+      "교류대학 수학계획서 및 학점교류 추천서식 작성 후 이메일 제출"
+    ],
+    "materials": [
+      "교류대학 수학계획서",
+      "학점교류 추천서식"
+    ],
+    "category": "학사",
+    "days_left": 5,
+    "is_expired": false,
+    "is_urgent": true
+  },
+  {
+    "id": "academic-1630",
+    "title": "2026학년도 동계 계절수업 학점교류 수학 안내(배재대학교)",
+    "url": "https://www.koreatech.ac.kr/notice/view.es?mid=a10604030000&board_id=16&post_seq=1630&prefix_id=",
+    "source": "학교-학사",
+    "source_type": "학교",
+    "published_date": "2026-11-19",
+    "body": "2026학년도 동계 계절수업 학점교류 수학 안내(배재대학교)\n국내 대학 간 학점교류 협정에 따라 2026학년도 동계 배재대학교 계절수업 학점교류에 대해 다음과 같이 안내하오니, 수강을 희망하는 학생은 기한 내 신청하시기 바랍니다\n□ 대상자: 2026학년도 2학기 재학생\n□ 수강신청 학점: 본교 계절수업 포함 6학점 이내(재학기간 중 타대학 취득 인정학점 40학점 이내)\n□ 수강신청 및 등록기간, 교과목 리스트: 첨부파일 참조\n□ 수강신청 방법: 교류대학 수학계획서(우리대학 양식), 학점교류 추천서식(배재대학교 양식)을 작성하여 haksa@학교메일로 제출\n- 제출기한: 2026. 11. 25.(수) 12:00 까지 제출\n- 이메일 제목: 2026학년도 동계 계절학기 학점교류 신청(배재대)_이름_학번\n- 교류대학 수학계획서에 수강 교과목 담당교수님 확인 후 지도교수님, 소속 학부(과)장님 확인 받아 제출(순서대로 확인받으시기 바람)\n□ 유의사항\n- 우리대학 학사팀에 교류대학 수학 지원서 및 계획서 미제출 시 추후 학점인정처리 불가\n- 타 대학 수강예정과목은 우리대학 관련과목으로 해당학점 내에서 인정 가능함\n→ 타대학 2학점 교과목을 우리 대학 3학점 교과목으로 인정 불가\n→ 이러닝 수업의 경우 우리대학의 교과목으로 인정이 불가할 수 있음\n- 학점교류 시 교류 대학과의 상호작용 기간이 소요되어, 성적확정 처리(학점반영)이 지연될 수 있음\n→ 2027년 2월 졸업예정 학생 수강 불가\n- 관련문의: 학사팀(haksa@학교메일)\n첨부파일\n붙임1. 2026학년도 배재대학교 겨울계절학기 안내문.pdf\n다운로드\n미리보기\n붙임3. 2026학년도 배재대학교 겨울계절학기 수학 추천자 명단(서식).xlsx\n다운로드\n미리보기\n붙임4. 배재대학교 학점교류 신청서.hwp\n다운로드\n미리보기\n(한국기술교육대학교) 2026학년도 동계 계절학기 타대학 학점교류 안내.hwp\n다운로드\n미리보기\n(한국기술교육대학교) 교류대학수학계획서.hwp\n다운로드\n미리보기",
+    "images": [],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-20T02:52:44+09:00",
+    "relevance": 2,
+    "relevance_reason": "넓은 조건(학적 상태) 일치 · 관심 분류 · 마감 있음",
+    "target": {
+      "scope": "specific",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [
+        "재학"
+      ],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": "2026-11-25T12:00:00+09:00",
+    "other_dates": [],
+    "actions": [
+      "교류대학 수학계획서 및 학점교류 추천서식 작성 후 이메일 제출"
+    ],
+    "materials": [
+      "교류대학 수학계획서(우리대학 양식)",
+      "학점교류 추천서식(배재대학교 양식)"
+    ],
+    "category": "학사",
+    "days_left": 5,
+    "is_expired": false,
+    "is_urgent": true
+  },
+  {
+    "id": "academic-1629",
+    "title": "2026학년도 동계 계절수업 학점교류 수학 안내(순천향대학교)",
+    "url": "https://www.koreatech.ac.kr/notice/view.es?mid=a10604030000&board_id=16&post_seq=1629&prefix_id=",
+    "source": "학교-학사",
+    "source_type": "학교",
+    "published_date": "2026-11-19",
+    "body": "2026학년도 동계 계절수업 학점교류 수학 안내(순천향대학교)\n국내 대학 간 학점교류 협정에 따라 2026학년도 동계 순천향대학교 계절수업 학점교류에 대해 다음과 같이 안내하오니, 수강을 희망하는 학생은 기한 내 신청하시기 바랍니다\n□ 대상자: 2026학년도 2학기 재학생\n□ 수강신청 학점: 본교 계절수업 포함 6학점 이내(재학기간 중 타대학 취득 인정학점 40학점 이내)\n□ 수강신청 및 등록기간, 교과목 리스트: 첨부파일 참조\n□ 수강신청 방법: 교류대학 수학계획서(우리대학 양식), 학점교류 추천서식(순천향대학교 양식)을 작성하여 haksa@학교메일로 제출\n- 제출기한: 2026. 11. 25.(수) 12:00 까지 제출\n- 이메일 제목: 2026학년도 동계 계절학기 학점교류 신청(순천향대)_이름_학번\n- 교류대학 수학계획서에 수강 교과목 담당교수님 확인 후 지도교수님, 소속 학부(과)장님 확인 받아 제출(순서대로 확인받으시기 바람)\n□ 유의사항\n- 우리대학 학사팀에 교류대학 수학 지원서 및 계획서 미제출 시 추후 학점인정처리 불가\n- 타 대학 수강예정과목은 우리대학 관련과목으로 해당학점 내에서 인정 가능함\n→ 타대학 2학점 교과목을 우리 대학 3학점 교과목으로 인정 불가\n→ 이러닝 수업의 경우 우리대학의 교과목으로 인정이 불가할 수 있음\n- 학점교류 시 교류 대학과의 상호작용 기간이 소요되어, 성적확정 처리(학점반영)이 지연될 수 있음\n→ 2027년 2월 졸업예정 학생 수강 불가\n- 관련문의: 학사팀(haksa@학교메일)\n첨부파일\n(붙임 2) 2026학년도 동계학기 수학 신청자 명단_협약대학 공통.xlsx\n다운로드\n미리보기\n(순천향대학교) 2026학년도 동계 계절학기 학점교류 안내.pdf\n다운로드\n미리보기\n(붙임 1) 2026학년도 동계학기 수학 안내_협약대학 공통_안내용-복사.pdf\n다운로드\n미리보기\n(한국기술교육대학교) 2026학년도 동계 계절학기 타대학 학점교류 안내.hwp\n다운로드\n미리보기\n(한국기술교육대학교) 교류대학수학계획서.hwp\n다운로드\n미리보기",
+    "images": [],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-20T02:52:44+09:00",
+    "relevance": 2,
+    "relevance_reason": "넓은 조건(학적 상태) 일치 · 관심 분류 · 마감 있음",
+    "target": {
+      "scope": "specific",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [
+        "재학"
+      ],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": "2026-11-25T12:00:00+09:00",
+    "other_dates": [],
+    "actions": [
+      "교류대학 수학계획서 및 학점교류 추천서식 작성 후 이메일 제출"
+    ],
+    "materials": [
+      "교류대학 수학계획서",
+      "학점교류 추천서식"
+    ],
+    "category": "학사",
+    "days_left": 5,
+    "is_expired": false,
+    "is_urgent": true
+  },
+  {
+    "id": "academic-1628",
+    "title": "2026학년도 동계 계절수업 학점교류 수학 안내(남서울대학교)",
+    "url": "https://www.koreatech.ac.kr/notice/view.es?mid=a10604030000&board_id=16&post_seq=1628&prefix_id=",
+    "source": "학교-학사",
+    "source_type": "학교",
+    "published_date": "2026-11-19",
+    "body": "2026학년도 동계 계절수업 학점교류 수학 안내(남서울대학교)\n국내 대학 간 학점교류 협정에 따라 2026학년도 동계 남서울대학교 계절수업 학점교류에 대해 다음과 같이 안내하오니, 수강을 희망하는 학생은 기한 내 신청하시기 바랍니다\n□ 대상자: 2026학년도 2학기 재학생\n□ 수강신청 학점: 본교 계절수업 포함 6학점 이내(재학기간 중 타대학 취득 인정학점 40학점 이내)\n□ 수강신청 및 등록기간, 교과목 리스트: 첨부파일 참조\n□ 수강신청 방법: 교류대학 수학계획서(우리대학 양식), 학점교류 추천서식(남서울대학교 양식)을 작성하여 haksa@학교메일로 제출\n- 제출기한: 2026. 11. 25.(수) 12:00 까지 제출\n- 이메일 제목: 2026학년도 동계 계절학기 학점교류 신청(남서울대)_이름_학번\n- 교류대학 수학계획서에 수강 교과목 담당교수님 확인 후 지도교수님, 소속 학부(과)장님 확인 받아 제출(순서대로 확인받으시기 바람)\n□ 유의사항\n- 우리대학 학사팀에 교류대학 수학 지원서 및 계획서 미제출 시 추후 학점인정처리 불가\n- 타 대학 수강예정과목은 우리대학 관련과목으로 해당학점 내에서 인정 가능함\n→ 타대학 2학점 교과목을 우리 대학 3학점 교과목으로 인정 불가\n→ 이러닝 수업의 경우 우리대학의 교과목으로 인정이 불가할 수 있음\n- 학점교류 시 교류 대학과의 상호작용 기간이 소요되어, 성적확정 처리(학점반영)이 지연될 수 있음\n→ 2027년 2월 졸업예정 학생 수강 불가\n- 관련문의: 학사팀(haksa@학교메일)\n첨부파일\n(남서울대학교)2026학년도 동계 계절학기 학점교류 안내.pdf\n다운로드\n미리보기\n(서식)2026학년도 남서울대학교 동계 계절학기 수학 추천.xlsx\n다운로드\n미리보기\n(한국기술교육대학교) 2026학년도 동계 계절학기 타대학 학점교류 안내.hwp\n다운로드\n미리보기\n(한국기술교육대학교) 교류대학수학계획서.hwp\n다운로드\n미리보기",
+    "images": [],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-20T02:52:44+09:00",
+    "relevance": 2,
+    "relevance_reason": "넓은 조건(학적 상태) 일치 · 관심 분류 · 마감 있음",
+    "target": {
+      "scope": "specific",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [
+        "재학"
+      ],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": "2026-11-25T12:00:00+09:00",
+    "other_dates": [],
+    "actions": [
+      "교류대학 수학계획서 및 학점교류 추천서식 작성 후 이메일(haksa@학교메일) 제출"
+    ],
+    "materials": [
+      "교류대학 수학계획서",
+      "학점교류 추천서식"
+    ],
+    "category": "학사",
+    "days_left": 5,
     "is_expired": false,
     "is_urgent": true
   }
