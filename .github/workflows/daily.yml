@@ -50,6 +50,20 @@ jobs:
             echo "크롤러(src/crawler.py)가 아직 없어서 건너뜁니다."
           fi
 
+      # A: 온통청년 청년정책. 설정에 거주 지역이 있을 때만 모은다. AI는 거치지 않는다.
+      - name: 1-2. 청년정책 모으기 (A)
+        id: youth
+        timeout-minutes: 5
+        continue-on-error: true
+        env:
+          YOUTH_API_KEY: ${{ secrets.YOUTH_API_KEY }}
+        run: |
+          if [ -f src/youth_policy.py ]; then
+            python src/youth_policy.py
+          else
+            echo "청년정책 수집(src/youth_policy.py)이 아직 없어서 건너뜁니다."
+          fi
+
       - name: 2. AI 정리 (B)
         id: ai
         timeout-minutes: 15
@@ -122,6 +136,7 @@ jobs:
         if: always()
         env:
           CRAWL: ${{ steps.crawl.outcome }}
+          YOUTH: ${{ steps.youth.outcome }}
           AI: ${{ steps.ai.outcome }}
           WEATHER: ${{ steps.weather.outcome }}
           RELEVANCE: ${{ steps.relevance.outcome }}
@@ -129,6 +144,7 @@ jobs:
         run: |
           failed=""
           [ "$CRAWL" = "failure" ] && failed="$failed 1.공지모으기"
+          [ "$YOUTH" = "failure" ] && failed="$failed 1-2.청년정책"
           [ "$AI" = "failure" ] && failed="$failed 2.AI정리"
           [ "$WEATHER" = "failure" ] && failed="$failed 3.날씨"
           [ "$RELEVANCE" = "failure" ] && failed="$failed 4.관련도"
