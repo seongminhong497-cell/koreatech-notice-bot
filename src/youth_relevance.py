@@ -1,3 +1,4 @@
+
 """Youth-policy matching helpers.
 
 True means match, False means mismatch, and None means uncertain.
@@ -68,55 +69,47 @@ def match_age(
     return None  # Birthday could change the answer.
 
 
-def match_region(user_sido, user_sigungu, regions):
-    """Match region pairs with OR; return True, False, or None."""
-    if not isinstance(regions, list):
+def match_region(user_code, region_codes, *, nationwide=None):
+    """Compare district/city codes; missing information stays uncertain."""
+
+    def valid_code(value):
+        return (
+            isinstance(value, str)
+            and len(value) == 5
+            and value.isascii()
+            and value.isdigit()
+        )
+
+    # Team rule: missing user region requires confirmation.
+    if not valid_code(user_code):
         return None
-    if not regions:
-        return True  # Explicitly nationwide.
 
-    def clean(value):
-        if isinstance(value, str) and value.strip():
-            return value.strip()
+    if not isinstance(region_codes, list):
         return None
 
-    user_sido = clean(user_sido)
-    user_sigungu = clean(user_sigungu)
-    uncertain = False
+    if nationwide is True:
+        return True if region_codes == [] else None
 
-    for region in regions:
-        if not isinstance(region, dict):
-            uncertain = True
-            continue
+    if nationwide is not False:
+        return None
 
-        sido = clean(region.get("sido"))
-        if sido is None or "sigungu" not in region:
-            uncertain = True
-            continue
+    # An empty list alone does not mean nationwide.
+    if not region_codes:
+        return None
 
-        raw_sigungu = region["sigungu"]
-        sigungu = clean(raw_sigungu)
+    city_code = user_code[:4] + "0"
+    valid_codes = [
+        code for code in region_codes if valid_code(code)
+    ]
 
-        if raw_sigungu is not None and sigungu is None:
-            uncertain = True
-            continue
+    if user_code in valid_codes or city_code in valid_codes:
+        return True
 
-        if user_sido is None:
-            uncertain = True
-            continue
+    # Invalid entries might contain missing matching information.
+    if len(valid_codes) != len(region_codes):
+        return None
 
-        if user_sido != sido:
-            continue
-
-        if raw_sigungu is None:
-            return True  # Entire matching province/city.
-
-        if user_sigungu is None:
-            uncertain = True
-        elif user_sigungu == sigungu:
-            return True
-
-    return None if uncertain else False
+    return False
 
 
 def evaluate_youth_relevance(notice, profile, *, reference_year):
@@ -137,10 +130,11 @@ def evaluate_youth_relevance(notice, profile, *, reference_year):
         reference_year=reference_year,
         unrestricted=target.get("age_unrestricted"),
     )
+
     region_match = match_region(
-        profile.get("region_sido"),
-        profile.get("region_sigungu"),
-        target.get("regions"),
+        profile.get("region_code"),
+        target.get("region_codes"),
+        nationwide=target.get("nationwide"),
     )
 
     # A definite mismatch takes priority over uncertainty elsewhere.
@@ -171,6 +165,5 @@ def evaluate_youth_relevance(notice, profile, *, reference_year):
 
     return (
         2,
-
         "나이·지역 조건 충족 · 마감 정보 없음 · 기타 신청 조건은 원문 확인",
     )

@@ -1,3 +1,4 @@
+
 import unittest
 import datetime as dt
 
@@ -67,79 +68,32 @@ class AgeMatchingTests(unittest.TestCase):
 
 
 class RegionMatchingTests(unittest.TestCase):
-    def test_nationwide_without_user_region(self):
-        self.assertIs(match_region(None, None, []), True)
-
-    def test_unknown_policy_region(self):
-        self.assertIsNone(match_region("충청남도", "천안시", None))
-
-    def test_exact_city_match(self):
-        regions = [{"sido": "충청남도", "sigungu": "천안시"}]
-        self.assertIs(
-            match_region("충청남도", "천안시", regions), True
-        )
-
-    def test_entire_province(self):
-        regions = [{"sido": "충청남도", "sigungu": None}]
-        self.assertIs(match_region("충청남도", None, regions), True)
-
-    def test_different_province(self):
-        regions = [{"sido": "서울특별시", "sigungu": None}]
-        self.assertIs(
-            match_region("충청남도", "천안시", regions), False
-        )
-
-    def test_different_city(self):
-        regions = [{"sido": "충청남도", "sigungu": "아산시"}]
-        self.assertIs(
-            match_region("충청남도", "천안시", regions), False
-        )
-
-    def test_missing_user_city(self):
-        regions = [{"sido": "충청남도", "sigungu": "천안시"}]
-        self.assertIsNone(match_region("충청남도", None, regions))
-
-    def test_missing_user_province(self):
-        regions = [{"sido": "충청남도", "sigungu": "천안시"}]
-        self.assertIsNone(match_region(None, "천안시", regions))
-
-    def test_any_matching_region_is_enough(self):
-        regions = [
-            {"sido": "서울특별시", "sigungu": None},
-            {"sido": "충청남도", "sigungu": "천안시"},
+    def test_region_codes(self):
+        cases = [
+            ("exact district", "44131", ["44131"], False, True),
+            ("parent city", "44131", ["44130"], False, True),
+            ("another city", "44131", ["44150"], False, False),
+            ("another district", "44131", ["44133"], False, False),
+            ("multiple codes", "44131", ["44150", "44130"], False, True),
+            ("nationwide", "44131", [], True, True),
+            ("missing user", None, ["44130"], False, None),
+            ("empty user", "", ["44130"], False, None),
+            ("nationwide missing user", None, [], True, None),
+            ("unknown policy", "44131", None, False, None),
+            ("empty local list", "44131", [], False, None),
+            ("missing nationwide flag", "44131", [], None, None),
+            ("contradictory nationwide", "44131", ["44130"], True, None),
+            ("numeric user", 44131, ["44130"], False, None),
+            ("short user", "4413", ["44130"], False, None),
+            ("invalid policy code", "44131", ["bad"], False, None),
+            ("mixed unknown", "44131", ["44150", None], False, None),
+            ("known match wins", "44131", ["44130", None], False, True),
         ]
-        self.assertIs(
-            match_region("충청남도", "천안시", regions), True
-        )
-
-    def test_province_and_city_stay_paired(self):
-        regions = [
-            {"sido": "충청남도", "sigungu": "아산시"},
-            {"sido": "다른도", "sigungu": "천안시"},
-        ]
-        self.assertIs(
-            match_region("충청남도", "천안시", regions), False
-        )
-
-    def test_malformed_alternative_prevents_false_mismatch(self):
-        regions = [
-            {"sido": "서울특별시", "sigungu": None},
-            {"sido": "충청남도"},
-        ]
-        self.assertIsNone(
-            match_region("충청남도", "천안시", regions)
-        )
-
-    def test_malformed_region_values(self):
-        for regions in (
-            "전국",
-            [None],
-            [{"sido": None, "sigungu": None}],
-            [{"sido": "충청남도", "sigungu": ""}],
-        ):
-            with self.subTest(regions=regions):
-                self.assertIsNone(
-                    match_region("충청남도", "천안시", regions)
+        for label, user, codes, nationwide, expected in cases:
+            with self.subTest(case=label):
+                self.assertIs(
+                    match_region(user, codes, nationwide=nationwide),
+                    expected,
                 )
 
 
@@ -147,8 +101,7 @@ class YouthScoringTests(unittest.TestCase):
     def setUp(self):
         self.profile = {
             "birth_year": 2006,
-            "region_sido": "충청남도",
-            "region_sigungu": "천안시",
+            "region_code": "44131",
             "excluded_categories": [],
         }
         self.notice = {
@@ -158,9 +111,8 @@ class YouthScoringTests(unittest.TestCase):
                 "age_min": 19,
                 "age_max": 34,
                 "age_unrestricted": False,
-                "regions": [
-                    {"sido": "충청남도", "sigungu": "천안시"}
-                ],
+                "region_codes": ["44130"],
+                "nationwide": False,
             },
         }
 
@@ -183,17 +135,17 @@ class YouthScoringTests(unittest.TestCase):
         self.assertIn("나이 확인 필요", reason)
 
     def test_uncertain_region_with_deadline_gets_one(self):
-        self.profile["region_sigungu"] = None
+        self.profile["region_code"] = None
         self.assertEqual(self.result()[0], 1)
 
     def test_age_mismatch_overrides_unknown_region(self):
         self.profile["birth_year"] = 2009
-        self.profile["region_sigungu"] = None
+        self.profile["region_code"] = None
         self.assertEqual(self.result()[0], 0)
 
     def test_region_mismatch_overrides_unknown_age(self):
         self.profile["birth_year"] = None
-        self.profile["region_sido"] = "서울특별시"
+        self.profile["region_code"] = "11110"
         self.assertEqual(self.result()[0], 0)
 
     def test_excluded_category_overrides_matching(self):
@@ -204,15 +156,16 @@ class YouthScoringTests(unittest.TestCase):
         self.notice["target"] = None
         self.assertEqual(self.result()[0], 1)
 
-    def test_explicitly_unrestricted_conditions(self):
+    def test_nationwide_without_user_region_requires_confirmation(self):
         self.profile = {}
         self.notice["target"] = {
             "age_unrestricted": True,
             "age_min": None,
             "age_max": None,
-            "regions": [],
+            "region_codes": [],
+            "nationwide": True,
         }
-        self.assertEqual(self.result()[0], 3)
+        self.assertEqual(self.result()[0], 1)
 
     def test_reason_mentions_other_requirements(self):
         self.assertIn("기타 신청 조건은 원문 확인", self.result()[1])
@@ -226,8 +179,7 @@ class YouthPipelineTests(unittest.TestCase):
         )
         self.profile = {
             "birth_year": 2006,
-            "region_sido": "충청남도",
-            "region_sigungu": "천안시",
+            "region_code": "44131",
             "urgent_days": 3,
             "preparation_days": 7,
         }
@@ -244,9 +196,8 @@ class YouthPipelineTests(unittest.TestCase):
                 "age_min": 19,
                 "age_max": 34,
                 "age_unrestricted": False,
-                "regions": [
-                    {"sido": "충청남도", "sigungu": "천안시"}
-                ],
+                "region_codes": ["44130"],
+                "nationwide": False,
             },
         }
 

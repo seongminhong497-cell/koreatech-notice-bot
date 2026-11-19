@@ -1,7 +1,8 @@
 {
   "birth_year": 2006,
-  "region_sido": "충청남도",
-  "region_sigungu": "천안시",
+  "sido": "충남",
+  "sigungu": "천안시 동남구",
+  "region_code": "44131",
   "excluded_categories": [],
   "urgent_days": 3,
   "preparation_days": 7
