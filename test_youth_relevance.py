@@ -139,6 +139,7 @@ class RegionMatchingTests(unittest.TestCase):
                 self.assertIsNone(
                     match_region("충청남도", "천안시", regions)
                 )
+
 class YouthScoringTests(unittest.TestCase):
     def setUp(self):
         self.profile = {
@@ -212,6 +213,8 @@ class YouthScoringTests(unittest.TestCase):
 
     def test_reason_mentions_other_requirements(self):
         self.assertIn("기타 신청 조건은 원문 확인", self.result()[1])
+
+
 class YouthPipelineTests(unittest.TestCase):
     def setUp(self):
         self.now = dt.datetime(
@@ -299,5 +302,7 @@ class YouthPipelineTests(unittest.TestCase):
         )
         self.profile["birth_year"] = 2007
         self.assertEqual(self.result()["relevance"], 3)
+
+
 if __name__ == "__main__":
     unittest.main()

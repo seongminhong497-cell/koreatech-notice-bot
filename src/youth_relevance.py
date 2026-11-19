@@ -117,6 +117,8 @@ def match_region(user_sido, user_sigungu, regions):
             return True
 
     return None if uncertain else False
+
+
 def evaluate_youth_relevance(notice, profile, *, reference_year):
     """Score age/region relevance, not complete application eligibility."""
     if notice.get("category") in (
@@ -169,5 +171,6 @@ def evaluate_youth_relevance(notice, profile, *, reference_year):
 
     return (
         2,
+
         "나이·지역 조건 충족 · 마감 정보 없음 · 기타 신청 조건은 원문 확인",
     )
