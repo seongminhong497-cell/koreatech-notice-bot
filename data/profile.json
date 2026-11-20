@@ -1,5 +1,5 @@
 {
-  "department": "기계공학부",
+  "department": "반도체·디스플레이공학과",
   "year": 1,
   "groups": [
     "학부생"
@@ -8,8 +8,7 @@
   "dorm_resident": true,
   "interests": [
     "장학",
-    "학사",
-    "취업·인턴"
+    "학사"
   ],
   "always_show_categories": [],
   "excluded_categories": [],
@@ -21,7 +20,7 @@
   "region": null,
   "urgent_days": 3,
   "preparation_days": 7,
-  "birth_year": 2006,
+  "birth_year": null,
   "sido": "충남",
   "sigungu": "천안시 동남구",
   "region_code": "44131"
