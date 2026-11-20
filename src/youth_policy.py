@@ -340,7 +340,7 @@ def make_notice(policy, now):
             "age_min": age_min,
             "age_max": age_max,
             "age_unrestricted": age_unrestricted,
-            "region_codes": raw_region_codes,
+            "region_codes": [] if nationwide else raw_region_codes,
             "nationwide": nationwide,
         },
         API_MODIFIED_FIELD: clean_text(policy.get("lastMdfcnDt")),
