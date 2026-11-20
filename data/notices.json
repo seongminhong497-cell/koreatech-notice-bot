@@ -16,8 +16,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 2,
-    "relevance_reason": "넓은 조건(학적 상태) 일치 · 관심 분류 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -504,8 +504,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance": 1,
+    "relevance_reason": "좁은 조건(학과) 일치 · 마감 정보 없음",
     "target": {
       "scope": "specific",
       "departments": [
@@ -588,8 +588,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance": 1,
+    "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
     "target": {
       "scope": "all",
       "departments": [],
@@ -630,8 +630,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 2,
-    "relevance_reason": "넓은 조건(학적 상태) 일치 · 관심 분류 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -680,8 +680,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -790,8 +790,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -836,8 +836,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -880,8 +880,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 2,
-    "relevance_reason": "넓은 조건(학적 상태) 일치 · 관심 분류 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -960,8 +960,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 2,
-    "relevance_reason": "넓은 조건(학적 상태, 대상 집단) 일치 · 관심 분류 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태, 대상 집단)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -1005,8 +1005,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 2,
-    "relevance_reason": "넓은 조건(학적 상태, 대상 집단) 일치 · 관심 분류 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태, 대상 집단)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -1057,8 +1057,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 2,
-    "relevance_reason": "넓은 조건(학적 상태) 일치 · 관심 분류 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -1103,8 +1103,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 2,
-    "relevance_reason": "넓은 조건(학적 상태) 일치 · 관심 분류 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -1144,8 +1144,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 2,
-    "relevance_reason": "넓은 조건(학적 상태, 대상 집단) 일치 · 관심 분류 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태, 대상 집단)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -1282,8 +1282,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 2,
-    "relevance_reason": "전체 학생 대상 · 관심 분류 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
     "target": {
       "scope": "all",
       "departments": [],
@@ -1376,8 +1376,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 2,
-    "relevance_reason": "넓은 조건(학적 상태) 일치 · 관심 분류 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -1556,8 +1556,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 2,
-    "relevance_reason": "넓은 조건(학적 상태, 대상 집단) 일치 · 관심 분류 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태, 대상 집단)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -1727,8 +1727,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 2,
-    "relevance_reason": "넓은 조건(학적 상태, 대상 집단) 일치 · 관심 분류 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태, 대상 집단)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -1756,8 +1756,8 @@
     ],
     "category": "장학",
     "days_left": 0,
-    "is_expired": false,
-    "is_urgent": true
+    "is_expired": true,
+    "is_urgent": false
   },
   {
     "id": "scholarship-2410",
@@ -1776,8 +1776,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 2,
-    "relevance_reason": "넓은 조건(대상 집단) 일치 · 관심 분류 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(대상 집단)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -1928,8 +1928,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 2,
-    "relevance_reason": "넓은 조건(학적 상태, 대상 집단) 일치 · 관심 분류 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태, 대상 집단)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -2360,8 +2360,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 2,
-    "relevance_reason": "전체 학생 대상 · 관심 분류 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
     "target": {
       "scope": "all",
       "departments": [],
@@ -2428,8 +2428,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 2,
-    "relevance_reason": "전체 학생 대상 · 관심 분류 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
     "target": {
       "scope": "all",
       "departments": [],
@@ -2472,8 +2472,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 2,
-    "relevance_reason": "넓은 조건(학적 상태) 일치 · 관심 분류 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -2563,8 +2563,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 2,
-    "relevance_reason": "넓은 조건(학적 상태) 일치 · 관심 분류 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -2605,8 +2605,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 2,
-    "relevance_reason": "넓은 조건(학적 상태) 일치 · 관심 분류 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -2647,8 +2647,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 2,
-    "relevance_reason": "넓은 조건(학적 상태) 일치 · 관심 분류 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -2745,8 +2745,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-11T13:47:50+09:00",
-    "relevance": 2,
-    "relevance_reason": "전체 학생 대상 · 관심 분류 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
     "target": {
       "scope": "all",
       "departments": [],
@@ -3063,8 +3063,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-12T11:37:12+09:00",
-    "relevance": 2,
-    "relevance_reason": "넓은 조건(학적 상태, 대상 집단) 일치 · 관심 분류 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태, 대상 집단)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -3227,7 +3227,7 @@
     "is_new": false,
     "collected_at": "2026-11-12T14:05:45+09:00",
     "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance_reason": "학과 조건 불일치",
     "target": {
       "scope": "specific",
       "departments": [
@@ -3357,8 +3357,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-12T15:29:21+09:00",
-    "relevance": 2,
-    "relevance_reason": "넓은 조건(학적 상태) 일치 · 관심 분류 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -3450,8 +3450,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-13T02:16:35+09:00",
-    "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -3492,8 +3492,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-13T02:16:35+09:00",
-    "relevance": 2,
-    "relevance_reason": "넓은 조건(학적 상태, 대상 집단) 일치 · 관심 분류 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태, 대상 집단)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -3636,8 +3636,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-13T11:16:46+09:00",
-    "relevance": 2,
-    "relevance_reason": "전체 학생 대상 · 관심 분류 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
     "target": {
       "scope": "all",
       "departments": [],
@@ -3916,7 +3916,7 @@
     "is_new": false,
     "collected_at": "2026-11-14T01:52:29+09:00",
     "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance_reason": "학과 조건 불일치",
     "target": {
       "scope": "specific",
       "departments": [
@@ -3963,8 +3963,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-14T18:53:53+09:00",
-    "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance": 1,
+    "relevance_reason": "좁은 조건(학과) 일치 · 마감 정보 없음",
     "target": {
       "scope": "specific",
       "departments": [
@@ -4333,8 +4333,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-15T01:17:06+09:00",
-    "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance": 1,
+    "relevance_reason": "좁은 조건(학과) 일치 · 마감 정보 없음",
     "target": {
       "scope": "specific",
       "departments": [
@@ -4377,8 +4377,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-15T01:17:06+09:00",
-    "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance": 3,
+    "relevance_reason": "좁은 조건(학과) 일치 · 마감 있음",
     "days_left": 10,
     "is_expired": false,
     "is_urgent": false,
@@ -4804,7 +4804,7 @@
     "is_new": false,
     "collected_at": "2026-11-15T01:17:06+09:00",
     "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance_reason": "학년 조건 불일치",
     "target": {
       "scope": "specific",
       "departments": [
@@ -4991,8 +4991,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-15T01:17:06+09:00",
-    "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance": 1,
+    "relevance_reason": "좁은 조건(학과) 일치 · 마감 정보 없음",
     "target": {
       "scope": "specific",
       "departments": [
@@ -5288,7 +5288,7 @@
     "is_new": false,
     "collected_at": "2026-11-15T10:27:42+09:00",
     "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance_reason": "학적 상태 조건 불일치",
     "target": {
       "scope": "specific",
       "departments": [
@@ -5330,7 +5330,7 @@
     "is_new": false,
     "collected_at": "2026-11-15T10:27:42+09:00",
     "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance_reason": "학적 상태 조건 불일치",
     "target": {
       "scope": "specific",
       "departments": [
@@ -5379,8 +5379,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-15T10:27:42+09:00",
-    "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance": 3,
+    "relevance_reason": "좁은 조건(학과) 일치 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [
@@ -5421,8 +5421,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-15T10:27:42+09:00",
-    "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance": 3,
+    "relevance_reason": "좁은 조건(학과) 일치 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [
@@ -5461,7 +5461,7 @@
     "is_new": false,
     "collected_at": "2026-11-15T10:27:42+09:00",
     "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance_reason": "학적 상태 조건 불일치",
     "target": {
       "scope": "specific",
       "departments": [
@@ -5509,7 +5509,7 @@
     "is_new": false,
     "collected_at": "2026-11-15T10:27:42+09:00",
     "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance_reason": "학적 상태 조건 불일치",
     "target": {
       "scope": "specific",
       "departments": [
@@ -5557,8 +5557,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-15T10:27:42+09:00",
-    "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance": 3,
+    "relevance_reason": "좁은 조건(학과) 일치 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [
@@ -5595,8 +5595,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-15T10:27:42+09:00",
-    "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance": 3,
+    "relevance_reason": "좁은 조건(학과) 일치 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [
@@ -5647,7 +5647,7 @@
     "is_new": false,
     "collected_at": "2026-11-15T10:27:42+09:00",
     "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance_reason": "제외 대상 집단 전용 공지",
     "target": {
       "scope": "specific",
       "departments": [
@@ -5688,7 +5688,7 @@
     "is_new": false,
     "collected_at": "2026-11-15T10:27:42+09:00",
     "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance_reason": "학적 상태 조건 불일치",
     "target": {
       "scope": "specific",
       "departments": [
@@ -5734,8 +5734,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-15T10:27:42+09:00",
-    "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance": 3,
+    "relevance_reason": "좁은 조건(학과) 일치 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [
@@ -5803,8 +5803,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-15T10:27:42+09:00",
-    "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance": 3,
+    "relevance_reason": "좁은 조건(학과) 일치 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [
@@ -5845,8 +5845,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-15T10:27:42+09:00",
-    "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance": 3,
+    "relevance_reason": "좁은 조건(학과) 일치 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [
@@ -5906,8 +5906,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-15T10:27:42+09:00",
-    "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance": 3,
+    "relevance_reason": "좁은 조건(학과) 일치 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [
@@ -5945,8 +5945,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-15T10:27:42+09:00",
-    "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance": 3,
+    "relevance_reason": "좁은 조건(학과) 일치 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [
@@ -5982,8 +5982,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-15T10:27:42+09:00",
-    "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance": 1,
+    "relevance_reason": "좁은 조건(학과) 일치 · 마감 정보 없음",
     "target": {
       "scope": "specific",
       "departments": [
@@ -6020,7 +6020,7 @@
     "is_new": false,
     "collected_at": "2026-11-15T10:27:42+09:00",
     "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance_reason": "제외 대상 집단 전용 공지",
     "target": {
       "scope": "specific",
       "departments": [
@@ -6061,8 +6061,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-15T10:27:42+09:00",
-    "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance": 1,
+    "relevance_reason": "좁은 조건(학과) 일치 · 마감 정보 없음",
     "target": {
       "scope": "specific",
       "departments": [
@@ -6102,8 +6102,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-15T10:27:42+09:00",
-    "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance": 3,
+    "relevance_reason": "좁은 조건(학과) 일치 · 마감 있음",
     "target": {
       "scope": "specific",
       "departments": [
@@ -6144,7 +6144,7 @@
     "is_new": false,
     "collected_at": "2026-11-15T10:27:42+09:00",
     "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance_reason": "학적 상태 조건 불일치",
     "target": {
       "scope": "specific",
       "departments": [
@@ -6389,8 +6389,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-16T10:50:50+09:00",
-    "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -6475,8 +6475,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-16T10:50:50+09:00",
-    "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -6503,7 +6503,7 @@
     "category": "취업·인턴",
     "days_left": 3,
     "is_expired": false,
-    "is_urgent": false
+    "is_urgent": true
   },
   {
     "id": "scholarship-2419",
@@ -6521,8 +6521,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-16T10:50:50+09:00",
-    "relevance": 2,
-    "relevance_reason": "넓은 조건(학적 상태, 대상 집단) 일치 · 관심 분류 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태, 대상 집단)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -7141,7 +7141,7 @@
     "is_new": false,
     "collected_at": "2026-11-16T10:50:50+09:00",
     "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance_reason": "학과 조건 불일치",
     "target": {
       "scope": "specific",
       "departments": [
@@ -7562,7 +7562,7 @@
     "is_new": false,
     "collected_at": "2026-11-16T10:50:50+09:00",
     "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance_reason": "학적 상태 조건 불일치",
     "target": {
       "scope": "specific",
       "departments": [
@@ -7610,7 +7610,7 @@
     "is_new": false,
     "collected_at": "2026-11-16T10:50:50+09:00",
     "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance_reason": "학과 조건 불일치",
     "target": {
       "scope": "specific",
       "departments": [
@@ -7653,7 +7653,7 @@
     "is_new": false,
     "collected_at": "2026-11-16T10:50:50+09:00",
     "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance_reason": "학과 조건 불일치",
     "target": {
       "scope": "specific",
       "departments": [
@@ -7690,7 +7690,7 @@
     "is_new": false,
     "collected_at": "2026-11-16T10:50:50+09:00",
     "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance_reason": "학과 조건 불일치",
     "target": {
       "scope": "specific",
       "departments": [
@@ -7727,7 +7727,7 @@
     "is_new": false,
     "collected_at": "2026-11-16T10:50:50+09:00",
     "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance_reason": "학과 조건 불일치",
     "target": {
       "scope": "specific",
       "departments": [
@@ -7766,8 +7766,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-16T10:50:50+09:00",
-    "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance": 3,
+    "relevance_reason": "좁은 조건(학과) 일치 · 마감 있음",
     "days_left": -845,
     "is_expired": true,
     "is_urgent": false,
@@ -7831,7 +7831,7 @@
     "is_new": false,
     "collected_at": "2026-11-16T10:50:50+09:00",
     "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance_reason": "학과 조건 불일치",
     "days_left": -870,
     "is_expired": true,
     "is_urgent": false,
@@ -7877,7 +7877,7 @@
     "is_new": false,
     "collected_at": "2026-11-16T10:50:50+09:00",
     "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance_reason": "학과 조건 불일치",
     "days_left": null,
     "is_expired": false,
     "is_urgent": false,
@@ -7915,7 +7915,7 @@
     "is_new": false,
     "collected_at": "2026-11-16T10:50:50+09:00",
     "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance_reason": "학과 조건 불일치",
     "days_left": -1069,
     "is_expired": true,
     "is_urgent": false,
@@ -7969,7 +7969,7 @@
     "is_new": false,
     "collected_at": "2026-11-16T10:50:50+09:00",
     "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance_reason": "학과 조건 불일치",
     "days_left": -1059,
     "is_expired": true,
     "is_urgent": false,
@@ -8006,7 +8006,7 @@
     "is_new": false,
     "collected_at": "2026-11-16T10:50:50+09:00",
     "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance_reason": "학과 조건 불일치",
     "days_left": -1024,
     "is_expired": true,
     "is_urgent": false,
@@ -8049,7 +8049,7 @@
     "is_new": false,
     "collected_at": "2026-11-16T10:50:50+09:00",
     "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance_reason": "학과 조건 불일치",
     "days_left": null,
     "is_expired": false,
     "is_urgent": false,
@@ -8102,7 +8102,7 @@
     "is_new": false,
     "collected_at": "2026-11-16T10:50:50+09:00",
     "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance_reason": "학과 조건 불일치",
     "days_left": -1464,
     "is_expired": true,
     "is_urgent": false,
@@ -8147,7 +8147,7 @@
     "is_new": false,
     "collected_at": "2026-11-16T10:50:50+09:00",
     "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance_reason": "학과 조건 불일치",
     "days_left": null,
     "is_expired": false,
     "is_urgent": false,
@@ -8192,7 +8192,7 @@
     "is_new": false,
     "collected_at": "2026-11-16T10:50:50+09:00",
     "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance_reason": "학과 조건 불일치",
     "days_left": null,
     "is_expired": false,
     "is_urgent": false,
@@ -8232,7 +8232,7 @@
     "is_new": false,
     "collected_at": "2026-11-16T10:50:50+09:00",
     "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance_reason": "학과 조건 불일치",
     "days_left": null,
     "is_expired": false,
     "is_urgent": false,
@@ -8269,7 +8269,7 @@
     "is_new": false,
     "collected_at": "2026-11-16T10:50:50+09:00",
     "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance_reason": "학과 조건 불일치",
     "days_left": null,
     "is_expired": false,
     "is_urgent": false,
@@ -8311,7 +8311,7 @@
     "is_new": false,
     "collected_at": "2026-11-16T10:50:50+09:00",
     "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance_reason": "학과 조건 불일치",
     "days_left": null,
     "is_expired": false,
     "is_urgent": false,
@@ -8359,7 +8359,7 @@
     "is_new": false,
     "collected_at": "2026-11-16T10:50:50+09:00",
     "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance_reason": "학과 조건 불일치",
     "days_left": null,
     "is_expired": false,
     "is_urgent": false,
@@ -8398,7 +8398,7 @@
     "is_new": false,
     "collected_at": "2026-11-16T10:50:50+09:00",
     "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance_reason": "학과 조건 불일치",
     "days_left": -1754,
     "is_expired": true,
     "is_urgent": false,
@@ -8441,8 +8441,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-16T13:01:07+09:00",
-    "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance": 1,
+    "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
     "target": {
       "scope": "all",
       "departments": [],
@@ -8517,8 +8517,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-17T04:07:13+09:00",
-    "relevance": 2,
-    "relevance_reason": "전체 학생 대상 · 관심 분류 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
     "target": {
       "scope": "all",
       "departments": [],
@@ -8720,8 +8720,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-17T04:07:13+09:00",
-    "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태, 대상 집단)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -8767,8 +8767,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-17T04:07:13+09:00",
-    "relevance": 2,
-    "relevance_reason": "넓은 조건(학적 상태, 대상 집단) 일치 · 관심 분류 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태, 대상 집단)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -8895,8 +8895,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-17T13:15:46+09:00",
-    "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -9068,7 +9068,7 @@
     "is_new": false,
     "collected_at": "2026-11-17T13:15:46+09:00",
     "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance_reason": "학과 조건 불일치",
     "target": {
       "scope": "specific",
       "departments": [
@@ -9153,8 +9153,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-17T13:15:46+09:00",
-    "relevance": 2,
-    "relevance_reason": "전체 학생 대상 · 관심 분류 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
     "target": {
       "scope": "all",
       "departments": [],
@@ -9291,8 +9291,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-18T03:02:01+09:00",
-    "relevance": 2,
-    "relevance_reason": "넓은 조건(학적 상태, 대상 집단) 일치 · 관심 분류 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태, 대상 집단)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -9346,7 +9346,7 @@
     "is_new": false,
     "collected_at": "2026-11-18T03:02:01+09:00",
     "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance_reason": "학과 조건 불일치",
     "target": {
       "scope": "specific",
       "departments": [
@@ -9433,8 +9433,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-18T03:02:01+09:00",
-    "relevance": 2,
-    "relevance_reason": "넓은 조건(대상 집단) 일치 · 관심 분류 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(대상 집단)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -9616,8 +9616,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-18T12:16:11+09:00",
-    "relevance": 2,
-    "relevance_reason": "전체 학생 대상 · 관심 분류 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
     "target": {
       "scope": "all",
       "departments": [],
@@ -9651,8 +9651,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-18T12:16:11+09:00",
-    "relevance": 2,
-    "relevance_reason": "넓은 조건(학적 상태, 대상 집단) 일치 · 관심 분류 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태, 대상 집단)만 일치",
     "days_left": 0,
     "is_expired": true,
     "is_urgent": false,
@@ -9739,8 +9739,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-19T02:42:42+09:00",
-    "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -9793,8 +9793,8 @@
     "processed": true,
     "is_new": false,
     "collected_at": "2026-11-19T02:42:42+09:00",
-    "relevance": 2,
-    "relevance_reason": "넓은 조건(학적 상태) 일치 · 관심 분류 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -9916,8 +9916,8 @@
     "processed": true,
     "is_new": true,
     "collected_at": "2026-11-20T02:52:44+09:00",
-    "relevance": 2,
-    "relevance_reason": "넓은 조건(학적 상태) 일치 · 관심 분류 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -9967,8 +9967,8 @@
     "processed": true,
     "is_new": true,
     "collected_at": "2026-11-20T02:52:44+09:00",
-    "relevance": 0,
-    "relevance_reason": "사용자가 제외한 분류",
+    "relevance": 1,
+    "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
     "target": {
       "scope": "all",
       "departments": [],
@@ -10138,8 +10138,8 @@
     "processed": true,
     "is_new": true,
     "collected_at": "2026-11-20T02:52:44+09:00",
-    "relevance": 2,
-    "relevance_reason": "넓은 조건(학적 상태) 일치 · 관심 분류 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -10178,8 +10178,8 @@
     "processed": true,
     "is_new": true,
     "collected_at": "2026-11-20T02:52:44+09:00",
-    "relevance": 2,
-    "relevance_reason": "넓은 조건(학적 상태) 일치 · 관심 분류 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -10218,8 +10218,8 @@
     "processed": true,
     "is_new": true,
     "collected_at": "2026-11-20T02:52:44+09:00",
-    "relevance": 2,
-    "relevance_reason": "넓은 조건(학적 상태) 일치 · 관심 분류 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -10258,8 +10258,8 @@
     "processed": true,
     "is_new": true,
     "collected_at": "2026-11-20T02:52:44+09:00",
-    "relevance": 2,
-    "relevance_reason": "넓은 조건(학적 상태) 일치 · 관심 분류 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -10298,8 +10298,8 @@
     "processed": true,
     "is_new": true,
     "collected_at": "2026-11-20T02:52:44+09:00",
-    "relevance": 2,
-    "relevance_reason": "넓은 조건(학적 상태) 일치 · 관심 분류 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태)만 일치",
     "target": {
       "scope": "specific",
       "departments": [],
@@ -10341,8 +10341,8 @@
     "processed": true,
     "is_new": true,
     "collected_at": "2026-11-20T11:45:39+09:00",
-    "relevance": 2,
-    "relevance_reason": "전체 학생 대상 · 관심 분류 · 마감 있음",
+    "relevance": 1,
+    "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
     "target": {
       "scope": "all",
       "departments": [],
@@ -10364,7 +10364,7 @@
     "materials": null,
     "category": "교내활동",
     "days_left": 0,
-    "is_expired": false,
-    "is_urgent": true
+    "is_expired": true,
+    "is_urgent": false
   }
 ]
