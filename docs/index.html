@@ -14,11 +14,15 @@
     .notice h3 { margin: 8px 0 6px; font-size: 17px; }
     .notice .meta { font-size: 13px; color: #666; margin-top: 4px; }
     .tag { display: inline-block; background: #e8eefc; color: #2f5bd3; border-radius: 6px; padding: 2px 6px; font-size: 12px; }
+    .tag.gov { background: #e6f4ea; color: #1e7a3c; }
     .new { display: inline-block; background: #ffe9a8; color: #8a5a00; border-radius: 6px; padding: 2px 6px; font-size: 12px; font-weight: bold; }
     .dday { font-weight: bold; color: #555; }
     .dday.urgent { color: #d33; }
     .sample { color: #999; font-size: 12px; }
     .empty { color: #888; text-align: center; }
+    .profile-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; }
+    .settings-btn { background: #2f5bd3; color: #fff; text-decoration: none; border-radius: 16px; padding: 6px 12px; font-size: 14px; white-space: nowrap; }
+    .settings-btn:hover { background: #2549ad; }
     a { color: inherit; }
   </style>
 </head>
@@ -27,28 +31,50 @@
   <p class="sub">나에게 맞는 학교 공지를 모아서 보여줍니다</p>
 
   <!-- 내 설정 (3주차에 profile.json 연결) -->
-  <div class="box" id="profile">내 설정: 컴퓨터공학부 · 1학년 · 재학 · 생활관 거주</div>
+  <div class="box profile-row">
+    <span id="profile">내 설정: 불러오는 중…</span>
+    <a class="settings-btn" id="settings-btn" href="https://github.com/seongminhong497-cell/koreatech-notice-bot/issues/new?template=settings.yml" target="_blank" rel="noopener">⚙️ 내 설정 바꾸기</a>
+  </div>
 
   <div class="filters" id="filters"></div>
 
   <div id="notice-list"><p class="empty">공지를 불러오는 중…</p></div>
 
   <script>
-    // ▼ 저장소 주인 GitHub 아이디로 바꾸기
-    const OWNER = "seongminhong497-cell";
-    const REPO = "koreatech-notice-bot";
-    const DATA_URL = `https://raw.githubusercontent.com/${OWNER}/${REPO}/main/data/notices.json`;
+    // 저장소 주소: GitHub Pages 주소(아이디.github.io/저장소이름)에서 자동으로 알아낸다.
+    // 저장소를 복사해서 써도 고칠 필요 없음. 내 컴퓨터에서 파일로 열 때만 아래 기본값을 쓴다.
+    const ON_PAGES = location.hostname.endsWith(".github.io");
+    const OWNER = ON_PAGES ? location.hostname.split(".")[0] : "seongminhong497-cell";
+    const REPO = (ON_PAGES && location.pathname.split("/")[1]) || "koreatech-notice-bot";
+    document.getElementById("settings-btn").href =
+      `https://github.com/${OWNER}/${REPO}/issues/new?template=settings.yml`;
+    // 파일 주소: ref 자리에 커밋 번호를 넣으면 커밋마다 주소가 달라져서 GitHub 캐시에 걸리지 않는다
+    const fileUrl = (ref, path) => `https://raw.githubusercontent.com/${OWNER}/${REPO}/${ref}/${path}`;
 
-    // 마감 임박 기준 (profile.json 값과 맞추기)
-    const URGENT_DAYS = 3;           // 기본
-    const URGENT_DAYS_MATERIALS = 7; // 준비물 있을 때
+    // main의 최신 커밋 번호 (실패하거나 API 한도(시간당 60번)를 넘으면 예전처럼 main 사용)
+    const latestRef = fetch(`https://api.github.com/repos/${OWNER}/${REPO}/commits/main`, {
+        cache: "no-store",
+        headers: { Accept: "application/vnd.github.sha" },
+      })
+      .then(r => { if (!r.ok) throw new Error(r.status); return r.text(); })
+      .then(sha => /^[0-9a-f]{40}$/.test(sha.trim()) ? sha.trim() : "main")
+      .catch(() => "main");
 
-    const CATEGORIES = ["전체", "장학", "학사", "취업·인턴", "교내활동", "대외활동·공모전", "생활관"];
+    // 마감 임박 기준 (profile.json을 불러오면 그 값으로 바뀜)
+    let URGENT_DAYS = 3;           // 기본
+    let URGENT_DAYS_MATERIALS = 7; // 준비물 있을 때
+
+    const CATEGORIES = ["전체", "장학", "학사", "취업·인턴", "교내활동", "대외활동·공모전", "생활관", "청년정책"];
     let notices = [];
     let current = "전체";
 
     function esc(s) {
       return String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+    }
+
+    // 청년정책(정부 공지)인지: 분류가 "청년정책"이거나 출처 종류가 "정부"
+    function isYouthPolicy(n) {
+      return n.category === "청년정책" || n.source_type === "정부";
     }
 
     // 한국 시간 기준 오늘 날짜 (YYYY-MM-DD)
@@ -63,11 +89,23 @@
       return Math.round((Date.parse(d) - Date.parse(todayKST())) / 86400000);
     }
 
+    // 마감이 지났는지 (시각이 있으면 지금 시각과 비교, 날짜만 있으면 그날 끝까지 유효)
+    function isExpired(n) {
+      if (!n.deadline) return false;
+      if (n.deadline.length > 10) {
+        const t = Date.parse(n.deadline);
+        if (!isNaN(t)) return t <= Date.now();
+      }
+      const left = daysLeft(n.deadline);
+      return left !== null && left < 0;
+    }
+
     function ddayHTML(n) {
       const left = daysLeft(n.deadline);
       if (left === null) return "";
       const hasMaterials = Array.isArray(n.materials) && n.materials.length > 0;
       const limit = hasMaterials ? URGENT_DAYS_MATERIALS : URGENT_DAYS;
+      if (isExpired(n)) return `<span class="dday">마감됨</span>`;
       let text;
       if (left < 0) text = "마감됨";
       else if (left === 0) text = n.deadline.length > 10 ? `오늘 ${n.deadline.slice(11, 16)}` : "오늘 마감";
@@ -95,13 +133,30 @@
       return r;
     }
 
+    // 추가 일정 (예: 결과 발표 11/27, 행사일 11/15)
+    function otherDatesText(list) {
+      if (!Array.isArray(list) || !list.length) return "";
+      return list
+        .filter(d => d && d.date)
+        .map(d => {
+          const date = String(d.date);
+          const md = `${Number(date.slice(5, 7))}/${Number(date.slice(8, 10))}`;
+          const time = date.length > 10 ? " " + date.slice(11, 16) : "";
+          return `${esc(d.label || "일정")} ${md}${time}`;
+        })
+        .join(", ");
+    }
+
     function card(n) {
       const extra = [];
       if (n.actions && n.actions.length) extra.push("할 일: " + n.actions.map(esc).join(", "));
       if (n.materials && n.materials.length) extra.push("준비물: " + n.materials.map(esc).join(", "));
+      const others = otherDatesText(n.other_dates);
+      if (others) extra.push("📅 추가 일정: " + others);
       return `
         <div class="box notice">
           <span class="tag">${esc(n.category || "미분류")}</span>
+          ${n.source_type === "정부" ? '<span class="tag gov">🏛 ' + esc(n.source || "온통청년") + "</span>" : ""}
           ${n.is_new ? '<span class="new">NEW</span>' : ""}
           ${ddayHTML(n)}
           ${n.is_sample ? '<span class="sample">예시 데이터</span>' : ""}
@@ -114,14 +169,25 @@
     function render() {
       const list = document.getElementById("notice-list");
       const shown = notices
-        .filter(n => current === "전체" || n.category === current)
+        .filter(n => n.relevance !== 0)   // 관련도 0 = 숨김
+        .filter(n => current === "전체" || (current === "청년정책" ? isYouthPolicy(n) : n.category === current))
         .sort((a, b) => {
-          // 마감 있는 공지 먼저, 마감 가까운 순
+          // 0) 마감 지난 공지는 맨 아래로
+          const ea = isExpired(a), eb = isExpired(b);
+          if (ea !== eb) return ea ? 1 : -1;
+          // 1) 관련도 높은 순 (미정은 맨 뒤)
+          const ra = typeof a.relevance === "number" ? a.relevance : -1;
+          const rb = typeof b.relevance === "number" ? b.relevance : -1;
+          if (ra !== rb) return rb - ra;
+          // 2) 마감 가까운 순 (마감 없는 공지는 뒤)
           const da = daysLeft(a.deadline), db = daysLeft(b.deadline);
-          if (da === null && db === null) return 0;
-          if (da === null) return 1;
-          if (db === null) return -1;
-          return da - db;
+          if (da !== db) {
+            if (da === null) return 1;
+            if (db === null) return -1;
+            return da - db;
+          }
+          // 3) 최신 게시일 순
+          return String(b.published_date || "").localeCompare(String(a.published_date || ""));
         });
       list.innerHTML = shown.length ? shown.map(card).join("") : '<p class="empty">해당하는 공지가 없습니다</p>';
     }
@@ -132,9 +198,43 @@
       box.querySelectorAll("button").forEach(b => b.onclick = () => { current = b.dataset.c; renderFilters(); render(); });
     }
 
-    fetch(DATA_URL, { cache: "no-store" })
+    // 내 설정 한 줄 (예: 컴퓨터공학부 · 1학년 · 재학 · 생활관 거주)
+    function profileText(p) {
+      const parts = [];
+      if (p.department) parts.push(p.department);
+      if (p.year) parts.push(`${p.year}학년`);
+      if (p.enrollment_status) parts.push(p.enrollment_status);
+      if (p.dorm_resident === true) parts.push("생활관 거주");
+      else if (p.dorm_resident === false) parts.push("생활관 미거주");
+      // 나이: age가 있으면 그대로, 없고 출생연도가 있으면 계산
+      const age = Number.isInteger(p.age) ? p.age
+        : (Number.isInteger(p.birth_year) ? Number(todayKST().slice(0, 4)) - p.birth_year : null);
+      if (age !== null) parts.push(`만 ${age}세`);
+      // 지역: region이 있으면 그대로, 없으면 시도 + 시군구
+      const region = p.region || [p.sido, p.sigungu].filter(Boolean).join(" ");
+      if (region) parts.push(region);
+      return parts.length ? parts.join(" · ") : "설정 없음";
+    }
+
+    // profile.json 불러오기 (실패해도 공지 목록은 그대로 보여줌)
+    // 최신 커밋 주소로 받아와서, 설정을 바꾸면 새로고침만으로 바로 보인다
+    const profileLoaded = latestRef
+      .then(ref => fetch(fileUrl(ref, "data/profile.json"), { cache: "no-store" }))
       .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
-      .then(data => { notices = data; renderFilters(); render(); })
+      .then(p => {
+        document.getElementById("profile").textContent = "내 설정: " + profileText(p);
+        if (Number.isInteger(p.urgent_days)) URGENT_DAYS = p.urgent_days;
+        if (Number.isInteger(p.preparation_days)) URGENT_DAYS_MATERIALS = p.preparation_days;
+      })
+      .catch(() => {
+        document.getElementById("profile").textContent = "내 설정: 불러오지 못했습니다";
+      });
+
+    latestRef
+      .then(ref => fetch(fileUrl(ref, "data/notices.json"), { cache: "no-store" }))
+      .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(data => profileLoaded.then(() => data))   // 마감 임박 기준을 먼저 맞추고 그리기
+      .then(data => { notices = Array.isArray(data) ? data : (data.notices || []); renderFilters(); render(); })
       .catch(err => {
         document.getElementById("notice-list").innerHTML =
           `<p class="empty">공지를 불러오지 못했습니다 (${esc(err.message)})<br>OWNER 값과 data/notices.json 위치를 확인하세요</p>`;

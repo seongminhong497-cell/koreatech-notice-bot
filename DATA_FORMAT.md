@@ -262,3 +262,40 @@ relevance와 relevance_reason은 null입니다.
 - sample-002: 신청 마감은 deadline, 결과 발표는 other_dates에 저장합니다.
 - sample-003: 신청 마감은 없으므로 deadline은 null이고, 행사일은 other_dates에 저장합니다.
 - 예시 데이터는 실제 디스코드 알림에서 제외합니다.
+
+## 4. 관련도 계산 구현 추가 사항
+
+### profile.groups
+- 사용자가 명시한 소속 집단 목록입니다. 예: ["학부생"]
+- target.groups와 같은 표준 명칭을 사용합니다.
+- 누락, null, []는 알려진 소속 집단이 없다는 뜻입니다.
+- 목록에 없다는 이유만으로 해당 집단이 아니라고 판단하지 않습니다.
+- 알려진 소속 집단이 대상 목록에 하나라도 있으면 집단 조건은 일치합니다.
+- 대상 집단이 모두 excluded_target_groups에 속하면 숨깁니다.
+- 소속과 제외 설정이 겹치면 현재 구현은 소속 일치를 우선합니다.
+
+### C가 추가하는 공지 필드
+| 필드 | 형식 | 의미 |
+|---|---|---|
+| days_left | 정수 또는 null | 한국 날짜 기준 마감까지 남은 일수 |
+| is_expired | 불리언 또는 null | 마감 경과 여부 |
+| is_urgent | 불리언 | 관련도 1~3이며 마감 임박 조건을 충족하는지 |
+
+- extracted가 true인 공지는 실행할 때마다 다시 계산합니다.
+- extracted가 true가 아니면 관련도와 이유, days_left,
+  is_expired를 null로 초기화하고 processed와 is_urgent는 false로 둡니다.
+- 마감이 없는 처리 완료 공지는 days_left=null,
+  is_expired=false, is_urgent=false입니다.
+- 마감 시각과 현재 시각이 같으면 마감된 것으로 처리합니다.
+- is_sample과 is_new는 변경하지 않습니다.
+- is_urgent는 예시 여부와 별개로 계산하며,
+  실제 전송에서 예시 공지를 제외하는 것은 D의 담당입니다.
+- 날짜 형식이 잘못되면 오류로 종료하며 기존 JSON을 덮어쓰지 않습니다.
+
+### 실행
+- python src/relevance.py: 계산 결과를 data/notices.json에 저장
+- python src/relevance.py --dry-run: 저장 없이 확인
+- python src/relevance.py --output 파일경로: 별도 파일로 저장
+
+관련도 계산과 마감 계산은 별개입니다.
+마감된 공지도 관련도 점수는 유지하지만 is_urgent는 false입니다.

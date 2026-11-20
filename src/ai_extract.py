@@ -18,11 +18,17 @@ import requests
 from google import genai
 from google.genai import types
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from departments import DEPARTMENTS, normalize_departments, normalize_notices  # noqa: E402
+
 MODEL = "gemini-3.5-flash-lite"
 BACKUP_MODEL = "gemma-4-26b-a4b-it"  # 기본 모델이 붐빌 때 쓰는 예비 모델
 NOTICES_PATH = "data/notices.json"
 MAX_IMAGES = 3  # 공지 하나에 AI로 보낼 이미지 최대 개수
 MAX_IMAGE_BYTES = 5 * 1024 * 1024  # 5MB보다 큰 이미지는 보내지 않음
+MAX_PER_RUN = 30  # 한 번 실행에 처리할 공지 최대 개수. 나머지는 다음 실행 때
+TIME_BUDGET = 12 * 60  # AI 정리에 쓸 최대 시간(초). 워크플로 제한(15분) 전에 멈춘다
+IMAGE_TIMEOUT = (5, 10)  # 이미지 접속 5초, 받기 10초
 WAIT_SECONDS = 4.5  # 분당 15회 한도를 넘지 않도록 공지 사이에 쉬는 시간
 
 CATEGORIES = ["장학", "학사", "취업·인턴", "교내활동", "대외활동·공모전", "생활관"]
@@ -45,13 +51,16 @@ SYSTEM_PROMPT = """너는 한국기술교육대학교 공지에서 정보를 뽑
 target (누구를 위한 공지인지)
 - scope: 학생 누구나 해당되면 "all", 특정 학과·학년·학적·집단만 해당되면 "specific",
   판단할 수 없으면 "unknown"
-- departments: 대상 학과 목록. "컴퓨터공학부"처럼 정식 이름으로 써. 학과 제한이 없으면 [], 알 수 없으면 null
+- departments: 대상 학과 목록. 아래 이름 중에서 골라 써. 전공 이름이 나오면 그 전공이 속한 학부를 써.
+  {DEPARTMENT_LIST}
+  목록에 없는 학과는 공지에 적힌 대로 써. 학과 제한이 없으면 [], 알 수 없으면 null
 - years: 대상 학년 숫자 목록. 예: [1, 2]. 학년 제한이 없으면 [], 알 수 없으면 null
 - enrollment_statuses: 대상 학적 목록. "재학", "휴학", "졸업예정", "졸업" 중에서만 골라.
   제한이 없으면 [], 알 수 없으면 null
 - groups: 대상 집단 목록. "학부생", "대학원생", "교직원", "외국인 유학생", "일반인" 중에서만 골라.
   직원·계약직·연구원 채용은 "교직원"으로 써. 제한이 없으면 [], 알 수 없으면 null
   그냥 "학생" 누구나 대상이면 학부생·대학원생을 적지 말고 []로 둬.
+  "대학(원)생", "학부(원)생", "대학생 및 대학원생"은 학부생과 대학원생 둘 다야.
 - dorm_required: 생활관생만 해당되면 true, 생활관생이 아닌 사람만 해당되면 false, 상관없거나 알 수 없으면 null
 
 deadline (신청·제출 마감)
@@ -84,6 +93,8 @@ materials (준비물·제출 서류)
 category (분류)
 - "장학", "학사", "취업·인턴", "교내활동", "대외활동·공모전", "생활관" 중 하나.
 - 시스템 점검, 단순 안내처럼 맞는 게 없으면 억지로 고르지 말고 null
+- "생활관"은 기숙사(생활관) 입주, 퇴사, 점호, 호실처럼 기숙사 공지에만 써.
+  통학버스, 셔틀버스, 주차, 교통, 건물·시설 안내는 생활관이 아니야.
 
 답 형식 (꺾쇠 안의 설명 대신 공지에서 찾은 실제 값을 넣어)
 {
@@ -103,6 +114,10 @@ category (분류)
 }
 
 답하기 전에 본문을 끝까지 읽고, 신청 기간·신청 자격·신청 방법·제출 서류 부분을 꼭 확인해."""
+
+SYSTEM_PROMPT = SYSTEM_PROMPT.replace(
+    "{DEPARTMENT_LIST}", ", ".join(DEPARTMENTS)
+)
 
 _client = None
 
@@ -145,7 +160,7 @@ def _read_image(url, headers):
             print(f"  이미지 파일 열기 실패, 건너뜀: {url} ({e})")
             return None
     try:
-        res = requests.get(url, timeout=20, headers=headers)
+        res = requests.get(url, timeout=IMAGE_TIMEOUT, headers=headers)
         res.raise_for_status()
     except requests.RequestException as e:
         print(f"  이미지 받기 실패, 건너뜀: {url} ({e})")
@@ -163,9 +178,7 @@ def download_images(urls, referer=None):
     if referer:
         headers["Referer"] = referer
     parts = []
-    for url in (urls or [])[:MAX_IMAGES * 2]:  # 실패할 것까지 생각해 넉넉히
-        if len(parts) >= MAX_IMAGES:
-            break
+    for url in (urls or [])[:MAX_IMAGES]:  # 앞에서 3장까지만 시도
         data = _read_image(url, headers)
         if data is None:
             continue
@@ -260,6 +273,31 @@ def _date(value):
     return f"{day.isoformat()}T{h:02d}:{mi:02d}:{sec:02d}+09:00"
 
 
+def _fix_past_year(deadline, published_date):
+    """마감일이 작성일보다 90일 넘게 앞서면 연도 오타로 보고 1년을 올린다.
+
+    예: 2026-08-31에 올라온 공지의 마감 "2025.12.31" → 2026-12-31
+    다시 올린 공지(끌올)처럼 마감이 조금 지난 경우는 그대로 둔다.
+    1년을 올려도 작성일보다 앞서면 고치지 않는다.
+    """
+    if not deadline or not isinstance(published_date, str):
+        return deadline
+    try:
+        posted = datetime.date.fromisoformat(published_date[:10])
+        day = datetime.date.fromisoformat(deadline[:10])
+    except ValueError:
+        return deadline
+    if (posted - day).days <= 90:
+        return deadline
+    try:
+        fixed = day.replace(year=day.year + 1)
+    except ValueError:  # 2월 29일
+        return deadline
+    if fixed < posted:
+        return deadline
+    return fixed.isoformat() + deadline[10:]
+
+
 def _str_list(value, allowed=None):
     """문자열 목록으로 정리한다. 허용 목록 밖의 값은 버리고, 전부 버려지면 '모름'(None)으로 본다."""
     if not isinstance(value, list):
@@ -330,7 +368,9 @@ def clean(result):
 
     target = {
         "scope": scope,
-        "departments": _str_list(t.get("departments")),
+        "departments": normalize_departments(
+            _str_list(t.get("departments"))
+        ),
         "years": _year_list(t.get("years")),
         "enrollment_statuses": _str_list(
             t.get("enrollment_statuses"), STATUSES
@@ -380,22 +420,66 @@ def extract(text, images=None, referer=None, show_raw=False):
     return clean(raw)
 
 
+def _save(path, data):
+    """임시 파일에 쓴 뒤 바꿔치기해서, 중간에 끊겨도 파일이 깨지지 않게 한다."""
+    tmp = path + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+    os.replace(tmp, path)
+
+
+def _board_department(source):
+    """'컴퓨터공학부-일반'처럼 학과 게시판에서 온 공지면 그 학과 표준 이름을 돌려준다."""
+    if not isinstance(source, str) or "-" not in source:
+        return None
+    names = normalize_departments([source.split("-")[0]])
+    if len(names) == 1 and names[0] in DEPARTMENTS:
+        return names[0]
+    return None
+
+
 def process_notices(path=NOTICES_PATH):
-    """notices.json에서 아직 AI 정리가 안 된 공지만 처리하고 저장한다."""
+    """notices.json에서 아직 AI 정리가 안 된 공지만 처리한다.
+
+    공지를 하나 처리할 때마다 바로 저장해서, 워크플로가 중간에 끊겨도
+    처리한 만큼은 남는다. 한 번에 MAX_PER_RUN개까지만 처리한다.
+    """
     with open(path, encoding="utf-8") as f:
         data = json.load(f)
     notices = data["notices"] if isinstance(data, dict) else data
+
+    # 예전에 저장된 공지의 학과 이름도 표준 이름으로 맞춘다 (관련도 계산 전에)
+    renamed = normalize_notices(notices)
+    if renamed:
+        print(f"저장된 공지의 학과 이름 통일: {renamed}개")
+        _save(path, data)
 
     todo = [
         n for n in notices
         if not n.get("is_sample") and not n.get("extracted")
     ]
+    # 본문도 이미지도 없으면 AI가 제목만 보고 추측하게 되므로 건너뛴다.
+    # extracted는 false로 남아서, 크롤러가 본문을 채운 다음 실행 때 처리된다.
+    empty = [n for n in todo if not (n.get("body") or "").strip()
+             and not n.get("images")]
+    todo = [n for n in todo if n not in empty]
+    if empty:
+        print(f"본문이 비어 있어 다음에 처리할 공지: {len(empty)}개")
+    if len(todo) > MAX_PER_RUN:
+        print(f"이번에는 {MAX_PER_RUN}개만 처리하고 "
+              f"나머지 {len(todo) - MAX_PER_RUN}개는 다음 실행 때 처리합니다.")
+        todo = todo[:MAX_PER_RUN]
     print(f"처리할 공지: {len(todo)}개")
     if not todo:
         return  # 바꿀 게 없으면 파일을 다시 쓰지 않는다(불필요한 커밋 방지)
 
+    started = time.monotonic()
     for i, notice in enumerate(todo, 1):
-        print(f"[{i}/{len(todo)}] {notice.get('title', '')}")
+        if time.monotonic() - started > TIME_BUDGET:
+            print(f"시간 예산({TIME_BUDGET // 60}분)을 다 써서 멈춥니다. "
+                  f"남은 {len(todo) - i + 1}개는 다음 실행 때 처리합니다.")
+            break
+        print(f"[{i}/{len(todo)}] {notice.get('title', '')}", flush=True)
         info = extract(
             build_text(notice),
             images=notice.get("images") or [],
@@ -404,13 +488,21 @@ def process_notices(path=NOTICES_PATH):
         if info is None:
             print("  실패, 다음 실행 때 다시 처리합니다.")
         else:
+            info["deadline"] = _fix_past_year(
+                info["deadline"], notice.get("published_date")
+            )
+            # 학과 게시판 공지인데 AI가 대상 학과를 못 찾으면, 그 게시판의 학과로 채운다
+            board_department = _board_department(notice.get("source"))
+            target = info.get("target") or {}
+            if board_department and not target.get("departments"):
+                target["departments"] = [board_department]
+                target["scope"] = "specific"
+                info["target"] = target
             notice.update(info)
             notice["extracted"] = True
+            _save(path, data)  # 하나 끝날 때마다 저장
         if i < len(todo):
             time.sleep(WAIT_SECONDS)
-
-    with open(path, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
     print("저장 완료")
 
 
