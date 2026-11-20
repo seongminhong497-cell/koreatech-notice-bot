@@ -1,8 +1,7 @@
-
 """Youth-policy matching helpers.
 
 True means match, False means mismatch, and None means uncertain.
-Birth year alone gives a conservative range of possible ages.
+Age uses the team convention: Korean calendar year minus birth year.
 """
 
 
@@ -14,7 +13,7 @@ def match_age(
     reference_year,
     unrestricted=None,
 ):
-    """Compare possible ages with inclusive policy age limits.
+    """Compare calendar-year age with inclusive policy age limits.
 
     A missing bound means unknown, not automatically unlimited.
     Explicit unrestricted=True permits any age.
@@ -50,23 +49,15 @@ def match_age(
     ):
         return None
 
-    oldest = reference_year - birth_year
-    youngest = max(0, oldest - 1)
-
-    # Every possible age fails a known restriction.
-    if age_min is not None and oldest < age_min:
+    age = reference_year - birth_year
+    if age_min is not None and age < age_min:
         return False
-    if age_max is not None and youngest > age_max:
+    if age_max is not None and age > age_max:
         return False
-
-    # Cannot confirm eligibility with an unknown boundary.
     if age_min is None or age_max is None:
         return None
+    return True
 
-    if youngest >= age_min and oldest <= age_max:
-        return True
-
-    return None  # Birthday could change the answer.
 
 
 def match_region(user_code, region_codes, *, nationwide=None):
@@ -112,6 +103,27 @@ def match_region(user_code, region_codes, *, nationwide=None):
     return False
 
 
+def classify_region(user_code, region_codes, *, nationwide=None):
+    """Return local, wide, nationwide, False (mismatch), or None."""
+    matched = match_region(user_code, region_codes, nationwide=nationwide)
+    if matched is not True:
+        return matched
+    if nationwide is True:
+        return "nationwide"
+    # A known membership match cannot establish scope if codes are malformed.
+    if any(
+        not isinstance(code, str)
+        or len(code) != 5
+        or not code.isascii()
+        or not code.isdigit()
+        for code in region_codes
+    ):
+        return None
+    if all(code.startswith(user_code[:4]) for code in region_codes):
+        return "local"
+    return "wide"
+
+
 def evaluate_youth_relevance(notice, profile, *, reference_year):
     """Score age/region relevance, not complete application eligibility."""
     if notice.get("category") in (
@@ -131,7 +143,7 @@ def evaluate_youth_relevance(notice, profile, *, reference_year):
         unrestricted=target.get("age_unrestricted"),
     )
 
-    region_match = match_region(
+    region_match = classify_region(
         profile.get("region_code"),
         target.get("region_codes"),
         nationwide=target.get("nationwide"),
@@ -157,13 +169,19 @@ def evaluate_youth_relevance(notice, profile, *, reference_year):
             f"{'·'.join(unknown)} 확인 필요 · 기타 신청 조건은 원문 확인",
         )
 
-    if notice.get("deadline"):
-        return (
-            3,
-            "나이·지역 조건 충족 · 마감 있음 · 기타 신청 조건은 원문 확인",
-        )
-
+    has_deadline = bool(notice.get("deadline"))
+    if region_match == "local":
+        rating = 3 if has_deadline else 2
+        area = "우리 시 정책"
+    elif region_match == "wide":
+        rating = 2 if has_deadline else 1
+        area = "광역 정책"
+    else:
+        interested = "청년정책" in (profile.get("interests") or [])
+        rating = 2 if interested else 1
+        area = "전국 정책 · 관심 분야" if interested else "전국 정책"
+    timing = "마감 있음" if has_deadline else "마감 정보 없음(상시 등)"
     return (
-        2,
-        "나이·지역 조건 충족 · 마감 정보 없음 · 기타 신청 조건은 원문 확인",
+        rating,
+        f"{area} · 나이 일치 · {timing} · 기타 신청 조건은 원문 확인",
     )

@@ -225,6 +225,10 @@ def process_notices(notices, profile, now=None):
         notice["relevance_reason"] = reason
 
         days, expired, urgent = deadline_info(notice, profile, now)
+        if notice.get("category") == "청년정책" and expired:
+            notice["relevance"] = 0
+            notice["relevance_reason"] = "마감된 청년정책"
+            urgent = False
         notice.update(
             days_left=days,
             is_expired=expired,

@@ -7,6 +7,7 @@ from src.relevance import process_notices
 from src.youth_relevance import (
     evaluate_youth_relevance,
     match_age,
+    classify_region,
     match_region,
 )
 
@@ -21,14 +22,14 @@ class AgeMatchingTests(unittest.TestCase):
             unrestricted=unrestricted,
         )
 
-    def test_both_possible_ages_match(self):
+    def test_calendar_year_age_matches(self):
         self.assertIs(self.match(2006, 19, 34), True)
 
-    def test_minimum_birthday_boundary_is_unknown(self):
-        self.assertIsNone(self.match(2007, 19, 34))
+    def test_minimum_age_is_inclusive(self):
+        self.assertIs(self.match(2007, 19, 34), True)
 
-    def test_maximum_birthday_boundary_is_unknown(self):
-        self.assertIsNone(self.match(1991, 19, 34))
+    def test_above_maximum_age_is_mismatch(self):
+        self.assertIs(self.match(1991, 19, 34), False)
 
     def test_definitely_too_young(self):
         self.assertIs(self.match(2009, 19, 34), False)
@@ -129,7 +130,7 @@ class YouthScoringTests(unittest.TestCase):
         self.assertEqual(self.result()[0], 2)
 
     def test_uncertain_age_with_deadline_gets_one(self):
-        self.profile["birth_year"] = 2007
+        self.profile["birth_year"] = None
         rating, reason = self.result()
         self.assertEqual(rating, 1)
         self.assertIn("나이 확인 필요", reason)
@@ -169,6 +170,47 @@ class YouthScoringTests(unittest.TestCase):
 
     def test_reason_mentions_other_requirements(self):
         self.assertIn("기타 신청 조건은 원문 확인", self.result()[1])
+
+    def test_region_scope_and_stars(self):
+        cases = [
+            (["44131"], False, True, False, 3),
+            (["44130", "44131", "44133"], False, True, False, 3),
+            (["44130"], False, False, False, 2),
+            (["44130", "44150"], False, True, False, 2),
+            (["44130", "11110"], False, False, True, 1),
+            ([], True, True, True, 2),
+            ([], True, False, True, 2),
+            ([], True, True, False, 1),
+            ([], True, False, False, 1),
+            (["44133"], False, True, True, 0),
+            (["44130", None], False, True, True, 1),
+        ]
+        for codes, nationwide, deadline, interest, expected in cases:
+            with self.subTest(codes=codes, deadline=deadline, interest=interest):
+                self.notice["target"].update(
+                    region_codes=codes, nationwide=nationwide
+                )
+                self.notice["deadline"] = "2026-12-01" if deadline else None
+                self.profile["interests"] = ["청년정책"] if interest else []
+                self.assertEqual(self.result()[0], expected)
+
+    def test_unknown_age_precedes_nationwide_interest(self):
+        self.notice["target"].update(nationwide=True, region_codes=[])
+        self.profile.update(birth_year=None, interests=["청년정책"])
+        self.assertEqual(self.result()[0], 1)
+
+    def test_scope_uses_membership_before_prefix(self):
+        self.assertIs(classify_region(
+            "44131", ["44133"], nationwide=False
+        ), False)
+        self.assertEqual(classify_region(
+            "44150", ["44150"], nationwide=False
+        ), "local")
+
+    def test_maximum_age_is_inclusive(self):
+        self.assertIs(match_age(
+            1992, 19, 34, reference_year=2026, unrestricted=False
+        ), True)
 
 
 class YouthPipelineTests(unittest.TestCase):
@@ -230,10 +272,10 @@ class YouthPipelineTests(unittest.TestCase):
         self.assertFalse(result["processed"])
         self.assertFalse(result["is_urgent"])
 
-    def test_expired_policy_keeps_rating_but_is_not_urgent(self):
+    def test_expired_policy_is_hidden_and_not_urgent(self):
         self.notice["deadline"] = "2026-11-18"
         result = self.result()
-        self.assertEqual(result["relevance"], 3)
+        self.assertEqual(result["relevance"], 0)
         self.assertTrue(result["is_expired"])
         self.assertFalse(result["is_urgent"])
 
@@ -244,7 +286,7 @@ class YouthPipelineTests(unittest.TestCase):
         self.assertFalse(result["is_urgent"])
 
     def test_uncertain_policy_can_still_have_deadline_warning(self):
-        self.profile["birth_year"] = 2007
+        self.profile["birth_year"] = None
         result = self.result()
         self.assertEqual(result["relevance"], 1)
         self.assertTrue(result["is_urgent"])
@@ -254,7 +296,37 @@ class YouthPipelineTests(unittest.TestCase):
             2027, 1, 1, 12,
             tzinfo=dt.timezone(dt.timedelta(hours=9)),
         )
-        self.profile["birth_year"] = 2007
+        self.profile["birth_year"] = 2008
+        self.notice["deadline"] = "2027-01-02"
+        self.assertEqual(self.result()["relevance"], 3)
+
+
+    def test_expiration_boundaries(self):
+        cases = [
+            ("2026-11-19", 3, False),
+            ("2026-11-18", 0, True),
+            ("2026-11-19T12:00:00+09:00", 0, True),
+            ("2026-11-19T12:00:01+09:00", 3, False),
+            ("2026-11-19T03:00:00+00:00", 0, True),
+        ]
+        for deadline, rating, expired in cases:
+            with self.subTest(deadline=deadline):
+                self.notice["deadline"] = deadline
+                result = self.result()
+                self.assertEqual(result["relevance"], rating)
+                self.assertEqual(result["is_expired"], expired)
+                if expired:
+                    self.assertFalse(result["is_urgent"])
+
+    def test_expired_unknown_policy_is_hidden(self):
+        self.profile["birth_year"] = None
+        self.notice["deadline"] = "2026-11-18"
+        self.assertEqual(self.result()["relevance"], 0)
+
+    def test_year_converts_to_korean_time(self):
+        self.now = dt.datetime(2026, 12, 31, 15, tzinfo=dt.timezone.utc)
+        self.profile["birth_year"] = 2008
+        self.notice["deadline"] = "2027-01-02"
         self.assertEqual(self.result()["relevance"], 3)
 
 
