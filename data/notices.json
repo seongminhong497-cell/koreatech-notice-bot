@@ -9990,7 +9990,7 @@
     "materials": null,
     "category": "취업·인턴",
     "days_left": 0,
-    "is_expired": false,
+    "is_expired": true,
     "is_urgent": false
   },
   {
@@ -10321,6 +10321,49 @@
     ],
     "category": "학사",
     "days_left": 5,
+    "is_expired": false,
+    "is_urgent": true
+  },
+  {
+    "id": "general-37527",
+    "title": "[국제교육팀(GEC)] 12월 모의 어학 시험 토익, 토익스피킹 접수(오늘11.20.(금)17:00까지 접수)",
+    "url": "https://www.koreatech.ac.kr/notice/view.es?mid=a10604010000&board_id=14&post_seq=37527&prefix_id=",
+    "source": "학교-일반",
+    "source_type": "학교",
+    "published_date": "2026-11-20",
+    "body": "안녕하세요. 국제교육팀(GEC) 입니다.\n2026학년도 마지막 모의 어학시험(토익/토익스피킹) 시행 관련하여 안내합니다.\n2026.12.2.(수) 시행되는 토익과 토익스피킹 시험이 올해 진행되는 마지막 모의 어학시험입니다.\n2026.11.20.(금) 오늘 17시 접수 마감 예정이오니 잊지 말고 신청해주시기 바랍니다.\n2027학년도 시험은 4월부터 진행 될 예정이니 미리 확인하시고 착오 없이 준비하시기 바랍니다.\n국제교육팀(GEC)\n첨부파일\n모의 어학시험.jpg\n다운로드\n미리보기",
+    "images": [
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&a=id&p=37527&fn=1795137729388_%25EB%25AA%25A8%25EC%259D%2598%2B%25EC%2596%25B4%25ED%2595%2599%25EC%258B%259C%25ED%2597%2598.jpg",
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&p=37527&a=fd&fs=1"
+    ],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-20T11:45:39+09:00",
+    "relevance": 2,
+    "relevance_reason": "전체 학생 대상 · 관심 분류 · 마감 있음",
+    "target": {
+      "scope": "all",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": "2026-11-20T17:00:00+09:00",
+    "other_dates": [
+      {
+        "label": "모의 어학시험 시행일",
+        "date": "2026-12-02"
+      }
+    ],
+    "actions": [
+      "모의 어학 시험 접수"
+    ],
+    "materials": null,
+    "category": "교내활동",
+    "days_left": 0,
     "is_expired": false,
     "is_urgent": true
   }
