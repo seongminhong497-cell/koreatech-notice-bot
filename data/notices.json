@@ -3519,8 +3519,8 @@
     "materials": null,
     "category": "교내활동",
     "days_left": 0,
-    "is_expired": false,
-    "is_urgent": true
+    "is_expired": true,
+    "is_urgent": false
   },
   {
     "id": "academic-1625",
@@ -9654,8 +9654,8 @@
     "relevance": 2,
     "relevance_reason": "넓은 조건(학적 상태, 대상 집단) 일치 · 관심 분류 · 마감 있음",
     "days_left": 0,
-    "is_expired": false,
-    "is_urgent": true,
+    "is_expired": true,
+    "is_urgent": false,
     "target": {
       "scope": "specific",
       "departments": [],
@@ -9860,8 +9860,8 @@
     "materials": null,
     "category": "교내활동",
     "days_left": 0,
-    "is_expired": false,
-    "is_urgent": true
+    "is_expired": true,
+    "is_urgent": false
   },
   {
     "id": "general-37526",
