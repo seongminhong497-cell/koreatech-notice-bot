@@ -1,5 +1,5 @@
 {
-  "department": "기계공학부",
+  "department": "컴퓨터공학부",
   "year": 1,
   "groups": [
     "학부생"
@@ -9,6 +9,7 @@
   "interests": [
     "장학",
     "학사",
+    "취업·인턴",
     "청년정책"
   ],
   "always_show_categories": [],
@@ -23,6 +24,6 @@
   "preparation_days": 7,
   "birth_year": 2006,
   "sido": "충남",
-  "sigungu": "보령시",
-  "region_code": "44180"
+  "sigungu": "천안시 동남구",
+  "region_code": "44131"
 }
