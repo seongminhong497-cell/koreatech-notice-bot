@@ -46,9 +46,16 @@ class AgeMatchingTests(unittest.TestCase):
     def test_missing_limits_are_unknown(self):
         self.assertIsNone(self.match(2006, None, None))
 
-    def test_one_missing_limit_cannot_confirm_match(self):
-        self.assertIsNone(self.match(2006, 19, None))
-        self.assertIsNone(self.match(2006, None, 34))
+    def test_one_missing_limit_can_match(self):
+        self.assertIs(self.match(2006, 19, None, False), True)
+        self.assertIs(self.match(2006, None, 34, False), True)
+
+    def test_one_missing_limit_can_reject(self):
+        self.assertIs(self.match(2010, 19, None, False), False)
+        self.assertIs(self.match(1990, None, 34, False), False)
+
+    def test_both_missing_limits_remain_unknown(self):
+        self.assertIsNone(self.match(2006, None, None, False))
 
     def test_known_limit_can_prove_mismatch(self):
         self.assertIs(self.match(2009, 19, None), False)
