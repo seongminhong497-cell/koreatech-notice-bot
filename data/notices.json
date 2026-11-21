@@ -14495,5 +14495,581 @@
     "days_left": null,
     "is_expired": false,
     "is_urgent": false
+  },
+  {
+    "id": "youth-20261028005400114467",
+    "title": "청년친화형 연구타운 조성",
+    "url": "https://www.chungnam.go.kr/cnportal/cnapcPressList/cnapcPress/view.do?nttId=2162422&menuNo=500498&pageIndex=1",
+    "source": "온통청년",
+    "source_type": "정부",
+    "published_date": "2026-10-28",
+    "body": "충남 천안아산 연구개발(R&D) 집적지구에 청년 창업자와 연구인력이 일하고 성장할 수 있는 ‘청년친화형 미래기술허브센터’를 조성해 창업·기술개발·인재양성을 연계 지원\n지원 내용: ❍ 청년 창업공간 조성 : 창업기업과 기업 부설연구소 등이 입주할 수 있는 공간을 마련합니다. ❍ 기술 연구개발 지원 : 기업과 연구자가 활용할 수 있는 오픈랩 등 연구개발 기반시설을 조성합니다. ❍ 시제품 제작 지원 기반 마련 : 아이디어를 제품으로 구현하고 시험할 수 있는 시제품 제작 시설을 마련합니다. ❍ 창업 단계별 육성 : 예비창업부터 기업 성장까지 단계에 맞는 창업지원 프로그램을 운영할 계획입니다. ❍ 교육 및 네트워킹 지원 : 교육·교류 공간을 통해 청년 창업자, 연구인력, 기업 및 연구기관 간 협력을 촉진합니다. ❍ 취업·인재양성 연계 : 지역 기업과의 연계를 통해 청년 연구인력 양성과 취업 기회를 확대할 계획입니다.\n신청 방법: 별도 문의\n추가 조건: 청년 창업자 대상 사업",
+    "images": [],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-21T22:37:33+09:00",
+    "relevance": 1,
+    "relevance_reason": "광역 정책 · 나이 일치 · 마감 정보 없음(상시 등) · 기타 신청 조건은 원문 확인",
+    "category": "청년정책",
+    "deadline": null,
+    "other_dates": [],
+    "actions": [
+      "신청: 별도 문의"
+    ],
+    "materials": [
+      "별도 문의"
+    ],
+    "target": {
+      "scope": "specific",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null,
+      "age_min": null,
+      "age_max": null,
+      "age_unrestricted": true,
+      "region_codes": [
+        "44130",
+        "44200"
+      ],
+      "nationwide": false
+    },
+    "api_last_modified": "2026-10-28 14:20:21",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "youth-20261026005400114421",
+    "title": "대학로 청년문화예술 활성화 지원",
+    "url": "https://youth.chungnam.go.kr/web/main/customSupp/M060-09/view?bizId=A20250417CT000000000002260",
+    "source": "온통청년",
+    "source_type": "정부",
+    "published_date": "2026-10-26",
+    "body": "천안시 안서동 대학 지역 내 청년문화예술 활성화를 통해 정주율 향상 및 지역활력 제고\n지원 내용: ❍공연·문화행사 지원: 청년이 기획하고 참여하는 문화예술 프로그램 운영 ❍창작활동 기회 제공: 청년 예술인의 작품·콘텐츠를 선보일 기회 마련 ❍체험 프로그램 운영: 공예 등 다양한 문화예술 체험활동 진행 ❍청년 예술인 발굴: 지역에서 활동하는 신진 청년 예술인의 참여와 성장 지원 ❍대학로 활성화: 대학과 지역주민, 청년이 함께하는 문화행사를 통해 안서동 대학로의 지역 브랜드 강화\n신청 방법: 천안시 및 사업 운영기관의 프로그램별 모집공고를 통해 신청",
+    "images": [],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-21T22:37:33+09:00",
+    "relevance": 2,
+    "relevance_reason": "우리 시 정책 · 나이 일치 · 마감 정보 없음(상시 등) · 기타 신청 조건은 원문 확인",
+    "category": "청년정책",
+    "deadline": null,
+    "other_dates": [],
+    "actions": [
+      "신청: 천안시 및 사업 운영기관의 프로그램별 모집공고를 통해 신청"
+    ],
+    "materials": [
+      "별도 문의"
+    ],
+    "target": {
+      "scope": "specific",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null,
+      "age_min": 19,
+      "age_max": 39,
+      "age_unrestricted": false,
+      "region_codes": [
+        "44130"
+      ],
+      "nationwide": false
+    },
+    "api_last_modified": "2026-11-06 15:21:33",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "youth-20260504005400213136",
+    "title": "천안청년센터 이음 운영",
+    "url": "https://www.ch2030youth.kr/",
+    "source": "온통청년",
+    "source_type": "정부",
+    "published_date": "2026-05-04",
+    "body": "천안청년센터 이음 운영\n지원 내용: 청년능력개발지원사업, 청년심리정서지원사업, 1인가구지원사업, 지역정착지원사업, 청년네트워크지원사업, 청년문화활성화지원사업, 청년센터홍보활동, 고립은둔청년지원사업\n신청 방법: 천안청년센터 이음 홈페이지 참고(각 프로그램별 상이)\n추가 조건: 해당없음",
+    "images": [],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-21T22:37:33+09:00",
+    "relevance": 2,
+    "relevance_reason": "우리 시 정책 · 나이 일치 · 마감 정보 없음(상시 등) · 기타 신청 조건은 원문 확인",
+    "category": "청년정책",
+    "deadline": null,
+    "other_dates": [],
+    "actions": [
+      "신청: 천안청년센터 이음 홈페이지 참고(각 프로그램별 상이)"
+    ],
+    "materials": [
+      "천안청년센터 이음 홈페이지 참고(각 프로그램별 상이)"
+    ],
+    "target": {
+      "scope": "specific",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null,
+      "age_min": 18,
+      "age_max": 39,
+      "age_unrestricted": false,
+      "region_codes": [
+        "44130"
+      ],
+      "nationwide": false
+    },
+    "api_last_modified": "2026-11-13 17:40:13",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "youth-20260504005400213132",
+    "title": "생활권 보행환경 종합정비사업",
+    "url": "https://www.youthcenter.go.kr",
+    "source": "온통청년",
+    "source_type": "정부",
+    "published_date": "2026-05-04",
+    "body": "대학로 특화거리 조성 및 보행안전도로 조성\n지원 내용: 천안 안서동 청년안심 탄소중립 보행환경 개선\n신청 방법: 별도문의\n추가 조건: 제한없음",
+    "images": [],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-21T22:37:33+09:00",
+    "relevance": 2,
+    "relevance_reason": "우리 시 정책 · 나이 일치 · 마감 정보 없음(상시 등) · 기타 신청 조건은 원문 확인",
+    "category": "청년정책",
+    "deadline": null,
+    "other_dates": [],
+    "actions": [
+      "신청: 별도문의"
+    ],
+    "materials": [
+      "-"
+    ],
+    "target": {
+      "scope": "specific",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null,
+      "age_min": null,
+      "age_max": null,
+      "age_unrestricted": true,
+      "region_codes": [
+        "44130"
+      ],
+      "nationwide": false
+    },
+    "api_last_modified": "2026-10-30 19:37:55",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "youth-20260504005400113103",
+    "title": "안서동 목조 커뮤니티시설 및 전망대 설치",
+    "url": "https://youth.chungnam.go.kr/web/main/customSupp/M040-06/view?bizId=A20260309CT000000000003033",
+    "source": "온통청년",
+    "source_type": "정부",
+    "published_date": "2026-05-04",
+    "body": "국산 목재를 활용한 목조 커뮤니티시설과 전망대 및 목재 특화거리를 조성하여 탄소중립 실현과 지역경제 활성화, 대학로 청년문화 공간 확충을 추진\n지원 내용: ❍ 국산목재 목조건축물 조성: 국산 목재를 활용한 목조 커뮤니티시설 건립을 통해 청년 및 지역주민의 문화·교류 공간 마련 ❍ 목조 전망대 설치: 안서동 대학로의 경관 및 관광자원을 활용한 전망대 조성으로 지역 명소화 추진 ❍ 목재 특화거리 조성: 목재를 활용한 거리 및 공간 디자인을 통해 친환경적이고 특색 있는 대학로 환경 조성 ❍ 청년 커뮤니티 공간 확충: 청년·대학생·지역주민이 함께 이용할 수 있는 소통 및 문화활동 공간 마련 ❍ 탄소중립 및 지역경제 활성화: 국산 목재 활용 확대와 지역 관광·상권 연계를 통한 지속가능한 지역 발전 추진\n신청 방법: 천안시의 사업계획 수립 및 예산확보를 통해 추진 예정\n추가 조건: 제한없음",
+    "images": [],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-21T22:37:33+09:00",
+    "relevance": 3,
+    "relevance_reason": "우리 시 정책 · 나이 일치 · 마감 있음 · 기타 신청 조건은 원문 확인",
+    "category": "청년정책",
+    "deadline": "2026-12-31T23:59:00+09:00",
+    "other_dates": [
+      {
+        "label": "신청 시작",
+        "date": "2026-01-01"
+      }
+    ],
+    "actions": [
+      "신청: 천안시의 사업계획 수립 및 예산확보를 통해 추진 예정"
+    ],
+    "materials": [
+      "별도문의"
+    ],
+    "target": {
+      "scope": "specific",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null,
+      "age_min": null,
+      "age_max": null,
+      "age_unrestricted": true,
+      "region_codes": [
+        "44130"
+      ],
+      "nationwide": false
+    },
+    "api_last_modified": "2026-11-06 09:44:43",
+    "days_left": 40,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "youth-20260504005400213065",
+    "title": "천안형 채용연계프로그램",
+    "url": "https://www.ch2030youth.kr/lmth/02_busi/busi08.php",
+    "source": "온통청년",
+    "source_type": "정부",
+    "published_date": "2026-05-04",
+    "body": "관내 미취업 청년이 취업역량 강화 교육과 기업설명회, 면접 연계 등을 통해 관내 기업과의 채용 기회를 확대하는 프로그램으로, 기업 정보 제공과 취업 지원을 통해 청년의 노동시장 진입을 돕고 지역 인재의 안정적인 정착과 청년 일자리 창출에 기여하고자 추진하는 사업\n지원 내용: 취업기술 향상 교육(약 50시간), 관내 우수기업 정보 제공 및 기업설명회, 정규직 채용연계 면접 동행 지원, 천안 청년 취업응원금(천안사랑카드 50만원) 지원\n신청 방법: 홈페이지 신청\n추가 조건: 해당없음",
+    "images": [],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-21T22:37:33+09:00",
+    "relevance": 2,
+    "relevance_reason": "우리 시 정책 · 나이 일치 · 마감 정보 없음(상시 등) · 기타 신청 조건은 원문 확인",
+    "category": "청년정책",
+    "deadline": null,
+    "other_dates": [],
+    "actions": [
+      "신청: 홈페이지 신청"
+    ],
+    "materials": [
+      "해당없음"
+    ],
+    "target": {
+      "scope": "specific",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null,
+      "age_min": 18,
+      "age_max": 39,
+      "age_unrestricted": false,
+      "region_codes": [
+        "44130"
+      ],
+      "nationwide": false
+    },
+    "api_last_modified": "2026-11-13 17:44:05",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "youth-20260504005400213025",
+    "title": "청년이 일하기 좋은 청년친화적 기업 지원",
+    "url": "https://youth.chungnam.go.kr/web/main/customSupp/M030-01/view?bizId=A20260402LC000000000003164",
+    "source": "온통청년",
+    "source_type": "정부",
+    "published_date": "2026-05-04",
+    "body": "재직 청년들이 지역에서 함께 성장・정주・동행할 수 있도록 지속적으로 청년친화적 기업 문화 확산 촉진\n지원 내용: 청년친화기업 재직 청년들의 재직자 커뮤니티 활성화 및 역량강화를 위한 자기개발 지원\n신청 방법: 기업별 상이\n추가 조건: 천안형 청년친화기업 9개사 및 재직 청년",
+    "images": [],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-21T22:37:33+09:00",
+    "relevance": 3,
+    "relevance_reason": "우리 시 정책 · 나이 일치 · 마감 있음 · 기타 신청 조건은 원문 확인",
+    "category": "청년정책",
+    "deadline": "2026-12-31T23:59:00+09:00",
+    "other_dates": [
+      {
+        "label": "신청 시작",
+        "date": "2026-07-01"
+      }
+    ],
+    "actions": [
+      "신청: 기업별 상이"
+    ],
+    "materials": [
+      "기업별 상이"
+    ],
+    "target": {
+      "scope": "specific",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null,
+      "age_min": 18,
+      "age_max": 39,
+      "age_unrestricted": false,
+      "region_codes": [
+        "44130"
+      ],
+      "nationwide": false
+    },
+    "api_last_modified": "2026-11-13 17:54:21",
+    "days_left": 40,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "youth-20260504005400213018",
+    "title": "청년 버스 운전자 양성 프로그램",
+    "url": "https://youth.chungnam.go.kr/web/main/customSupp/M030-01/view?bizId=A20260402LC000000000003169",
+    "source": "온통청년",
+    "source_type": "정부",
+    "published_date": "2026-05-04",
+    "body": "관내 미취업 청년을 대상으로 버스 운전자 양성과 면허 취득 및 취업 연계 지원을 통해 대중교통 분야 전문 인력을 양성하는 프로그램으로, 청년의 노동시장 진입을 지원하고 지역 운수업계 인력난 해소와 청년 일자리 창출에 기여하고자 추진하는 사업\n지원 내용: 버스 운전자 취업을 희망하는 청년을 대상으로 대형면허 취득 및 버스 운전자 양성 교육을 지원하고, 관내 운수업체와 연계한 취업을 지원\n신청 방법: 홈페이지를 통한 신청\n추가 조건: 1,2종 보통 면허 취득 후 1년 이상 경과한자, 신체에 결함이 없는자, 교통법규 위반 이력이 없는 자(음주운전, 난폭운전 등)",
+    "images": [],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-21T22:37:33+09:00",
+    "relevance": 3,
+    "relevance_reason": "우리 시 정책 · 나이 일치 · 마감 있음 · 기타 신청 조건은 원문 확인",
+    "category": "청년정책",
+    "deadline": "2026-11-30T23:59:00+09:00",
+    "other_dates": [
+      {
+        "label": "신청 시작",
+        "date": "2026-03-01"
+      }
+    ],
+    "actions": [
+      "신청: 홈페이지를 통한 신청"
+    ],
+    "materials": [
+      "해당없음"
+    ],
+    "target": {
+      "scope": "specific",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null,
+      "age_min": 20,
+      "age_max": 39,
+      "age_unrestricted": false,
+      "region_codes": [
+        "44130"
+      ],
+      "nationwide": false
+    },
+    "api_last_modified": "2026-05-04 17:20:26",
+    "days_left": 9,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "youth-20260430005400212993",
+    "title": "천안시 일자리종합지원센터 운영",
+    "url": "https://www.cheonan.go.kr/job.do",
+    "source": "온통청년",
+    "source_type": "정부",
+    "published_date": "2026-04-30",
+    "body": "구인정보 및 구직정보 제공 및 구인기업과 구직자 취업알선\n지원 내용: 구인정보 및 구직정보 제공 및 구인기업과 구직자 취업알선\n신청 방법: 방문상담 및 전화상담(041-568-9002~6)\n추가 조건: 해당없음",
+    "images": [],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-21T22:37:33+09:00",
+    "relevance": 3,
+    "relevance_reason": "우리 시 정책 · 나이 일치 · 마감 있음 · 기타 신청 조건은 원문 확인",
+    "category": "청년정책",
+    "deadline": "2026-12-31T23:59:00+09:00",
+    "other_dates": [
+      {
+        "label": "신청 시작",
+        "date": "2026-01-01"
+      }
+    ],
+    "actions": [
+      "신청: 방문상담 및 전화상담(041-568-9002~6)"
+    ],
+    "materials": [
+      "구직신청 : 신분증, 구직신청서 구인신청 : 구인신청서, 사업자등록증 사본, 신청인 재직증명서, 계약서"
+    ],
+    "target": {
+      "scope": "specific",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null,
+      "age_min": null,
+      "age_max": null,
+      "age_unrestricted": true,
+      "region_codes": [
+        "44130"
+      ],
+      "nationwide": false
+    },
+    "api_last_modified": "2026-11-13 17:19:06",
+    "days_left": 40,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "youth-20260430005400212991",
+    "title": "청년정책네트워크 운영",
+    "url": "https://www.ch2030youth.kr",
+    "source": "온통청년",
+    "source_type": "정부",
+    "published_date": "2026-04-30",
+    "body": "청년의 정책 발굴과 의견 제안을 위한 참여 기구 지원을 통해 청년의 시정 참여 확대 및 다양한 의견 수렴 도모\n지원 내용: 정기회의 연 2회 개최, 참석수당 지급, 분과별활동비 지급, 우수분과시상\n신청 방법: 해당없음\n추가 조건: 해당없음",
+    "images": [],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-21T22:37:33+09:00",
+    "relevance": 3,
+    "relevance_reason": "우리 시 정책 · 나이 일치 · 마감 있음 · 기타 신청 조건은 원문 확인",
+    "category": "청년정책",
+    "deadline": "2026-12-31T23:59:00+09:00",
+    "other_dates": [
+      {
+        "label": "신청 시작",
+        "date": "2026-01-01"
+      }
+    ],
+    "actions": [
+      "신청: 해당없음"
+    ],
+    "materials": [
+      "해당없음"
+    ],
+    "target": {
+      "scope": "specific",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null,
+      "age_min": 19,
+      "age_max": 39,
+      "age_unrestricted": false,
+      "region_codes": [
+        "44130"
+      ],
+      "nationwide": false
+    },
+    "api_last_modified": "2026-11-16 17:56:45",
+    "days_left": 40,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "youth-20260430005400212969",
+    "title": "청년단기숙소 지원사업",
+    "url": "http://www.ai.ch2030youth.kr/bbs/board.php?bo_table=notice&wr_id=683&sst=wr_hit&sod=desc&sop=and&page=1",
+    "source": "온통청년",
+    "source_type": "정부",
+    "published_date": "2026-04-30",
+    "body": "취업을 위해 천안을 방문하는 청년과 관내 기업 취업 후 전입하는 청년에게 단기 숙소를 지원하는 사업으로, 면접 응시 청년에게는 1박 숙박을 지원하고 취업 확정 후 전입 청년에게는 최대 3개월간 임시 거주 공간을 제공하여 취업 준비 및 초기 정착 과정에서 발생하는 주거 부담을 완화하고 청년의 지역 정착을 유도하기 위해 추진하는 사업\n지원 내용: 면접 응시 청년 숙박 지원 및 취업 확정 전입 청년 임시 거주 지원\n신청 방법: 홈페이지 신청서 제출\n추가 조건: 면접자 및 취업확정자",
+    "images": [],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-21T22:37:33+09:00",
+    "relevance": 3,
+    "relevance_reason": "우리 시 정책 · 나이 일치 · 마감 있음 · 기타 신청 조건은 원문 확인",
+    "category": "청년정책",
+    "deadline": "2026-12-31T23:59:00+09:00",
+    "other_dates": [
+      {
+        "label": "신청 시작",
+        "date": "2026-01-01"
+      }
+    ],
+    "actions": [
+      "신청: 홈페이지 신청서 제출"
+    ],
+    "materials": [
+      "면접 확인서 및 취업 확인서 등 관련 증빙 제출 필요"
+    ],
+    "target": {
+      "scope": "specific",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null,
+      "age_min": 18,
+      "age_max": 39,
+      "age_unrestricted": false,
+      "region_codes": [
+        "44130"
+      ],
+      "nationwide": false
+    },
+    "api_last_modified": "2026-11-16 17:51:18",
+    "days_left": 40,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "youth-20260430005400212966",
+    "title": "천안학 운영",
+    "url": "https://www.chungnam.go.kr/cnportal/media/article/view.do?articleNo=MD0003423575&menuNo=500170",
+    "source": "온통청년",
+    "source_type": "정부",
+    "published_date": "2026-04-30",
+    "body": "천안학을 통해 천안의 역사, 문화, 사회에 대한 인식 제고\n지원 내용: 관내 8개 대학 교양과목 운영 및 천안학 시민강좌(관내 기관, 시설, 초중고)\n신청 방법: 해당없음\n추가 조건: 해당없음",
+    "images": [],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-21T22:37:33+09:00",
+    "relevance": 3,
+    "relevance_reason": "우리 시 정책 · 나이 일치 · 마감 있음 · 기타 신청 조건은 원문 확인",
+    "category": "청년정책",
+    "deadline": "2026-12-31T23:59:00+09:00",
+    "other_dates": [
+      {
+        "label": "신청 시작",
+        "date": "2026-01-01"
+      }
+    ],
+    "actions": [
+      "신청: 해당없음"
+    ],
+    "materials": [
+      "해당없음"
+    ],
+    "target": {
+      "scope": "specific",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null,
+      "age_min": null,
+      "age_max": null,
+      "age_unrestricted": true,
+      "region_codes": [
+        "44130"
+      ],
+      "nationwide": false
+    },
+    "api_last_modified": "2026-11-13 16:47:34",
+    "days_left": 40,
+    "is_expired": false,
+    "is_urgent": false
   }
 ]
