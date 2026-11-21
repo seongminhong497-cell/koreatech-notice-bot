@@ -5,6 +5,11 @@ import datetime as dt
 import json
 from pathlib import Path
 
+if __package__:
+    from .youth_relevance import evaluate_youth_relevance
+else:
+    from youth_relevance import evaluate_youth_relevance
+
 ROOT = Path(__file__).resolve().parents[1]
 KST = dt.timezone(dt.timedelta(hours=9))
 
@@ -208,11 +213,22 @@ def process_notices(notices, profile, now=None):
             results.append(notice)
             continue
 
-        rating, reason = evaluate_relevance(notice, profile)
+        if notice.get("category") == "청년정책":
+            rating, reason = evaluate_youth_relevance(
+                notice,
+                profile,
+                reference_year=now.year,
+            )
+        else:
+            rating, reason = evaluate_relevance(notice, profile)
         notice["relevance"] = rating
         notice["relevance_reason"] = reason
 
         days, expired, urgent = deadline_info(notice, profile, now)
+        if notice.get("category") == "청년정책" and expired:
+            notice["relevance"] = 0
+            notice["relevance_reason"] = "마감된 청년정책"
+            urgent = False
         notice.update(
             days_left=days,
             is_expired=expired,

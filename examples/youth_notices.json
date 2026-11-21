@@ -1,0 +1,40 @@
+[
+  {
+    "id": "youth-sample-001",
+    "title": "[예시] 천안 청년 지원사업",
+    "url": "https://example.com/youth/sample-001",
+    "source": "청년정책-가상예시",
+    "source_type": "정부",
+    "published_date": "2026-11-19",
+    "body": "가상 예시: 천안시 거주 만 19~34세 대상",
+    "images": [],
+    "category": "청년정책",
+    "target": {
+      "age_min": 19,
+      "age_max": 34,
+      "age_unrestricted": false,
+      "region_codes": [
+        "44130"
+      ],
+      "nationwide": false,
+      "scope": "specific",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": "2026-11-30",
+    "other_dates": [],
+    "actions": [
+      "신청 조건 확인"
+    ],
+    "materials": null,
+    "extracted": true,
+    "processed": false,
+    "relevance": null,
+    "relevance_reason": null,
+    "is_new": true,
+    "is_sample": true
+  }
+]
