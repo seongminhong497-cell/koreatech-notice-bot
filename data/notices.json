@@ -6502,8 +6502,8 @@
     "materials": null,
     "category": "취업·인턴",
     "days_left": 0,
-    "is_expired": false,
-    "is_urgent": true
+    "is_expired": true,
+    "is_urgent": false
   },
   {
     "id": "scholarship-2419",
@@ -15416,6 +15416,174 @@
     "materials": null,
     "category": "취업·인턴",
     "days_left": 4,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "general-37544",
+    "title": "과잠입고 치킨받자!!!!! 무료셔틀버스!!!!!! 2026. 충남앵커페스타 안내",
+    "url": "https://www.koreatech.ac.kr/notice/view.es?mid=a10604010000&board_id=14&post_seq=37544&prefix_id=",
+    "source": "학교-일반",
+    "source_type": "학교",
+    "published_date": "2026-11-23",
+    "body": "한기대↔독립기념관 무료 셔틀버스 왕복 운행!!\n과잠입고 인증샷 찍으면 치킨 쿠폰 증정!! >,<\n안녕하세요. 한국기술교육대학교 앵커사업단입니다.\n대학과 지역사회가 함께 일궈온 충남 앵커 사업의 우수 성과를 도민·청년들과 나누고, 지역 혁신 주체 간 소통의 장을 넓히고자 「2026 충남 앵커 페스타」를 아래와 같이 개최하오니 많은 참석 부탁드립니다!!!\n[행사개요]\n1) 일 시: 2026. 11. 26.(목) ~ 11. 27.(금) / 2일간\n2) 장 소: 독립기념관 겨레의 집 특설무대(충청남도 천안시 동남구 목천읍 독립기념로 1) << 한기대 무료 셔틀버스 왕복 운행!!\n3) 주최 및 주관: 충청남도, 충남앵커센터\n4) 주요내용\n- 참여대학·지역혁신기관·지자체 등의 성과 전시 및 도민 참여형 체험 프로그램 운영\n- 2026 중부권 앵커 라운드테이블「청년이 묻고, 앵커센터가 답하다」\n- 개·폐회식, CI 공모전 및 창업 아이디어 경진대회 시상식, 학생 서포터즈 발대식 등 운영\n첨부파일\n앵커페스타_한기대.png\n다운로드\n미리보기",
+    "images": [
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&a=id&p=37544&fn=1795425757811_%25EC%2595%25B5%25EC%25BB%25A4%25ED%258E%2598%25EC%258A%25A4%25ED%2583%2580_%25ED%2595%259C%25EA%25B8%25B0%25EB%258C%2580.png",
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&p=37544&a=fd&fs=1"
+    ],
+    "is_sample": false,
+    "extracted": false,
+    "processed": false,
+    "is_new": true,
+    "collected_at": "2026-11-23T22:16:55+09:00",
+    "relevance": null,
+    "relevance_reason": null,
+    "days_left": null,
+    "is_expired": null,
+    "is_urgent": false
+  },
+  {
+    "id": "general-37543",
+    "title": "겨울철 한파로 인한 한랭질환 예방수칙 안내",
+    "url": "https://www.koreatech.ac.kr/notice/view.es?mid=a10604010000&board_id=14&post_seq=37543&prefix_id=",
+    "source": "학교-일반",
+    "source_type": "학교",
+    "published_date": "2026-11-23",
+    "body": "첨부파일\n한랭질환1.jpg\n다운로드\n미리보기\n한랭질환2.jpg\n다운로드\n미리보기",
+    "images": [
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&a=id&p=37543&fn=1795421369863_%25ED%2595%259C%25EB%259E%25AD%25EC%25A7%2588%25ED%2599%25981.jpg",
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&a=id&p=37543&fn=1795421369864_%25ED%2595%259C%25EB%259E%25AD%25EC%25A7%2588%25ED%2599%25982.jpg",
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&p=37543&a=fd&fs=1",
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&p=37543&a=fd&fs=2"
+    ],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-23T22:16:55+09:00",
+    "relevance": 1,
+    "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
+    "target": {
+      "scope": "all",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": null,
+    "other_dates": [],
+    "actions": null,
+    "materials": null,
+    "category": null,
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "general-37542",
+    "title": "[생활관CARE] 한평정원의 달콤함 꿈(미리 메리 크리스마스) 참여안내(12.2)",
+    "url": "https://www.koreatech.ac.kr/notice/view.es?mid=a10604010000&board_id=14&post_seq=37542&prefix_id=",
+    "source": "학교-일반",
+    "source_type": "학교",
+    "published_date": "2026-11-23",
+    "body": "[생활관CARE] 한평정원의 달콤한 꿈  미리 메리 크리스마스\n소원을 걸면, 달콤한 행복이 찾아오는 크리스마스 정원!\n차가운 겨울바람 속에서도 따뜻한 설렘이 피어나는 계절, 크리스마스가 다가오고 있습니다.\n올 겨울, 한평정원이 여러분의 소원과 이야기가 모이는 특별한 크리스마스 정원으로 변신합니다.\n마음 속에 간직한 작은 소망을 오너먼트에 담아 트리에 걸어보세요!\n반짝이는 트리 아래 특별한 포토존에서 소중한 추억도 남길 수도 있답니다.\nMerry Christmas in 한평정원!\n♣ 행사 안내\n- 일시: 2026. 12.  2.(수) 16:00~19:00\n- 장소: 105동 함지관 앞 한평정원\n- 대상: 선착순 200명(생활관생)\n- 참여방법: 사전신청 없이 현장 참여\n♣ 크리스마스 행운의 선물\n- 쿠팡 상품권 3만원권 (3명)&쿠팡 상품권 1만원권 (5명)&대즐 5천원권 (10명) * 당첨자 발표: 2026. 12.  4.(금) 예정\n♣ 간식 안내\n참여하신 모든 분께 달콤한 크리스마스 쿠키를 선물합니다! ※ 견과류 알레르기가 있는 분들은 섭취 시 각별히 유의해 주세요.\n첨부파일\n미리메리크리스마스 포스터.png\n다운로드\n미리보기",
+    "images": [
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&a=id&p=37542&fn=1795412314700_%25EB%25AF%25B8%25EB%25A6%25AC%25EB%25A9%2594%25EB%25A6%25AC%25ED%2581%25AC%25EB%25A6%25AC%25EC%258A%25A4%25EB%25A7%2588%25EC%258A%25A4%2B%25ED%258F%25AC%25EC%258A%25A4%25ED%2584%25B0.png",
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&p=37542&a=fd&fs=1"
+    ],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-23T22:16:55+09:00",
+    "relevance": 1,
+    "relevance_reason": "좁은 조건(생활관) 일치 · 마감 정보 없음",
+    "target": {
+      "scope": "specific",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": true
+    },
+    "deadline": null,
+    "other_dates": [
+      {
+        "label": "한평정원의 달콤한 꿈 행사",
+        "date": "2026-12-02"
+      },
+      {
+        "label": "당첨자 발표",
+        "date": "2026-12-04"
+      }
+    ],
+    "actions": [],
+    "materials": null,
+    "category": "생활관",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "general-37541",
+    "title": "⭐⭐⭐2026학년도 동계방학 비교과프로그램 안내⭐⭐⭐_충남앵커공유대학_디스플레이반도체소부장융합전공",
+    "url": "https://www.koreatech.ac.kr/notice/view.es?mid=a10604010000&board_id=14&post_seq=37541&prefix_id=",
+    "source": "학교-일반",
+    "source_type": "학교",
+    "published_date": "2026-11-23",
+    "body": null,
+    "images": [],
+    "is_sample": false,
+    "extracted": false,
+    "processed": false,
+    "is_new": true,
+    "collected_at": "2026-11-23T22:16:55+09:00",
+    "relevance": null,
+    "relevance_reason": null,
+    "days_left": null,
+    "is_expired": null,
+    "is_urgent": false
+  },
+  {
+    "id": "general-37540",
+    "title": "[앵커공유대학] PLC 기반 설비제어전문가(3급) 자격 취득 지원 프로그램 학생 모집!/한기대 재학생 참여 가능!(~11/30...",
+    "url": "https://www.koreatech.ac.kr/notice/view.es?mid=a10604010000&board_id=14&post_seq=37540&prefix_id=",
+    "source": "학교-일반",
+    "source_type": "학교",
+    "published_date": "2026-11-23",
+    "body": "[앵커공유대학] PLC 기반 설비제어전문가(3급) 자격 취득 지원 프로그램 학생 모집!/한기대 재학생 참여 가능!(~11/30)\n안녕하세요.\n앵커사업단입니다.\n충남 앵커공유대학에서 아래와 같이 PLC 기반 설비제어전문가(3급) 자격 취득 지원 프로그램을 운영하오니 많은 관심과 지원 부탁드립니다.\n(한기대 일반 재학생 신청 가능합니다!)\n�� 프로그램명: PLC 기반 설비제어전문가(3급) 자격 취득 지원 프로그램\n�� 일 정: 2026. 12. 21.(월) ~ 12. 31.(목) 총 8일, 9:00~18:00 / 주말 및 공휴일 제외\n�� 장 소: 한국기술교육대학교 2캠퍼스(천안 두정동)\n�� 모집인원: 선착순 14명 (신청 마감 후 확정 안내 문자 발송 예정)\n�� 교육내용: PLC기반설비제어전문가(3급) 자격증 취득 지원 무료 교육\n�� 신청링크: https://naver.me/5ulJ5kSf\n�� 신청기간: 2026. 11. 24.(화) 10:00 ~ 11. 30.(월) 16:00\n�� 문의: 앵커사업단(구 RISE사업단) (041-580-485구)\n※ PLC기반설비제어전문가(3급) 무료 취득\n※ 희망시 기숙사 이용 가능(주말 퇴실)\n※  프로그램 특성상 사전 신청 필수 및 신청 취소 불가\n※ 개인 일정을 확인 후 신청 부탁드리며, 무단 불참 시 추후 앵커사업단 프로그램 참여에 제약이 있을 수 있습니다.",
+    "images": [],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-23T22:16:55+09:00",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태)만 일치",
+    "target": {
+      "scope": "specific",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [
+        "재학"
+      ],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": "2026-11-30T16:00:00+09:00",
+    "other_dates": [
+      {
+        "label": "프로그램 운영 기간",
+        "date": "2026-12-21"
+      }
+    ],
+    "actions": [
+      "포털에서 신청링크를 통해 신청서 제출"
+    ],
+    "materials": null,
+    "category": "교내활동",
+    "days_left": 7,
     "is_expired": false,
     "is_urgent": false
   }
