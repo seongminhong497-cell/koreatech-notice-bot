@@ -1,15 +1,14 @@
 {
-  "department": "컴퓨터공학부",
-  "year": 2,
+  "department": "에너지신소재화학공학부",
+  "year": 3,
   "groups": [
     "학부생"
   ],
   "enrollment_status": "재학",
   "dorm_resident": true,
   "interests": [
-    "장학",
-    "학사",
-    "청년정책"
+    "취업·인턴",
+    "대외활동·공모전"
   ],
   "always_show_categories": [],
   "excluded_categories": [],
@@ -21,8 +20,8 @@
   "region": null,
   "urgent_days": 3,
   "preparation_days": 7,
-  "birth_year": 2006,
+  "birth_year": 2005,
   "sido": "충남",
-  "sigungu": "천안시 동남구",
-  "region_code": "44131"
+  "sigungu": "태안군",
+  "region_code": "44825"
 }
