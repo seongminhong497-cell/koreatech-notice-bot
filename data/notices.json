@@ -15084,7 +15084,7 @@
     "is_sample": false,
     "extracted": true,
     "processed": true,
-    "is_new": true,
+    "is_new": false,
     "collected_at": "2026-11-23T11:04:55+09:00",
     "relevance": 0,
     "relevance_reason": "학과 조건 불일치",
@@ -15135,7 +15135,7 @@
     "is_sample": false,
     "extracted": true,
     "processed": true,
-    "is_new": true,
+    "is_new": false,
     "collected_at": "2026-11-23T11:04:55+09:00",
     "relevance": 2,
     "relevance_reason": "넓은 조건(학적 상태) 일치 · 관심 분류 · 마감 있음",
@@ -15191,7 +15191,7 @@
     "is_sample": false,
     "extracted": true,
     "processed": true,
-    "is_new": true,
+    "is_new": false,
     "collected_at": "2026-11-23T11:04:55+09:00",
     "relevance": 1,
     "relevance_reason": "넓은 조건(학적 상태, 대상 집단)만 일치",
@@ -15237,7 +15237,7 @@
     "is_sample": false,
     "extracted": true,
     "processed": true,
-    "is_new": true,
+    "is_new": false,
     "collected_at": "2026-11-23T11:04:55+09:00",
     "relevance": 1,
     "relevance_reason": "넓은 조건(학적 상태)만 일치",
@@ -15293,7 +15293,7 @@
     "is_sample": false,
     "extracted": true,
     "processed": true,
-    "is_new": true,
+    "is_new": false,
     "collected_at": "2026-11-23T13:57:37+09:00",
     "relevance": 0,
     "relevance_reason": "학과 조건 불일치",
@@ -15342,7 +15342,7 @@
     "is_sample": false,
     "extracted": true,
     "processed": true,
-    "is_new": true,
+    "is_new": false,
     "collected_at": "2026-11-23T13:57:37+09:00",
     "relevance": 1,
     "relevance_reason": "명확한 대상 조건이 없어 일반 공지로 표시",
@@ -15385,7 +15385,7 @@
     "is_sample": false,
     "extracted": true,
     "processed": true,
-    "is_new": true,
+    "is_new": false,
     "collected_at": "2026-11-23T13:57:37+09:00",
     "relevance": 1,
     "relevance_reason": "넓은 조건(학적 상태)만 일치",
@@ -15714,6 +15714,137 @@
     ],
     "actions": [
       "한국장학재단 홈페이지 또는 모바일 앱에서 국가장학금 신청"
+    ],
+    "materials": null,
+    "category": "장학",
+    "days_left": 44,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "general-37546",
+    "title": "[취창업지원팀] 학생종합경력개발시스템(STEMS) 일시 중단 안내(26.11.24. 16:00 ~ )",
+    "url": "https://www.koreatech.ac.kr/notice/view.es?mid=a10604010000&board_id=14&post_seq=37546&prefix_id=",
+    "source": "학교-일반",
+    "source_type": "학교",
+    "published_date": "2026-11-24",
+    "body": "안녕하세요. 취창업지원팀입니다.\n학생종합경력개발시스템(STEMS)의 보안 강화를 위한 백신 프로그램 설치 및 서버 재부팅으로 인해 시스템 이용이 일시적으로 중단될 예정입니다.\n점검 사유: 백신 프로그램 설치 및 서버 재부팅\n점검 시간: 26.11.24.(화) 16시 약 5~10분 소요 예정\n영향 범위: 점검 시간 중 시스템 접속 및 이용 일시 중단\n이용에 불편을 드리는 점 양해 부탁드리며, 안정적인 시스템 운영을 위한 조치이오니 협조 부탁드립니다.\n감사합니다.\n취창업지원팀",
+    "images": [],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-24T14:41:20+09:00",
+    "relevance": 1,
+    "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
+    "target": {
+      "scope": "all",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": null,
+    "other_dates": [
+      {
+        "label": "시스템 점검",
+        "date": "2026-11-24T16:00:00+09:00"
+      }
+    ],
+    "actions": null,
+    "materials": null,
+    "category": null,
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "general-37545",
+    "title": "(마감) (끌올) \"겨울 방학 캠프 갈사람!!\" [앵커] 2026 동계 창의·전략 비즈니스 캠프 신청(신청기간: ~ 11.27...",
+    "url": "https://www.koreatech.ac.kr/notice/view.es?mid=a10604010000&board_id=14&post_seq=37545&prefix_id=",
+    "source": "학교-일반",
+    "source_type": "학교",
+    "published_date": "2026-11-24",
+    "body": "(마감) (끌올) \"겨울 방학 캠프 갈사람!!\" [앵커] 2026 동계 창의·전략 비즈니스 캠프 신청(신청기간: ~ 11.27(금))\n학우님들의 많은 관심과 참여로 캠프 신청이 조기 마감되었음을 알려드립니다.\n정원 초과 시 취소자가 발생하면 대기자에게 별도로 연락드리겠습니다.\n※ 단체 채팅방 초대 링크를 전달받은 경우, 금일 자정(11.24) 내에 반드시 입장해 주시기 바랍니다. 기간 내 미입장 시 캠프 불참 의사로 간주하여 참여가 취소될 수 있습니다.\n안녕하세요, 앵커사업단입니다.\n내가 CEO라면? 우리 팀이 만든 웹앱이 실제로 작동한다면?\n취업 전에 미리 경험해 보는 실전형 캠프!\n전략경영 시뮬레이션으로 직접 CEO, CFO, 인사담당자 등 기업의 실무진이 되어 기업을 운영하고, 경영부터 의사결정까지 기업이 움직이는 과정을 경험해 보세요.\nAI 시대, 이제는 AI를 활용하는 사람이 경쟁력!\nClaude, Codex 등 AI 툴을 활용해 팀별 미션을 수행하고, 아이디어를 실제로 작동하는 웹앱으로 만들어 보세요. 코딩이 낯설어도 괜찮아요!\n3일간의 도전으로 실무 경험부터 취업 포트폴리오까지!\n충남 15개 대학 학생들과 함께 배우고, 만들고, 도전하는 특별한 기회!\n기업 경영도 경험하고, AI로 나만의 결과물도 만들어 보고 싶다면 이번 캠프에 참여해 보세요!\n[신청안내]\n□ 신청링크: https://forms.gle/aCZvT9Qd6ge8Yhcy7\n□ 신청기간: 마감\n[교육안내]\n□ 과정명: 2026 동계 창의·전략  비즈니스 캠프\n□ 일정: 26. 12. 20(일) ~ 12.22(화)\n□ 장소: 스플라스 리솜(예산)\n□ 대상: 앵커사업 참여학생 누구나(최대 40명 모집)\n- 전략경영 시뮬레이션: 직접 기업 경영자(CEO, CFO, 인사담당자 등)되어  모의 기업 운영을 통해 기업의 경영흐름 학습\n- AI 바이브코딩 해커톤: Claude, Codex를 활용하여 실제 작동하는 웹앱 제작 및 나만의 AI 포트폴리오를 제작\n* 팀별 유료 계정 지급 예정\n- 충남 15개 대학생들과 팀활동을 통해 팀워크과 의사소통 능력을 향상\n※ 개인 또는 팀단위 신청가능(최대 6인 1조로 운영)\n※ 건양대, 국립공주대, 나사렛대, 남서울대, 백석대, 상명대, 선문대, 세한대, 신성대, 유원대, 청운대, 충남도립대, 한국기술교육대, 한서대, 혜전대 중 소속캠퍼스 소재지가 충남인 학부 재학생\n□ 교육내용\n1. 1일차) 전략경영 시뮬레이션_모의 기업 운영(7H)\n2. 2일차) AI 바이브코딩 해커톤(7H)\n3. 3일차) 1, 2일차 학습내용 리뷰 및 우수팀 수상(3H)\n□ 지원사항: 2박 3일 숙박비, 조식·중식·석식 제공, 왕복 셔틀 버스 운행, 교육비 등\n※  캠프 특성상 사전 신청 필수 및 신청 취소 불가\n※ 개인 일정을 확인 후 신청 부탁드리며, 무단 불참 시 추후 앵커사업단 프로그램 참여에 제약이 있을 수 있습니다.",
+    "images": [],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-24T14:41:20+09:00",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태, 대상 집단)만 일치",
+    "target": {
+      "scope": "specific",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [
+        "재학"
+      ],
+      "groups": [
+        "학부생"
+      ],
+      "dorm_required": null
+    },
+    "deadline": null,
+    "other_dates": [
+      {
+        "label": "단체 채팅방 입장 마감",
+        "date": "2026-11-24T23:59:00+09:00"
+      },
+      {
+        "label": "캠프 교육 일정",
+        "date": "2026-12-20"
+      }
+    ],
+    "actions": [
+      "단체 채팅방 초대 링크 전달받은 경우 금일 자정 내 입장"
+    ],
+    "materials": null,
+    "category": "교내활동",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "scholarship-2423",
+    "title": "[국가근로장학] 2027년 1학기 1차 국가근로장학금 학생 신청 안내 ※ ~1. 7.",
+    "url": "https://www.koreatech.ac.kr/notice/view.es?mid=a10604020000&board_id=15&post_seq=2423&prefix_id=",
+    "source": "학교-장학",
+    "source_type": "학교",
+    "published_date": "2026-11-24",
+    "body": "한국장학재단에서는 대학생의 등록금 및 생활비 부담을 완화하고 안정적인 학업 여건을 지원하기 위해 「2027년 1학기 1차 국가근로장학금」 학생 신청을 진행하오니, 근로장학금 신청을 희망하는 학생들의 많은 관심과 신청 바랍니다.\n신청내용\n○ 신청대상: 재학생 및 대학생\n▸ 재학생\n▸ 신입생(고등학교 3학년, 재수생 등 입학예정자)\n▸ 편입생, 재입학생, 복학생 등\n○ 장학금 성격: 근로장학금\n▸ 근로장학생으로 선발된 학생이 실제 근로한 시간에 따라 장학금 지급\n○ 근로유형: 국가근로장학금\n▸ 교내 및 교외 근로 등 세부 근로기관 및 선발 절차는 소속 대학별로 상이\n신청접수\n○ 신청기간: 2026. 11. 24.(화) 09:00 ~ 2027. 1. 7.(목) 18:00\n○ 서류제출 및 가구원 동의 기간: 2026. 11. 24.(화) 09:00 ~ 2027. 1. 14.(목) 18:00\n○ 신청방법: 한국장학재단 홈페이지 또는 모바일 앱\n▸ 홈페이지: https://www.kosaf.go.kr\n▸ 모바일 앱: 한국장학재단 앱 접속 후 로그인 → 장학금 신청 → 통합신청\n○ 홈페이지 신청 경로\n▸ 한국장학재단 홈페이지 로그인 → 장학금 → 장학금신청 → 신청서 작성 → 국가근로장학금 선택\n○ 모바일 앱 신청 경로\n▸ 한국장학재단 모바일 앱 로그인 → 왼쪽 상단 메뉴 → 장학금 신청 → 통합신청\n신청 시 유의사항\n○ 국가근로장학금은 근로장학생으로 선발된 학생이 실제 근로한 시간에 따라 지급됩니다.\n○ 2027년 하계방학 집중근로 프로그램에 참여하고자 하는 학생은 반드시 1차 및 2차 통합신청 기간에 국가근로장학금을 신청하시기 바랍니다.\n○ 희망 근로기관 신청 및 장학생 선발 등의 절차는 대학별로 상이하므로, 소속 대학의 공지사항을 확인한 후 담당자에게 문의하시기 바랍니다.\n○ 신청 시 본인의 학적 상태, 소속 대학, 학번 등 학교 정보를 정확하게 입력하시기 바랍니다.\n○ 서류제출 대상자는 한국장학재단 홈페이지에서 제출 여부를 확인하고, 해당 서류를 기간 내 제출해야 합니다.\n○ 가구원 정보제공 동의가 필요한 경우 정해진 기간 내 동의를 완료해야 합니다.\n신청방법 안내\n○ 신청 매뉴얼\n▸ 첨부파일 1. 2027년 1학기 1차 국가근로장학금 학생신청 방법(홈페이지)\n▸ 첨부파일 2. 2027년 1학기 1차 국가근로장학금 학생신청 방법(모바일 앱)\n※ 신청 전 첨부된 매뉴얼을 참고하여 신청 절차를 확인하시기 바랍니다.\n관련문의\n○ 한국장학재단 상담센터 ☎ 1599-2290\n○ 홈페이지: https://www.kosaf.go.kr\n※ 자세한 사항은 한국장학재단 홈페이지 및 첨부된 「2027년 1학기 1차 국가근로장학금 학생신청 방법」을 참고하시기 바랍니다.\n첨부파일\n2027년 1학기 1차 국가근로장학금 학생신청 방법 (모바일앱).pdf\n다운로드\n미리보기\n2027년 1학기 1차 국가근로장학금 학생신청 방법 (홈페이지).pdf\n다운로드\n미리보기\n붙임2. 2027년 1학기 1차 국가근로장학금 학생신청 포스터.jpg\n다운로드\n미리보기\n붙임3. 국가근로장학금 알리미 홍보포스터.png\n다운로드\n미리보기",
+    "images": [
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=15&a=id&p=2423&fn=1795483358122_%25EB%25B6%2599%25EC%259E%25842.%2B2027%25EB%2585%2584%2B1%25ED%2595%2599%25EA%25B8%25B0%2B1%25EC%25B0%25A8%2B%25EA%25B5%25AD%25EA%25B0%2580%25EA%25B7%25BC%25EB%25A1%259C%25EC%259E%25A5%25ED%2595%2599%25EA%25B8%2588%2B%25ED%2595%2599%25EC%2583%259D%25EC%258B%25A0%25EC%25B2%25AD%2B%25ED%258F%25AC%25EC%258A%25A4%25ED%2584%25B0.jpg",
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=15&a=id&p=2423&fn=1795483358125_%25EB%25B6%2599%25EC%259E%25843.%2B%25EA%25B5%25AD%25EA%25B0%2580%25EA%25B7%25BC%25EB%25A1%259C%25EC%259E%25A5%25ED%2595%2599%25EA%25B8%2588%2B%25EC%2595%258C%25EB%25A6%25AC%25EB%25AF%25B8%2B%25ED%2599%258D%25EB%25B3%25B4%25ED%258F%25AC%25EC%258A%25A4%25ED%2584%25B0.png",
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=15&p=2423&a=fd&fs=3",
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=15&p=2423&a=fd&fs=4"
+    ],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-24T14:41:20+09:00",
+    "relevance": 2,
+    "relevance_reason": "전체 학생 대상 · 관심 분류 · 마감 있음",
+    "target": {
+      "scope": "all",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": "2027-01-07T18:00:00+09:00",
+    "other_dates": [
+      {
+        "label": "서류제출 및 가구원 동의 기간",
+        "date": "2027-01-14T18:00:00+09:00"
+      }
+    ],
+    "actions": [
+      "한국장학재단 홈페이지 또는 모바일 앱에서 국가근로장학금 신청"
     ],
     "materials": null,
     "category": "장학",
