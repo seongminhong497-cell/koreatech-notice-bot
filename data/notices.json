@@ -15851,5 +15851,90 @@
     "days_left": 44,
     "is_expired": false,
     "is_urgent": false
+  },
+  {
+    "id": "general-37547",
+    "title": "[일반공지] [교육지원센터] 2026-2학기 기말고사 대비 MSC 교원 튜터링 참여자 모집",
+    "url": "https://www.koreatech.ac.kr/notice/view.es?mid=a10604010000&board_id=14&post_seq=37547&prefix_id=",
+    "source": "학교-일반",
+    "source_type": "학교",
+    "published_date": "2026-11-24",
+    "body": "안녕하세요.\n교육지원센터에서는 학생들의 MSC과목에 대한 기초 학력 향상을 위하여\n다음과 같이 MSC교원 튜터링을 운영하고 있습니다.\n많은 신청 바랍니다.\n<2026학년도 2학기 MSC 교원 튜터링>\n▶ 운영 기간: 2026년 11월 30일(월) ~ 12월 7일(월) 중 해당과목 운영일 18:20~20:20\n▶ 운영 과목: 미적분학, 일반물리학2, 일반화학2\n▶ 운영 내용: 교수님께서 저녁시간에 기말고사 대비 풀이 진행\n▶ 신청 자격: MSC 기초가 부족한 재학생 누구나\n▶ 신청방법(택 1)\n1) 아우누리-학사-비교과프로그램-참여신청(MSC 교원 튜터링)\n2) 구글폼(https://forms.gle/APhTJu5nyGm7YMQB9) 신청 ~ 해당교과목 운영 전까지(선정 개별 연락 예정)\n▶ 기타\n- 중복 과목 신청시 과목별 각각 신청\n- 문의사항 640-8553 교육지원센터\n첨부파일\nMSC 교원 튜터링 포스터.jpg\n다운로드\n미리보기",
+    "images": [
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&a=id&p=37547&fn=1795503532580_MSC%2B%25EA%25B5%2590%25EC%259B%2590%2B%25ED%258A%259C%25ED%2584%25B0%25EB%25A7%2581%2B%25ED%258F%25AC%25EC%258A%25A4%25ED%2584%25B0.jpg",
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&p=37547&a=fd&fs=1"
+    ],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-24T16:46:01+09:00",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태)만 일치",
+    "target": {
+      "scope": "specific",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [
+        "재학"
+      ],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": null,
+    "other_dates": [
+      {
+        "label": "운영 기간",
+        "date": "2026-11-30"
+      }
+    ],
+    "actions": [
+      "아우누리-학사-비교과프로그램-참여신청(MSC 교원 튜터링) 또는 구글폼을 통해 신청"
+    ],
+    "materials": null,
+    "category": "학사",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "cse-general-57023",
+    "title": "[공학설계] 2026년 졸업작품 아이디어 경진대회 결과 알림",
+    "url": "https://www.koreatech.ac.kr/board.es?mid=b10601000000&bid=0105&act=view&list_no=57023&tag=&nPage=1",
+    "source": "컴퓨터공학부-일반",
+    "source_type": "학교",
+    "published_date": "2026-11-24",
+    "body": "안녕하세요.\n2026년 졸업작품 아이디어 경진대회 결과 안내합니다.\n평가 결과 상위 3개팀은 컴퓨터공학부 대표로 교내 경진대회에 참가하게 됩니다.\n그리고 심사위원 평가 결과를 반영하여 상위 9개팀에게는 상장 및 대즐 쿠폰이 수여됩니다.\n- 최우수작품: 대즐쿠폰 인당 3장 / 우수작품: 대즐쿠폰 인당 2장\n상장 및 대즐 쿠폰은 각 팀장 학생(혹은 팀원 중 1명)이 방문하여 일괄 수령(별도 연락 예정 - 다음주 예정)하기 바랍니다.\n공학설계를 수강하는 학생들은 경진대회를 준비하느라 고생 많으셨습니다.\n이번 아이디어 경진대회를 통해 얻을 결과를 바탕으로 내년 졸업작품 평가에서 좋은 결과를 얻을 수 있도록 힘내시기 바랍니다.\n추가 문의사항 있으면 연락주세요.\n* 졸업작품 아이디어 경진대회 평가 결과(상위 9개 팀) - 순서와 순위는 무관함!!\n첨부파일\n2026년 졸업작품 아이디어 경진대회 평가결과.JPG\n(109.11KB / 다운로드 18회 / 미리보기:13)\n다운로드\n미리보기",
+    "images": [
+      "https://www.koreatech.ac.kr/boardDownload.es?mid=b10601000000&bid=0105&list_no=57023&seq=1",
+      "https://www.koreatech.ac.kr/ease_src/crosseditor/binary/images/000032/20261124143220305_OWTEV0IM.jpg"
+    ],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-24T16:46:01+09:00",
+    "relevance": 1,
+    "relevance_reason": "좁은 조건(학과) 일치 · 마감 정보 없음",
+    "target": {
+      "scope": "specific",
+      "departments": [
+        "컴퓨터공학부"
+      ],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": null,
+    "other_dates": [],
+    "actions": [
+      "상장 및 대즐 쿠폰 수령 (수상 팀에 한함)"
+    ],
+    "materials": null,
+    "category": "교내활동",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
   }
 ]
