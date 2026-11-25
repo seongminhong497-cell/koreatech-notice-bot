@@ -10161,8 +10161,8 @@
     ],
     "category": "학사",
     "days_left": 0,
-    "is_expired": false,
-    "is_urgent": true
+    "is_expired": true,
+    "is_urgent": false
   },
   {
     "id": "academic-1631",
@@ -10201,8 +10201,8 @@
     ],
     "category": "학사",
     "days_left": 0,
-    "is_expired": false,
-    "is_urgent": true
+    "is_expired": true,
+    "is_urgent": false
   },
   {
     "id": "academic-1630",
@@ -10241,8 +10241,8 @@
     ],
     "category": "학사",
     "days_left": 0,
-    "is_expired": false,
-    "is_urgent": true
+    "is_expired": true,
+    "is_urgent": false
   },
   {
     "id": "academic-1629",
@@ -10281,8 +10281,8 @@
     ],
     "category": "학사",
     "days_left": 0,
-    "is_expired": false,
-    "is_urgent": true
+    "is_expired": true,
+    "is_urgent": false
   },
   {
     "id": "academic-1628",
@@ -10321,8 +10321,8 @@
     ],
     "category": "학사",
     "days_left": 0,
-    "is_expired": false,
-    "is_urgent": true
+    "is_expired": true,
+    "is_urgent": false
   },
   {
     "id": "general-37527",
@@ -15693,7 +15693,7 @@
     "is_sample": false,
     "extracted": true,
     "processed": true,
-    "is_new": true,
+    "is_new": false,
     "collected_at": "2026-11-24T05:45:10+09:00",
     "relevance": 2,
     "relevance_reason": "전체 학생 대상 · 관심 분류 · 마감 있음",
@@ -16136,15 +16136,41 @@
     "body": "엠이엠씨 코리아(주)\n1. 모집 포지션\n① 설비관리 엔지니어 (Facility Engineer)\n[주요업무]\nü Utility 설비 운영 및 예방보전·유지관리\nü 설비 이상 원인 분석 및 개선을 통한 설비 안정화\nü Utility 설비 개선 및 에너지·운영 효율화 활동\nü 설비 공사 기획, 안전관리 및 운영비·예산 관리\n[관련 전공 및 우대사항]\nü 기계공학 등 기계·설비 관련 전공\nü 제조업 Utility 설비 운영·유지보수 경험 및 전공 관련 자격증 보유자 우대\nü 영어 활용 역량 및 Data 분석·AI 활용 역량 보유자 우대\n② 전기제어 엔지니어 (Electrical Engineer)\n[주요업무]\nü 반도체 제조시설 내 전기·제어설비 운영 및 유지보수\nü 수변전설비 및 Utility 설비 점검·관리\nü 전기·계장 공사 및 설비 개선 프로젝트 수행\nü 전기설비 관련 법정검사, 대관업무 및 안전관리\n[관련 전공 및 우대사항]\nü 전기·전자·제어 관련 전공\nü 전기 또는 전기공사 산업기사 이상 자격증 보유 필수\nü 반도체·제조업 장비 유지보수 경험 및 AI·Data 활용 역량 보유자 우대\nü 영어 또는 일본어 활용 역량 보유자 우대\n2. 지원 자격\nü 졸업자 또는 졸업예정자\nü 관련 전공자 중 학점 3.0 이상인 학생\nü 반도체 제조시설 및 설비에 대한 관심과 현장 중심의 기술 업무 수행 의지를 갖춘 학생\nü 입사 의지 높은 학생\n3. 채용전형 진행 계획\n1) 지원서 접수: 12월 1일(화) 17시까지\n2) 1차 면접: 12월 둘째 주(12/7~12/11) 중 진행 예정\n3) 후속 전형: 1차 면접 합격자 대상 온라인 인적성검사 및 2차 면접 진행\n[전체 채용전형 절차]\n서류전형 → 1차 면접 → 인적성검사(Online) → 2차 면접 → 채용검진 → 내부 품의 → 최종 합격통보 → 입사\n※ 한기대 우대 채용으로 학생종합경력개발에서만 지원 가능합니다. 학생종합경력개발 >> 추천채용에서 지원하세요!~",
     "images": [],
     "is_sample": false,
-    "extracted": false,
-    "processed": false,
+    "extracted": true,
+    "processed": true,
     "is_new": true,
     "collected_at": "2026-11-25T04:50:50+09:00",
-    "relevance": null,
-    "relevance_reason": null,
-    "days_left": null,
-    "is_expired": null,
-    "is_urgent": false
+    "relevance": 0,
+    "relevance_reason": "학과 조건 불일치",
+    "days_left": 6,
+    "is_expired": false,
+    "is_urgent": false,
+    "target": {
+      "scope": "specific",
+      "departments": [
+        "기계공학부",
+        "전기·전자·통신공학부"
+      ],
+      "years": [],
+      "enrollment_statuses": [
+        "졸업",
+        "졸업예정"
+      ],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": "2026-12-01T17:00:00+09:00",
+    "other_dates": [
+      {
+        "label": "1차 면접",
+        "date": "2026-12-07"
+      }
+    ],
+    "actions": [
+      "학생종합경력개발 추천채용에서 지원서 접수"
+    ],
+    "materials": null,
+    "category": "취업·인턴"
   },
   {
     "id": "general-37548",
@@ -16237,5 +16263,87 @@
     "days_left": 4,
     "is_expired": false,
     "is_urgent": true
+  },
+  {
+    "id": "general-37554",
+    "title": "[안내] 논술고사 실시에 따른 셔틀버스 탑승장 변경 안내",
+    "url": "https://www.koreatech.ac.kr/notice/view.es?mid=a10604010000&board_id=14&post_seq=37554&prefix_id=",
+    "source": "학교-일반",
+    "source_type": "학교",
+    "published_date": "2026-11-25",
+    "body": "교내 논술고사 실시에 따라 오늘 하루 셔틀버스 탑승장을 아래와 같이 변경하오니 이용에 참고해주시기 바랍니다.\n- 변경일자: 2026.11.25(수) 오늘 하루\n- 변경 탑승장: 인문경영관 앞\n- 18:10 하교 셔틀: 기존과 동일하게 운행\n셔틀버스 이용에 착오 없으시기 바랍니다.",
+    "images": [],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-25T13:42:20+09:00",
+    "relevance": 1,
+    "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
+    "target": {
+      "scope": "all",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": null,
+    "other_dates": [
+      {
+        "label": "셔틀버스 탑승장 변경일",
+        "date": "2026-11-25"
+      }
+    ],
+    "actions": null,
+    "materials": null,
+    "category": null,
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "academic-1634",
+    "title": "2026학년도 2학기 학점포기 신청 안내",
+    "url": "https://www.koreatech.ac.kr/notice/view.es?mid=a10604030000&board_id=16&post_seq=1634&prefix_id=",
+    "source": "학교-학사",
+    "source_type": "학교",
+    "published_date": "2026-11-25",
+    "body": "2026학년도 2학기 학점포기 신청 접수를 다음과 같이 안내하오니, 희망 학생은 절차를 확인하여 기한 내 신청하여 주시기 바랍니다.\n1. 신청 가능자\n○ 2014학년도 이전 입학한 학생*중 6학기 이상 이수한 자**\n* 학제변경 여부와 관계없이 입학연도 기준임\n** 재학생, 휴학생, 초과학기생 모두 신청 가능, 편입학생은 2학기 이상 이수한 경우 가능\n- 총 3과목까지 가능하며 이미 포기한 과목이 있는 경우 이를 합산하여 계산됨(0학점인 과목도 포함)\n○ 2019학년도 이전 입학한 학생 중 에너지신소재공학 전공 학생\n- MSC 공학기초 전산영역 교과(전산활용및실습, 프로그래밍및실습)와 동일대체교과(컴퓨팅사고)를 모두 이수하여 <전산활용및실습> 및 <프로그래밍및실습> 교과에 대한 재수강이 불가능한 경우, 학점포기 선택 가능\n○ 2023학년도 이전 교육과정을 적용받는 학생 중 메카트로닉스공학부 학생\n- <CAD및실습>,<창의적공학설계(AD)>를 모두 이수한 학생의 경우, 두 교과목 중 1개 교과목을 <CAD설계및실습>으로 재수강한 후, 나머지 1개 교과목도 재수강이 필요한 경우에는 학점포기 선택 가능\n학부(과)\n전공\n교과목\n동대체지정교과목\n메카트로닉스\n공학부\n생산전공\n제어전공\n디지털전공\n(MTB390)_CAD및실습\n(MEF664)_창의적공학설계(AD)\n※ 2023학년도 폐지\n(MTB391, MTC394)\nCAD설계및실습\n- <기계공작실습>, <유공압기초실습>, <기전시스템기초설계> 3개 교과목 중 2개 이상 이수한 학생의 경우, 동일 대체 교과목으로는 1개 교과목만 재수강이 가능하므로, 1개 교과목을 추가로 재수강하고자 할 경우, 학점포기 신청 가능\n학부(과)\n전공\n교과목\n동대체지정교과목\n메카트로닉스\n공학부\n생산전공\n제어전공\n디지털전공\n(MCA940)_기계공작실습\n(MCA214)_유공압기초실습\n(MTB484)_기전시스템기초설계\n(3과목 중 2개 선택)\n(MTA300, MTA301)\n메카트로닉스기초실습\n2. 신청기간: 2026. 11. 25.(수) ~ 12. 4.(금)\n○ 기간 내 학점포기 신청 및 승인이 완료된 건에 대해서만 학점포기 확정 처리\n※ 학생들은 반드시 지도교수님의 승인 여부를 파악하여, 승인이 되지 않을 시 개별 연락을 드려 기한 내 승인이 될 수 있도록 해야 함\n3. 신청방법: 아우누리-학사-성적조회-학점포기신청(붙임 참조)\n※ 지도교수님 및 학부장님 연락은 직접 메일 또는 학부사무실 문의, 그 외 사항은 학사팀(560-2527)으로 연락 요망\n※ 학부사무실 연락처\n학부(과)\n소속\n연락처\n기계공학부\n1학부사무실\n041-560-1290\n전기·전자·통신공학부\n1학부사무실\n041-560-1292\n컴퓨터공학부\n2학부사무실\n041-560-1461\n디자인공학과/건축공학과\n2학부사무실\n041-560-1221\n에너지신소재화학공학부\n3학부사무실\n041-560-1302\n메카트로닉스공학부\n3학부사무실\n041-560-1376\n경영학부\n4학부사무실\n041-560-1437\n고용서비스정책학과\n4학부사무실\n041-560-1761\n교양학부\n5학부사무실\n041-560-1294\nHRD학과\n5학부사무실\n041-560-1295\n미래융합학부\n5학부사무실\n041-560-1489\n미래융합학부\n5학부사무실\n041-560-2508\n첨부파일\n2026학년도 2학기 학점포기 신청 안내문.pdf\n다운로드\n미리보기",
+    "images": [],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-25T13:42:20+09:00",
+    "relevance": 0,
+    "relevance_reason": "학과 조건 불일치",
+    "target": {
+      "scope": "specific",
+      "departments": [
+        "에너지신소재화학공학부",
+        "메카트로닉스공학부"
+      ],
+      "years": [],
+      "enrollment_statuses": [
+        "재학",
+        "휴학"
+      ],
+      "groups": [
+        "학부생"
+      ],
+      "dorm_required": null
+    },
+    "deadline": "2026-12-04",
+    "other_dates": [],
+    "actions": [
+      "아우누리-학사-성적조회-학점포기신청에서 신청",
+      "지도교수 승인 여부 확인"
+    ],
+    "materials": null,
+    "category": "학사",
+    "days_left": 9,
+    "is_expired": false,
+    "is_urgent": false
   }
 ]
