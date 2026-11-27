@@ -15416,8 +15416,8 @@
     "materials": null,
     "category": "취업·인턴",
     "days_left": 0,
-    "is_expired": false,
-    "is_urgent": true
+    "is_expired": true,
+    "is_urgent": false
   },
   {
     "id": "general-37544",
@@ -16361,7 +16361,7 @@
     "is_sample": false,
     "extracted": true,
     "processed": true,
-    "is_new": true,
+    "is_new": false,
     "collected_at": "2026-11-26T03:55:34+09:00",
     "relevance": 2,
     "relevance_reason": "넓은 조건(학적 상태) 일치 · 관심 분류 · 마감 있음",
@@ -16406,7 +16406,7 @@
     "is_sample": false,
     "extracted": true,
     "processed": true,
-    "is_new": true,
+    "is_new": false,
     "collected_at": "2026-11-26T03:55:34+09:00",
     "relevance": 1,
     "relevance_reason": "넓은 조건(학적 상태)만 일치",
@@ -16437,8 +16437,8 @@
     "materials": null,
     "category": "취업·인턴",
     "days_left": 0,
-    "is_expired": false,
-    "is_urgent": true
+    "is_expired": true,
+    "is_urgent": false
   },
   {
     "id": "general-37555",
@@ -16455,7 +16455,7 @@
     "is_sample": false,
     "extracted": true,
     "processed": true,
-    "is_new": true,
+    "is_new": false,
     "collected_at": "2026-11-26T03:55:34+09:00",
     "relevance": 1,
     "relevance_reason": "넓은 조건(학적 상태, 대상 집단)만 일치",
@@ -16502,7 +16502,7 @@
     "is_sample": false,
     "extracted": true,
     "processed": true,
-    "is_new": true,
+    "is_new": false,
     "collected_at": "2026-11-26T12:52:34+09:00",
     "relevance": 2,
     "relevance_reason": "넓은 조건(학적 상태, 대상 집단) 일치 · 관심 분류 · 마감 있음",
@@ -16557,7 +16557,7 @@
     "is_sample": false,
     "extracted": true,
     "processed": true,
-    "is_new": true,
+    "is_new": false,
     "collected_at": "2026-11-26T12:52:34+09:00",
     "relevance": 2,
     "relevance_reason": "넓은 조건(학적 상태) 일치 · 관심 분류 · 마감 있음",
@@ -16602,7 +16602,7 @@
     "is_sample": false,
     "extracted": true,
     "processed": true,
-    "is_new": true,
+    "is_new": false,
     "collected_at": "2026-11-26T12:52:34+09:00",
     "relevance": 1,
     "relevance_reason": "좁은 조건(생활관) 일치 · 마감 정보 없음",
@@ -16646,7 +16646,7 @@
     "is_sample": false,
     "extracted": true,
     "processed": true,
-    "is_new": true,
+    "is_new": false,
     "collected_at": "2026-11-26T12:52:34+09:00",
     "relevance": 1,
     "relevance_reason": "넓은 조건(학적 상태)만 일치",
@@ -16698,7 +16698,7 @@
     "is_sample": false,
     "extracted": true,
     "processed": true,
-    "is_new": true,
+    "is_new": false,
     "collected_at": "2026-11-26T12:52:34+09:00",
     "relevance": 2,
     "relevance_reason": "넓은 조건(학적 상태) 일치 · 관심 분류 · 마감 있음",
@@ -16902,6 +16902,226 @@
     "materials": null,
     "category": "교내활동",
     "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "general-37569",
+    "title": "[보건실] 기말고사 비타민 이벤트 - 12/1(화)부터",
+    "url": "https://www.koreatech.ac.kr/notice/view.es?mid=a10604010000&board_id=14&post_seq=37569&prefix_id=",
+    "source": "학교-일반",
+    "source_type": "학교",
+    "published_date": "2026-11-27",
+    "body": "안녕하세요, 보건실입니다.\n12월 1일(화)부터 기말고사 시험 전 비타민 나눔 이벤트를 진행하오니\n학생 여러분의 많은 참여 바랍니다.\n첨부파일\n비타민포스터12월 게시판.jpg\n다운로드\n미리보기",
+    "images": [
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&a=id&p=37569&fn=1795743558666_%25EB%25B9%2584%25ED%2583%2580%25EB%25AF%25BC%25ED%258F%25AC%25EC%258A%25A4%25ED%2584%25B012%25EC%259B%2594%2B%25EA%25B2%258C%25EC%258B%259C%25ED%258C%2590.jpg",
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&p=37569&a=fd&fs=1"
+    ],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-27T12:54:07+09:00",
+    "relevance": 1,
+    "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
+    "target": {
+      "scope": "all",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": null,
+    "other_dates": [
+      {
+        "label": "비타민 나눔 이벤트 시작",
+        "date": "2026-12-01"
+      }
+    ],
+    "actions": [],
+    "materials": null,
+    "category": "교내활동",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "general-37568",
+    "title": "[보건실] 올 해 마지막 헌혈 캠페인 실시 (12/1,화)",
+    "url": "https://www.koreatech.ac.kr/notice/view.es?mid=a10604010000&board_id=14&post_seq=37568&prefix_id=",
+    "source": "학교-일반",
+    "source_type": "학교",
+    "published_date": "2026-11-27",
+    "body": "안녕하세요. 보건실입니다.\n2026년 마지막 헌혈 캠페인을 실시 합니다. (12월 1일, 화요일)\n생명 나눔의 기쁨과 함께 봉사 시간 인정 및 다양한 기념품 혜택이 제공되오니 많은 참여 바랍니다.\n첨부파일\n12.1 헌혈 게시용.jpg\n다운로드\n미리보기\n26.12.1.화 한국기술교육대학교 헌혈 홍보 포스터 게시판.jpg\n다운로드\n미리보기",
+    "images": [
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&a=id&p=37568&fn=1795743285189_12.1%2B%25ED%2597%258C%25ED%2598%2588%2B%25EA%25B2%258C%25EC%258B%259C%25EC%259A%25A9.jpg",
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&a=id&p=37568&fn=1795743285192_26.12.1.%25ED%2599%2594%2B%25ED%2595%259C%25EA%25B5%25AD%25EA%25B8%25B0%25EC%2588%25A0%25EA%25B5%2590%25EC%259C%25A1%25EB%258C%2580%25ED%2595%2599%25EA%25B5%2590%2B%25ED%2597%258C%25ED%2598%2588%2B%25ED%2599%258D%25EB%25B3%25B4%2B%25ED%258F%25AC%25EC%258A%25A4%25ED%2584%25B0%2B%25EA%25B2%258C%25EC%258B%259C%25ED%258C%2590.jpg",
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&p=37568&a=fd&fs=1",
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&p=37568&a=fd&fs=2"
+    ],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-27T12:54:07+09:00",
+    "relevance": 1,
+    "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
+    "target": {
+      "scope": "all",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": null,
+    "other_dates": [
+      {
+        "label": "헌혈 캠페인",
+        "date": "2026-12-01"
+      }
+    ],
+    "actions": [
+      "헌혈 캠페인 참여"
+    ],
+    "materials": null,
+    "category": "교내활동",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "general-37571",
+    "title": "[국제교육팀(GEC)]겨울학기 비교과 프로그램 어학특강 오픽 IM2 대비반 모집 (26.11.30.(월)10시~ 26.12.4...",
+    "url": "https://www.koreatech.ac.kr/notice/view.es?mid=a10604010000&board_id=14&post_seq=37571&prefix_id=",
+    "source": "학교-일반",
+    "source_type": "학교",
+    "published_date": "2026-11-27",
+    "body": "[국제교육팀(GEC)]겨울학기 비교과 프로그램 어학특강 오픽 IM2 대비반 모집 (26.11.30.(월)10시~ 26.12.4(금)17시까지)\n안녕하세요. 국제교육팀(GEC) 입니다.\n겨울학기 비교과 프로그램 어학특강 오픽 IM2 대비반 모집을 안내합니다.\n이번 프로그램부터는 수료기준 미충족시 2027학년도 1학기 국제교육팀에서 진행되는 비교과프로그램 어학특강을 참여 할 수 없음을 미리 알려드립니다.\n본인의 일정을 확인 후 신청 부탁드립니다.\n해당프로그램은 비대면 온라인 실시간 교육으로 진행됩니다.\n첨부파일\n오픽 IM2 목표반 모집 공고.jpg\n다운로드\n미리보기",
+    "images": [
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&a=id&p=37571&fn=1795744083208_%25EC%2598%25A4%25ED%2594%25BD%2BIM2%2B%25EB%25AA%25A9%25ED%2591%259C%25EB%25B0%2598%2B%25EB%25AA%25A8%25EC%25A7%2591%2B%25EA%25B3%25B5%25EA%25B3%25A0.jpg",
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&p=37571&a=fd&fs=1"
+    ],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-27T12:54:07+09:00",
+    "relevance": 2,
+    "relevance_reason": "전체 학생 대상 · 관심 분류 · 마감 있음",
+    "target": {
+      "scope": "all",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": "2026-12-04T17:00:00+09:00",
+    "other_dates": [
+      {
+        "label": "신청 기간",
+        "date": "2026-11-30T10:00:00+09:00"
+      }
+    ],
+    "actions": [
+      "포털 또는 안내된 방법에 따라 오픽 IM2 대비반 신청"
+    ],
+    "materials": null,
+    "category": "교내활동",
+    "days_left": 7,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "general-37570",
+    "title": "[다산정보관] ☘️120번의 만남☘️ 휴먼아카데미 기념 퀴즈 이벤트 안내(120명 추첨, 12/2 16시까지!)",
+    "url": "https://www.koreatech.ac.kr/notice/view.es?mid=a10604010000&board_id=14&post_seq=37570&prefix_id=",
+    "source": "학교-일반",
+    "source_type": "학교",
+    "published_date": "2026-11-27",
+    "body": "스무 해의 이야기, 120번의 만남.\n2006년 시작된 휴먼아카데미가 제120회를 맞이합니다.\n지난 20년간의 발자취를 돌아보는 퀴즈와 다음 강연자를 추천하는 이벤트를 진행하오니, 대학 구성원 여러분의 많은 관심과 참여 바랍니다.\n■ 제120회 휴먼아카데미 이벤트 안내\n참여기간: ~ 2026. 12. 2.(수) 16:00까지\n참여방법: 이벤트 홈페이지에서 퀴즈 응답 및 차기 연사 추천\n당첨인원: 퀴즈 정답자 중 120명 추첨\n경품: 투썸플레이스 아메리카노 모바일 쿠폰\n참여링크(복사-붙여넣기!): https://humanacademy120.netlify.app/\n■ 제120회 휴먼아카데미 안내\n한 걸음의 용기_에베레스트에서 남극까지\n12. 2.(수) 오후 4시, 다산홀\n강연연사: 김영미 (탐험가, 노스페이스 애슬리트팀)\n- 무동력 솔로 남극대륙 1,756km 도보 스키 횡단(2024-2025)부터 8,848m 에베레스트 신루트 등반까지(2009).\n- tvN〈유퀴즈 온 더 블럭〉, 〈남극 대륙 단독 횡단 다큐멘터리〉 등 출연\n강연약사\n20대에 히말라야와 7대륙 최고봉을 오르던 '수직'의 도전에서 남극 대륙 단독 횡단이라는 '수평'의 탐험을 완성하기까지,\n20년 넘게 산악인으로 살아온 이야기를 통해 '한 걸음의 용기'를 나누고자 합니다.\n저는 성공한 등반보다 실패한 등반에서 더 크게 성장했습니다.\n10여 년에 걸쳐 3단계로 이어진 남극 대륙 단독 횡단의 여정을 함께 따라가며,\n여러분 각자에게 '내 인생의 탐험'은 무엇인지 물어보는 시간이 되었으면 합니다.\n거칠고 험한 남극의 야생에서 얻은 이야기로,\n삶의 주인공으로 살아가려는 여러분의 '한 걸음의 용기'에 응원을 보냅니다.\n사전신청안내\n- 신청기간: 2026. 11. 24.(화) ~ 12. 1.(화) 17:00  ※ 모집정원 충원 시 조기마감될 수 있음\n- 모집인원: 학부생 130명\n- 사전신청 방법: (아우누리) 학사 > 비교과통합시스템 > 비교과 참여신청 > 주관부서: 학술정보팀 설정 > 제120회 휴먼아카데미 > [참여신청] 클릭\n참여혜택\n- 학부생 H&C 마일리지 3점\n- 참여자 전원 저녁 '버거킹 와퍼' 제공\n문의: 041-560-1387 / 학술정보팀\n첨부파일\n휴먼아카데미 20주년 기념 퀴즈_VEVENT.png\n다운로드\n미리보기\n제120회 휴먼아카데미 포스터.png\n다운로드\n미리보기",
+    "images": [
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&a=id&p=37570&fn=1795744390052_%25ED%259C%25B4%25EB%25A8%25BC%25EC%2595%2584%25EC%25B9%25B4%25EB%258D%25B0%25EB%25AF%25B8%2B20%25EC%25A3%25BC%25EB%2585%2584%2B%25EA%25B8%25B0%25EB%2585%2590%2B%25ED%2580%25B4%25EC%25A6%2588_VEVENT.png",
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&a=id&p=37570&fn=1795744439841_%25EC%25A0%259C120%25ED%259A%258C%2B%25ED%259C%25B4%25EB%25A8%25BC%25EC%2595%2584%25EC%25B9%25B4%25EB%258D%25B0%25EB%25AF%25B8%2B%25ED%258F%25AC%25EC%258A%25A4%25ED%2584%25B0.png",
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&p=37570&a=fd&fs=1",
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&p=37570&a=fd&fs=2"
+    ],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-27T12:54:07+09:00",
+    "relevance": 2,
+    "relevance_reason": "전체 학생 대상 · 관심 분류 · 마감 있음",
+    "target": {
+      "scope": "all",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": "2026-12-02T16:00:00+09:00",
+    "other_dates": [
+      {
+        "label": "휴먼아카데미 사전신청",
+        "date": "2026-12-01T17:00:00+09:00"
+      },
+      {
+        "label": "제120회 휴먼아카데미 강연",
+        "date": "2026-12-02T16:00:00+09:00"
+      }
+    ],
+    "actions": [
+      "이벤트 홈페이지에서 퀴즈 응답 및 차기 연사 추천"
+    ],
+    "materials": null,
+    "category": "교내활동",
+    "days_left": 5,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "general-37567",
+    "title": "[단기근로]전문대학원 송년의 밤 행사 지원 단기 근로 장학생 모집(~12.3)",
+    "url": "https://www.koreatech.ac.kr/notice/view.es?mid=a10604010000&board_id=14&post_seq=37567&prefix_id=",
+    "source": "학교-일반",
+    "source_type": "학교",
+    "published_date": "2026-11-27",
+    "body": "안녕하세요, 전문대학원교학팀입니다.\n다음과 같이 단기근로장학생을 모집합니다.\n1. 근로일자: 2026년 12월 5일(토)\n2. 근무시간: 15:00 ~ 21:00\n3. 시     급: 10,320원/시간\n4. 근로내용: 전문대학원 행사 지원\n5. 근로장소: 2캠퍼스(두정동)\n6. 모집인원: 2명\n7. 모집기한: 선발 시 마감\n8. 지원방법: 이름, 연락처, 학과, 학번 작성하여 메일 지원(gshrd@학교메일)\n9. 문     의: 041-8-521-8204\n※ 선발자에게만 개별연락\n※ 재학생만 가능(휴학생, 초과학기자 지원불가)",
+    "images": [],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-27T12:54:07+09:00",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태)만 일치",
+    "target": {
+      "scope": "specific",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [
+        "재학"
+      ],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": "2026-12-03",
+    "other_dates": [
+      {
+        "label": "근로일자",
+        "date": "2026-12-05"
+      }
+    ],
+    "actions": [
+      "이름, 연락처, 학과, 학번 작성하여 메일 지원"
+    ],
+    "materials": null,
+    "category": "취업·인턴",
+    "days_left": 6,
     "is_expired": false,
     "is_urgent": false
   }
