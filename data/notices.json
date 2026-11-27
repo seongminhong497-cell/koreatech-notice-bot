@@ -49,7 +49,7 @@
       "포트폴리오 자료(맞춤형 동영상 편집교육 지원자 한정)"
     ],
     "category": "교내활동",
-    "days_left": -5,
+    "days_left": -6,
     "is_expired": true,
     "is_urgent": false
   },
@@ -89,7 +89,7 @@
     ],
     "materials": null,
     "category": "학사",
-    "days_left": -14,
+    "days_left": -15,
     "is_expired": true,
     "is_urgent": false
   },
@@ -246,7 +246,7 @@
     ],
     "materials": null,
     "category": "대외활동·공모전",
-    "days_left": 3,
+    "days_left": 2,
     "is_expired": false,
     "is_urgent": true
   },
@@ -399,7 +399,7 @@
     ],
     "materials": null,
     "category": null,
-    "days_left": 34,
+    "days_left": 33,
     "is_expired": false,
     "is_urgent": false
   },
@@ -662,7 +662,7 @@
     ],
     "materials": null,
     "category": "교내활동",
-    "days_left": -15,
+    "days_left": -16,
     "is_expired": true,
     "is_urgent": false
   },
@@ -713,7 +713,7 @@
     ],
     "materials": null,
     "category": "취업·인턴",
-    "days_left": -9,
+    "days_left": -10,
     "is_expired": true,
     "is_urgent": false
   },
@@ -770,7 +770,7 @@
       "작품 시안"
     ],
     "category": "대외활동·공모전",
-    "days_left": -12,
+    "days_left": -13,
     "is_expired": true,
     "is_urgent": false
   },
@@ -816,7 +816,7 @@
     ],
     "materials": [],
     "category": "취업·인턴",
-    "days_left": -11,
+    "days_left": -12,
     "is_expired": true,
     "is_urgent": false
   },
@@ -862,7 +862,7 @@
     ],
     "materials": null,
     "category": "취업·인턴",
-    "days_left": -11,
+    "days_left": -12,
     "is_expired": true,
     "is_urgent": false
   },
@@ -904,9 +904,9 @@
     ],
     "materials": null,
     "category": "교내활동",
-    "days_left": 0,
-    "is_expired": false,
-    "is_urgent": true
+    "days_left": -1,
+    "is_expired": true,
+    "is_urgent": false
   },
   {
     "id": "scholarship-2418",
@@ -987,7 +987,7 @@
       "팀원 전체 확인서"
     ],
     "category": "장학",
-    "days_left": -14,
+    "days_left": -15,
     "is_expired": true,
     "is_urgent": false
   },
@@ -1035,7 +1035,7 @@
       "신청 사유에 따른 증빙자료"
     ],
     "category": "장학",
-    "days_left": -14,
+    "days_left": -15,
     "is_expired": true,
     "is_urgent": false
   },
@@ -1085,7 +1085,7 @@
     ],
     "materials": null,
     "category": "장학",
-    "days_left": -15,
+    "days_left": -16,
     "is_expired": true,
     "is_urgent": false
   },
@@ -1126,7 +1126,7 @@
       "외국인등록증 또는 귀화자의 기본증명서(상세) 또는 제적등본"
     ],
     "category": "장학",
-    "days_left": -35,
+    "days_left": -36,
     "is_expired": true,
     "is_urgent": false
   },
@@ -1170,7 +1170,7 @@
       "사회봉사활동 증빙자료(1365, VMS 발급 실적인증서, 교내사회봉사활동 확인서 등)"
     ],
     "category": "장학",
-    "days_left": -35,
+    "days_left": -36,
     "is_expired": true,
     "is_urgent": false
   },
@@ -1320,7 +1320,7 @@
     ],
     "materials": null,
     "category": "장학",
-    "days_left": -10,
+    "days_left": -11,
     "is_expired": true,
     "is_urgent": false
   },
@@ -1404,7 +1404,7 @@
       "외국어 성적 증명서"
     ],
     "category": "장학",
-    "days_left": -140,
+    "days_left": -141,
     "is_expired": true,
     "is_urgent": false
   },
@@ -1582,7 +1582,7 @@
     ],
     "materials": null,
     "category": "장학",
-    "days_left": -24,
+    "days_left": -25,
     "is_expired": true,
     "is_urgent": false
   },
@@ -1639,7 +1639,7 @@
       "국민기초생활수급자 및 차상위계층 확인 서류"
     ],
     "category": "장학",
-    "days_left": -14,
+    "days_left": -15,
     "is_expired": true,
     "is_urgent": false
   },
@@ -1709,7 +1709,7 @@
       "2026년 1학기 대학교 성적증명서 1부"
     ],
     "category": "장학",
-    "days_left": -28,
+    "days_left": -29,
     "is_expired": true,
     "is_urgent": false
   },
@@ -1755,7 +1755,7 @@
       "직전 학기 성적증명서"
     ],
     "category": "장학",
-    "days_left": -7,
+    "days_left": -8,
     "is_expired": true,
     "is_urgent": false
   },
@@ -1795,7 +1795,7 @@
     ],
     "materials": null,
     "category": "장학",
-    "days_left": -29,
+    "days_left": -30,
     "is_expired": true,
     "is_urgent": false
   },
@@ -1865,7 +1865,7 @@
       "우대사항 증빙서류"
     ],
     "category": "장학",
-    "days_left": -26,
+    "days_left": -27,
     "is_expired": true,
     "is_urgent": false
   },
@@ -1972,7 +1972,7 @@
     ],
     "materials": null,
     "category": "학사",
-    "days_left": -16,
+    "days_left": -17,
     "is_expired": true,
     "is_urgent": false
   },
@@ -2377,7 +2377,7 @@
     ],
     "materials": null,
     "category": "학사",
-    "days_left": -662,
+    "days_left": -663,
     "is_expired": true,
     "is_urgent": false
   },
@@ -2454,7 +2454,7 @@
     ],
     "materials": null,
     "category": "학사",
-    "days_left": -19,
+    "days_left": -20,
     "is_expired": true,
     "is_urgent": false
   },
@@ -2496,7 +2496,7 @@
       "학점교류 추천서식"
     ],
     "category": "학사",
-    "days_left": -25,
+    "days_left": -26,
     "is_expired": true,
     "is_urgent": false
   },
@@ -2542,7 +2542,7 @@
       "신청서"
     ],
     "category": "학사",
-    "days_left": -28,
+    "days_left": -29,
     "is_expired": true,
     "is_urgent": false
   },
@@ -2587,7 +2587,7 @@
     ],
     "materials": null,
     "category": "학사",
-    "days_left": -25,
+    "days_left": -26,
     "is_expired": true,
     "is_urgent": false
   },
@@ -2629,7 +2629,7 @@
       "학점교류 추천서식"
     ],
     "category": "학사",
-    "days_left": -39,
+    "days_left": -40,
     "is_expired": true,
     "is_urgent": false
   },
@@ -2672,7 +2672,7 @@
     ],
     "materials": null,
     "category": "학사",
-    "days_left": -39,
+    "days_left": -40,
     "is_expired": true,
     "is_urgent": false
   },
@@ -2727,7 +2727,7 @@
     ],
     "materials": null,
     "category": "학사",
-    "days_left": -65,
+    "days_left": -66,
     "is_expired": true,
     "is_urgent": false
   },
@@ -2768,7 +2768,7 @@
     ],
     "materials": null,
     "category": "학사",
-    "days_left": -74,
+    "days_left": -75,
     "is_expired": true,
     "is_urgent": false
   },
@@ -3042,7 +3042,7 @@
     ],
     "materials": null,
     "category": "대외활동·공모전",
-    "days_left": -10,
+    "days_left": -11,
     "is_expired": true,
     "is_urgent": false
   },
@@ -3089,7 +3089,7 @@
     ],
     "materials": null,
     "category": "교내활동",
-    "days_left": 3,
+    "days_left": 2,
     "is_expired": false,
     "is_urgent": true
   },
@@ -3206,9 +3206,9 @@
     ],
     "materials": null,
     "category": "대외활동·공모전",
-    "days_left": 0,
-    "is_expired": false,
-    "is_urgent": true
+    "days_left": -1,
+    "is_expired": true,
+    "is_urgent": false
   },
   {
     "id": "general-37469",
@@ -3336,7 +3336,7 @@
       "입소 신청서"
     ],
     "category": null,
-    "days_left": -7,
+    "days_left": -8,
     "is_expired": true,
     "is_urgent": false
   },
@@ -3391,7 +3391,7 @@
       "작품 시안"
     ],
     "category": "교내활동",
-    "days_left": -12,
+    "days_left": -13,
     "is_expired": true,
     "is_urgent": false
   },
@@ -3518,7 +3518,7 @@
     ],
     "materials": null,
     "category": "교내활동",
-    "days_left": -7,
+    "days_left": -8,
     "is_expired": true,
     "is_urgent": false
   },
@@ -3570,7 +3570,7 @@
       "안전관리실습 신청서"
     ],
     "category": "학사",
-    "days_left": -1,
+    "days_left": -2,
     "is_expired": true,
     "is_urgent": false
   },
@@ -3618,7 +3618,7 @@
     ],
     "materials": null,
     "category": "학사",
-    "days_left": -2,
+    "days_left": -3,
     "is_expired": true,
     "is_urgent": false
   },
@@ -3670,7 +3670,7 @@
     ],
     "materials": null,
     "category": "교내활동",
-    "days_left": -10,
+    "days_left": -11,
     "is_expired": true,
     "is_urgent": false
   },
@@ -3848,7 +3848,7 @@
     ],
     "materials": null,
     "category": "대외활동·공모전",
-    "days_left": 5,
+    "days_left": 4,
     "is_expired": false,
     "is_urgent": false
   },
@@ -4379,7 +4379,7 @@
     "collected_at": "2026-11-15T01:17:06+09:00",
     "relevance": 3,
     "relevance_reason": "좁은 조건(학과) 일치 · 마감 있음",
-    "days_left": 3,
+    "days_left": 2,
     "is_expired": false,
     "is_urgent": true,
     "target": {
@@ -4448,7 +4448,7 @@
     ],
     "materials": null,
     "category": "교내활동",
-    "days_left": -18,
+    "days_left": -19,
     "is_expired": true,
     "is_urgent": false
   },
@@ -4511,7 +4511,7 @@
     ],
     "materials": null,
     "category": "교내활동",
-    "days_left": -10,
+    "days_left": -11,
     "is_expired": true,
     "is_urgent": false
   },
@@ -4570,7 +4570,7 @@
       "신청서"
     ],
     "category": "교내활동",
-    "days_left": -28,
+    "days_left": -29,
     "is_expired": true,
     "is_urgent": false
   },
@@ -4590,7 +4590,7 @@
     "collected_at": "2026-11-15T01:17:06+09:00",
     "relevance": 3,
     "relevance_reason": "좁은 조건(학과) 일치 · 마감 있음",
-    "days_left": -21,
+    "days_left": -22,
     "is_expired": true,
     "is_urgent": false,
     "target": {
@@ -4747,7 +4747,7 @@
     ],
     "materials": null,
     "category": "대외활동·공모전",
-    "days_left": -72,
+    "days_left": -73,
     "is_expired": true,
     "is_urgent": false
   },
@@ -4848,7 +4848,7 @@
     "collected_at": "2026-11-15T01:17:06+09:00",
     "relevance": 3,
     "relevance_reason": "좁은 조건(학과) 일치 · 마감 있음",
-    "days_left": -77,
+    "days_left": -78,
     "is_expired": true,
     "is_urgent": false,
     "target": {
@@ -4921,7 +4921,7 @@
       "지도교수 변경신청서"
     ],
     "category": "학사",
-    "days_left": -85,
+    "days_left": -86,
     "is_expired": true,
     "is_urgent": false
   },
@@ -4973,7 +4973,7 @@
       "재학증명서"
     ],
     "category": "교내활동",
-    "days_left": -85,
+    "days_left": -86,
     "is_expired": true,
     "is_urgent": false
   },
@@ -5070,7 +5070,7 @@
     ],
     "materials": [],
     "category": "장학",
-    "days_left": -96,
+    "days_left": -97,
     "is_expired": true,
     "is_urgent": false
   },
@@ -5093,7 +5093,7 @@
     "collected_at": "2026-11-15T01:17:06+09:00",
     "relevance": 3,
     "relevance_reason": "좁은 조건(학과) 일치 · 마감 있음",
-    "days_left": -49,
+    "days_left": -50,
     "is_expired": true,
     "is_urgent": false,
     "target": {
@@ -5309,7 +5309,7 @@
     ],
     "materials": null,
     "category": "취업·인턴",
-    "days_left": -12,
+    "days_left": -13,
     "is_expired": true,
     "is_urgent": false
   },
@@ -5401,7 +5401,7 @@
       "사람인 온라인 이력서"
     ],
     "category": "취업·인턴",
-    "days_left": -127,
+    "days_left": -128,
     "is_expired": true,
     "is_urgent": false
   },
@@ -5440,7 +5440,7 @@
     ],
     "materials": null,
     "category": "취업·인턴",
-    "days_left": -203,
+    "days_left": -204,
     "is_expired": true,
     "is_urgent": false
   },
@@ -5488,7 +5488,7 @@
     ],
     "materials": null,
     "category": "취업·인턴",
-    "days_left": -219,
+    "days_left": -220,
     "is_expired": true,
     "is_urgent": false
   },
@@ -5539,7 +5539,7 @@
       "어학성적, 자격증"
     ],
     "category": "취업·인턴",
-    "days_left": -235,
+    "days_left": -236,
     "is_expired": true,
     "is_urgent": false
   },
@@ -5577,7 +5577,7 @@
     ],
     "materials": null,
     "category": "취업·인턴",
-    "days_left": -306,
+    "days_left": -307,
     "is_expired": true,
     "is_urgent": false
   },
@@ -5626,7 +5626,7 @@
       "리포지토리"
     ],
     "category": "취업·인턴",
-    "days_left": -361,
+    "days_left": -362,
     "is_expired": true,
     "is_urgent": false
   },
@@ -5714,7 +5714,7 @@
     ],
     "materials": null,
     "category": "취업·인턴",
-    "days_left": -439,
+    "days_left": -440,
     "is_expired": true,
     "is_urgent": false
   },
@@ -5783,7 +5783,7 @@
       "경력증명서"
     ],
     "category": "취업·인턴",
-    "days_left": -574,
+    "days_left": -575,
     "is_expired": true,
     "is_urgent": false
   },
@@ -5822,7 +5822,7 @@
     ],
     "materials": null,
     "category": "취업·인턴",
-    "days_left": -574,
+    "days_left": -575,
     "is_expired": true,
     "is_urgent": false
   },
@@ -5888,7 +5888,7 @@
       "참가지원서 및 일체서류"
     ],
     "category": "취업·인턴",
-    "days_left": -585,
+    "days_left": -586,
     "is_expired": true,
     "is_urgent": false
   },
@@ -5925,7 +5925,7 @@
     ],
     "materials": null,
     "category": "취업·인턴",
-    "days_left": -599,
+    "days_left": -600,
     "is_expired": true,
     "is_urgent": false
   },
@@ -5964,7 +5964,7 @@
     ],
     "materials": null,
     "category": "취업·인턴",
-    "days_left": -882,
+    "days_left": -883,
     "is_expired": true,
     "is_urgent": false
   },
@@ -6121,7 +6121,7 @@
     ],
     "materials": null,
     "category": "취업·인턴",
-    "days_left": -992,
+    "days_left": -993,
     "is_expired": true,
     "is_urgent": false
   },
@@ -6166,7 +6166,7 @@
     ],
     "materials": null,
     "category": "취업·인턴",
-    "days_left": -1002,
+    "days_left": -1003,
     "is_expired": true,
     "is_urgent": false
   },
@@ -6331,7 +6331,7 @@
     ],
     "materials": null,
     "category": "교내활동",
-    "days_left": -11,
+    "days_left": -12,
     "is_expired": true,
     "is_urgent": false
   },
@@ -6415,7 +6415,7 @@
     ],
     "materials": null,
     "category": "취업·인턴",
-    "days_left": -11,
+    "days_left": -12,
     "is_expired": true,
     "is_urgent": false
   },
@@ -6501,7 +6501,7 @@
     ],
     "materials": null,
     "category": "취업·인턴",
-    "days_left": -4,
+    "days_left": -5,
     "is_expired": true,
     "is_urgent": false
   },
@@ -6547,7 +6547,7 @@
     ],
     "materials": null,
     "category": "장학",
-    "days_left": -11,
+    "days_left": -12,
     "is_expired": true,
     "is_urgent": false
   },
@@ -6624,7 +6624,7 @@
     ],
     "materials": null,
     "category": "학사",
-    "days_left": -154,
+    "days_left": -155,
     "is_expired": true,
     "is_urgent": false
   },
@@ -6681,7 +6681,7 @@
       "자 (CAD-3D 응시자)"
     ],
     "category": "학사",
-    "days_left": -142,
+    "days_left": -143,
     "is_expired": true,
     "is_urgent": false
   },
@@ -6734,7 +6734,7 @@
       "추천자 명단(붙임2)"
     ],
     "category": "학사",
-    "days_left": -219,
+    "days_left": -220,
     "is_expired": true,
     "is_urgent": false
   },
@@ -6830,7 +6830,7 @@
       "건설엔지니어 장학금 자기소개서 1부"
     ],
     "category": "장학",
-    "days_left": -231,
+    "days_left": -232,
     "is_expired": true,
     "is_urgent": false
   },
@@ -6869,7 +6869,7 @@
     ],
     "materials": null,
     "category": "학사",
-    "days_left": -316,
+    "days_left": -317,
     "is_expired": true,
     "is_urgent": false
   },
@@ -6970,7 +6970,7 @@
       "증빙 자료"
     ],
     "category": "학사",
-    "days_left": -324,
+    "days_left": -325,
     "is_expired": true,
     "is_urgent": false
   },
@@ -7012,7 +7012,7 @@
     ],
     "materials": null,
     "category": "교내활동",
-    "days_left": -346,
+    "days_left": -347,
     "is_expired": true,
     "is_urgent": false
   },
@@ -7067,7 +7067,7 @@
     ],
     "materials": null,
     "category": "교내활동",
-    "days_left": -343,
+    "days_left": -344,
     "is_expired": true,
     "is_urgent": false
   },
@@ -7122,7 +7122,7 @@
     ],
     "materials": null,
     "category": "교내활동",
-    "days_left": -343,
+    "days_left": -344,
     "is_expired": true,
     "is_urgent": false
   },
@@ -7173,7 +7173,7 @@
       "어학성적증명서"
     ],
     "category": "취업·인턴",
-    "days_left": -371,
+    "days_left": -372,
     "is_expired": true,
     "is_urgent": false
   },
@@ -7221,7 +7221,7 @@
     ],
     "materials": null,
     "category": "대외활동·공모전",
-    "days_left": -371,
+    "days_left": -372,
     "is_expired": true,
     "is_urgent": false
   },
@@ -7265,7 +7265,7 @@
       "공학설계 소요재료 신청서"
     ],
     "category": "학사",
-    "days_left": -378,
+    "days_left": -379,
     "is_expired": true,
     "is_urgent": false
   },
@@ -7351,7 +7351,7 @@
     "actions": null,
     "materials": null,
     "category": "학사",
-    "days_left": -504,
+    "days_left": -505,
     "is_expired": true,
     "is_urgent": false
   },
@@ -7404,7 +7404,7 @@
       "증빙자료 (전국 규모 이상의 국내ㆍ외 수상 해당자)"
     ],
     "category": "학사",
-    "days_left": -504,
+    "days_left": -505,
     "is_expired": true,
     "is_urgent": false
   },
@@ -7446,7 +7446,7 @@
       "개인정보활용동의서"
     ],
     "category": "학사",
-    "days_left": -595,
+    "days_left": -596,
     "is_expired": true,
     "is_urgent": false
   },
@@ -7485,7 +7485,7 @@
       "졸업설계소요재료 엑셀파일"
     ],
     "category": "학사",
-    "days_left": -581,
+    "days_left": -582,
     "is_expired": true,
     "is_urgent": false
   },
@@ -7541,7 +7541,7 @@
     ],
     "materials": null,
     "category": "장학",
-    "days_left": -642,
+    "days_left": -643,
     "is_expired": true,
     "is_urgent": false
   },
@@ -7745,7 +7745,7 @@
     ],
     "materials": null,
     "category": "취업·인턴",
-    "days_left": -818,
+    "days_left": -819,
     "is_expired": true,
     "is_urgent": false
   },
@@ -7768,7 +7768,7 @@
     "collected_at": "2026-11-16T10:50:50+09:00",
     "relevance": 3,
     "relevance_reason": "좁은 조건(학과) 일치 · 마감 있음",
-    "days_left": -852,
+    "days_left": -853,
     "is_expired": true,
     "is_urgent": false,
     "target": {
@@ -7832,7 +7832,7 @@
     "collected_at": "2026-11-16T10:50:50+09:00",
     "relevance": 0,
     "relevance_reason": "학과 조건 불일치",
-    "days_left": -877,
+    "days_left": -878,
     "is_expired": true,
     "is_urgent": false,
     "target": {
@@ -7916,7 +7916,7 @@
     "collected_at": "2026-11-16T10:50:50+09:00",
     "relevance": 0,
     "relevance_reason": "학과 조건 불일치",
-    "days_left": -1076,
+    "days_left": -1077,
     "is_expired": true,
     "is_urgent": false,
     "target": {
@@ -7970,7 +7970,7 @@
     "collected_at": "2026-11-16T10:50:50+09:00",
     "relevance": 0,
     "relevance_reason": "학과 조건 불일치",
-    "days_left": -1066,
+    "days_left": -1067,
     "is_expired": true,
     "is_urgent": false,
     "target": {
@@ -8007,7 +8007,7 @@
     "collected_at": "2026-11-16T10:50:50+09:00",
     "relevance": 0,
     "relevance_reason": "학과 조건 불일치",
-    "days_left": -1031,
+    "days_left": -1032,
     "is_expired": true,
     "is_urgent": false,
     "target": {
@@ -8103,7 +8103,7 @@
     "collected_at": "2026-11-16T10:50:50+09:00",
     "relevance": 0,
     "relevance_reason": "학과 조건 불일치",
-    "days_left": -1471,
+    "days_left": -1472,
     "is_expired": true,
     "is_urgent": false,
     "target": {
@@ -8399,7 +8399,7 @@
     "collected_at": "2026-11-16T10:50:50+09:00",
     "relevance": 0,
     "relevance_reason": "학과 조건 불일치",
-    "days_left": -1761,
+    "days_left": -1762,
     "is_expired": true,
     "is_urgent": false,
     "target": {
@@ -8539,7 +8539,7 @@
     ],
     "materials": null,
     "category": "교내활동",
-    "days_left": 9,
+    "days_left": 8,
     "is_expired": false,
     "is_urgent": false
   },
@@ -8746,9 +8746,9 @@
     ],
     "materials": null,
     "category": "취업·인턴",
-    "days_left": 0,
-    "is_expired": false,
-    "is_urgent": true
+    "days_left": -1,
+    "is_expired": true,
+    "is_urgent": false
   },
   {
     "id": "scholarship-2420",
@@ -8798,7 +8798,7 @@
     ],
     "materials": null,
     "category": "장학",
-    "days_left": -9,
+    "days_left": -10,
     "is_expired": true,
     "is_urgent": false
   },
@@ -9006,7 +9006,7 @@
     ],
     "materials": null,
     "category": null,
-    "days_left": 20,
+    "days_left": 19,
     "is_expired": false,
     "is_urgent": false
   },
@@ -9135,7 +9135,7 @@
     ],
     "materials": null,
     "category": "교내활동",
-    "days_left": 7,
+    "days_left": 6,
     "is_expired": false,
     "is_urgent": false
   },
@@ -9172,7 +9172,7 @@
       "의견서"
     ],
     "category": "학사",
-    "days_left": -3,
+    "days_left": -4,
     "is_expired": true,
     "is_urgent": false
   },
@@ -9223,7 +9223,7 @@
       "사회봉사활동 등 (선택)"
     ],
     "category": "장학",
-    "days_left": -4,
+    "days_left": -5,
     "is_expired": true,
     "is_urgent": false
   },
@@ -9327,7 +9327,7 @@
       "사진 파일(JPG, JPEG, PNG)"
     ],
     "category": "교내활동",
-    "days_left": 6,
+    "days_left": 5,
     "is_expired": false,
     "is_urgent": true
   },
@@ -9377,7 +9377,7 @@
       "본인이 이수한 과목을 확인 할 수 있는 자료"
     ],
     "category": "취업·인턴",
-    "days_left": 2,
+    "days_left": 1,
     "is_expired": false,
     "is_urgent": false
   },
@@ -9457,9 +9457,9 @@
     ],
     "materials": null,
     "category": "학사",
-    "days_left": 0,
-    "is_expired": false,
-    "is_urgent": true
+    "days_left": -1,
+    "is_expired": true,
+    "is_urgent": false
   },
   {
     "id": "cse-general-56976",
@@ -9633,7 +9633,7 @@
     ],
     "materials": null,
     "category": "생활관",
-    "days_left": 2,
+    "days_left": 1,
     "is_expired": false,
     "is_urgent": true
   },
@@ -9653,7 +9653,7 @@
     "collected_at": "2026-11-18T12:16:11+09:00",
     "relevance": 2,
     "relevance_reason": "넓은 조건(학적 상태, 대상 집단) 일치 · 관심 분류 · 마감 있음",
-    "days_left": -7,
+    "days_left": -8,
     "is_expired": true,
     "is_urgent": false,
     "target": {
@@ -9819,7 +9819,7 @@
       "온라인평생교육원 근로장학생 지원서"
     ],
     "category": "장학",
-    "days_left": -3,
+    "days_left": -4,
     "is_expired": true,
     "is_urgent": false
   },
@@ -9859,7 +9859,7 @@
     ],
     "materials": null,
     "category": "교내활동",
-    "days_left": -7,
+    "days_left": -8,
     "is_expired": true,
     "is_urgent": false
   },
@@ -9949,7 +9949,7 @@
       "포트폴리오 자료(맞춤형 동영상 편집교육 지원자에 한함)"
     ],
     "category": "교내활동",
-    "days_left": -5,
+    "days_left": -6,
     "is_expired": true,
     "is_urgent": false
   },
@@ -9989,7 +9989,7 @@
     ],
     "materials": null,
     "category": "취업·인턴",
-    "days_left": -7,
+    "days_left": -8,
     "is_expired": true,
     "is_urgent": false
   },
@@ -10160,7 +10160,7 @@
       "학점교류 추천서식"
     ],
     "category": "학사",
-    "days_left": -2,
+    "days_left": -3,
     "is_expired": true,
     "is_urgent": false
   },
@@ -10200,7 +10200,7 @@
       "학점교류 추천서식"
     ],
     "category": "학사",
-    "days_left": -2,
+    "days_left": -3,
     "is_expired": true,
     "is_urgent": false
   },
@@ -10240,7 +10240,7 @@
       "학점교류 추천서식(배재대학교 양식)"
     ],
     "category": "학사",
-    "days_left": -2,
+    "days_left": -3,
     "is_expired": true,
     "is_urgent": false
   },
@@ -10280,7 +10280,7 @@
       "학점교류 추천서식"
     ],
     "category": "학사",
-    "days_left": -2,
+    "days_left": -3,
     "is_expired": true,
     "is_urgent": false
   },
@@ -10320,7 +10320,7 @@
       "학점교류 추천서식"
     ],
     "category": "학사",
-    "days_left": -2,
+    "days_left": -3,
     "is_expired": true,
     "is_urgent": false
   },
@@ -10363,7 +10363,7 @@
     ],
     "materials": null,
     "category": "교내활동",
-    "days_left": -7,
+    "days_left": -8,
     "is_expired": true,
     "is_urgent": false
   },
@@ -10469,7 +10469,7 @@
     ],
     "materials": null,
     "category": "교내활동",
-    "days_left": -4,
+    "days_left": -5,
     "is_expired": true,
     "is_urgent": false
   },
@@ -10492,7 +10492,7 @@
     "collected_at": "2026-11-21T02:28:10+09:00",
     "relevance": 2,
     "relevance_reason": "전체 학생 대상 · 관심 분류 · 마감 있음",
-    "days_left": -3,
+    "days_left": -4,
     "is_expired": true,
     "is_urgent": false,
     "target": {
@@ -10551,9 +10551,9 @@
     ],
     "materials": null,
     "category": "대외활동·공모전",
-    "days_left": 0,
-    "is_expired": false,
-    "is_urgent": true
+    "days_left": -1,
+    "is_expired": true,
+    "is_urgent": false
   },
   {
     "id": "general-37528",
@@ -10606,7 +10606,7 @@
       "사진 파일(JPG, JPEG, PNG)"
     ],
     "category": "대외활동·공모전",
-    "days_left": 6,
+    "days_left": 5,
     "is_expired": false,
     "is_urgent": true
   },
@@ -10669,7 +10669,7 @@
       "nationwide": false
     },
     "api_last_modified": "2026-11-13 11:13:45",
-    "days_left": 4,
+    "days_left": 3,
     "is_expired": false,
     "is_urgent": true
   },
@@ -10732,7 +10732,7 @@
       "nationwide": false
     },
     "api_last_modified": "2026-11-13 16:25:59",
-    "days_left": 34,
+    "days_left": 33,
     "is_expired": false,
     "is_urgent": false
   },
@@ -10795,7 +10795,7 @@
       "nationwide": false
     },
     "api_last_modified": "2026-11-13 11:18:39",
-    "days_left": 34,
+    "days_left": 33,
     "is_expired": false,
     "is_urgent": false
   },
@@ -10847,7 +10847,7 @@
       "nationwide": false
     },
     "api_last_modified": "2026-11-12 17:19:20",
-    "days_left": 34,
+    "days_left": 33,
     "is_expired": false,
     "is_urgent": false
   },
@@ -11241,7 +11241,7 @@
       "nationwide": false
     },
     "api_last_modified": "2026-10-30 17:46:21",
-    "days_left": 34,
+    "days_left": 33,
     "is_expired": false,
     "is_urgent": false
   },
@@ -11527,7 +11527,7 @@
       "nationwide": false
     },
     "api_last_modified": "2026-10-27 13:27:59",
-    "days_left": 34,
+    "days_left": 33,
     "is_expired": false,
     "is_urgent": false
   },
@@ -11706,7 +11706,7 @@
       "nationwide": false
     },
     "api_last_modified": "2026-10-26 13:15:40",
-    "days_left": 3,
+    "days_left": 2,
     "is_expired": false,
     "is_urgent": true
   },
@@ -12174,7 +12174,7 @@
       "nationwide": false
     },
     "api_last_modified": "2026-10-27 10:24:31",
-    "days_left": 34,
+    "days_left": 33,
     "is_expired": false,
     "is_urgent": false
   },
@@ -12235,7 +12235,7 @@
       "nationwide": false
     },
     "api_last_modified": "2026-11-06 09:32:55",
-    "days_left": 34,
+    "days_left": 33,
     "is_expired": false,
     "is_urgent": false
   },
@@ -12625,7 +12625,7 @@
       "nationwide": false
     },
     "api_last_modified": "2026-10-26 13:19:24",
-    "days_left": 34,
+    "days_left": 33,
     "is_expired": false,
     "is_urgent": false
   },
@@ -12746,7 +12746,7 @@
       "nationwide": false
     },
     "api_last_modified": "2026-11-06 10:00:25",
-    "days_left": 34,
+    "days_left": 33,
     "is_expired": false,
     "is_urgent": false
   },
@@ -12809,7 +12809,7 @@
       "nationwide": false
     },
     "api_last_modified": "2026-11-06 09:59:25",
-    "days_left": 34,
+    "days_left": 33,
     "is_expired": false,
     "is_urgent": false
   },
@@ -13102,7 +13102,7 @@
       "nationwide": false
     },
     "api_last_modified": "2026-10-30 19:36:32",
-    "days_left": 34,
+    "days_left": 33,
     "is_expired": false,
     "is_urgent": false
   },
@@ -13223,7 +13223,7 @@
       "nationwide": false
     },
     "api_last_modified": "2026-10-27 10:03:04",
-    "days_left": 34,
+    "days_left": 33,
     "is_expired": false,
     "is_urgent": false
   },
@@ -13286,7 +13286,7 @@
       "nationwide": false
     },
     "api_last_modified": "2026-10-30 19:35:06",
-    "days_left": 93,
+    "days_left": 92,
     "is_expired": false,
     "is_urgent": false
   },
@@ -13349,7 +13349,7 @@
       "nationwide": false
     },
     "api_last_modified": "2026-10-30 19:35:20",
-    "days_left": 34,
+    "days_left": 33,
     "is_expired": false,
     "is_urgent": false
   },
@@ -13412,7 +13412,7 @@
       "nationwide": false
     },
     "api_last_modified": "2026-11-06 09:50:43",
-    "days_left": 34,
+    "days_left": 33,
     "is_expired": false,
     "is_urgent": false
   },
@@ -13475,7 +13475,7 @@
       "nationwide": false
     },
     "api_last_modified": "2026-10-30 17:36:43",
-    "days_left": 93,
+    "days_left": 92,
     "is_expired": false,
     "is_urgent": false
   },
@@ -13596,7 +13596,7 @@
       "nationwide": false
     },
     "api_last_modified": "2026-10-30 17:34:23",
-    "days_left": 34,
+    "days_left": 33,
     "is_expired": false,
     "is_urgent": false
   },
@@ -13717,7 +13717,7 @@
       "nationwide": false
     },
     "api_last_modified": "2026-10-30 17:34:01",
-    "days_left": 34,
+    "days_left": 33,
     "is_expired": false,
     "is_urgent": false
   },
@@ -13838,7 +13838,7 @@
       "nationwide": false
     },
     "api_last_modified": "2026-10-30 17:33:29",
-    "days_left": 34,
+    "days_left": 33,
     "is_expired": false,
     "is_urgent": false
   },
@@ -13901,7 +13901,7 @@
       "nationwide": false
     },
     "api_last_modified": "2026-05-08 19:07:44",
-    "days_left": 34,
+    "days_left": 33,
     "is_expired": false,
     "is_urgent": false
   },
@@ -14021,7 +14021,7 @@
       "nationwide": false
     },
     "api_last_modified": "2026-10-28 13:50:53",
-    "days_left": 34,
+    "days_left": 33,
     "is_expired": false,
     "is_urgent": false
   },
@@ -14084,7 +14084,7 @@
       "nationwide": false
     },
     "api_last_modified": "2026-05-07 09:35:29",
-    "days_left": 34,
+    "days_left": 33,
     "is_expired": false,
     "is_urgent": false
   },
@@ -14434,7 +14434,7 @@
       "nationwide": false
     },
     "api_last_modified": "2026-05-07 09:26:29",
-    "days_left": 93,
+    "days_left": 92,
     "is_expired": false,
     "is_urgent": false
   },
@@ -14723,7 +14723,7 @@
       "nationwide": false
     },
     "api_last_modified": "2026-11-06 09:44:43",
-    "days_left": 34,
+    "days_left": 33,
     "is_expired": false,
     "is_urgent": false
   },
@@ -14818,7 +14818,7 @@
       "nationwide": false
     },
     "api_last_modified": "2026-11-13 17:54:21",
-    "days_left": 34,
+    "days_left": 33,
     "is_expired": false,
     "is_urgent": false
   },
@@ -14868,7 +14868,7 @@
       "nationwide": false
     },
     "api_last_modified": "2026-05-04 17:20:26",
-    "days_left": 3,
+    "days_left": 2,
     "is_expired": false,
     "is_urgent": true
   },
@@ -14918,7 +14918,7 @@
       "nationwide": false
     },
     "api_last_modified": "2026-11-13 17:19:06",
-    "days_left": 34,
+    "days_left": 33,
     "is_expired": false,
     "is_urgent": false
   },
@@ -14968,7 +14968,7 @@
       "nationwide": false
     },
     "api_last_modified": "2026-11-16 17:56:45",
-    "days_left": 34,
+    "days_left": 33,
     "is_expired": false,
     "is_urgent": false
   },
@@ -15018,7 +15018,7 @@
       "nationwide": false
     },
     "api_last_modified": "2026-11-16 17:51:18",
-    "days_left": 34,
+    "days_left": 33,
     "is_expired": false,
     "is_urgent": false
   },
@@ -15068,7 +15068,7 @@
       "nationwide": false
     },
     "api_last_modified": "2026-11-13 16:47:34",
-    "days_left": 34,
+    "days_left": 33,
     "is_expired": false,
     "is_urgent": false
   },
@@ -15117,7 +15117,7 @@
     ],
     "materials": null,
     "category": "교내활동",
-    "days_left": 10,
+    "days_left": 9,
     "is_expired": false,
     "is_urgent": false
   },
@@ -15172,7 +15172,7 @@
       "참가신청서"
     ],
     "category": "교내활동",
-    "days_left": 6,
+    "days_left": 5,
     "is_expired": false,
     "is_urgent": true
   },
@@ -15323,7 +15323,7 @@
     ],
     "materials": null,
     "category": "대외활동·공모전",
-    "days_left": 3,
+    "days_left": 2,
     "is_expired": false,
     "is_urgent": false
   },
@@ -15366,7 +15366,7 @@
     ],
     "materials": null,
     "category": "생활관",
-    "days_left": 7,
+    "days_left": 6,
     "is_expired": false,
     "is_urgent": false
   },
@@ -15415,7 +15415,7 @@
     ],
     "materials": null,
     "category": "취업·인턴",
-    "days_left": 0,
+    "days_left": -1,
     "is_expired": true,
     "is_urgent": false
   },
@@ -15621,7 +15621,7 @@
     ],
     "materials": null,
     "category": "교내활동",
-    "days_left": 3,
+    "days_left": 2,
     "is_expired": false,
     "is_urgent": true
   },
@@ -15674,9 +15674,9 @@
     ],
     "materials": null,
     "category": "학사",
-    "days_left": 0,
-    "is_expired": false,
-    "is_urgent": true
+    "days_left": -1,
+    "is_expired": true,
+    "is_urgent": false
   },
   {
     "id": "scholarship-2422",
@@ -15717,7 +15717,7 @@
     ],
     "materials": null,
     "category": "장학",
-    "days_left": 41,
+    "days_left": 40,
     "is_expired": false,
     "is_urgent": false
   },
@@ -15848,7 +15848,7 @@
     ],
     "materials": null,
     "category": "장학",
-    "days_left": 41,
+    "days_left": 40,
     "is_expired": false,
     "is_urgent": false
   },
@@ -15984,9 +15984,9 @@
     ],
     "materials": null,
     "category": "교내활동",
-    "days_left": 4,
+    "days_left": 3,
     "is_expired": false,
-    "is_urgent": false
+    "is_urgent": true
   },
   {
     "id": "general-37552",
@@ -16034,7 +16034,7 @@
       "참가신청서"
     ],
     "category": "교내활동",
-    "days_left": 12,
+    "days_left": 11,
     "is_expired": false,
     "is_urgent": false
   },
@@ -16122,7 +16122,7 @@
     ],
     "materials": null,
     "category": "교내활동",
-    "days_left": 3,
+    "days_left": 2,
     "is_expired": false,
     "is_urgent": true
   },
@@ -16142,7 +16142,7 @@
     "collected_at": "2026-11-25T04:50:50+09:00",
     "relevance": 0,
     "relevance_reason": "학과 조건 불일치",
-    "days_left": 4,
+    "days_left": 3,
     "is_expired": false,
     "is_urgent": false,
     "target": {
@@ -16260,7 +16260,7 @@
       "한부모가정 증명서 또는 가족관계 증명서"
     ],
     "category": "장학",
-    "days_left": 2,
+    "days_left": 1,
     "is_expired": false,
     "is_urgent": true
   },
@@ -16342,7 +16342,7 @@
     ],
     "materials": null,
     "category": "학사",
-    "days_left": 7,
+    "days_left": 6,
     "is_expired": false,
     "is_urgent": false
   },
@@ -16387,7 +16387,7 @@
     ],
     "materials": null,
     "category": "교내활동",
-    "days_left": 3,
+    "days_left": 2,
     "is_expired": false,
     "is_urgent": true
   },
@@ -16436,7 +16436,7 @@
     ],
     "materials": null,
     "category": "취업·인턴",
-    "days_left": 0,
+    "days_left": -1,
     "is_expired": true,
     "is_urgent": false
   },
@@ -16539,7 +16539,7 @@
       "포트폴리오 자료(동영상 편집교육 지원자에 한함)"
     ],
     "category": "교내활동",
-    "days_left": 2,
+    "days_left": 1,
     "is_expired": false,
     "is_urgent": true
   },
@@ -16583,7 +16583,7 @@
     ],
     "materials": null,
     "category": "교내활동",
-    "days_left": 5,
+    "days_left": 4,
     "is_expired": false,
     "is_urgent": false
   },
@@ -16650,7 +16650,7 @@
     "collected_at": "2026-11-26T12:52:34+09:00",
     "relevance": 1,
     "relevance_reason": "넓은 조건(학적 상태)만 일치",
-    "days_left": 6,
+    "days_left": 5,
     "is_expired": false,
     "is_urgent": true,
     "target": {
@@ -16736,7 +16736,7 @@
       "관련 자격증 사본 등(선택)"
     ],
     "category": "교내활동",
-    "days_left": 5,
+    "days_left": 4,
     "is_expired": false,
     "is_urgent": true
   },
@@ -16755,7 +16755,7 @@
     "is_sample": false,
     "extracted": true,
     "processed": true,
-    "is_new": true,
+    "is_new": false,
     "collected_at": "2026-11-26T15:11:22+09:00",
     "relevance": 1,
     "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
@@ -16858,7 +16858,7 @@
     ],
     "materials": null,
     "category": "교내활동",
-    "days_left": 3,
+    "days_left": 2,
     "is_expired": false,
     "is_urgent": false
   },
@@ -17030,7 +17030,7 @@
     ],
     "materials": null,
     "category": "교내활동",
-    "days_left": 7,
+    "days_left": 6,
     "is_expired": false,
     "is_urgent": false
   },
@@ -17079,7 +17079,7 @@
     ],
     "materials": null,
     "category": "교내활동",
-    "days_left": 5,
+    "days_left": 4,
     "is_expired": false,
     "is_urgent": false
   },
@@ -17121,7 +17121,7 @@
     ],
     "materials": null,
     "category": "취업·인턴",
-    "days_left": 6,
+    "days_left": 5,
     "is_expired": false,
     "is_urgent": false
   },
@@ -17170,8 +17170,280 @@
     ],
     "materials": null,
     "category": "취업·인턴",
-    "days_left": 0,
+    "days_left": -1,
+    "is_expired": true,
+    "is_urgent": false
+  },
+  {
+    "id": "general-37578",
+    "title": "☘️❤️[모집] 차(茶) 함께 마셔요. 즐거운 찻자리 - KOREATECH Heritage Class 12월 프로그램",
+    "url": "https://www.koreatech.ac.kr/notice/view.es?mid=a10604010000&board_id=14&post_seq=37578&prefix_id=",
+    "source": "학교-일반",
+    "source_type": "학교",
+    "published_date": "2026-11-27",
+    "body": "2026 「KOREATECH Heritage Class」12월 프로그램\n○ 주 제: 가뿐한 차(茶) 생활\n○ 일 시: 2026. 12. 1.(화) 14:00 (90~120분 진행)\n○ 강 사: 윤소운 (티소믈리에)\n○ 장 소: 다산정보관 다담소 (3층 일반자료실 내 위치)\n○ 내 용: 차의 종류와 차예절을 알아보고 차도구(개완 사용법을 배워요)로 직접 차를 우려서 마셔보는 특별한 시간을 가집니다.\n※ 차도구, 차, 다식 등이 제공됩니다.\n- 인원: 학부 재학생 20명 내외 선착순 모집\n- 신청: https://forms.gle/5BJ5Q5AcM97Hu8Td6\n첨부파일\n12월 프로그램 신청.png\n다운로드\n미리보기",
+    "images": [
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&a=id&p=37578&fn=1795772856911_12%25EC%259B%2594%2B%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%25A8%2B%25EC%258B%25A0%25EC%25B2%25AD.png",
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&p=37578&a=fd&fs=1"
+    ],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-28T03:37:33+09:00",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태, 대상 집단)만 일치",
+    "target": {
+      "scope": "specific",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [
+        "재학"
+      ],
+      "groups": [
+        "학부생"
+      ],
+      "dorm_required": null
+    },
+    "deadline": null,
+    "other_dates": [
+      {
+        "label": "12월 프로그램 행사일",
+        "date": "2026-12-01T14:00:00+09:00"
+      }
+    ],
+    "actions": [
+      "구글폼을 통해 신청서 제출"
+    ],
+    "materials": null,
+    "category": "교내활동",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "general-37577",
+    "title": "(끌올)(~11/30)⭐2026 충남앵커공유대학 디스플레이-반도체소부장융합전공 성과교류 캠프 참가자 모집!⭐",
+    "url": "https://www.koreatech.ac.kr/notice/view.es?mid=a10604010000&board_id=14&post_seq=37577&prefix_id=",
+    "source": "학교-일반",
+    "source_type": "학교",
+    "published_date": "2026-11-27",
+    "body": "▩ 2026 디스플레이-반도체소부장융합전공 성과교류 캠프 참가자 모집!\n안녕하세요. 한국기술교육대학교 앵커사업단입니다.\n이번 겨울, 학교 밖에서 특별한 추억 만들 준비됐나요? ▩️\n공유대학 내 다양한 타대학 친구들과 만나 팀을 이루고, 함께 교류하며 잊지 못한 1박 2일을 보내보세요!\n▩ 프로그램명: 2026. 디스플레이-반도체소부장융합전공 성과교류 캠프 신청\n▩ 일정 2026. 12. 28.(월) ~ 12. 29.(화) / 1박 2일\n▩ 장소 벨포레 증평 (교통편: 천안-증평 버스 이동)\n▩ 대상 충남앵커공유대학 디스플레이-반도체소부장융합전공 참여대학 충남 소재 캠퍼스 학부 재학생\n* 건양대, 국립공주대, 나사렛대, 남서울대, 백석대, 상명대, 선문대, 세한대, 신성대, 유원대, 청운대, 충남도립대, 한국기술교육대, 한서대, 혜전대 중 소속캠퍼스 소재지가 충남인 학부 재학생\n▩ 참가신청 링크: https://forms.gle/k4s5QQeKAy5ixet99\n▩ 참가비 무료\n▩ 이런 프로그램이 준비되어 있어요!\n▩ 다양한 대학 친구들과 함께하는 팀워크 프로젝트\n▩ 나의 공유대학 참여 경험을 담은 성과 콘텐츠 제작\n▩️ 짜릿한 레저카트 액티비티까지!\n▩ 15개 대학 친구들과 함께하는 특별한 겨울 캠프!\n수업에서 벗어나 새로운 친구도 만나고, 액티비티도 즐기고, 특별한 추억까지 만들어 보세요!\n▩ 사전 신청 필수 / 신청 후 취소 불가\n※ 개인 일정을 반드시 확인한 후 신청해 주세요. 무단 불참 시 추후 앵커사업단 프로그램 참여에 제한이 있을 수 있습니다.\n지금 바로 신청하고, 12월의 특별한 추억을 함께 만들어 봐요! 많은 신청 부탁드립니다:)\n문의 041-580-사팔오삼",
+    "images": [
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&a=id&p=37466&fn=1794447875555_%25EC%259C%25B5%25ED%2595%25A9%25EC%25A0%2584%25EA%25B3%25B5%2B%25EC%2584%25B1%25EA%25B3%25BC%25EA%25B5%2590%25EB%25A5%2598%2B%25EC%25BA%25A0%25ED%2594%2584%2B%25282%2529.png"
+    ],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-28T03:37:33+09:00",
+    "relevance": 0,
+    "relevance_reason": "학과 조건 불일치",
+    "target": {
+      "scope": "specific",
+      "departments": [
+        "디스플레이-반도체소부장융합전공"
+      ],
+      "years": [],
+      "enrollment_statuses": [
+        "재학"
+      ],
+      "groups": [
+        "학부생"
+      ],
+      "dorm_required": null
+    },
+    "deadline": "2026-11-30",
+    "other_dates": [
+      {
+        "label": "성과교류 캠프",
+        "date": "2026-12-28"
+      }
+    ],
+    "actions": [
+      "구글폼을 통해 참가 신청"
+    ],
+    "materials": null,
+    "category": "교내활동",
+    "days_left": 2,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "general-37576",
+    "title": "[온라인평생교육원] 이러닝운영팀 근로장학생 모집 (~12.3(목))",
+    "url": "https://www.koreatech.ac.kr/notice/view.es?mid=a10604010000&board_id=14&post_seq=37576&prefix_id=",
+    "source": "학교-일반",
+    "source_type": "학교",
+    "published_date": "2026-11-27",
+    "body": "안녕하세요. 온라인평생교육원 이러닝운영팀입니다.\n온라인평생교육원 이러닝운영팀에서 근무할 근로장학생을 아래와 같이 모집하오니 많은 지원 바랍니다.\n- 아 래 -\n1. 모집 안내\n1) 모집기간: 공고일 ~ 2026. 12. 3.(목)\n2) 모집인원: 1명\n3) 모집대상: 한국기술교육대학교 재학생\n- 정규학기 이내 재학생만 지원 가능\n- 졸업생, 휴학생, 초과학기자, 타부서 근로장학생 지원 불가\n4) 근무기간: 2026. 12. 7.(월) ~ 2027. 1. 29.(금)\n5) 근무장소: 온라인평생교육원 이러닝운영팀 (공학4관 A동 314호)\n6) 주요업무: 이러닝 콘텐츠 검수 및 행정업무 보조\n2. 신청 방법: 첨부된 지원서 작성 후 이메일 접수 (jhjh@학교메일)\n- 메일 제목 \"이러닝운영팀 근로장학생 모집 지원_성명\" / 파일명은 \"지원서_성명\"으로 기재\n- 지원서 내 자필서명 必, 붙임으로 시간표 첨부\n3. 우대사항\n- 컴퓨터 활용이 능숙한 자\n- 성실한 근무 태도로 업무에 임할 수 있는 자(무단결근 금지 및 근무시간 엄수)\n- 학기중 월 40시간, 방학중 월 80시간 근무 가능한 자(근무시간 협의가능)\n4. 급여: 최저시급 10,320원*근무시간\n- 2027년 1월은 최저시급에 따라 변동\n- 최대 근무시간: 학기중 월 40시간, 방학중 월 80시간\n5. 문의: 온라인평생교육원 이러닝운영팀(041-580-사사일사 / jhjh@학교메일)\n※ 12.4(금) 합격자에 한해 개별 문자 안내 예정입니다.\n※ 근무 중 다른 근로장학 업무는 불가합니다.\n많은 지원 바랍니다.\n감사합니다.\n첨부파일\n온라인평생교육원(이러닝운영팀) 근로장학생 지원서.hwp\n다운로드\n미리보기",
+    "images": [],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-28T03:37:33+09:00",
+    "relevance": 2,
+    "relevance_reason": "넓은 조건(학적 상태, 대상 집단) 일치 · 관심 분류 · 마감 있음",
+    "target": {
+      "scope": "specific",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [
+        "재학"
+      ],
+      "groups": [
+        "학부생"
+      ],
+      "dorm_required": null
+    },
+    "deadline": "2026-12-03",
+    "other_dates": [
+      {
+        "label": "근무 시작일",
+        "date": "2026-12-07"
+      },
+      {
+        "label": "합격자 발표",
+        "date": "2026-12-04"
+      }
+    ],
+    "actions": [
+      "첨부된 지원서 작성 후 이메일 접수"
+    ],
+    "materials": [
+      "지원서",
+      "시간표"
+    ],
+    "category": "장학",
+    "days_left": 5,
     "is_expired": false,
     "is_urgent": true
+  },
+  {
+    "id": "general-37575",
+    "title": "[고용서비스교육팀] 근로장학생 모집",
+    "url": "https://www.koreatech.ac.kr/notice/view.es?mid=a10604010000&board_id=14&post_seq=37575&prefix_id=",
+    "source": "학교-일반",
+    "source_type": "학교",
+    "published_date": "2026-11-27",
+    "body": "고용서비스교육팀에서 아래와 같이 교외 단기 근로 장학생을 모집 중에 있사오니 많은 관심과 지원 바랍니다.\n1. 근로 기간: 2026년 12월 14일(월)부터 ~ 2027년 1월 19일(화)까지 / 주중 월 ~ 목\n※ 사정에 따라 근로일 변경 및 연장 될 수 있음.\n2. 근로 시간: 월~목 오전 9:00~15:00(5시간) / 평일 고정 근무\n3. 시     급: 10,320(원)\n4. 근로 내용: 직업상담사 1급 운영 관리 및 출석 관리, 교육 운영 보조 등\n5. 근로 장소: (영등포구) 서울 현대건설기술교육원 5층\n▶  주소: 서울시 영등포구 도림천로19길 12-2 현대건설기술교육원\n6. 모집 인원: 총 1명\n7. 지원 자격: (서울에 살고 있는) 한국기술교육대학교 휴학생, 초과학기생 가능\n8. 우대 조건: 엑셀 가능자 우대\n9. 신청 방법: mayinn@학교메일로 1. 성명 2. 학번 3. 연락처 4. 경력(타부서 근로장학, 아르바이트 등) 작성하여 송부\n10. 선발 안내: 신청자 중 적임자 개별 안내(※ 미선발자 별도 안내 없음)\n11. 관련 문의: 041-521-8180 /  생활관 지원 불가 / 식사 제공\n근로장학 신청을 위해 기입한 개인정보는 목적 달성 후 즉각 파기하며, 신청서 제출시 개인정보 활용에 동의한 것으로 간주 합니다.\n수집한 개인정보는 근로장학생 선발을 위하여 활용 합니다.\n많은 지원 바랍니다.",
+    "images": [],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-28T03:37:33+09:00",
+    "relevance": 0,
+    "relevance_reason": "학적 상태 조건 불일치",
+    "target": {
+      "scope": "specific",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [
+        "휴학"
+      ],
+      "groups": [],
+      "dorm_required": false
+    },
+    "deadline": null,
+    "other_dates": [
+      {
+        "label": "근로 기간",
+        "date": "2026-12-14"
+      }
+    ],
+    "actions": [
+      "mayinn@학교메일로 성명, 학번, 연락처, 경력 작성하여 송부"
+    ],
+    "materials": null,
+    "category": "장학",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "general-37574",
+    "title": "[국제교육팀(GEC)] GEC 에 트리가 생겼어요 놀러오세요._폴라로이드 사진 1인 1매 촬영 및 도시락 제공!!(26.12....",
+    "url": "https://www.koreatech.ac.kr/notice/view.es?mid=a10604010000&board_id=14&post_seq=37574&prefix_id=",
+    "source": "학교-일반",
+    "source_type": "학교",
+    "published_date": "2026-11-27",
+    "body": "[국제교육팀(GEC)] GEC 에 트리가 생겼어요 놀러오세요._폴라로이드 사진 1인 1매 촬영 및 도시락 제공!!(26.12.3.(목) 18:00 부터 선착순!! (현장참여))\n안녕하세요. 국제교육팀(GEC)입니다.\n국제교육센터 1층 로비에 트리를 설치 했습니다.\n트리를 설치한 기념으로 학생들에게 추억을 제공하고자 폴라로이드 사진을 1매씩 찍어 드리고 도시락을 제공하고 트리에 함께 소원을 적는 행사를 마련했습니다.\n사전참여 신청 없이 현장 참여로 참여 가능하며 행사 일시는 2026.12.3.(목) 18시부터 GEC 1층 로비에서 진행됩니다.\n단 도시락 및 폴라로이드 사진 촬영을 선착순 제공하고자 하오니 늦지 않게 오시기 바랍니다.\n한국인학생 외국인학생 모두 참여가 가능한 행사로 같이 친해지는 시간을 마련한 것이니 많은 참여 부탁드립니다.\n첨부파일\nGEC에 트리가 생겼어요 놀러오세요.jpg\n다운로드\n미리보기",
+    "images": [
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&a=id&p=37574&fn=1795760663410_GEC%25EC%2597%2590%2B%25ED%258A%25B8%25EB%25A6%25AC%25EA%25B0%2580%2B%25EC%2583%259D%25EA%25B2%25BC%25EC%2596%25B4%25EC%259A%2594%2B%25EB%2586%2580%25EB%259F%25AC%25EC%2598%25A4%25EC%2584%25B8%25EC%259A%2594.jpg",
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&p=37574&a=fd&fs=1"
+    ],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-28T03:37:33+09:00",
+    "relevance": 1,
+    "relevance_reason": "전체 학생 대상 · 관심 분류와 마감 조건 미충족",
+    "target": {
+      "scope": "all",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": null,
+    "other_dates": [
+      {
+        "label": "GEC 트리 행사",
+        "date": "2026-12-03T18:00:00+09:00"
+      }
+    ],
+    "actions": [],
+    "materials": null,
+    "category": "교내활동",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
+  },
+  {
+    "id": "general-37573",
+    "title": "학습&전공 고민은 그만! ⭐새내기 학습&전공 로드맵 그리기 1:1 컨설팅⭐",
+    "url": "https://www.koreatech.ac.kr/notice/view.es?mid=a10604010000&board_id=14&post_seq=37573&prefix_id=",
+    "source": "학교-일반",
+    "source_type": "학교",
+    "published_date": "2026-11-27",
+    "body": "(통합모집) 신입생 여러분~ 학습&전공 고민은 이제 그만!\n전문컨설턴트와 함께 하는 1:1 컨설팅으로 학습&전공 로드맵을 함께 그려봐요!\n안녕하세요! Edutech센터입니다.\nEdutech센터에서는 통합모집 및 신입생 학생들의 학습&전공 고민 해결을 위해 1:1 컨설팅을 진행하고 있습니다!\n참여자의 희망하는 날짜, 방법 맞춰 컨설팅 진행하오니 많은 참여부탁드립니다!\n꼭 통합모집 학생이 아니어도 됩니다!\n학습&전공 고민하고 있으신 1~2학년 학생들 신청해주세요~\n참여 방법\n① 아래의 링크 혹은 QR코드 접속하여 1:1 컨설팅 신청하기\n② 1~2일 이내로 카카오톡으로 전송되는 U&I 학습유형검사 실시\n③ 희망하는 날짜와 시간에 전문 컨설턴트와 대면ㆍ비대면 1:1 컨설팅 받기\n신청방법\n▷구글폼 신청: 링크 접속 혹은 포스터의 QR코드 스캔\n- https://forms.gle/VtPDY5ufcaTezJhS9\n▷전화신청: 041-580-4708",
+    "images": [
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&a=id&p=36396&fn=1780387906657_%25EC%2583%2588%25EB%2582%25B4%25EA%25B8%25B0%2B%25ED%2595%2599%25EC%258A%25B5%25EC%25A0%2584%25EA%25B3%25B5%2B%25EB%25A1%259C%25EB%2593%259C%25EB%25A7%25B5%2B%25EC%25BB%25A8%25EC%2584%25A4%25ED%258C%2585%2B%25ED%258F%25AC%25EC%258A%25A4%25ED%2584%25B0.png"
+    ],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-28T03:37:33+09:00",
+    "relevance": 1,
+    "relevance_reason": "좁은 조건(학년) 일치 · 마감 정보 없음",
+    "target": {
+      "scope": "specific",
+      "departments": [],
+      "years": [
+        1,
+        2
+      ],
+      "enrollment_statuses": [],
+      "groups": [
+        "학부생"
+      ],
+      "dorm_required": null
+    },
+    "deadline": null,
+    "other_dates": [],
+    "actions": [
+      "구글폼 또는 전화로 1:1 컨설팅 신청하기",
+      "카카오톡으로 전송되는 U&I 학습유형검사 실시하기"
+    ],
+    "materials": null,
+    "category": "교내활동",
+    "days_left": null,
+    "is_expired": false,
+    "is_urgent": false
   }
 ]
