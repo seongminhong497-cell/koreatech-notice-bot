@@ -17124,5 +17124,54 @@
     "days_left": 6,
     "is_expired": false,
     "is_urgent": false
+  },
+  {
+    "id": "general-37572",
+    "title": "(오늘 마감) 활동비·BM컨설턴트 자격과정 지원! 대학생 실전 기술사업화 프로젝트 「T-BRIDGE」 참여 학생 모집 (~11...",
+    "url": "https://www.koreatech.ac.kr/notice/view.es?mid=a10604010000&board_id=14&post_seq=37572&prefix_id=",
+    "source": "학교-일반",
+    "source_type": "학교",
+    "published_date": "2026-11-27",
+    "body": "(오늘 마감) 활동비·BM컨설턴트 자격과정 지원! 대학생 실전 기술사업화 프로젝트 「T-BRIDGE」 참여 학생 모집 (~11/27)\n※ 오늘(11. 27.)까지 신청을 받습니다. 관심 있는 학생은 서둘러 신청해 주세요.\n연구실의 기술을, 기업이 원하는 비즈니스로.\nT-BRIDGE는 우리 학교가 보유한 특허와 연구성과 중 사업화 가능성이 있는 기술을 직접 발굴하고, 수요기업을 찾아 기술이전까지 도전하는 실전 프로젝트입니다.\n교수님 인터뷰로 특허를 이해하고, 기업이 읽는 기술소개서(SMK)를 직접 만들어 12월 21일 기술상담회에서 실제 기업 담당자에게 소개합니다.\n1월에는 BM컨설턴트 자격과정과 함께 기업분석보고서, 신사업 제안서까지 완성합니다.\n활동 결과물은 그대로 취업 포트폴리오가 되며, 기술영업·기술사업화·신사업 기획 직무를 미리 경험해 볼 수 있습니다.\n팀 활동비와 자격과정 비용을 지원하고, 변리사·기술거래사·전략컨설턴트 등 현직자 멘토링도 함께 제공합니다.\n기말고사 기간에는 시험 부담을 줄일 수 있도록 비대면/대면을 활용해 주 3시간 내외로 운영합니다. 관심 있는 학생들의 많은 지원 바랍니다.\n■ 프로그램 개요\n대상: 한국기술교육대학교 재학생 (전공·학년 무관, 사전 지식 불필요)\n기간: 2026년 12월 ~ 2027년 1월\n규모: 10명 이내, 3~4명 팀 단위 활동 (개인 신청 시 팀 매칭)\n활동량: 시험기간 비대면/대면 활용 주 3시간 내외, 종강 후 1월 집중 운영\n■ 지원 내용\n팀 활동비: 팀별 월 30만 원 (월별 산출물 제출 기준)\nBM컨설턴트 자격과정 교육 및 자격검정 지원\n현직자 멘토링 (변리사·기술거래사·전략컨설턴트 등)\n수료증 발급 및 우수팀 시상\n■ 신청 방법\n기간: 2026. 11. 23.(월) ~ 11. 27.(금)\n방법: 온라인 신청서 작성 ☞ https://docs.google.com/forms/d/e/1FAIpQLSegnXsDAXJJRJnSKs8SRoD0DMmX2TLkCVEaQgDfNOBUkI0ByQ/viewform\n선발 결과: 11. 30.(월) 개별 안내\n■ 문의\n한국기술교육대학교 앵커사업단 ☎ 041-580-사86오 / hammy33@학교메일\n※ 수요조사 시 안내한 TCC 자격과정은 BM컨설턴트 자격과정으로 변경되었습니다.\n※ 세부 일정은 OT에서 안내하며, 운영 사정에 따라 변경될 수 있습니다.\n첨부: T-BRIDGE 참여 학생 모집 포스터 1부\n첨부파일\nT-BRIDGE 참여 학생 모집 포스터 (A3)@1x (1).png\n다운로드\n미리보기",
+    "images": [
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&a=id&p=37572&fn=1795754354017_T-BRIDGE%2B%25EC%25B0%25B8%25EC%2597%25AC%2B%25ED%2595%2599%25EC%2583%259D%2B%25EB%25AA%25A8%25EC%25A7%2591%2B%25ED%258F%25AC%25EC%258A%25A4%25ED%2584%25B0%2B%2528A3%2529%25401x%2B%25281%2529.png",
+      "https://portal.koreatech.ac.kr/ctt/bb/bulletin?b=14&p=37572&a=fd&fs=1"
+    ],
+    "is_sample": false,
+    "extracted": true,
+    "processed": true,
+    "is_new": true,
+    "collected_at": "2026-11-27T14:59:50+09:00",
+    "relevance": 1,
+    "relevance_reason": "넓은 조건(학적 상태)만 일치",
+    "target": {
+      "scope": "specific",
+      "departments": [],
+      "years": [],
+      "enrollment_statuses": [
+        "재학"
+      ],
+      "groups": [],
+      "dorm_required": null
+    },
+    "deadline": "2026-11-27",
+    "other_dates": [
+      {
+        "label": "선발 결과 발표",
+        "date": "2026-11-30"
+      },
+      {
+        "label": "기술상담회",
+        "date": "2026-12-21"
+      }
+    ],
+    "actions": [
+      "온라인 신청서 작성"
+    ],
+    "materials": null,
+    "category": "취업·인턴",
+    "days_left": 0,
+    "is_expired": false,
+    "is_urgent": true
   }
 ]
